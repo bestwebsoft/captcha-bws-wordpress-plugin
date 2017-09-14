@@ -1,0 +1,1857 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: captcha\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-09-08 12:59+0300\n"
+"PO-Revision-Date: 2017-09-08 13:00+0300\n"
+"Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
+"Language-Team: bestwebsoft.com <https://support.bestwebsoft.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : "
+"((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: captcha-bws.php:36 captcha-bws.php:38 captcha-bws.php:238
+#: includes/class-cptch-settings-tabs.php:160
+msgid "Captcha Settings"
+msgstr "Настройки Captcha"
+
+#: captcha-bws.php:38 captcha-bws.php:628 captcha-bws.php:641
+#: includes/class-cptch-settings-tabs.php:25
+msgid "Settings"
+msgstr "Настройки"
+
+#: captcha-bws.php:45
+msgid "Upgrade to Pro"
+msgstr "Обновить до Pro"
+
+#: captcha-bws.php:396
+msgid "Click the BACK button on your browser, and try again."
+msgstr "Нажмите НАЗАД в браузере и попробуйте еще раз."
+
+#: captcha-bws.php:499
+msgid "Captcha loading..."
+msgstr "Капча загружается..."
+
+#: captcha-bws.php:501
+msgid "In order to pass the captcha please enable JavaScript."
+msgstr "Для того, чтобы пройти тест CAPTCHA включите JavaScript."
+
+#: captcha-bws.php:642
+msgid "FAQ"
+msgstr "FAQ"
+
+#: captcha-bws.php:643
+msgid "Support"
+msgstr "Поддержка"
+
+#: includes/class-cptch-settings-tabs.php:26
+msgid "Misc"
+msgstr "Разное"
+
+#: includes/class-cptch-settings-tabs.php:27
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: includes/class-cptch-settings-tabs.php:29
+msgid "License Key"
+msgstr "Лицензионный ключ"
+
+#: includes/class-cptch-settings-tabs.php:55
+msgid "Login form"
+msgstr "Форма входа"
+
+#: includes/class-cptch-settings-tabs.php:56
+msgid "Registration form"
+msgstr "Форма регистрации"
+
+#: includes/class-cptch-settings-tabs.php:57
+msgid "Reset password form"
+msgstr "Форма восстановления пароля"
+
+#: includes/class-cptch-settings-tabs.php:58
+msgid "Comments form"
+msgstr "Форма комментариев"
+
+#: includes/class-cptch-settings-tabs.php:95
+msgid "WordPress default"
+msgstr "Стандартные формы WordPress"
+
+#: includes/class-cptch-settings-tabs.php:104
+msgid "External plugins"
+msgstr "Внешние плагины"
+
+#: includes/class-cptch-settings-tabs.php:148
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: includes/class-cptch-settings-tabs.php:165
+msgid "Enable Captcha for"
+msgstr "Включить Captcha для"
+
+#: includes/class-cptch-settings-tabs.php:197
+msgid "Enable to add the CAPTCHA to forms on their settings pages."
+msgstr "Включите для добавления Captcha на страницах настроек этих форм."
+
+#: includes/class-cptch-settings-tabs.php:236
+msgid "Activate"
+msgstr "Активировать"
+
+#: includes/class-cptch-settings-tabs.php:238
+msgid "Install Now"
+msgstr "Установить"
+
+#: includes/invisible.php:28
+msgid "Can't handle encrypting/decrypting data."
+msgstr "Невозможно обработать данные шифрования/дешифрования."
+
+#: includes/invisible.php:31 includes/invisible.php:64
+#: includes/invisible.php:99
+msgid "ERROR"
+msgstr "Ошибка"
+
+#: includes/invisible.php:61
+#, php-format
+msgid "Protected by %s"
+msgstr "Защищено %s"
+
+#: includes/invisible.php:77
+msgid "Empty captcha."
+msgstr "Пустое поле Captcha."
+
+#: includes/invisible.php:91
+msgid "Captcha time limit exceeded."
+msgstr "Превышен лимит времени капчи."
+
+#: includes/invisible.php:96
+msgid "Wrong captcha."
+msgstr "Неправильные данные капчи."
+
+#~ msgid "Captcha Packages"
+#~ msgstr "Пакеты Captcha"
+
+#~ msgid "Packages"
+#~ msgstr "Пакеты"
+
+#~ msgid "Captcha Whitelist"
+#~ msgstr "Белый Список Captcha"
+
+#~ msgid "Whitelist"
+#~ msgstr "Белый список"
+
+#~ msgid "Error"
+#~ msgstr "Ошибка"
+
+#~ msgid "In order to pass the CAPTCHA please enable JavaScript"
+#~ msgstr "Для того, чтобы пройти тест CAPTCHA включите JavaScript"
+
+#~ msgid "zero"
+#~ msgstr "ноль"
+
+#~ msgid "one"
+#~ msgstr "один"
+
+#~ msgid "two"
+#~ msgstr "два"
+
+#~ msgid "three"
+#~ msgstr "три"
+
+#~ msgid "four"
+#~ msgstr "четыре"
+
+#~ msgid "five"
+#~ msgstr "пять"
+
+#~ msgid "six"
+#~ msgstr "шесть"
+
+#~ msgid "seven"
+#~ msgstr "семь"
+
+#~ msgid "eight"
+#~ msgstr "восемь"
+
+#~ msgid "nine"
+#~ msgstr "девять"
+
+#~ msgid "ten"
+#~ msgstr "десять"
+
+#~ msgid "eleven"
+#~ msgstr "одиннадцать"
+
+#~ msgid "twelve"
+#~ msgstr "двенадцать"
+
+#~ msgid "thirteen"
+#~ msgstr "тринадцать"
+
+#~ msgid "fourteen"
+#~ msgstr "четырнадцать"
+
+#~ msgid "fifteen"
+#~ msgstr "пятнадцать"
+
+#~ msgid "sixteen"
+#~ msgstr "шестнадцать"
+
+#~ msgid "seventeen"
+#~ msgstr "семнадцать"
+
+#~ msgid "eighteen"
+#~ msgstr "восемнадцать"
+
+#~ msgid "nineteen"
+#~ msgstr "девятнадцать"
+
+#~ msgid "twenty"
+#~ msgstr "двадцать"
+
+#~ msgid "twenty one"
+#~ msgstr "двадцать один"
+
+#~ msgid "twenty two"
+#~ msgstr "двадцать два"
+
+#~ msgid "twenty three"
+#~ msgstr "двадцать три"
+
+#~ msgid "twenty four"
+#~ msgstr "двадцать четыре"
+
+#~ msgid "twenty five"
+#~ msgstr "двадцать пять"
+
+#~ msgid "twenty six"
+#~ msgstr "двадцать шесть"
+
+#~ msgid "twenty seven"
+#~ msgstr "двадцать семь"
+
+#~ msgid "twenty eight"
+#~ msgstr "двадцать восемь"
+
+#~ msgid "twenty nine"
+#~ msgstr "двадцать девять"
+
+#~ msgid "thirty"
+#~ msgstr "тридцать"
+
+#~ msgid "thirty one"
+#~ msgstr "тридцать один"
+
+#~ msgid "thirty two"
+#~ msgstr "тридцать два"
+
+#~ msgid "thirty three"
+#~ msgstr "тридцать три"
+
+#~ msgid "thirty four"
+#~ msgstr "тридцать четыре"
+
+#~ msgid "thirty five"
+#~ msgstr "тридцать пять"
+
+#~ msgid "thirty six"
+#~ msgstr "тридцать шесть"
+
+#~ msgid "thirty seven"
+#~ msgstr "тридцать семь"
+
+#~ msgid "thirty eight"
+#~ msgstr "тридцать восемь"
+
+#~ msgid "thirty nine"
+#~ msgstr "тридцать девять"
+
+#~ msgid "forty"
+#~ msgstr "сорок"
+
+#~ msgid "forty one"
+#~ msgstr "сорок один"
+
+#~ msgid "forty two"
+#~ msgstr "сорок два"
+
+#~ msgid "forty three"
+#~ msgstr "сорок три"
+
+#~ msgid "forty four"
+#~ msgstr "сорок четыре"
+
+#~ msgid "forty five"
+#~ msgstr "сорок пять"
+
+#~ msgid "forty six"
+#~ msgstr "сорок шесть"
+
+#~ msgid "forty seven"
+#~ msgstr "сорок семь"
+
+#~ msgid "forty eight"
+#~ msgstr "сорок восемь"
+
+#~ msgid "forty nine"
+#~ msgstr "сорок девять"
+
+#~ msgid "fifty"
+#~ msgstr "пятьдесят"
+
+#~ msgid "fifty one"
+#~ msgstr "пятьдесят один"
+
+#~ msgid "fifty two"
+#~ msgstr "пятьдесят два"
+
+#~ msgid "fifty three"
+#~ msgstr "пятьдесят три"
+
+#~ msgid "fifty four"
+#~ msgstr "пятьдесят четыре"
+
+#~ msgid "fifty five"
+#~ msgstr "пятьдесят пять"
+
+#~ msgid "fifty six"
+#~ msgstr "пятьдесят шесть"
+
+#~ msgid "fifty seven"
+#~ msgstr "пятьдесят семь"
+
+#~ msgid "fifty eight"
+#~ msgstr "пятьдесят восемь"
+
+#~ msgid "fifty nine"
+#~ msgstr "пятьдесят девять"
+
+#~ msgid "sixty"
+#~ msgstr "шестьдесят"
+
+#~ msgid "sixty one"
+#~ msgstr "шестьдесят один"
+
+#~ msgid "sixty two"
+#~ msgstr "шестьдесят два"
+
+#~ msgid "sixty three"
+#~ msgstr "шестьдесят три"
+
+#~ msgid "sixty four"
+#~ msgstr "шестьдесят четыре"
+
+#~ msgid "sixty five"
+#~ msgstr "шестьдесят пять"
+
+#~ msgid "sixty six"
+#~ msgstr "шестьдесят шесть"
+
+#~ msgid "sixty seven"
+#~ msgstr "шестьдесят семь"
+
+#~ msgid "sixty eight"
+#~ msgstr "шестьдесят восемь"
+
+#~ msgid "sixty nine"
+#~ msgstr "шестьдесят девять"
+
+#~ msgid "seventy"
+#~ msgstr "семьдесят"
+
+#~ msgid "seventy one"
+#~ msgstr "семьдесят один"
+
+#~ msgid "seventy two"
+#~ msgstr "семьдесят два"
+
+#~ msgid "seventy three"
+#~ msgstr "семьдесят три"
+
+#~ msgid "seventy four"
+#~ msgstr "семьдесят четыре"
+
+#~ msgid "seventy five"
+#~ msgstr "семьдесят пять"
+
+#~ msgid "seventy six"
+#~ msgstr "семьдесят шесть"
+
+#~ msgid "seventy seven"
+#~ msgstr "семьдесят семь"
+
+#~ msgid "seventy eight"
+#~ msgstr "семьдесят восемь"
+
+#~ msgid "seventy nine"
+#~ msgstr "семьдесят девять"
+
+#~ msgid "eighty"
+#~ msgstr "восемьдесят"
+
+#~ msgid "eighty one"
+#~ msgstr "восемьдесят один"
+
+#~ msgid "eighty two"
+#~ msgstr "восемьдесят два"
+
+#~ msgid "eighty three"
+#~ msgstr "восемьдесят три"
+
+#~ msgid "eighty four"
+#~ msgstr "восемьдесят четыре"
+
+#~ msgid "eighty five"
+#~ msgstr "восемьдесят пять"
+
+#~ msgid "eighty six"
+#~ msgstr "восемьдесят шесть"
+
+#~ msgid "eighty seven"
+#~ msgstr "восемьдесят семь"
+
+#~ msgid "eighty eight"
+#~ msgstr "восемьдесят восемь"
+
+#~ msgid "eighty nine"
+#~ msgstr "восемьдесят девять"
+
+#~ msgid "ninety"
+#~ msgstr "девяносто"
+
+#~ msgid "ninety one"
+#~ msgstr "девяносто один"
+
+#~ msgid "ninety two"
+#~ msgstr "девяносто два"
+
+#~ msgid "ninety three"
+#~ msgstr "девяносто три"
+
+#~ msgid "ninety four"
+#~ msgstr "девяносто четыре"
+
+#~ msgid "ninety five"
+#~ msgstr "девяносто пять"
+
+#~ msgid "ninety six"
+#~ msgstr "девяносто шесть"
+
+#~ msgid "ninety seven"
+#~ msgstr "девяносто семь"
+
+#~ msgid "ninety eight"
+#~ msgstr "девяносто восемь"
+
+#~ msgid "ninety nine"
+#~ msgstr "девяносто девять"
+
+#~ msgid "Encryption password is not set"
+#~ msgstr "Пароль для шифрования не установлен"
+
+#~ msgid "Decryption password is not set"
+#~ msgstr "Пароль для дешифровки не установлен"
+
+#~ msgid "settings page"
+#~ msgstr "странице настроек"
+
+#~ msgid ""
+#~ "You're using W3 Total Cache plugin. If %1$s doesn't work properly, please "
+#~ "clear the cache in W3 Total Cache plugin and turn on '%2$s' option on the "
+#~ "plugin %3$s."
+#~ msgstr ""
+#~ "Вы используете плагин W3 Total Cache. Если %1$s работает некорректно, "
+#~ "пожалуйста очистите кэш в плагине W3 Total Cache и включите опцию \"%2$s"
+#~ "\" на %3$s плагина."
+
+#~ msgid "Show CAPTCHA after the end of the page loading"
+#~ msgstr "Отображать CAPTCHA после окончания загрузки страницы"
+
+#~ msgid "Warning"
+#~ msgstr "Внимание"
+
+#~ msgid "plugin contains deprecated functionality that will be removed"
+#~ msgstr "содержит устаревший функционал, который будет удален"
+
+#~ msgid "in the future"
+#~ msgstr "в будущем"
+
+#~ msgid "after"
+#~ msgstr "после"
+
+#~ msgid "has old version"
+#~ msgstr "имеет устаревшую версию"
+
+#~ msgid "has compatibility problems with"
+#~ msgstr "имеет проблемы совместимости с"
+
+#~ msgid "You need to update this plugin for correct work with"
+#~ msgstr "Вам необходимо обновить этот плагин для корректной работы с"
+
+#~ msgid "package"
+#~ msgstr "пакет"
+
+#~ msgid "packages"
+#~ msgstr "пакеты"
+
+#~ msgid "Add New"
+#~ msgstr "Добавить"
+
+#~ msgid "This options is available in Pro version of plugin"
+#~ msgstr "Эта опция доступна только для Pro-версии плагина"
+
+#~ msgid "If the package already exists"
+#~ msgstr "Если пакет ранее был загружен"
+
+#~ msgid "Skip it"
+#~ msgstr "Пропустить"
+
+#~ msgid "Update the existed one"
+#~ msgstr "Обновить"
+
+#~ msgid "Save it as new"
+#~ msgstr "Сохранить как новый"
+
+#~ msgid "Browse packages"
+#~ msgstr "Обзор пакетов"
+
+#~ msgid "Search"
+#~ msgstr "Поиск"
+
+#~ msgid "No packages found"
+#~ msgstr "Пакеты не найдены"
+
+#~ msgid "Package"
+#~ msgstr "Пакет"
+
+#~ msgid "Date Added"
+#~ msgstr "Дата добавления"
+
+#~ msgid ""
+#~ "Can not load images in to the \"uploads\" folder. Please, check your "
+#~ "permissions."
+#~ msgstr ""
+#~ "Невозможно загрузить изображения в папку \"uploads\". Пожалуйста, "
+#~ "проверьте свои права."
+
+#~ msgid "One package has been updated or added to the database."
+#~ msgid_plural "%s packages have been updated or added to the database."
+#~ msgstr[0] "Один пакет был добавлен или обновлен в базе данных."
+#~ msgstr[1] "%s пакета были добавлены или обновлены в базе данных."
+#~ msgstr[2] "%s пакетов были добавлены или обновлены в базе данных."
+#~ msgstr[3] "%s пакет был добавлен или обновлён в базе данных."
+
+#~ msgid "One image has been updated or added to the database."
+#~ msgid_plural "%s images have been updated or added to the database."
+#~ msgstr[0] "Одно изображение было добавлено или обновлено в базе данных."
+#~ msgstr[1] "%s изображения были добавлены или обновлены в базе данных."
+#~ msgstr[2] "%s изображений были добавлены или обновлены в базе данных."
+#~ msgstr[3] "%s изображение было добавлено или обновлено в базе данных."
+
+#~ msgid "Archive is empty"
+#~ msgstr "Архив пустой"
+
+#~ msgid ""
+#~ "Some settings of the package %s were set incorrectly. They have been "
+#~ "skipped."
+#~ msgstr ""
+#~ "Некоторые настройки пакета %s были установлены неправильно. Они были "
+#~ "пропущены."
+
+#~ msgid "Wrong data"
+#~ msgstr "Неправильные данные"
+
+#~ msgid "Messages"
+#~ msgstr "Уведомления"
+
+#~ msgid "Forgot password form"
+#~ msgstr "Форма восстановления пароля"
+
+#~ msgid "Create a Group form"
+#~ msgstr "Форма создания группы"
+
+#~ msgid "Checkout form"
+#~ msgstr "Форма оформления заказа"
+
+#~ msgid "BuddyPress"
+#~ msgstr "BuddyPress"
+
+#~ msgid "WooCommerce"
+#~ msgstr "WooCommerce"
+
+#~ msgid "Arithmetic Actions"
+#~ msgstr "Арифметические действия"
+
+#~ msgid "Complexity"
+#~ msgstr "Сложность"
+
+#~ msgid "Image Packages"
+#~ msgstr "Пакеты Изображений"
+
+#~ msgid "Text fields in the \"Messages\" tab must not be empty."
+#~ msgstr ""
+#~ "Текстовые поля в блоке настроек \"Уведомления\" не должны быть пустыми."
+
+#~ msgid "\"%s\" option must not be fully disabled."
+#~ msgstr "Опция \"%s\"  не должна быть полностью отключена."
+
+#~ msgid ""
+#~ "In order to use \"Optical Character Recognition\" type, please select at "
+#~ "least one of the items in the option \"Image Packages\"."
+#~ msgstr ""
+#~ "Для того, чтобы использовать тип \"Визуальное распознавание символов\", "
+#~ "пожалуйста, выберите как минимум один элемент в блоке настроек \"Пакеты "
+#~ "изображений\"."
+
+#~ msgid ""
+#~ "In order to use images in the CAPTCHA, please select at least one of the "
+#~ "items in the option \"Image Packages\". The \"Images\" checkbox in "
+#~ "\"Complexity\" option has been disabled."
+#~ msgstr ""
+#~ "Для того, чтобы использовать изображения в CAPTCHA, пожалуйста, выберите "
+#~ "как минимум один элемент в блоке настроек \"Пакеты изображений\". Пункт "
+#~ "\"Изображения\" в блоке опций \"Сложность\" отключен."
+
+#~ msgid "Captcha Type"
+#~ msgstr "Тип"
+
+#~ msgid "Arithmetic actions"
+#~ msgstr "Арифметические действия"
+
+#~ msgid "Optical Character Recognition (OCR)"
+#~ msgstr "Визуальное распознавание символов"
+
+#~ msgid "Addition"
+#~ msgstr "Сложение"
+
+#~ msgid "Subtruction"
+#~ msgstr "Вычитание"
+
+#~ msgid "Multiplication"
+#~ msgstr "Умножение"
+
+#~ msgid "Numbers (1, 2, 3, etc.)"
+#~ msgstr "Цифры (1, 2, 3 и т.д.)"
+
+#~ msgid "Words (one, two, three, etc.)"
+#~ msgstr "Слова (один, два, три и т.д.)"
+
+#~ msgid "Images"
+#~ msgstr "Изображения"
+
+#~ msgid "Number of Images"
+#~ msgstr "Количество изображений"
+
+#~ msgid ""
+#~ "Set a number of images to display simultaneously as a captcha question."
+#~ msgstr "Укажите количество изображений отображаемых одновременно."
+
+#~ msgid ""
+#~ "With a whitelist you can hide captcha field for your personal and trusted "
+#~ "IP addresses."
+#~ msgstr ""
+#~ "С помощью белого списка вы можете отменить отображение поля CAPTCHA для "
+#~ "себя и доверенных IP адресов."
+
+#~ msgid "Default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Limit Attempts"
+#~ msgstr "Limit Attempts"
+
+#~ msgid "Use several image packages at the same time"
+#~ msgstr "Использовать несколько пакетов изображений одновременно"
+
+#~ msgid "Enlarge Images"
+#~ msgstr "Увеличение изображений"
+
+#~ msgid "Enable to enlarge captcha images on mouseover."
+#~ msgstr "Включить увеличение изображений при наведении."
+
+#~ msgid "Reload Button"
+#~ msgstr "Кнопка перезагрузки"
+
+#~ msgid "Enable to display reload button for captcha."
+#~ msgstr "Включить отображение кнопки перезагрузки для Captcha."
+
+#~ msgid "Captcha Title"
+#~ msgstr "Заголовок Captcha"
+
+#~ msgid "Required Symbol"
+#~ msgstr "Обязательный cимвол"
+
+#~ msgid "Advanced Protection"
+#~ msgstr "Продвинутая защита"
+
+#~ msgid "Enable to display captcha when the website page is loaded."
+#~ msgstr ""
+#~ "Включите, чтобы отображать Captcha после того, как страница сайта была "
+#~ "загружена."
+
+#~ msgid "General"
+#~ msgstr "Общие настройки"
+
+#~ msgid "Close"
+#~ msgstr "Закрыть"
+
+#~ msgid "Enable to activate a time limit requeired to complete captcha."
+#~ msgstr "Включите, чтобы активировать временное ограничение на ввод Captcha."
+
+#~ msgid "Time Limit"
+#~ msgstr "Временное ограничение"
+
+#~ msgid "Time Limit Thershold"
+#~ msgstr "Временной лимит"
+
+#~ msgid "sec"
+#~ msgstr "сек."
+
+#~ msgid "This option is available only for network or for main blog"
+#~ msgstr "Эта опция доступна только для сетевых настроек или главного блога"
+
+#~ msgid "Hide from Registered Users"
+#~ msgstr "Скрыть от зарегистрированных пользователей"
+
+#~ msgid "update"
+#~ msgstr "обновите"
+
+#~ msgid "to the current version"
+#~ msgstr "до текущей версии"
+
+#~ msgid "install"
+#~ msgstr "установить"
+
+#~ msgid "activate"
+#~ msgstr "активировать"
+
+#~ msgid "You should"
+#~ msgstr "Вы должны"
+
+#~ msgid "to use this functionality."
+#~ msgstr "для того чтобы использовать функционал."
+
+#~ msgid "Messages Settings"
+#~ msgstr "Настройки Уведомлений"
+
+#~ msgid "Captcha Field is Empty"
+#~ msgstr "Пустое поле Captcha"
+
+#~ msgid "Please complete the captcha."
+#~ msgstr "Пожалуйста, заполните CAPTCHA."
+
+#~ msgid "Captcha is Incorrect"
+#~ msgstr "Captcha заполнена некорректно"
+
+#~ msgid "Please enter correct captcha value."
+#~ msgstr "Пожалуйста, введите правильное значение CAPTCHA."
+
+#~ msgid "Time Limit Exceeded"
+#~ msgstr "Превышен лимит времени"
+
+#~ msgid "Time limit exceeded. Please complete the captcha once again."
+#~ msgstr "Достигнут лимит времени. Пожалуйста, введите CAPTCHA снова."
+
+#~ msgid "This message will be displayed above the captcha field."
+#~ msgstr "Это сообщение будет отображено над полем Captcha."
+
+#~ msgid "Whitelisted IP"
+#~ msgstr "IP в белом списке"
+
+#~ msgid "Your IP address is Whitelisted."
+#~ msgstr "Ваш IP находится в белом списке."
+
+#~ msgid "This message will be displayed instead of the captcha field."
+#~ msgstr "Это сообщение будет отображено вместо поля CAPTCHA."
+
+#~ msgid ""
+#~ "The image packages list is empty. Please restore default settings or re-"
+#~ "install the plugin to fix this error."
+#~ msgstr ""
+#~ "Список пакетов изображений пустой. Пожалуйста, восстановите настройки по "
+#~ "умолчанию или переустановите плагин для исправления этой ошибки."
+
+#~ msgid "All dates"
+#~ msgstr "Всё время"
+
+#~ msgid "Last 24 hours"
+#~ msgstr "Последние 24 часа"
+
+#~ msgid "Last week"
+#~ msgstr "Последняя неделя"
+
+#~ msgid "Last month"
+#~ msgstr "Последний месяц"
+
+#~ msgid "Last year"
+#~ msgstr "Последний год"
+
+#~ msgid "Limit Attempts whitelist is activated."
+#~ msgstr "Белый список Limit Attemts активирован."
+
+#~ msgid "View the whitelist"
+#~ msgstr "Посмотреть белый список"
+
+#~ msgid "or"
+#~ msgstr "или"
+
+#~ msgid "Enable default captcha whitelist"
+#~ msgstr "Включить белый список Сaptcha по умолчанию"
+
+#~ msgid "Load IP Address(-es)"
+#~ msgstr "Загрузить IP адреса"
+
+#~ msgid "Save changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
+#~ msgstr "Загрузите IP адреса из белого списка \"Limit Attempts\"."
+
+#~ msgid "IP to whitelist"
+#~ msgstr "IP в белый список"
+
+#~ msgid "My IP"
+#~ msgstr "Мой IP"
+
+#~ msgid "Allowed formats"
+#~ msgstr "Доступные форматы"
+
+#~ msgid "Allowed diapason"
+#~ msgstr "Доступные диапазоны"
+
+#~ msgid "Add IP to whitelist"
+#~ msgstr "Добавить IP в белый список"
+
+#~ msgid "Search item"
+#~ msgstr "Поиск"
+
+#~ msgid "Nothing found"
+#~ msgstr "Ничего не найдено"
+
+#~ msgid "No IP in the whitelist"
+#~ msgstr "Список IP пустой"
+
+#~ msgid "IP Address"
+#~ msgstr "IP адреса"
+
+#~ msgid "Delete"
+#~ msgstr "Удалить"
+
+#~ msgid "Filter"
+#~ msgstr "Применить фильтр"
+
+#~ msgid "IP added to the whitelist successfully."
+#~ msgstr "IP адрес успешно добавлен в белый список."
+
+#~ msgid "Some errors occurred."
+#~ msgstr "Возникли некоторые ошибки."
+
+#~ msgid "IP is already in the whitelist."
+#~ msgstr "IP адрес уже в белом списке."
+
+#~ msgid "Invalid IP. See allowed formats."
+#~ msgstr "Неверный IP адрес. Смотрите доступные форматы."
+
+#~ msgid "%s IP was deleted successfully"
+#~ msgid_plural "%s IPs were deleted successfully"
+#~ msgstr[0] "IP адрес был успешно удален"
+#~ msgstr[1] "%s IP адреса были успешно удалены"
+#~ msgstr[2] "%s IP адресов были успешно удалены"
+#~ msgstr[3] "%s IP адрес был успешно удален"
+
+#~ msgid "Some errors occurred"
+#~ msgstr "Возникли некоторые ошибки"
+
+#~ msgid "One IP was deleted successfully"
+#~ msgstr "Один IP адрес был успешно удален"
+
+#~ msgid "You have not entered any value."
+#~ msgstr "Вы не ввели значение."
+
+#~ msgid "You have not entered any value in to the search form."
+#~ msgstr "Вы не ввели значение в форму поиска."
+
+#~ msgid "Search results for"
+#~ msgstr "Результаты поиска для"
+
+#~ msgid "IP-address(es) successfully copied to the whitelist."
+#~ msgstr "IP-адрес(а) успешно скопированы в белый список."
+
+#~ msgid "use"
+#~ msgstr "использовать"
+
+#~ msgid "the whitelist of"
+#~ msgstr "белый список плагина"
+
+#~ msgid "use the whitelist of %s"
+#~ msgstr "использовать белый список плагина %s"
+
+#~ msgid "you should %s to use this functionality"
+#~ msgstr "Вам необходимо %s для того, чтобы использовать этот функционал"
+
+#~ msgid "you should install %s to use this functionality"
+#~ msgstr ""
+#~ "Вам необходимо установить %s для того, чтобы использовать этот функционал"
+
+#~ msgid "Allowed separators for IPs: a comma"
+#~ msgstr "Доступные разделители для IP: запятая"
+
+#~ msgid "semicolon"
+#~ msgstr "точка с запятой"
+
+#~ msgid "ordinary space, tab, new line or carriage return"
+#~ msgstr "обычный пробел, табуляция или новая строка"
+
+#~ msgid "Reason"
+#~ msgstr "Причина"
+
+#~ msgid "Allowed separators for reasons: a comma"
+#~ msgstr "Доступные разделители для причин: запятая"
+
+#~ msgid "tab, new line or carriage return"
+#~ msgstr "табуляция или новая строка"
+
+#~ msgid "General Settings"
+#~ msgstr "Общие настройки"
+
+#~ msgid "Enable to use general captcha settings."
+#~ msgstr "Включите, чтобы использовать общие настройки."
+
+#~ msgid "Use Several Image Packages at The Same Time"
+#~ msgstr "Использовать несколько пакетов изображений одновременно"
+
+#~ msgid "Your IP addresse is Whitelisted."
+#~ msgstr "Ваш IP добавлен в белый список."
+
+#~ msgid "Check off for adding the CAPTCHA to forms on their settings pages."
+#~ msgstr "Включите для добавления Captcha на страницах настроек этих форм."
+
+#~ msgid "\"Captcha Title\" and \"Required Symbol\" must not be empty."
+#~ msgstr ""
+#~ "\"Заголовок Captcha\" и \"Обязательный cимвол\" не должны быть пустыми."
+
+#~ msgid ""
+#~ "The image packages list is empty. Please restore default settings or re-"
+#~ "install the plugin to fix this error"
+#~ msgstr ""
+#~ "Список пакетов изображений пустой. Пожалуйста, восстановите настройки по "
+#~ "умолчанию или переустановите плагин для исправления этой ошибки"
+
+#~ msgid ""
+#~ "With a whitelist you can hide captcha field for your presonal and trusted "
+#~ "IP addresses."
+#~ msgstr ""
+#~ "С помощью белого списка вы можете отменить отображение поля CAPTCHA для "
+#~ "себя и доверенных IP адресов."
+
+#~ msgid "Captcha Shortchode"
+#~ msgstr "CAPTCHA шорткод"
+
+#~ msgid ""
+#~ "Add CAPTCHA to your posts, pages, custom post types or widgets by using "
+#~ "the following shortcode:"
+#~ msgstr ""
+#~ "Добавьте CAPTCHA к постам, страницам, пользовательским типам постов или "
+#~ "виджетам используя шорткод:"
+
+#~ msgid "\"%s\" option must not be fully disabled"
+#~ msgstr "Опция \"%s\"  не должна быть полностью отключена "
+
+#~ msgid ""
+#~ "Text fields in the \"Notification messages\" option must not be empty."
+#~ msgstr "Текстовые поля в \"Уведомлениях\" не должны быть пустыми."
+
+#~ msgid ""
+#~ "In order to use \"Character recognition\" type, please select at least "
+#~ "one of the items in the option \"Image Packages\"."
+#~ msgstr ""
+#~ "Для того, чтобы использовать тип \"Распознавание символов\", пожалуйста, "
+#~ "выберите как минимум один элемент в блоке настроек \"Пакеты изображений\"."
+
+#~ msgid ""
+#~ "Can not load images in to the \"uploads\" folder. Please, check your "
+#~ "permissions"
+#~ msgstr ""
+#~ "Невозможно загрузить изображения в папку \"uploads\". Пожалуйста, "
+#~ "проверьте свои права"
+
+#~ msgid "Error during package uploading"
+#~ msgstr "Ошибка при загрузке пакета"
+
+#~ msgid "check your archive."
+#~ msgstr "проверьте архив."
+
+#~ msgid "file format should be ZIP-archive."
+#~ msgstr "формат файла должен быть ZIP-архив."
+
+#~ msgid "file size should not exceed"
+#~ msgstr "размер файла должен быть не более"
+
+#~ msgid "it is impossible to upload the archive to the server."
+#~ msgstr "невозможно загрузить архив на сервер."
+
+#~ msgid "archive can not be unzipped."
+#~ msgstr "архив нельзя разархивировать."
+
+#~ msgid "MB"
+#~ msgstr "МБ"
+
+#~ msgid "KB"
+#~ msgstr "КБ"
+
+#~ msgid "Bytes"
+#~ msgstr "Байт"
+
+#~ msgid "One package has been updated or added to the database"
+#~ msgid_plural "%s packages have been updated or added to the database"
+#~ msgstr[0] "Один пакет был добавлен или обновлён в базе данных"
+#~ msgstr[1] "%s пакета были добавлены или обновлены в базе данных"
+#~ msgstr[2] "%s пакетов были добавлены или обновлены в базе данных"
+#~ msgstr[3] "%s пакет был добавлен или обновлён в базе данных"
+
+#~ msgid "One image has been updated or added to the database"
+#~ msgid_plural "%s images have been updated or added to the database"
+#~ msgstr[0] "Одно изображение было добавлено или обновлено в базе данных"
+#~ msgstr[1] "%s изображения были добавлены или обновлены в базе данных"
+#~ msgstr[2] "%s изображений были добавлены или обновлены в базе данных"
+#~ msgstr[3] "%s изображение было добавлено или обновлено в базе данных"
+
+#~ msgid ""
+#~ "Some settings of the package %s were set incorrectly. They have been "
+#~ "skipped"
+#~ msgstr ""
+#~ "Некоторые настройки пакета %s были установлены неправильно. Они были "
+#~ "пропущены"
+
+#~ msgid "Register form"
+#~ msgstr "Форма регистрации"
+
+#~ msgid ""
+#~ "In order to use \"Character recognition\" type, please select at least "
+#~ "one of the items in the option \"Use image packages\"."
+#~ msgstr ""
+#~ "Для того, чтобы использовать тип \"Распознавание символов\", пожалуйста, "
+#~ "выберите как минимум один элемент в блоке настроек \"Использовать пакеты "
+#~ "изображений\"."
+
+#~ msgid ""
+#~ "In order to use images in the CAPTCHA, please select at least one of the "
+#~ "items in the option \"Use image packages\". The \"Images\" checkbox in "
+#~ "\"Complexity\" option has been disabled."
+#~ msgstr ""
+#~ "Для того, чтобы использовать изображения в CAPTCHA, пожалуйста, выберите "
+#~ "как минимум один элемент в блоке настроек \"Использовать пакеты "
+#~ "изображений\". Пункт \"Изображения\" в блоке опций \"Уровень сложности\" "
+#~ "отключен."
+
+#~ msgid "Settings saved"
+#~ msgstr "Настройки сохранены"
+
+#~ msgid "Hide from registered users"
+#~ msgstr "Скрыть от зарегистрированных пользователей"
+
+#~ msgid "This message will be displayed avove the captcha field."
+#~ msgstr "Это сообщение будет отображено над полем CAPTCHA."
+
+#~ msgid "Enable default capthcha whitelist"
+#~ msgstr "Включить стандартный белый список CAPTCHA"
+
+#~ msgid "Allowed formats:"
+#~ msgstr "Доступные форматы:"
+
+#~ msgid "Allowed diapason:"
+#~ msgstr "Доступные диапазоны:"
+
+#~ msgid "IP added to the whitelist successfully"
+#~ msgstr "IP успешно добавлен в белый список"
+
+#~ msgid "IP is already in the whitelist"
+#~ msgstr "IP уже в белом списке"
+
+#~ msgid "Invalid IP. See allowed formats"
+#~ msgstr "Неверные данные. Смотите доступные форматы"
+
+#~ msgid "You have not entered any value"
+#~ msgstr "Вы не ввели IP"
+
+#~ msgid "You have not entered any value in to the search form"
+#~ msgstr "Вы не ввели никакого значения в форму поиска"
+
+#~ msgid "IP-address(es) successfully copied to the whitelist"
+#~ msgstr "IP-адрес(а) успешно скопированы в белый список"
+
+#~ msgid "Install now"
+#~ msgstr "Установить сейчас"
+
+#~ msgid "Date"
+#~ msgstr "Дата"
+
+#~ msgid "Remove from the whitelist"
+#~ msgstr "Удалить"
+
+#~ msgid "Use general settings"
+#~ msgstr "Использовать общие настройки"
+
+#~ msgid "Use image packages"
+#~ msgstr "Использовать пакеты изображений"
+
+#~ msgid "For IP addresses from the whitelist CAPTCHA will not be displayed."
+#~ msgstr ""
+#~ "CAPTCHA не будет отображаться для добавленных в белый список IP адресов."
+
+#~ msgid ""
+#~ "With this option the CAPTCHA will be generated via %s into the form after "
+#~ "the end of the page loading. In this case, the most of spam bots can't "
+#~ "figure out the answer to the CAPTCHA automatically because they just "
+#~ "can't get the CAPTCHA content."
+#~ msgstr ""
+#~ "CAPTCHA будет сгенерирована в форму посредством %s после окончания "
+#~ "загрузки страницы. В этом случае, большинство спам-ботов не смогут "
+#~ "определить ответ к CAPTCHA автоматически, так как они просто не смогут "
+#~ "получить контент CAPTCHA."
+
+#~ msgid "Load IP Adress(-es)"
+#~ msgstr "Загрузить IP Адрес(-а)"
+
+#~ msgid "WordPress Login form"
+#~ msgstr "Форма логина WordPress "
+
+#~ msgid "WordPress Registration form"
+#~ msgstr "Форма регистрации WordPress"
+
+#~ msgid "WordPress Reset Password form"
+#~ msgstr "Форма восстановления пароля WordPress"
+
+#~ msgid "WordPress Comments form"
+#~ msgstr "Форма комментариев WordPress"
+
+#~ msgid "Buddypress Registration form"
+#~ msgstr "Форма регистрации плагина Buddypress"
+
+#~ msgid "Buddypress Comments form"
+#~ msgstr "Форма комментариев плагина Buddypress"
+
+#~ msgid "Buddypress \"Create a Group\" form"
+#~ msgstr "Форма \"Создать группу\" плагина Buddypress"
+
+#~ msgid "WooCommerce Login form"
+#~ msgstr "Форма логина плагина WooCommerce "
+
+#~ msgid "WooCommerce Register form"
+#~ msgstr "Форма регистрации плагина WooCommerce "
+
+#~ msgid "WooCommerce Lost Password form"
+#~ msgstr "Форма восстановления пароля плагина WooCommerce "
+
+#~ msgid "WooCommerce Checkout Billing form"
+#~ msgstr "Форма заказа плагина WooCommerce"
+
+#~ msgid "Images count"
+#~ msgstr "Количество изображений"
+
+#~ msgid "Enable to enlarge captcha images on mouseover"
+#~ msgstr "Разрешить увеличение изображений при наведении мыши"
+
+#~ msgid "Enable to display reload button for captcha"
+#~ msgstr "Разрешить отображать кнопку перезагрузки для CAPTCHA"
+
+#~ msgid "Check off for adding the CAPTCHA to forms on their settings pages"
+#~ msgstr "Отметьте для добавления CAPTCHA в формы на их страницы настроек"
+
+#~ msgid "For IP addresses from the whitelist CAPTCHA will not be displayed"
+#~ msgstr "Для IP-адресов из белого списка CAPTCHA не будет отображаться"
+
+#~ msgid "Limit Attempts whitelist is activated"
+#~ msgstr "Белый список Limit Attempts активирован."
+
+#~ msgid "IP address"
+#~ msgstr "IP-адрес"
+
+#~ msgid "Date added"
+#~ msgstr "Дата добавления"
+
+#~ msgid "Please enter a CAPTCHA value."
+#~ msgstr "Пожалуйста, заполните CAPTCHA."
+
+#~ msgid "Please enter a valid CAPTCHA value."
+#~ msgstr "Пожалуйста, введите корректное значение CAPTCHA."
+
+#~ msgid "Time limit is exhausted. Please enter a CAPTCHA value again."
+#~ msgstr ""
+#~ "Лимит Времени истёк. Пожалуйста, введите значение для CAPTCHA опять."
+
+#~ msgid "Time limit is exhausted. Please reload the CAPTCHA."
+#~ msgstr "Лимит времени истёк. Пожалуйста, перезагрузите CAPTCHA."
+
+#~ msgid "You are in the whitelist."
+#~ msgstr "Вы в белом списке."
+
+#~ msgid "Enable time limit"
+#~ msgstr "Включить ограничение по времени"
+
+#~ msgid "for"
+#~ msgstr "в"
+
+#~ msgid "seconds"
+#~ msgstr "секунд"
+
+#~ msgid "Enable"
+#~ msgstr "Включить"
+
+#~ msgid "requires"
+#~ msgstr "требует"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress "
+#~ "and try again."
+#~ msgstr ""
+#~ "или выше, поэтому плагин был деактивирован! Обновите WordPress и "
+#~ "повторите попытку."
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "Назад к WordPress"
+
+#~ msgid "Learn More"
+#~ msgstr "Подробнее"
+
+#~ msgid "Close notice"
+#~ msgstr "Закрыть"
+
+#~ msgid "Notice"
+#~ msgstr "Обратите внимание"
+
+#~ msgid "Save Changes"
+#~ msgstr "Сохранить изменения"
+
+#~ msgid "The license key is valid."
+#~ msgstr "Лицензионный ключ принят."
+
+#~ msgid "Plugins"
+#~ msgstr "форм плагинов"
+
+#~ msgid "Check license key"
+#~ msgstr "Проверка лицензионного ключа"
+
+#~ msgid "All plugin settings were restored."
+#~ msgstr "Все настройки плагина восстановлены."
+
+#~ msgid ""
+#~ "This license key is valid, but Your license has expired. If you want to "
+#~ "update our plugin in future, you should extend the license."
+#~ msgstr ""
+#~ "Лицензионный ключ принят, но срок действия лицензии истек. Если вы хотите "
+#~ "обновлять плагин в будущем, вы должны продлить лицензию."
+
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr "К сожалению, вы превысили количество доступных попыток."
+
+#~ msgid "Please, enter your license key"
+#~ msgstr "Пожалуйста, введите Ваш лицензионный ключ"
+
+#~ msgid "Time limit exceeded. Please complete hde captcha once again."
+#~ msgstr "Тостигнут лимт времени. Пожалуйста, введите CAPTCHA снова."
+
+#~ msgid "Captcha"
+#~ msgstr "Captcha"
+
+#~ msgid "How to Use Step-by-step Instruction"
+#~ msgstr "Инструкция по использованию"
+
+#~ msgid "This setting is available in Pro version"
+#~ msgstr "Эта опция доступна только для Pro-версии плагина"
+
+#~ msgid "Custom code"
+#~ msgstr "Пользовательский код"
+
+#~ msgid "Go PRO"
+#~ msgstr "Перейти на PRO-версию"
+
+#~ msgid "check your archive"
+#~ msgstr "проверьте архив"
+
+#~ msgid "file format should be ZIP-archive"
+#~ msgstr "формат файла должен быть ZIP-архив"
+
+#~ msgid "it is impossible to upload the archive to the server"
+#~ msgstr "невозможно загрузить архив на сервер"
+
+#~ msgid "archive can not be unzipped"
+#~ msgstr "архив нельзя разархивировать"
+
+#~ msgid "General Options"
+#~ msgstr "Общие настройки"
+
+#~ msgid ""
+#~ "Text fields in the \"Notification messages\" option must not be empty"
+#~ msgstr ""
+#~ "Текстовые поля в блоке настроек \"Уведомления\" не должны быть пустыми"
+
+#~ msgid "Captcha type"
+#~ msgstr "Тип капчи"
+
+#~ msgid "Character recognition"
+#~ msgstr "Распознавание символов"
+
+#~ msgid "Plus"
+#~ msgstr "Плюс"
+
+#~ msgid "Minus"
+#~ msgstr "Минус"
+
+#~ msgid "Numbers"
+#~ msgstr "Цифры"
+
+#~ msgid "Words"
+#~ msgstr "Слова"
+
+#~ msgid "Enlarge images on mouseover"
+#~ msgstr "Увеличивать изображения при наведении мышью"
+
+#~ msgid "Show reload button"
+#~ msgstr "Показать кнопку перезагрузки"
+
+#~ msgid "CAPTCHA title"
+#~ msgstr "Подпись к CAPTCHA"
+
+#~ msgid "Required symbol"
+#~ msgstr "Символ для отображения обязательных полей"
+
+#~ msgid ""
+#~ "With this option the CAPTCHA will be generated via %s into the form after "
+#~ "the end of the page loading. In this case, the most of spam bots can't "
+#~ "figure out the answer to the CAPTCHA automatically because they just "
+#~ "can't get the CAPTCHA content"
+#~ msgstr ""
+#~ "CAPTCHA будет сгенерирована в форму посредством %s после окончания "
+#~ "загрузки страницы. В этом случае, большинство спам-ботов не смогут "
+#~ "определить ответ к CAPTCHA автоматически, так как они просто не смогут "
+#~ "получить контент CAPTCHA"
+
+#~ msgid "second"
+#~ msgid_plural "seconds"
+#~ msgstr[0] "секунда"
+#~ msgstr[1] "секунды"
+#~ msgstr[2] "секунд"
+#~ msgstr[3] "секунда"
+
+#~ msgid "If the CAPTCHA field is empty"
+#~ msgstr "Если CAPTCHA не заполнена"
+
+#~ msgid "If the CAPTCHA is incorrect"
+#~ msgstr "Если CAPTCHA заполнена некорректно"
+
+#~ msgid "If the time limit is exhausted"
+#~ msgstr "Если лимит времени исчерпан"
+
+#~ msgid ""
+#~ "If the time limit is exhausted (this message will be displayed above the "
+#~ "CAPTCHA)"
+#~ msgstr ""
+#~ "Если лимит времени исчерпан (указанное сообщение будет отображаться над "
+#~ "блоком CAPTCHA)"
+
+#~ msgid ""
+#~ "If the user IP is added to the whitelist (this message will be displayed "
+#~ "instead of the CAPTCHA)"
+#~ msgstr ""
+#~ "Если IP в белом списке (указанное сообщение будет отображаться вместо "
+#~ "CAPTCHA)"
+
+#~ msgid "Errors"
+#~ msgstr "При ошибках"
+
+#~ msgid ""
+#~ "These messages will be displayed if the CAPTCHA answer has not passed the "
+#~ "verification"
+#~ msgstr ""
+#~ "Эти сообщения будут отображаться, если ответ на CAPTCHA не прошел "
+#~ "верификацию"
+
+#~ msgid "Info"
+#~ msgstr "Информационные"
+
+#~ msgid "These messages will be displayed inside of the CAPTCHA"
+#~ msgstr "Эти сообщения будут отображаться внутри блока CAPTCHA"
+
+#~ msgid "Notification messages"
+#~ msgstr "Уведомления"
+
+#~ msgid "to use this functionality"
+#~ msgstr ", чтобы использовать этот функционал"
+
+#~ msgid ""
+#~ "With this option, CAPTCHA will not be displayed for IP-addresses from the "
+#~ "whitelist of %s"
+#~ msgstr ""
+#~ "Если опция включена, CAPTCHA не будет отображаться для IP-адресов из "
+#~ "белого списка плагина %s"
+
+#~ msgid "Load IP to the whitelist"
+#~ msgstr "Загрузить  IP в белый список"
+
+#~ msgid ""
+#~ "By click on this button, all IP-addresses from the whitelist of %s will "
+#~ "be loaded to the whitelist of %s"
+#~ msgstr ""
+#~ "При нажатии на эту кнопку, все IP-адреса из белого списка плагина %s "
+#~ "будут загружены в белый список плагина %s"
+
+#~ msgid "Search IP"
+#~ msgstr "Искать IP"
+
+#~ msgid "Some errors occured"
+#~ msgstr "Возникли некоторые ошибки"
+
+#~ msgid ""
+#~ "In order to use images in the CAPTCHA, please select at least one of the "
+#~ "items in the option \"Use image packages\". The \"Images\" checkbox in "
+#~ "\"Complexity\" option has been disabled"
+#~ msgstr ""
+#~ "Для того, чтобы использовать изображения в CAPTCHA, пожалуйста, выберите "
+#~ "как минимум один элемент в блоке настроек \"Использовать пакеты "
+#~ "изображений\". Пункт \"Изображения\" в блоке опций \"Уровень сложности\" "
+#~ "отключен"
+
+#~ msgid "instruction"
+#~ msgstr "инструкции"
+
+#~ msgid ""
+#~ "Functions from the %1s plugin are used on your site. These functions are "
+#~ "deprecated ( %2s ) since version %4s. Please replace them according to "
+#~ "the %3s. If you close this message it will appear in case if deprecated "
+#~ "function would be called again only"
+#~ msgstr ""
+#~ "На Вашем сайте используются функции из плагина %1s которые на данный "
+#~ "момент уже устарели ( %2s ) с версии %4s. Пожалуйста, замените их "
+#~ "согласно %3s. Если Вы закроете это сообщение оно появится только после "
+#~ "повторного вызова устаревшей функции"
+
+#~ msgid "some call functions for the \"%s\" filter hook"
+#~ msgstr "функции для хука \"%s\""
+
+#~ msgid "Enable the CAPTCHA for"
+#~ msgstr "Отображать CAPTCHA для"
+
+#~ msgid "Unlock premium options by upgrading to Pro version"
+#~ msgstr "Активируйте премиум опции обновившись до Pro версии "
+
+#~ msgid "One package %1$s"
+#~ msgid_plural "%2$s packages %3$s"
+#~ msgstr[0] "Один пакет %1$s"
+#~ msgstr[1] "%2$s пакета %3$s"
+#~ msgstr[2] "%2$s пакетов %3$s"
+#~ msgstr[3] "%2$s пакет %3$s"
+
+#~ msgid "have been updated or added to the database"
+#~ msgstr "были добавлены или обновлены"
+
+#~ msgid "one image %1$s"
+#~ msgid_plural "%2$s images %$3s"
+#~ msgstr[0] "одно изображение %1$s"
+#~ msgstr[1] "%2$s изображения %$3s"
+#~ msgstr[2] "%2$s изображений %$3s"
+#~ msgstr[3] "%2$s изображение %$3s"
+
+#~ msgid "Network Settings"
+#~ msgstr "Сетевые настройки"
+
+#~ msgid "New: Custom Image Packs for Captcha"
+#~ msgstr "Новинка: Дополнительные пакеты изображений для CAPTCHA"
+
+#~ msgid ""
+#~ "Stand out, brand yourself and enhance forms protection with custom "
+#~ "captcha images"
+#~ msgstr ""
+#~ "Выделяйся, будь узнаваем и повысь защиту форм с дополнительными "
+#~ "изображениями для CAPTCHA"
+
+#~ msgid "Try Now"
+#~ msgstr "Попробуй"
+
+#~ msgid "Add IP to the whitelist"
+#~ msgstr "Добавить IP в белый список"
+
+#~ msgid "Allowed separators: a comma"
+#~ msgstr "Доступные разделители для IP-адресов: запятая"
+
+#~ msgid "Save IP to the whitelist"
+#~ msgstr "Сохранить IP в белый список"
+
+#~ msgid "Range from"
+#~ msgstr "Диапазон от"
+
+#~ msgid "Range to"
+#~ msgstr "Диапазон до"
+
+#~ msgid "Range"
+#~ msgstr "Диапазон"
+
+#~ msgid "not saved to the whitelist."
+#~ msgstr "не сохранён в белый список."
+
+#~ msgid "invalid format. See allowed formats."
+#~ msgstr "неверный формат. Смотите доступные форматы"
+
+#~ msgid "Selected packages have been removed successfully"
+#~ msgstr "Выбранные пакеты были удалены"
+
+#~ msgid "This option will replace all current settings on separate sites."
+#~ msgstr "Эта настройка заменит все текущие настройки отдельных сайтов."
+
+#~ msgid ""
+#~ "It is prohibited to change Captcha Pro settings on this site in the "
+#~ "Captcha Pro network settings."
+#~ msgstr ""
+#~ "Запрещается изменять настройки Captcha Pro на этом сайте в сетевых "
+#~ "настройках Captcha Pro."
+
+#~ msgid ""
+#~ "It is prohibited to view Captcha Pro settings on this site in the Captcha "
+#~ "Pro network settings."
+#~ msgstr ""
+#~ "Запрещается просматривать настройки Captcha Pro на этом сайте в сетевых "
+#~ "настройках Captcha Pro."
+
+#~ msgid ""
+#~ "Option for displaying Captcha with Contact Form 7 is enabled. For correct "
+#~ "work, please don't forget to add the BWS CAPTCHA block to the necessary "
+#~ "form (see"
+#~ msgstr ""
+#~ "Опция отображения CAPTCHA для Contact Form 7 включена, не забудьте "
+#~ "добавить блок BWS CAPTCHA в нужной форме Contact Form 7 (см."
+
+#~ msgid "Apply to all sites and use by default"
+#~ msgstr "Применить для всех сайтов и использовать по умолчанию"
+
+#~ msgid "All current settings on separate sites will be replaced"
+#~ msgstr "Все текущие настройки в отдельных сайтах будут заменены"
+
+#~ msgid "By default"
+#~ msgstr "По умолчанию"
+
+#~ msgid "Settings will be applied to newly added websites by default"
+#~ msgstr ""
+#~ "настройки будут использоваться по умолчанию для вновь добавленных сайтов"
+
+#~ msgid "Do not apply"
+#~ msgstr "Не применять"
+
+#~ msgid "Change the settings on separate sites of the multisite only"
+#~ msgstr "изменять настройки только на отдельных сайтах"
+
+#~ msgid "Allow to change the settings on separate websites"
+#~ msgstr "Разрешить изменять настройки на отдельных сайтах"
+
+#~ msgid "Allow to view the settings on separate websites"
+#~ msgstr "Разрешить просмотр настроек на отдельных сайтах"
+
+#~ msgid "Apply network settings"
+#~ msgstr "Применить сетевые настройки"
+
+#~ msgid ""
+#~ "To display images from selected packages, please enable \"Images\" in the "
+#~ "\"Complexity\" block in \"General Options\" tab"
+#~ msgstr ""
+#~ "Для вывода изображений из выбранных пакетов, пожалуйста, включите "
+#~ "\"Изображения\" в блоке настроек \"Уровень сложности\" во вкладке \"Общие "
+#~ "настройки\""
+
+#~ msgid "BWS CAPTCHA"
+#~ msgstr "BWS CAPTCHA"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Copy this code and paste it into the form left."
+#~ msgstr "Скопируйте этот код и вставьте его в форму слева."
+
+#~ msgid "Insert Tag"
+#~ msgstr "Вставить тэг"
+
+#~ msgid ""
+#~ "On your site uses functions from the %1s plugin that are deprecated "
+#~ "( %2s ) since version %4s. Please replace them according to the %3s"
+#~ msgstr ""
+#~ "На Вашем сайте используются функции из плагина %1s которые на данный "
+#~ "момент уже устарели ( %2s ) с версии %4s. Пожалуйста, замените их "
+#~ "согласно %3s"
+
+#~ msgid "Use packages"
+#~ msgstr "Использовать пакеты"
+
+#~ msgid "Plus (&#43;)"
+#~ msgstr "Плюс (&#43;)"
+
+#~ msgid "Minus (&minus;)"
+#~ msgstr "Минус (&minus;)"
+
+#~ msgid "Multiply"
+#~ msgstr "Умножить"
+
+#~ msgid ""
+#~ "Please select one item in the block Arithmetic and Complexity for CAPTCHA"
+#~ msgstr ""
+#~ "Пожалуйста, выберите 1 пункт из блока Арифметические дейтсвия и Сложность "
+#~ "для CAPTCHA"
+
+#~ msgid "Please select one item in the block Enable image packages"
+#~ msgstr "Пожалуйста, выберите 1 пункт из блока Включить пакеты изображений"
+
+#~ msgid "Basic"
+#~ msgstr "Базовые"
+
+#~ msgid "Advanced"
+#~ msgstr "Расширенные"
+
+#~ msgid "for network"
+#~ msgstr "для сети"
+
+#~ msgid "download"
+#~ msgstr "скачать"
+
+#~ msgid "at least up to v3.4 to use this functionality"
+#~ msgstr ""
+#~ "как миниму до версии 3.4 для того, чтобы использовать этот функционал"
+
+#~ msgid "Buddypress comments form"
+#~ msgstr "Форма комментариев плагина Buddypress"
+
+#~ msgid "If you would like to add Captcha to a custom form see"
+#~ msgstr "Если вы хотите добавить Captcha в кастомную форму, смотрите"
+
+#~ msgid "Hide CAPTCHA"
+#~ msgstr "Скрыть CAPTCHA"
+
+#~ msgid "Title"
+#~ msgstr "Заголовок"
+
+#~ msgid ""
+#~ "If this option is enabled, CAPTCHA will be use pictures from different "
+#~ "packages at the same time"
+#~ msgstr ""
+#~ "Если эта опция включена, CAPTCHA будет использовать изображения из "
+#~ "нескольких пакетов одновременно"
+
+#~ msgid "Set time limit values (in seconds)"
+#~ msgstr "Установить время ограничения (в секундах)"
+
+#~ msgid "Contact Form by BestWebSoft"
+#~ msgstr "Форма плагина Contact Form by BestWebSoft"
+
+#~ msgid "Subscriber by BestWebSoft form"
+#~ msgstr "Форма плагина Subscriber by BestWebSoft"
+
+#~ msgid "Contact Form 7"
+#~ msgstr "Форма плагина  Contact Form 7"
+
+#~ msgid "WooCommerce login form"
+#~ msgstr "WooCommerce форма логина"
+
+#~ msgid "Other Forms"
+#~ msgstr "Другие формы"
+
+#~ msgid "Network"
+#~ msgstr "Сетевые"
+
+#~ msgid "Upload Package"
+#~ msgstr "Загрузить пакет"
+
+#~ msgid "If time limit is exhausted"
+#~ msgstr "Если лимит времени исчерпан"
+
+#~ msgid ""
+#~ "If the user IP is added to the whitelist (this message will be displayed "
+#~ "instead of CAPTCHA)."
+#~ msgstr ""
+#~ "Если IP в белом списоке, то указанное сообщение будет отображаться вместо "
+#~ "капчи."
+
+#~ msgid "Try New %s: with Pictures Now!"
+#~ msgstr "Попробуйте новую %s: теперь с изображениями!"
+
+#~ msgid "File packages.txt not found. Package not saved."
+#~ msgstr "Файл  packages.txt не найден. Пакет изображений не сохранён."
+
+#~ msgid "Can not read data from packages.txt. Packages not saved."
+#~ msgstr ""
+#~ "Невозможно считать данные из пакета изображений. Пакет изображений не "
+#~ "сохранен."
+
+#~ msgid "Package successfully loaded."
+#~ msgstr "Пакет изображений успешно сохранён."
+
+#~ msgid "Buddypress Registration form "
+#~ msgstr "Форма регистрации плагина Buddypress"
+
+#~ msgid "and"
+#~ msgstr "и"
+
+#~ msgid "IP %s was deleted from whitelist successfully"
+#~ msgstr "IP %s был успешно удалён"
+
+#~ msgid "Diapason"
+#~ msgstr "Диапазон"
+
+#~ msgid "not saved in database."
+#~ msgstr "не сохранён в базу данных."
+
+#~ msgid "is allready in database"
+#~ msgstr "уже в базе данных"
+
+#~ msgid ""
+#~ "The plugin's settings have been changed. In order to save them please "
+#~ "don't forget to click the 'Save Changes' button."
+#~ msgstr ""
+#~ "Настройки плагина были изменены. Для того, чтобы сохранить их, "
+#~ "пожалуйста, не забудьте нажать кнопку 'Сохранить изменения'."
+
+#~ msgid "Download"
+#~ msgstr "Скачать"
+
+#~ msgid "\"Create a Group\" form"
+#~ msgstr "Форма \"Создать группу\""
+
+#~ msgid "at least up to v3.4 so that Сaptcha could work correctly with it"
+#~ msgstr "как минимум до версии 3.4, чтобы Сaptcha корректно с ним работала"
+
+#~ msgid "Title for CAPTCHA in the form"
+#~ msgstr "Заголовок для CAPTCHA в форме"
+
+#~ msgid "Error messages"
+#~ msgstr "Сообщения об ошибке"
+
+#~ msgid "Display for whitelisted IP"
+#~ msgstr "Отображать для IP в белом списке"
+
+#~ msgid "activate Buddypress"
+#~ msgstr "активировать Buddypress"
+
+#~ msgid "download Buddypress"
+#~ msgstr "установить Buddypress"
+
+#~ msgid "Error:"
+#~ msgstr "Ошибка:"
+
+#~ msgid "Activate contact form"
+#~ msgstr "Активировать контакную форму"
+
+#~ msgid "Download contact form"
+#~ msgstr "Скачать контактную форму"
+
+#~ msgid "Activate Subscriber"
+#~ msgstr "Активировать плагин Subscriber"
+
+#~ msgid "Download Subscriber"
+#~ msgstr "Загрузить плагин Subscriber"
+
+#~ msgid "Diapason till"
+#~ msgstr "Диапазон до"
+
+#~ msgid "Input field settings"
+#~ msgstr "Настройки поля ввода"
+
+#~ msgid "optional"
+#~ msgstr "необязательно"
+
+#~ msgid "powered by"
+#~ msgstr "разработано компанией"
+
+#~ msgid "Subscriber"
+#~ msgstr "Subscriber"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later. If the error will appear again, "
+#~ "please, contact us <a href=https://support.bestwebsoft.com>BestWebSoft</"
+#~ "a>. We are sorry for inconvenience."
+#~ msgstr ""
+#~ "Что-то пошло не так. Попробуйте еще раз позже. Если ошибка появится "
+#~ "снова, пожалуйста, свяжитесь с нами <a href=http://support.bestwebsoft."
+#~ "com>BestWebSoft</a>. Приносим извинения за неудобства."
+
+#~ msgid "This license key is bind to another site"
+#~ msgstr "Этот лицензионный ключ привязан к другому сайту"
+
+#~ msgid "The license key is valid. Your license will expire on"
+#~ msgstr "Лицензионный ключ принят. Ваша лицензия истечет"
+
+#~ msgid ""
+#~ "If needed you can check if the license key is correct or reenter it in "
+#~ "the field below. You can find your license key on your personal page - "
+#~ "Client area - on our website"
+#~ msgstr ""
+#~ "При необходимости вы можете проверить валидность лицензионного ключа или "
+#~ "повторно ввести его в поле ниже. Вы можете найти ваш лицензионный ключ на "
+#~ "своей личной странице - Client area - на нашем сайте"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product). If "
+#~ "necessary, please submit \"Lost your password?\" request."
+#~ msgstr ""
+#~ "(ваш пользователь это емейл, который вы указывали при покупке продукта). "
+#~ "При необходимости нажмите \"Lost your password?\"."
+
+#~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
+#~ msgstr "Если вам понравился плагин, то поставьте нам 5 звезд на WordPress"
+
+#~ msgid "Rate the plugin"
+#~ msgstr "Оценить плагин"
+
+#~ msgid "If there is something wrong about it, please contact us"
+#~ msgstr "Если у вас есть какие-то вопросы, обращайтесь"
+
+#~ msgid "ERROR:"
+#~ msgstr "ОШИБКА:"
+
+#~ msgid ""
+#~ "WARNING: We have noticed illegal use of our plugin by you. We strongly "
+#~ "recommend you to solve the problem within 24 hours, otherwise the plugin "
+#~ "will be deactivated. Please go to your personal"
+#~ msgstr ""
+#~ "ВНИМАНИЕ: Было замечено незаконное использование вами нашего плагина. Мы "
+#~ "настоятельно рекомендуем Вам, решить данную проблему в течение 24 часов, "
+#~ "в противном случае плагин будет деактивирован. Пожалуйста, перейдите на "
+#~ "вашу личную"
+
+#~ msgid ""
+#~ "(your username is the email you specify when purchasing the product), "
+#~ "where you can make the necessary changes."
+#~ msgstr ""
+#~ "(ваш пользователь это емейл, который вы указывали при покупке продукта), "
+#~ "где вы можете сделать необходимые изменения."
+
+#~ msgid ""
+#~ "Your license has expired. To continue getting top-priority support and "
+#~ "plugin updates you should extend it in your"
+#~ msgstr ""
+#~ "Время использования вашей лицензии истекло. Для обновления вашего плагина "
+#~ "вам нужно продлить лицензию перейдя на вашей"
+
+#~ msgid "You license for"
+#~ msgstr "Ваша лицензия для"
+
+#~ msgid "expires on"
+#~ msgstr "истекает"
+
+#~ msgid ""
+#~ "and you won't be granted TOP-PRIORITY SUPPORT or UPDATES. To extend your "
+#~ "license please go to your"
+#~ msgstr ""
+#~ "и у вас не будет возможности обновляться или иметь приоритетную "
+#~ "техподдержку. Для продления лицензии, пожалуйста, перейдите на вашу"
+
+#~ msgid "where you'll be able to do that once this period expires."
+#~ msgstr "где появится такая возможность по истечении данного срока."
+
+#~ msgid "If you do not fill the CAPTCHA field"
+#~ msgstr "Если CAPTCHA не заполнена"
+
+#~ msgid "Invalid CAPTCHA value."
+#~ msgstr "Неправильное значение CAPTCHA."
+
+#~ msgid "Please fill the form"
+#~ msgstr "Пожалуйста, заполните форму."
