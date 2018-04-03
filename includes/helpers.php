@@ -62,32 +62,6 @@ if ( ! function_exists( 'cptch_get_default_forms' ) ) {
 }
 
 /**
- * Replaces values of the base array by values form appropriate fields of the replacement array or
- * joins not existed fields in base from the replacement recursively
- * @param  array  $base          The initial array
- * @param  array  $replacement   The array to merge
- * @return array
- */
-if ( ! function_exists( 'cptch_merge_recursive' ) ) {
-	function cptch_merge_recursive( $base, $replacement ) {
-
-		/* array_keys( $replacement ) == range( 0, count( $replacement ) - 1 ) - checking if array is numerical */
-		if ( ! is_array( $base ) || empty( $replacement ) || array_keys( $replacement ) == range( 0, count( $replacement ) - 1 ) )
-			return $replacement;
-
-		foreach ( $replacement as $key => $value ) {
-			if ( ! empty( $base[ $key ] ) && is_array( $base[ $key ] ) ) {
-				$base[ $key ] = cptch_merge_recursive( $base[ $key ], $value );
-			} else {
-				$base[ $key ] = $value;
-			}
-		}
-
-		return $base;
-	}
-}
-
-/**
  * Fethch the plugin data
  * @param  string|array  $plugins       The string or array of strings in the format {plugin_folder}/{plugin_file}
  * @param  array         $all_plugins   The list of all installed plugins

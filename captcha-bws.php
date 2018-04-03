@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.0.0
+Version: 5.0.1
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -213,16 +213,37 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 		}
 
 		if ( empty( $cptch_options['plugin_option_version'] ) || $cptch_options['plugin_option_version'] != $cptch_plugin_info["Version"] ) {
+
 			$need_update = true;
 
 			require_once( dirname( __FILE__ ) . '/includes/helpers.php' );
 			
 			$default_options = cptch_get_default_options();
-			$cptch_options = cptch_merge_recursive( $cptch_options, $default_options );
+
+			if ( function_exists( 'array_replace_recursive' ) ) {
+				$cptch_options = array_replace_recursive( $default_options, $cptch_options );
+			} else {
+				foreach ( $default_options as $key => $value ) {
+					if (
+						! isset( $cptch_options[ $key ] ) ||
+						( isset( $cptch_options[ $key ] ) && is_array( $default_options[ $key ] ) && ! is_array( $cptch_options[ $key ] ) )
+					) {
+						$cptch_options[ $key ] = $default_options[ $key ];
+					} else {
+						if ( is_array( $default_options[ $key ] ) ) {
+							foreach ( $default_options[ $key ] as $key2 => $value2 ) {
+								if ( ! isset( $cptch_options[ $key ][ $key2 ] ) )
+									$cptch_options[ $key ][ $key2 ] = $default_options[ $key ][ $key2 ];
+							}
+						}
+					}
+				}
+			}
 		}
 
-		if ( $need_update )
+		if ( $need_update ) {
 			update_option( 'cptch_options', $cptch_options );
+		}
 	}
 }
 

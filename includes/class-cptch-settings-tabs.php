@@ -182,7 +182,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 												);
 
 											$value = $fieldset_name . '_' . $form_name;
-											$id = 'cptch_' . $form_name . '_enable';
+											$id = 'cptch_' .  $form_name . '_enable';
 											$name = 'cptch[forms][' . $form_name . '][enable]';
 											$checked = !! $this->options['forms'][ $form_name ]['enable'];
 											$this->add_checkbox_input( compact( 'id', 'name', 'checked', 'value', 'class', 'disabled' ) );
