@@ -1,0 +1,188 @@
+/*
+ * Settings
+ */
+
+/* The list of packages in the "Used Packages" option */
+#cptch_show_packages_pro_tab {
+	display: none;
+}
+.cptch_tabs_package_list {
+	position: relative;
+	display: inline-block;
+	height: 200px;
+	min-height: 200px;
+	width: 100%;
+	max-width: 500px;
+}
+.cptch_tabs_package_list ul {
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	background: #fff;
+	border: 1px solid #ddd;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.cptch_tabs_package_list ul li:hover {
+	background: #e0f1f8;
+}
+.cptch_tabs_package_list ul li {
+	padding: 3px 5px 3px 9px;
+	margin: 0;
+	display: block;
+}
+.cptch_tabs_package_list ul li span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.cptch_tabs_package_list ul img {
+	width: 40px;
+	height: auto;
+	margin: 0 10px;
+	border: 1px solid #ccc;
+}
+.cptch_tabs_package_list .ui-resizable-handle {
+	bottom: -11px;
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	font-size: 24px;
+	color: #ccc;
+}
+.cptch_tabs_package_list .ui-resizable-se {
+	right: 0;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	cursor: se-resize;
+}
+.cptch_tabs_package_list .ui-resizable-sw {
+	left: -18px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	cursor: sw-resize;
+}
+.cptch_tabs_package_list_items li span:first-child {
+	padding-left: 5px;
+}
+
+/*
+ * Packages tab
+ */
+.cptch_install_package_wrap {
+	padding: 0 15px;
+}
+.cptch_install_package_wrap .wp-upload-form {
+	display: inline-block;
+}
+.cptch_package_list .has-media-icon img {
+	max-width: 40px;
+	height: auto;
+	vertical-align: top;
+	margin: 0 9px 0 0;
+	float: left;
+}
+.cptch_add_ons_link {
+	display: inline-block;
+	position: relative;
+	margin: 0 30px;
+	text-decoration: none;
+	z-index: 10;
+}
+/*
+ * RTL styles
+ */
+.rtl .cptch_tabs_package_list {
+	right: 0;
+	padding-right: 0;
+}
+.rtl table.cptch_package_list .media-icon {
+	float: right;
+}
+.rtl table.cptch_package_list .media-icon img {
+	margin: 0 0 0 9px;
+}
+.rtl .cptch_tabs_package_list_items li span:first-child {
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+@media only screen and ( max-width: 1024px ) {
+	.cptch_tabs_package_list {
+		max-width: 280px;
+	}
+	.cptch_tabs_package_list.ui-resizable {
+		margin-bottom: 40px;
+	}
+	.cptch_tabs_package_list .ui-resizable-handle {
+		width: 40px;
+		height: 40px;
+		font-size: 48px;
+	}
+	.cptch_tabs_package_list .ui-resizable-se {
+		bottom: -40px;
+		right: 8px;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		cursor: ns-resize;
+	}
+	.rtl .cptch_tabs_package_list .ui-resizable-sw {
+		bottom: -45px;
+		left: 0;
+		-webkit-transform: rotate(90deg);
+		-moz-transform: rotate(90deg);
+		-ms-transform: rotate(90deg);
+		-o-transform: rotate(90deg);
+		transform: rotate(90deg);
+		cursor: ns-resize;
+	}
+}
+
+@media only screen and ( max-width: 782px ) {
+	#cptch_whitelist_search p.search-box {
+		position: static;
+	}
+	#cptch_whitelist .tablenav.top {
+		display: none;
+	}
+	#cptch_whitelist .column-ip_from,
+	#cptch_whitelist .column-ip_to,
+	#cptch_whitelist .column-add_time {
+		display: none;
+	}
+}
+
+@media only screen and ( max-width: 480px ) {
+	#cptch_whitelist .bulkactions {
+		float: none;
+	}
+	#cptch_whitelist .tablenav-pages {
+		display: block;
+		margin-bottom: 10px;
+		float: none;
+		clear: both;
+	}
+	#cptch_whitelist .tablenav-pages .displaying-num {
+		position: static;
+	}
+	#cptch_whitelist .column-add_reason {
+		display: none;
+	}
+	.cptch_add_ons_link {
+		display: block;
+		float: none;
+		clear: both;
+		margin: 10px 0;
+	}
+}

@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 3.9
-Tested up to: 4.9.4
-Stable tag: 5.0.1
+Tested up to: 4.9.8
+Stable tag: 5.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,45 +25,56 @@ Stop spam now!
     * Registration form
     * Reset password form
     * Comments form
+    * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f)
     * Custom form
+* Choose Captcha type: [NEW]
+    * Invisible
+    * Character Recognition
+    * Simple math actions such as addition, subtraction, and multiplication
+* Enhance captcha protection with: [NEW]
+    * Letters
+    * Numbers
+    * Images
+* Hide captcha for: [NEW]
+    * Registered users in comments form
+* Set captcha submission time limit [NEW]
+* Refresh captcha option [NEW]
+* Image packages with hand-drawn digits [NEW]
+* Edit captcha title and notifications [NEW]
 * Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
 * Detailed step-by-step documentations and videos
-* Multi-lingual and RTL ready
+* Multilingual and RTL ready
 
 > **Pro Features**
 >
 > All features from Free version included plus:
 >
-> * Choose Captcha type:
->   * Invisible (Default)
->   * Simple math actions such as addition, subtraction, and multiplication
->   * Character Recognition
-> * Add captcha to:
->   * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=77588d399fe8cb2d33ec1be26e404896)
->   * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=0473d534b7affdaf5bf4a6c74c0600ef)
+> * Compatible with :
 >   * Contact Form 7 (since v 3.4)
-> * Compatible with BuddyPress:
->   * Registration form
->   * Comments form
->   * Create a Group form
+>   * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348)
+>   * Jetpack contact form
+>   * MailChimp for WordPress [NEW]
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
 >   * Lost password form
 >   * Checkout billing form
-> * Enhance captcha protection with:
->   * Letters
->   * Numbers
->   * Images
+> * Compatible with bbPress: [NEW]
+>   * New Topic form
+>   * Reply form
+> * Compatible with BuddyPress:
+>   * Registration form
+>   * Comments form
+>   * Create a Group form
+> * Compatible with Forums - wpForo: [NEW]
+>   * Login form
+>   * Registration form
+>   * New Topic form
+>   * Reply form
 > * Hide captcha for:
->   * Registered users in comments form
 >   * Whitelisted IP addresses
-> * Set captcha submission time limit
-> * Refresh captcha option
-> * Image packages with hand-drawn digits
-> * Edit captcha title and notifications
 > * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988) plugin with Captcha whitelist
 > * Configure all subsites on the network
 > * Captcha submission time limit for separate forms
@@ -82,18 +93,52 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=r0Noz2bYAq8)
 * [[Video] Installation Instruction](https://www.youtube.com/watch?v=qsfLTcSo5Ok)
 
-= Documentation & Videos =
-
-* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
-
 = Help & Support =
 
 Visit our Help Center if you have any questions, our friendly Support Team is happy to help - <https://support.bestwebsoft.com/>
 
 = Translation =
 
+* Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)
+* Bangla (bn_BD) (thanks to [SM Mehdi Akram](mailto:mehdi.akram@gmail.com), www.shamokaldarpon.com)
+* Belarusian (bel) (thanks to [Natasha Diatko](mailto:natasha.diatko@gmail.com))
+* Brazilian Portuguese (pt_BR) (thanks to [Breno Jacinto](mailto:brenojac@gmail.com), www.iconis.org.br)
+* Bulgarian (bg_BG) (thanks to [Nick](mailto:paharaman@gmail.com))
+* Catalan (ca) (thanks to [Psiete](mailto:psiete@gmail.com))
+* Chinese (zh_CN) (thanks to [TIM](mailto:416441872@qq.com), [Jack Chen](email: mailto:beijingtours@foxmail.com), www.jackchen.im)
+* Taiwan (zh_TW) (thanks to [Kaiconan](mailto:ch.unk.ai.ma.o@gmail.com))
+* Croatian (hr) (thanks to [Daniel](mailto:daniel@croteh.com))
+* Czech (cs_CZ) (thanks to [Michal Kučera](mailto:kucerami@gmail.com) www.n0lim.it)
+* Danish (da_DK) (thanks to Byrial Ole Jensed)
+* Dutch (nl_NL) (thanks to [Bart Duineveld](mailto:byrial@vip.cybercity.dk))
+* Estonian (et) (thanks to Ahto Tanner)
+* Greek (el) (thanks to Aris, www.paraxeno.net)
+* Farsi/Persian (fa_IR) (thanks to [Mostafa Asadi](mailto:mostafaasadi73@gmail.com), www.ma73.ir, [Morteza Gholami](mailto:Morteza.Gholami@Yahoo.Com))
+* Finnish (fi) (thanks to Mikko Sederholm)
+* French (fr_FR) (thanks to Martel Benjamin, [Capronnier luc](mailto:lcapronnier@yahoo.com))
+* German (de_DE) (thanks to Thomas Hartung, [Lothar Schiborr](mailto:lothar.schiborr@web.de))
+* Hebrew (he_IL) (thanks to Sagive SEO)
+* Hindi (hi_IN) (thanks to [Outshine Solutions](mailto:ash.pr@outshinesolutions.com), www.outshinesolutions.com)
+* Hungarian (hu_HU) (thanks to [Peter Aprily](mailto:solarside09@gmail.com))
+* Japanese (ja) (thanks to Foken)
+* Indonesian (id_ID) (thanks to [Nasrulhaq Muiz](mailto:nasroel@al-badar.net), www.al-badar.net)
+* Italian (it_IT) (thanks to [Marco](mailto:marco@blackstudio.it))
+* Latvian (lv) (thanks to [Juris O](mailto:juris.o@gmail.com))
+* Lithuanian (lt_LT) (thanks to [Arnas](mailto:arnas.metal@gmail.com))
+* Norwegian (nb_NO) (thanks to Tore Hjartland)
+* Polish (pl_PL) (thanks to Krzysztof Opuchlik)
+* Portuguese (pt_PT) (thanks to [João Paulo Antunes](mailto:jp.jp@sapo.pt))
+* Romanian (ro_RO) (thanks to Ciprian)
 * Russian (ru_RU)
+* Serbian (sr_RS) (thanks to Radovan Georgijevic)
+* Slovak (sk_SK) (thanks to Branco Radenovich)
+* Slovenian (sl_SI) (thanks to [Uroš Klopčič](mailto:uros.klopcic@gmail.com), www.klopcic.net)
+* Spain (es_ES)
+* Swedish (sv_SE) (thanks to Christer Rönningborg, [Blittan](mailto:blittan@xbmc.org))
+* Tagalog (tl) (thanks to [Roozbeh Jalali](mailto:rjalali@languageconnect.net), www.languageconnect.net)
+* Turkish (tr_TR) (thanks to Can Atasever, www.canatasever.com)
 * Ukrainian (uk)
+* Vietnamese (vi_VN) (thanks to NDT Solutions)
 
 Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
 
@@ -101,6 +146,8 @@ Some of these translations are not complete. We are constantly adding new featur
 
 * [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=c6b924d096b75a288daf0e49a58f93c2) - Protect WordPress website against brute force attacks. Limit rate of login attempts.
 * [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=0864088de1701a5e104ffb77c6d7011c) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
+* [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f) - Simple contact form plugin any WordPress website must have.
+* [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) - Add email newsletter sign up form to WordPress posts, pages and widgets. Collect data and subscribe your users.
 
 == Installation ==
 
@@ -122,7 +169,7 @@ Follow the next steps in order to add Captcha to your Wordpress login page (form
 
 = Any captcha answer results an error =
 
-Captcha will only be displayed if you are using standard registration, login, comments form pages. In case of using custom forms and pages it will be necessary to make changes in them so that captcha could be displayed and work correctly:
+Captcha will only be displayed if you are using standard registration, login, comments form pages. In case of using custom forms and pages it will be necessary to make changes in them so that captcha could be displayed and work correctly.
 
 = Add Captcha plugin to a custom form on my Wordpress website =
 
@@ -166,7 +213,7 @@ If you completed the instructions in point 2, then you should add:
 `<?php $error = apply_filters( 'cptch_verify', true, 'string', 'my_contact_form' );
 if ( true === $error ) { /* the CAPTCHA answer is right */
     /* do necessary action */
-} else { /* the CAPTCHA answer is wrong or there are some other errors */
+} else { /* the CAPTCHA answer is wrong or there are some other errors */Multilingual
     echo $error; /* display the error message or do other necessary actions in case when the CAPTCHA test was failed */
 } ?>`
 
@@ -206,17 +253,47 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Screenshots ==
 
-1. Captcha Settings page.
+1. Login form with Captcha.
+2. Registration form with Captcha.
+3. Lost password form with Captcha.
+4. Comments form with Captcha.
+5. Contact form with Captcha.
+6. Captcha Settings page.
+7. Captcha Packages page.
+8. Captcha Whitelist page.
 
 == Changelog ==
 
+= V5.0.2 - 10.10.2018 =
+* NEW : Ability to choose Captcha type has been added.
+* NEW : Ability to enhance captcha protection with letters, numbers, images has been added.
+* NEW : Ability to hide captcha for registered users in comments form has been added.
+* NEW : Ability to set captcha submission time limit has been added.
+* NEW : Ability to refresh captcha option has been added.
+* NEW : Image packages with hand-drawn digits has been added.
+* NEW : Ability to edit captcha title and notifications has been added.
+* Pro : Compatible with MailChimp for WordPress has been added.
+* Pro : Compatible with bbPress has been added.
+* Pro : Compatible with wpForo has been added.
+* Bugfix : Bug related to incorrect Captcha displaying at Arithmetic Actions has been fixed.
+* Bugfix : Bug related to incorrect Captcha displaying at Optical Character Recognition has been fixed.
+* Bugfix : Bug related to the Network settings page has been fixed.
+* Bugfix : The bug with infinite Captcha loading in BuddyPress Comments form has been fixed.
+* Update : Czech language file has been updated.
+
 = V5.0.1 - 03.04.2018 =
-* Pro: Bug related to the inability to save settings after upgrading to Pro version has been fixed
+* Pro: Bug related to the inability to save settings after upgrading to Pro version has been fixed.
 
 = V5.0.0 - 14.09.2017 =
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.0.2 =
+* Functionality expanded.
+* Bugs fixed.
+* New languages added.
+
 
 = V5.0.1 =
 * Bugs fixed.

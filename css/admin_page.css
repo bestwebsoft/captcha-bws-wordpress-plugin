@@ -1,7 +1,18 @@
 /*
  * menu sidebar
  */
-#toplevel_page_captcha .wp-menu-image:before {
-    content: "\e901";
-    font-family: 'bwsicons' !important;
+#toplevel_page_captcha .wp-menu-image:before,
+#toplevel_page_captcha-plus .wp-menu-image:before,
+#toplevel_page_captcha_pro .wp-menu-image:before {
+	content: "\e901";
+	font-family: 'bwsicons' !important;
+}
+.bws_pro_version_bloc.cptch_pro_block.cptch_packages_banner {
+    max-width: 550px;
+}
+
+@media screen and (max-width: 782px) {
+	p.search-box input[name="s"] {
+		margin-top: 20px !important;
+	}
 }

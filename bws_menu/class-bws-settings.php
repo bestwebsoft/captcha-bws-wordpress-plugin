@@ -692,7 +692,7 @@ if ( ! class_exists( 'Bws_Settings_Tabs' ) ) {
 			}
 
 			return compact( 'notice' );
-		}				
+		}
 
 		/**
 		 *
@@ -724,7 +724,7 @@ if ( ! class_exists( 'Bws_Settings_Tabs' ) ) {
 					</script>
 					<p><strong><?php _e( 'Congratulations! Pro license is activated successfully.', 'bestwebsoft' ); ?></strong></p>
 					<p><?php printf( __( 'You will be automatically redirected to the %s in %s seconds.', 'bestwebsoft' ), '<a href="' . esc_url( self_admin_url( $this->pro_page ) ) . '">' . __( 'Settings page', 'bestwebsoft' ) . '</a>', '<span id="bws_timeout_counter">7</span>' ); ?></p>
-				<?php } else { 			
+				<?php } else {
 					$attr = '';
 					if ( isset( $bstwbsftwppdtplgns_options['go_pro'][ $this->bws_license_plugin ]['count'] ) &&
 						'5' < $bstwbsftwppdtplgns_options['go_pro'][ $this->bws_license_plugin ]['count'] &&
