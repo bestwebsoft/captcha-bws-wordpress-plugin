@@ -8,7 +8,7 @@
 	} ).on( "touchstart", function( event ) {
 		event = event || window.event;
 		var item = $( event.target );
-		if ( cptch_vars.enlarge == '1' ) {
+		if ( '1' === cptch_vars.enlarge ) {
 			var element = item.hasClass( 'cptch_img' ) ? item : ( item.closest( '.cptch_img' ).length ? item.closest( '.cptch_img' ) : null );
 			if ( element && element.length ) {
 				event.preventDefault();
@@ -18,8 +18,8 @@
 				$( '.cptch_img' ).removeClass( 'cptch_reduce' );
 			}
 		}
-		if ( item.hasClass( 'cptch_reload_button' ) || 'ac_form_submit' == item.attr( 'name' ) ) {
-			if ( 'invisible' == item.data( 'cptch-type' ) ) {
+		if ( item.hasClass( 'cptch_reload_button' ) || 'ac_form_submit' === item.attr( 'name' ) ) {
+			if ( 'invisible' === item.data( 'cptch-type' ) ) {
 				cptch_reload( item, true, 'ac_form_submit' );
 				cptch_reload_events['ac_form_submit'] = setInterval( cptch_reload, ( cptch_vars.time_limit*1000 ), item, true, 'ac_form_submit' );
 			} else {
@@ -35,11 +35,12 @@
 
 		var ajax_containers = $( '.cptch_ajax_wrap' );
 
-		if ( ! ajax_containers.length )
+		if ( ! ajax_containers.length ) {
 			return;
+		}
 
 		ajax_containers.each( function( index ) {
-			if ( 'invisible' == $( this ).data( 'cptch-type' ) ) {
+			if ( 'invisible' === $( this ).data( 'cptch-type' ) ) {
 				cptch_reload( $( this ), true, index );
 				cptch_reload_events[ index ] = setInterval( cptch_reload, ( cptch_vars.time_limit*1000 ), $( this ), true, index );
 			} else {
@@ -53,14 +54,15 @@
 	 */
 	function cptch_reload( object, is_ajax_load, index ) {
 		is_ajax_load = is_ajax_load || false;
-		if  ( is_ajax_load ) {
+		if ( is_ajax_load ) {
 			var captcha = object;
 		} else {
 			var captcha = object.hasClass( 'cptch_reload_button' ) ? object.parent().parent( '.cptch_wrap' ) : object.closest( 'form' ).find( '.cptch_wrap' );
 		}
 		var button  = captcha.find( '.cptch_reload_button' );
-		if ( ! captcha.length || button.hasClass( 'cptch_active' ) )
+		if ( ! captcha.length || button.hasClass( 'cptch_active' ) ) {
 			return false;
+		}
 		button.addClass( 'cptch_active' );
 		var captcha_block	= captcha.parent(),
 			input			= captcha.find( 'input:text' ),
@@ -80,10 +82,11 @@
 			},
 			success: function( result ) {
 				captcha_block.find( '.cptch_to_remove' ).remove();
-				if ( '' === input_class )
+				if ( '' === input_class ) {
 					captcha.replaceWith( result ); /* for default forms */
-				else
-					captcha_block.replaceWith( result ); /* for custom forms */
+				} else {
+					captcha_block.replaceWith(result); /* for custom forms */
+				}
 
 				if ( $( result ).hasClass( 'cptch_recognition' ) || $( result ).find( '.cptch_wrap' ).hasClass( 'cptch_recognition' ) ) {
 					$( '.cptch_recognition' ).each( function() {

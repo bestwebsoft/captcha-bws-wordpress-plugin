@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 3.9
-Tested up to: 4.9.8
-Stable tag: 5.0.2
+Tested up to: 5.0.3
+Stable tag: 5.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,20 +27,20 @@ Stop spam now!
     * Comments form
     * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f)
     * Custom form
-* Choose Captcha type: [NEW]
+* Choose Captcha type:
     * Invisible
     * Character Recognition
     * Simple math actions such as addition, subtraction, and multiplication
-* Enhance captcha protection with: [NEW]
+* Enhance captcha protection with:
     * Letters
     * Numbers
     * Images
-* Hide captcha for: [NEW]
+* Hide captcha for:
     * Registered users in comments form
-* Set captcha submission time limit [NEW]
-* Refresh captcha option [NEW]
-* Image packages with hand-drawn digits [NEW]
-* Edit captcha title and notifications [NEW]
+* Set captcha submission time limit
+* Refresh captcha option
+* Image packages with hand-drawn digits
+* Edit captcha title and notifications
 * Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
@@ -55,20 +55,20 @@ Stop spam now!
 >   * Contact Form 7 (since v 3.4)
 >   * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348)
 >   * Jetpack contact form
->   * MailChimp for WordPress [NEW]
+>   * MailChimp for WordPress
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
 >   * Lost password form
 >   * Checkout billing form
-> * Compatible with bbPress: [NEW]
+> * Compatible with bbPress:
 >   * New Topic form
 >   * Reply form
 > * Compatible with BuddyPress:
 >   * Registration form
 >   * Comments form
 >   * Create a Group form
-> * Compatible with Forums - wpForo: [NEW]
+> * Compatible with Forums - wpForo:
 >   * Login form
 >   * Registration form
 >   * New Topic form
@@ -176,10 +176,9 @@ Captcha will only be displayed if you are using standard registration, login, co
 Follow the instructions below in order to add Captcha plugin to your custom PHP or HTML form:
 1. Install the Captcha plugin and activate it.
 2. (Optional) If you would like to use your own settings for the custom forms you have (for example, for your contact and sign up forms), please follow the steps below:
-- Go to the plugin settings page;
-- Open Custom code tab;
-- Mark "Activate" checkbox in the "Editing bws-custom-code.php" section;
-- Add the following code:
+   - Go to your theme folder for example 'your-wp-site/wp-content/themes/your-theme-name' where your-theme-name is theme name you currently using ;
+   - Open functions.php file;
+   - Add the following code to the end of the file:
 
 `function add_my_forms( $forms ) {
     $forms['my_contact_form'] = "Form Display Name";
@@ -262,7 +261,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 7. Captcha Packages page.
 8. Captcha Whitelist page.
 
-== Changelog ==
+== Changelog ===
+
+= V5.0.3 - 04.02.2019 =
+* NEW : Ability to use captcha in the custom login forms which calls function wp_login_form() has been added.
+* Bugfix : Compatible with W3 Total Cache has been fixed.
+* Update : Spanish language file has been updated.
+* Update : All functionality was updated for WordPress 5.0.3.
 
 = V5.0.2 - 10.10.2018 =
 * NEW : Ability to choose Captcha type has been added.
@@ -289,11 +294,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Upgrade Notice ==
 
+= V5.0.3 =
+* Functionality expanded.
+* Bugs fixed.
+* The compatibility with new WordPress version updated.
+
 = V5.0.2 =
 * Functionality expanded.
 * Bugs fixed.
 * New languages added.
-
 
 = V5.0.1 =
 * Bugs fixed.

@@ -190,7 +190,39 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 			<div class="clear"></div>
 		</div>
 		<div class="bws_info"><?php _e( 'Load IP addresses from the "Limit Attempts" whitelist.', 'captcha-bws' ); ?></div>
-		<p class="search-box">
+        <form class="form-table cptch_whitelist_form" method="post" action="admin.php?page=captcha-whitelist.php" style="margin: 10px 0;<?php echo ! ( isset( $_REQUEST['cptch_show_whitelist_form'] ) || isset( $_REQUEST['cptch_add_to_whitelist'] ) ) ? 'display: none;': ''; ?>">
+            <label><?php _e( 'IP to whitelist', 'captcha-bws' ) ?></label>
+            <br />
+            <textarea rows="2" cols="32" name="cptch_add_to_whitelist"></textarea>
+                <br />
+                <label>
+                    <input type="checkbox" name="cptch_add_to_whitelist_my_ip" value="1" />
+					<?php _e( 'My IP', 'captcha-bws' ); ?>
+                </label>
+            <div class="bws_info">
+                <div style="line-height: 2;">
+					<?php _e( "Allowed formats", 'captcha-bws' ); ?>:
+                    <code>
+                        192.168.0.1, 192.168.0., 192.168., 192., 192.168.0.1/8, 123.126.12.243-185.239.34.54
+                    </code>
+                </div>
+                <div style="line-height: 2;"><?php _e( "Allowed diapason", 'captcha-bws' ); ?>:<code>0.0.0.0 - 255.255.255.255</code></div>
+                <div style="line-height: 2;">
+					<?php _e( "Allowed separators", 'captcha-bws' ); ?>: <?php _e( "a comma", 'captcha-bws' ); ?> (<code>,</code>), <?php _e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php _e( 'ordinary space, tab, new line or carriage return.', 'captcha-bws' ); ?>
+                </div>
+            </div>
+            <br />
+            <label><?php _e( 'Reason', 'captcha-bws' ) ?></label>
+            <br />
+            <textarea rows="2" cols="32" name="cptch_add_to_whitelist_reason"></textarea>
+            <div class="bws_info">
+				<?php _e( "Allowed separators for reasons", 'captcha-bws' ); ?>: <?php _e( "a comma", 'captcha-bws' )?> (<code>,</code>), <?php _e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php _e( 'tab, new line or carriage return.', 'captcha-bws' ); ?>
+            </div>
+            <p>
+                <input type="submit" class="button-secondary" value="<?php _e( 'Add IP to whitelist', 'captcha-bws' ); ?>" />
+            </p>
+        </form>
+        <p class="search-box">
 			<label class="screen-reader-text" for="pdfprnt-search-input"><?php _e( 'search', 'captcha-bws' ); ?>:</label>
 			<input disabled="disabled" type="search" name="s" />
 			<input disabled="disabled" type="submit" id="search-submit" class="button" value="search" />

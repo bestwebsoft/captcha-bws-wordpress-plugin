@@ -16,29 +16,29 @@
 <li>Custom form</li>
 </ul>
 </li>
-<li>Choose Captcha type: [NEW]
+<li>Choose Captcha type:
 <ul>
 <li>Invisible</li>
 <li>Character Recognition</li>
 <li>Simple math actions such as addition, subtraction, and multiplication</li>
 </ul>
 </li>
-<li>Enhance captcha protection with: [NEW]
+<li>Enhance captcha protection with:
 <ul>
 <li>Letters</li>
 <li>Numbers</li>
 <li>Images</li>
 </ul>
 </li>
-<li>Hide captcha for: [NEW]
+<li>Hide captcha for:
 <ul>
 <li>Registered users in comments form</li>
 </ul>
 </li>
-<li>Set captcha submission time limit [NEW]</li>
-<li>Refresh captcha option [NEW]</li>
-<li>Image packages with hand-drawn digits [NEW]</li>
-<li>Edit captcha title and notifications [NEW]</li>
+<li>Set captcha submission time limit</li>
+<li>Refresh captcha option</li>
+<li>Image packages with hand-drawn digits</li>
+<li>Edit captcha title and notifications</li>
 <li>Add custom code via plugin settings page</li>
 <li>Compatible with latest WordPress version</li>
 <li>Incredibly simple settings for fast setup without modifying code</li>
@@ -54,7 +54,7 @@
 <li>Contact Form 7 (since v 3.4)</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348" rel="nofollow">Subscriber</a></li>
 <li>Jetpack contact form</li>
-<li>MailChimp for WordPress [NEW]</li>
+<li>MailChimp for WordPress</li>
 </ul>
 </li>
 <li>Compatible with WooCommerce:
@@ -65,7 +65,7 @@
 <li>Checkout billing form</li>
 </ul>
 </li>
-<li>Compatible with bbPress: [NEW]
+<li>Compatible with bbPress:
 <ul>
 <li>New Topic form</li>
 <li>Reply form</li>
@@ -78,7 +78,7 @@
 <li>Create a Group form</li>
 </ul>
 </li>
-<li>Compatible with Forums &#8211; wpForo: [NEW]
+<li>Compatible with Forums &#8211; wpForo:
 <ul>
 <li>Login form</li>
 <li>Registration form</li>

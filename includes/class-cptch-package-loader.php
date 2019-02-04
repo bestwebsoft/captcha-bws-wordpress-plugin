@@ -147,7 +147,7 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 		private function check_tables() {
 			global $wpdb;
 			if ( ! function_exists( 'dbDelta' ) ) {
-				require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+				require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 			}
 
 			if ( ! $wpdb->query( "SHOW TABLES LIKE '{$wpdb->base_prefix}cptch_images';" ) ) {

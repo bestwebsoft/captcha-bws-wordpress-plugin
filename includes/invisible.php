@@ -72,7 +72,7 @@ if ( ! class_exists( 'Cptch_Invisible' ) ) {
 			try {
 
 				$code	= empty( $_REQUEST['cptch_code'] ) ? '' : base64_decode( $_REQUEST['cptch_code'] );
-				$key	= empty( $_REQUEST['cptch_key'] ) ? '' :  base64_decode( $_REQUEST['cptch_key'] );
+				$key	= empty( $_REQUEST['cptch_key'] ) ? '' : base64_decode( $_REQUEST['cptch_key'] );
 
 				if ( empty( $code ) || empty( $key ) ) {
 					throw new Exception( __( 'Empty captcha.', 'captcha-bws' ) );
@@ -115,7 +115,7 @@ if ( ! class_exists( 'Cptch_Invisible' ) ) {
 		private function _get_one_time_key() {
 			$chars = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+\/|?';
 			$chras_length = strlen( $chars );
-			$rand  = '';
+			$rand = '';
 			for ( $i = 0; $i < 16; $i ++ )
 				$rand .= $chars[ rand( 0, absint( $chras_length - 1 ) ) ];
 			return $rand;

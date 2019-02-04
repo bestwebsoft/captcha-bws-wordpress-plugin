@@ -2,8 +2,8 @@
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/
  */
-(function( $ ) {
-	$(document).ready(function() {
+( function( $ ) {
+	$( document ).ready( function() {
 
 		/**
 		 * Handle the styling of the "Settings" tab on the plugin settings page
@@ -21,7 +21,7 @@
 
 		$( limitOption ).click( function() {
 			$( limitOption ).closest( 'tr' ).nextAll( '.cptch_time_limit' ).toggle();
-		});
+		} );
 
 		/*
 		 * Hide all unused related forms on settings page
@@ -38,16 +38,23 @@
 				} else {
 					formBlock.hide();
 				}
-			});
-		});
+			} );
+		} );
+
+		// hide/show whitelist "add new form"
+		$( 'button[name="cptch_show_whitelist_form"]' ).click( function() {
+			$( this ).parent( 'form' ).hide();
+			$( '.cptch_whitelist_form' ).show();
+			return false;
+		} );
 
 		function cptch_type() {
-			if ( 'recognition' == $( 'input[name="cptch_type"]:checked' ).val() ) {
+			if ( 'recognition' === $( 'input[name="cptch_type"]:checked' ).val() ) {
 				$( '.cptch_for_math_actions' ).hide();
 				$( '.cptch_for_recognition' ).show();
 				imageFormat.attr( 'checked', 'checked' );
 				cptchImageOptions();
-			} else if ( 'invisible' == $( 'input[name="cptch_type"]:checked' ).val() ) {
+			} else if ( 'invisible' === $( 'input[name="cptch_type"]:checked' ).val() ) {
 				$( '.cptch_for_recognition, .cptch_for_math_actions' ).hide();
 				imageFormat.removeAttr('checked' );
 				cptchImageOptions();
@@ -57,7 +64,9 @@
 			}
 		}
 		cptch_type();
-		$( 'input[name="cptch_type"]' ).click( function() { cptch_type(); } );
+		$( 'input[name="cptch_type"]' ).click( function() {
+			cptch_type();
+		} );
 
 		/* Handle the displaying of notice message above lists of image packages */
 		function cptchImageOptions() {
@@ -76,6 +85,6 @@
 		/* Open/hide packages pro tab */
 		$( '#cptch_show_packages_pro_tab_open' ).click( function() {
 			$( '#cptch_show_packages_pro_tab' ).toggle();
-		});
-	});
-})(jQuery);
+		} );
+	} );
+} )( jQuery );

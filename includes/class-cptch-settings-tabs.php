@@ -76,7 +76,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wpforo_login_form'			=> array( 'name' => __( 'wpForo Login form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'wpforo_register_form'		=> array( 'name' => __( 'wpForo Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'wpforo_new_topic_form'		=> array( 'name' => __( 'wpForo New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'wpforo_reply_form'			=> array( 'name' => __( 'wpForo Reply form', 'captcha-pro'), 'for_pro' => 1 )
+				'wpforo_reply_form'			=> array( 'name' => __( 'wpForo Reply form', 'captcha-bws' ), 'for_pro' => 1 )
 				/* pls*/
 			);
 
@@ -190,7 +190,6 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				/* pls*/
 			);
 
-
 			$user_forms = array_diff( array_keys( $this->forms ), $this->registered_forms );
 			if ( ! empty( $user_forms ) ) {
 				$this->form_categories['external']['forms'] = array_merge( $this->form_categories['external']['forms'], $user_forms );
@@ -284,7 +283,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					$notices[] = __( 'In order to use images in the CAPTCHA, please select at least one of the items in the option "Image Packages". The "Images" checkbox in "Complexity" option has been disabled.', 'captcha-bws' );
 				}
 				$key = array_keys( $this->options['operand_format'], 'images' );
-				unset( $this->options['operand_format'][$key[0]] );
+				unset( $this->options['operand_format'][ $key[0] ] );
 				if ( empty( $this->options['operand_format'] ) )
 					$this->options['operand_format'] = array( 'numbers', 'words' );
 			}
@@ -319,7 +318,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					'title'			=> __( 'Arithmetic Actions', 'captcha-bws' ),
 					'array_options'	=> array(
 						'plus'				=> array( __( 'Addition', 'captcha-bws' ) . '&nbsp;(+)' ),
-						'minus'				=> array( __( 'Subtruction', 'captcha-bws' ) . '&nbsp;(-)' ),
+						'minus'				=> array( __( 'Subtraction', 'captcha-bws' ) . '&nbsp;(-)' ),
 						'multiplications'	=> array( __( 'Multiplication', 'captcha-bws' ) . '&nbsp;(x)' )
 					),
 					'class'			=> 'cptch_for_math_actions'
@@ -535,7 +534,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						'id'					=> "cptch_enable_time_limit",
 						'name'					=> "cptch_enable_time_limit",
 						'checked'				=> $this->options['enable_time_limit'],
-						'inline_description'	=> __( 'Enable to activate a time limit requeired to complete captcha.', 'captcha-bws' )
+						'inline_description'	=> __( 'Enable to activate a time limit required to complete captcha.', 'captcha-bws' )
 					),
 					array(
 						'id'	=> "cptch_time_limit",
@@ -553,7 +552,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					</td>
 				</tr>
 				<tr class="cptch_time_limit" <?php echo $options[0]['checked'] ? '' : ' style="display: none"'; ?>>
-					<th scope="row"><?php _e( 'Time Limit Thershold', 'captcha-bws' ); ?></th>
+					<th scope="row"><?php _e( 'Time Limit Threshold', 'captcha-bws' ); ?></th>
 					<td>
 						<span class="cptch_time_limit">
 							<?php $this->add_number_input( $options[1] ); echo '&nbsp;' . _e( 'sec', 'captcha-bws' ); ?>

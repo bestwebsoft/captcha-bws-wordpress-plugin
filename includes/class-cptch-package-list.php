@@ -102,7 +102,7 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 				update_option( 'cptch_options', $cptch_options );
 			}
 			$display_pro_options_for_packages = get_option( 'cptch_options' );
-			if( empty( $display_pro_options_for_packages['hide_premium_options'][0] ) ) {
+			if ( empty( $display_pro_options_for_packages['hide_premium_options'][0] ) ) {
 				cptch_pro_block( 'cptch_packages_banner' );
 			} ?>
 			</form>

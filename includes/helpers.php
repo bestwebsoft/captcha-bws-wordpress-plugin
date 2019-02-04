@@ -247,12 +247,12 @@ if ( ! function_exists( 'cptch_get_plugin_status' ) ) {
 				if ( is_plugin_active( $plugin ) ) {
 					$result['status']		= 'active';
 					$result['compatible']	= cptch_is_compatible( $plugin, $all_plugins[ $plugin ]['Version'] );
-					$result['plugin_info']	= $all_plugins[$plugin];
+					$result['plugin_info']	= $all_plugins[ $plugin ];
 					break;
 				} else {
 					$result['status']		= 'deactivated';
 					$result['compatible']	= cptch_is_compatible( $plugin, $all_plugins[ $plugin ]['Version'] );
-					$result['plugin_info']	= $all_plugins[$plugin];
+					$result['plugin_info']	= $all_plugins[ $plugin ];
 				}
 			}
 		}
