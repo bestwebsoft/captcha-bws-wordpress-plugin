@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 3.9
-Tested up to: 5.0.3
-Stable tag: 5.0.3
+Tested up to: 5.1.1
+Stable tag: 5.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -56,6 +56,7 @@ Stop spam now!
 >   * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348)
 >   * Jetpack contact form
 >   * MailChimp for WordPress
+>   * Ninja Forms [NEW]
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
@@ -263,6 +264,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.0.4 - 22.04.2019 =
+* PRO : Compatibility with Ninja Forms has been added.
+* Update : All functionality was updated for WordPress 5.1.1.
+
 = V5.0.3 - 04.02.2019 =
 * NEW : Ability to use captcha in the custom login forms which calls function wp_login_form() has been added.
 * Bugfix : Compatible with W3 Total Cache has been fixed.
@@ -293,6 +298,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.0.4 =
+* Functionality expanded.
+* The compatibility with new WordPress version updated.
 
 = V5.0.3 =
 * Functionality expanded.

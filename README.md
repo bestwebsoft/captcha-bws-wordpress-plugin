@@ -55,6 +55,7 @@
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348" rel="nofollow">Subscriber</a></li>
 <li>Jetpack contact form</li>
 <li>MailChimp for WordPress</li>
+<li>Ninja Forms [NEW]</li>
 </ul>
 </li>
 <li>Compatible with WooCommerce:

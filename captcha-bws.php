@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.0.3
+Version: 5.0.4
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
