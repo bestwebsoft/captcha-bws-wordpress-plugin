@@ -63,7 +63,7 @@ if ( ! function_exists( 'cptch_get_default_forms' ) ) {
 		$defaults = array(
 			'wp_login', 'wp_register',
 			'wp_lost_password', 'wp_comments',
-			'bws_contact'
+			'bws_contact', 'bws_booking'
 		);
 
 		/*
@@ -173,6 +173,9 @@ if ( ! function_exists( 'cptch_parse_options' ) ) {
 			),
 			'bws_contact'		=> array(
 				'enable'		=> array( 'cptchpls_contact_form', 'cptch_contact_form' )
+			),
+			'bws_booking'		=> array(
+				'enable'		=> array( 'cptchpls_booking_form', 'cptch_booking_form' )
 			)
 		);
 
@@ -306,6 +309,7 @@ if ( ! function_exists( 'cptch_get_plugin' ) ) {
 			default:
 				return '';
 			case 'bws_contact':
+			case 'bws_booking':
 				return $form_slug;
 		}
 	}
@@ -324,6 +328,8 @@ if ( ! function_exists( 'cptch_get_plugin_link' ) ) {
 			case 'contact-form-plugin/contact_form.php':
 			case 'contact-form-pro/contact_form_pro.php':
 				return sprintf( $bws_link, 'contact-form', '9ab9d358ad3a23b8a99a8328595ede2e' );
+			case 'bws-car-rental-pro/bws-car-rental-pro.php':
+				return sprintf( $bws_link, 'car-rental-v2', '3c0c792876c76187abe0381d85d907c1' );
 			//case 'limit-attempts/limit-attempts.php':
 			//case 'limit-attempts-pro/limit-attempts-pro.php':
 				//return sprintf( $bws_link, 'limit-attempts', 'c5ba37f86ebfc2754a71c759a5907888' );
@@ -343,6 +349,8 @@ if ( ! function_exists( 'cptch_get_plugin_name' ) ) {
 		switch( $plugin_slug ) {
 			case 'bws_contact':
 				return 'Contact Form by BestwebSoft';
+			case 'bws_booking':
+				return 'Car Rental V2 by BestWebSoft';
 			default:
 				return 'unknown';
 		}

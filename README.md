@@ -13,6 +13,7 @@
 <li>Reset password form</li>
 <li>Comments form</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f" rel="nofollow">Contact Form</a></li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24" rel="nofollow">Car Rental V2 Pro</a> [NEW]</li>
 <li>Custom form</li>
 </ul>
 </li>
@@ -55,7 +56,7 @@
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348" rel="nofollow">Subscriber</a></li>
 <li>Jetpack contact form</li>
 <li>MailChimp for WordPress</li>
-<li>Ninja Forms [NEW]</li>
+<li>Ninja Forms</li>
 </ul>
 </li>
 <li>Compatible with WooCommerce:
@@ -107,7 +108,6 @@
 <li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/" rel="nofollow">[Doc] Installation</a></li>
 <li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/" rel="nofollow">[Doc] Purchase</a></li>
 <li><a href="https://www.youtube.com/watch?v=r0Noz2bYAq8" rel="nofollow">[Video] Purchase, Installation, Configuration Tutorial</a></li>
-<li><a href="https://www.youtube.com/watch?v=qsfLTcSo5Ok" rel="nofollow">[Video] Installation Instruction</a></li>
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8211; <a href="https://support.bestwebsoft.com/" rel="nofollow">https://support.bestwebsoft.com/</a></p>

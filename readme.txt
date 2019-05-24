@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 3.9
-Tested up to: 5.1.1
-Stable tag: 5.0.4
+Tested up to: 5.2.1
+Stable tag: 5.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,7 @@ Stop spam now!
     * Reset password form
     * Comments form
     * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f)
+    * [Car Rental V2 Pro](https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24) [NEW]
     * Custom form
 * Choose Captcha type:
     * Invisible
@@ -56,7 +57,7 @@ Stop spam now!
 >   * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348)
 >   * Jetpack contact form
 >   * MailChimp for WordPress
->   * Ninja Forms [NEW]
+>   * Ninja Forms
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
@@ -92,7 +93,6 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 * [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 * [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=r0Noz2bYAq8)
-* [[Video] Installation Instruction](https://www.youtube.com/watch?v=qsfLTcSo5Ok)
 
 = Help & Support =
 
@@ -264,6 +264,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.0.5 - 24.05.2019 =
+* NEW : The compatibility with Car Rental V2 has been added.
+* Bugfix : The bug with the "Advanced protection" option has been fixed.
+* Update : Chinese language file has been updated.
+* Update : All functionality was updated for WordPress 5.2.1.
+
 = V5.0.4 - 22.04.2019 =
 * PRO : Compatibility with Ninja Forms has been added.
 * Update : All functionality was updated for WordPress 5.1.1.
@@ -298,6 +304,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.0.5 =
+* Functionality expanded.
+* Bugs fixed.
+* The compatibility with new WordPress version updated.
 
 = V5.0.4 =
 * Functionality expanded.

@@ -59,6 +59,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wp_lost_password'		=> array( 'name' => __( 'Reset password form', 'captcha-bws' ) ),
 				'wp_comments'			=> array( 'name' => __( 'Comments form', 'captcha-bws' ) ),
 				'bws_contact'			=> array( 'name' => 'Contact Form' ),
+				'bws_booking'			=> array( 'name' => __( 'Car Rental V2 Pro', 'captcha-bws' ) ),
 				/*pls */
 				'bws_subscriber'			=> array( 'name' => 'Subscriber', 'for_pro' => 1 ),
 				'cf7_contact'				=> array( 'name' => 'Contact Form 7', 'for_pro' => 1 ),
@@ -126,7 +127,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'external' => array(
 					'title' => __( 'External plugins', 'captcha-bws' ),
 					'forms' => array(
-						'bws_contact'
+						'bws_contact',
+                        'bws_booking'
 					)
 				),
 				/*pls */
@@ -392,27 +394,35 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 							/**
 							* All missed forms will be displayed later in pro blocks
 							*/
-							if ( 'other_for_pro' == $fieldset_name )
-								continue; ?>
+							if ( 'other_for_pro' == $fieldset_name ) {
+								continue;
+							} ?>
 							<p><?php echo $fieldset_data['title']; ?></p>
 							<br>
 							<fieldset id="<?php echo $fieldset_name; ?>">
-								<?php foreach ( $fieldset_data['forms'] as $form_name ) { ?>
+								<?php foreach ( $fieldset_data['forms'] as $form_name ) {
+									$disabled = in_array( $form_name, $this->registered_forms ) && (
+                                        ( isset( $this->options['related_plugins_info'][ $form_name ] ) &&
+                                            'active' != $this->options['related_plugins_info'][ $form_name ]['status'] ) ||
+                                        ( isset( $this->options['related_plugins_info'][ $fieldset_name ] ) &&
+                                            'active' != $this->options['related_plugins_info'][ $fieldset_name ]['status'] )
+                                    ); ?>
 									<label class="cptch_related">
-										<?php $disabled = 'bws_contact' == $form_name && 'active' != $this->options['related_plugins_info']['bws_contact']['status'];
-										$value = $fieldset_name . '_' . $form_name;
+										<?php $value = $fieldset_name . '_' . $form_name;
 										$id = 'cptch_' . $form_name . '_enable';
 										$name = 'cptch[forms][' . $form_name . '][enable]';
-										$checked = !! $this->options['forms'][ $form_name ]['enable'];
+										if ( isset ( $this->options['forms'][ $form_name ]['enable'] ) ) {
+											$checked = !! $this->options['forms'][ $form_name ]['enable'];
+										} else {
+											$checked = 0;
+										}
+
 										$this->add_checkbox_input( compact( 'id', 'name', 'checked', 'value', 'class', 'disabled' ) );
 
 										echo $this->forms[ $form_name ]['name'];
-										if ( 'bws_contact' == $form_name ) {
-											/**
-											* display the "install/activate" message
-											*/
-											echo $this->get_form_message( 'bws_contact' );
 
+										if ( 'external' == $fieldset_name && $disabled ) {
+											echo $this->get_form_message( $form_name );
 											if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) ||
 													is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) { ?>
 												<span class="bws_info"> <?php _e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
@@ -934,6 +944,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			*/
 			$compatible_plugins = array(
 				'bws_contact' => array( 'contact-form-plugin/contact_form.php', 'contact-form-pro/contact_form_pro.php' ),
+				'bws_booking' => 'bws-car-rental-pro/bws-car-rental-pro.php',
 				'limit_attempts' => array( 'limit-attempts/limit-attempts.php', 'limit-attempts-pro/limit-attempts-pro.php' )
 			);
 
