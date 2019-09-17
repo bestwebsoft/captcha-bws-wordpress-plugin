@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
-Requires at least: 3.9
-Tested up to: 5.2.1
-Stable tag: 5.0.5
+Requires at least: 4.0
+Tested up to: 5.2.3
+Stable tag: 5.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -264,6 +264,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.0.7 - 17.09.2019 = 
+* Bugfix : Issue with Calling files remotely has been fixed.
+* Bugfix : Issue with Including Libraries Already In Core has been fixed.
+* Update : Checking for updates has been removed.
+* Update : BWS Menu Functionality is improved.
+
+= V5.0.6 - 04.09.2019 =
+* Update: The deactivation feedback has been changed. Misleading buttons have been removed.
+
 = V5.0.5 - 24.05.2019 =
 * NEW : The compatibility with Car Rental V2 has been added.
 * Bugfix : The bug with the "Advanced protection" option has been fixed.
@@ -304,6 +313,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.0.7 =
+* Usability improved
+
+= V5.0.6 =
+* Usability improved
 
 = V5.0.5 =
 * Functionality expanded.
