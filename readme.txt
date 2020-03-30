@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
-Requires at least: 4.0
-Tested up to: 5.2.3
-Stable tag: 5.0.7
+Requires at least: 4.5
+Tested up to: 5.3.2
+Stable tag: 5.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,7 @@ Stop spam now!
     * Invisible
     * Character Recognition
     * Simple math actions such as addition, subtraction, and multiplication
+    * Slide captcha [NEW]
 * Enhance captcha protection with:
     * Letters
     * Numbers
@@ -258,11 +259,16 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 3. Lost password form with Captcha.
 4. Comments form with Captcha.
 5. Contact form with Captcha.
-6. Captcha Settings page.
-7. Captcha Packages page.
-8. Captcha Whitelist page.
+6. Login form with Optical Character Recognition Captcha Type.
+7. Login form with Slide Captcha Type.
+8. Captcha Settings page.
+9. Captcha Packages page.
+10. Captcha Whitelist page.
 
 == Changelog ===
+
+= V5.0.8 - 30.03.2020 = 
+* NEW : New type of Captcha - Slide Captcha has been added.
 
 = V5.0.7 - 17.09.2019 = 
 * Bugfix : Issue with Calling files remotely has been fixed.
@@ -313,6 +319,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.0.8 =
+* New features added.
 
 = V5.0.7 =
 * Usability improved

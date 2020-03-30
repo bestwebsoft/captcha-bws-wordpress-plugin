@@ -9,18 +9,22 @@
 		 * Handle the styling of the "Settings" tab on the plugin settings page
 		 * @since 4.2.3
 		 */
-		var limitOption	= $( '#cptch_enable_time_limit' ),
-			imageFormat	= $( '#cptch_operand_format_images' );
+		var imageFormat	= $( '#cptch_operand_format_images' );
 
 		/*
 		* Hide "time limit thershold" field under unchecked "time limit" field
 		*/
-		if ( ! $( limitOption ).is( ':checked' ) ) {
-			$( limitOption ).closest( 'tr' ).nextAll( '.cptch_time_limit' ).hide();
+		function cptch_time_limit() {
+			if ( ! $( '#cptch_enable_time_limit' ).is( ':checked' ) ) {
+				$( '.cptch_time_limit' ).hide();
+			} else {
+				$( '.cptch_time_limit' ).show();
+			}
 		}
 
-		$( limitOption ).click( function() {
-			$( limitOption ).closest( 'tr' ).nextAll( '.cptch_time_limit' ).toggle();
+		cptch_time_limit();
+		$( $( '#cptch_enable_time_limit' ) ).click( function() {
+			cptch_time_limit();
 		} );
 
 		/*
@@ -49,20 +53,26 @@
 		} );
 
 		function cptch_type() {
-			if ( 'recognition' === $( 'input[name="cptch_type"]:checked' ).val() ) {
+
+			var cptchType = $( 'input[name="cptch_type"]:checked' ).val();
+
+			if ( 'recognition' === cptchType ) {
 				$( '.cptch_for_math_actions' ).hide();
 				$( '.cptch_for_recognition' ).show();
 				imageFormat.attr( 'checked', 'checked' );
 				cptchImageOptions();
-			} else if ( 'invisible' === $( 'input[name="cptch_type"]:checked' ).val() ) {
-				$( '.cptch_for_recognition, .cptch_for_math_actions' ).hide();
+				cptch_time_limit();
+			} else if ( 'invisible' === cptchType || 'slide' === cptchType ) {
+				$( '.cptch_for_recognition, .cptch_for_math_actions, .cptch_time_limit' ).hide();
 				imageFormat.removeAttr('checked' );
 				cptchImageOptions();
 			} else {
 				$( '.cptch_for_recognition' ).hide();
 				$( '.cptch_for_math_actions' ).show();
+				cptch_time_limit();
 			}
 		}
+
 		cptch_type();
 		$( 'input[name="cptch_type"]' ).click( function() {
 			cptch_type();

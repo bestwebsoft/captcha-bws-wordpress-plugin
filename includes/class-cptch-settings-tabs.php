@@ -3,8 +3,6 @@
  * Displays the content on the plugin settings page
  */
 
-require_once( dirname( dirname( __FILE__ ) ) . '/bws_menu/class-bws-settings.php' );
-
 if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 	class Cptch_Settings_Tabs extends Bws_Settings_Tabs {
 		private $forms, $form_categories, $registered_forms;
@@ -59,12 +57,12 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wp_lost_password'		=> array( 'name' => __( 'Reset password form', 'captcha-bws' ) ),
 				'wp_comments'			=> array( 'name' => __( 'Comments form', 'captcha-bws' ) ),
 				'bws_contact'			=> array( 'name' => 'Contact Form' ),
-				'bws_booking'			=> array( 'name' => __( 'Car Rental V2 Pro', 'captcha-bws' ) ),
+				'bws_booking'			=> array( 'name' => 'Car Rental V2 Pro' ),
 				/*pls */
 				'bws_subscriber'			=> array( 'name' => 'Subscriber', 'for_pro' => 1 ),
 				'cf7_contact'				=> array( 'name' => 'Contact Form 7', 'for_pro' => 1 ),
-				'mailchimp'					=> array( 'name' => __( 'Mailchimp for Wordpress', 'captcha-bws' ), 'for_pro' => 1 ),
-				'ninja_form'				=> array( 'name' => __( 'Ninja Forms', 'captcha-bws' ), 'for_pro' => 1 ),
+				'mailchimp'					=> array( 'name' => 'Mailchimp for Wordpress', 'for_pro' => 1 ),
+				'ninja_form'				=> array( 'name' => 'Ninja Forms', 'for_pro' => 1 ),
 				'buddypress_register'		=> array( 'name' => __( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_comments'		=> array( 'name' => __( 'Comments form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_group'			=> array( 'name' => __( 'Create a Group form', 'captcha-bws' ), 'for_pro' => 1 ),
@@ -144,14 +142,14 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						)
 					),
 					'bbpress' => array(
-						'title' => __( 'BbPress', 'captcha-bws' ),
+						'title' => 'BbPress',
 						'forms' => array(
 							'bbpress_new_topic_form',
 							'bbpress_reply_form'
 						)
 					),
 					'buddypress' => array(
-						'title' => __( 'BuddyPress', 'captcha-bws' ),
+						'title' => 'BuddyPress',
 						'forms' => array(
 							'buddypress_register',
 							'buddypress_comments',
@@ -159,7 +157,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						)
 					),
 					'woocommerce' => array(
-						'title' => __( 'WooCommerce', 'captcha-bws' ),
+						'title' => 'WooCommerce',
 						'forms' => array(
 							'woocommerce_login',
 							'woocommerce_register',
@@ -168,7 +166,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						)
 					),
 					'wpforo' => array(
-						'title' => __( 'Forums - wpForo', 'captcha-bws' ),
+						'title' => 'Forums - wpForo',
 						'forms' => array(
 							'wpforo_login_form',
 							'wpforo_register_form',
@@ -247,6 +245,10 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				}
 			}
 
+			if ( 'slide' == $this->options['type'] ) {
+				$this->options['load_via_ajax'] = 0;
+			}
+
 			foreach ( $general_arrays as $option => $option_name ) {
 				$value = isset( $_REQUEST["cptch_{$option}"] ) && is_array( $_REQUEST["cptch_{$option}"] ) ? array_map( 'esc_html', $_REQUEST["cptch_{$option}"] ) : array();
 
@@ -314,7 +316,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					'array_options'		=> array(
 						'math_actions'		=> array( __( 'Arithmetic actions', 'captcha-bws' ) ),
 						'recognition'		=> array( __( 'Optical Character Recognition (OCR)', 'captcha-bws' ) ),
-						'invisible'			=> array( __( 'Invisible', 'captcha-bws' ) )
+						'invisible'			=> array( __( 'Invisible', 'captcha-bws' ) ),
+						'slide'			    => array( __( 'Slide captcha', 'captcha-bws' ) )
 					)
 				),
 				'math_actions'	=> array(
@@ -410,6 +413,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 									<label class="cptch_related">
 										<?php $value = $fieldset_name . '_' . $form_name;
 										$id = 'cptch_' . $form_name . '_enable';
+										$class = '';
 										$name = 'cptch[forms][' . $form_name . '][enable]';
 										if ( isset ( $this->options['forms'][ $form_name ]['enable'] ) ) {
 											$checked = !! $this->options['forms'][ $form_name ]['enable'];
@@ -556,7 +560,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						'max'	=> 9999
 					)
 				); ?>
-				<tr>
+				<tr class="cptch_for_math_actions cptch_for_recognition">
 					<th scope="row"><?php _e( 'Time Limit', 'captcha-bws' ); ?></th>
 					<td>
 						<?php $this->add_checkbox_input( $options[0] ); ?>
@@ -610,7 +614,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						<tr class="cptch_form_option_hide_from_registered"<?php echo $style; ?>>
 							<th scope="row"><?php _e( 'Hide from Registered Users', 'captcha-bws' ); ?></th>
 							<td>
-								<?php $this->add_checkbox_input( compact( 'id', 'name', 'checked', 'readonly' ) ); ?>
+								<?php $this->add_checkbox_input( compact( 'id', 'name', 'checked', 'readonly' ) ); ?> <span class="bws_info"><?php _e( 'Enable to hide captcha for registered users.', 'captcha-bws' ); ?></span>
 							</td>
 						</tr>
 					</table><!-- .cptch_$form_slug --><!-- pls -->

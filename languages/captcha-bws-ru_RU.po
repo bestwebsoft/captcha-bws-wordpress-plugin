@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: captcha-pro\n"
+"Project-Id-Version: captcha-bws\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-28 13:38+0200\n"
-"PO-Revision-Date: 2018-12-28 13:45+0200\n"
+"POT-Creation-Date: 2020-03-11 17:00+0200\n"
+"PO-Revision-Date: 2020-03-11 17:00+0200\n"
 "Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
 "Language-Team: bestwebsoft.com <https://support.bestwebsoft.com>\n"
 "Language: ru_RU\n"
@@ -13,488 +13,497 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n:1,2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n%10==1 && n%100!=11) ? 3 : "
 "((n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20)) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: captcha-bws.php:35 captcha-bws.php:37 captcha-bws.php:331
-#: includes/class-cptch-settings-tabs.php:381
+#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:390
+#: includes/class-cptch-settings-tabs.php:388
 msgid "Captcha Settings"
 msgstr "Настройки Captcha"
 
-#: captcha-bws.php:37 captcha-bws.php:1525 captcha-bws.php:1538
-#: includes/class-cptch-settings-tabs.php:25
+#: captcha-bws.php:49 captcha-bws.php:1613 captcha-bws.php:1626
+#: includes/class-cptch-settings-tabs.php:23
 msgid "Settings"
 msgstr "Настройки"
 
-#: captcha-bws.php:39 includes/class-cptch-package-list.php:90
+#: captcha-bws.php:57 includes/class-cptch-package-list.php:90
 msgid "Captcha Packages"
 msgstr "Captcha Пакеты"
 
-#: captcha-bws.php:39
+#: captcha-bws.php:58
 msgid "Packages"
 msgstr "Пакеты"
 
-#: captcha-bws.php:42 captcha-bws.php:369
+#: captcha-bws.php:67 captcha-bws.php:425
 msgid "Captcha Whitelist"
 msgstr "Captcha Белый Список"
 
-#: captcha-bws.php:42 includes/pro_banners.php:51
+#: captcha-bws.php:68 includes/pro_banners.php:51
 msgid "Whitelist"
 msgstr "Белый список"
 
-#: captcha-bws.php:49 captcha-bws.php:384 includes/pro_banners.php:30
+#: captcha-bws.php:86 captcha-bws.php:441 includes/pro_banners.php:30
 msgid "Upgrade to Pro"
 msgstr "Обновить до Pro"
 
-#: captcha-bws.php:334
+#: captcha-bws.php:393
 msgid "WARNING"
 msgstr "ВНИМАНИЕ"
 
-#: captcha-bws.php:334
+#: captcha-bws.php:393
 msgid "The plugin works correctly only if JavaScript is enabled."
 msgstr "Плагин работает корректно только при включенном JavaScript."
 
-#: captcha-bws.php:370
+#: captcha-bws.php:427
 msgid "Add New"
 msgstr "Добавить"
 
-#: captcha-bws.php:375 includes/class-cptch-settings-tabs.php:432
-#: includes/class-cptch-settings-tabs.php:468
-#: includes/class-cptch-settings-tabs.php:608
-#: includes/class-cptch-settings-tabs.php:620
-#: includes/class-cptch-settings-tabs.php:721 includes/pro_banners.php:21
-msgid "Close"
-msgstr "Закрыть"
-
-#: captcha-bws.php:536
+#: captcha-bws.php:593
 msgid "Click the BACK button on your browser, and try again."
 msgstr "Нажмите НАЗАД в браузере и попробуйте еще раз."
 
-#: captcha-bws.php:778
+#: captcha-bws.php:851
 msgid "Captcha loading..."
 msgstr "Капча загружается..."
 
-#: captcha-bws.php:780
+#: captcha-bws.php:853
 msgid "In order to pass the CAPTCHA please enable JavaScript."
 msgstr "Для того, чтобы пройти тест CAPTCHA включите JavaScript."
 
-#: captcha-bws.php:1200
+#: captcha-bws.php:1277
 msgid "zero"
 msgstr "ноль"
 
-#: captcha-bws.php:1201
+#: captcha-bws.php:1278
 msgid "one"
 msgstr "один"
 
-#: captcha-bws.php:1202
+#: captcha-bws.php:1279
 msgid "two"
 msgstr "два"
 
-#: captcha-bws.php:1203
+#: captcha-bws.php:1280
 msgid "three"
 msgstr "три"
 
-#: captcha-bws.php:1204
+#: captcha-bws.php:1281
 msgid "four"
 msgstr "четыре"
 
-#: captcha-bws.php:1205
+#: captcha-bws.php:1282
 msgid "five"
 msgstr "пять"
 
-#: captcha-bws.php:1206
+#: captcha-bws.php:1283
 msgid "six"
 msgstr "шесть"
 
-#: captcha-bws.php:1207
+#: captcha-bws.php:1284
 msgid "seven"
 msgstr "семь"
 
-#: captcha-bws.php:1208
+#: captcha-bws.php:1285
 msgid "eight"
 msgstr "восемь"
 
-#: captcha-bws.php:1209
+#: captcha-bws.php:1286
 msgid "nine"
 msgstr "девять"
 
-#: captcha-bws.php:1211
+#: captcha-bws.php:1288
 msgid "ten"
 msgstr "десять"
 
-#: captcha-bws.php:1212
+#: captcha-bws.php:1289
 msgid "eleven"
 msgstr "одиннадцать"
 
-#: captcha-bws.php:1213
+#: captcha-bws.php:1290
 msgid "twelve"
 msgstr "двенадцать"
 
-#: captcha-bws.php:1214
+#: captcha-bws.php:1291
 msgid "thirteen"
 msgstr "тринадцать"
 
-#: captcha-bws.php:1215
+#: captcha-bws.php:1292
 msgid "fourteen"
 msgstr "четырнадцать"
 
-#: captcha-bws.php:1216
+#: captcha-bws.php:1293
 msgid "fifteen"
 msgstr "пятнадцать"
 
-#: captcha-bws.php:1217
+#: captcha-bws.php:1294
 msgid "sixteen"
 msgstr "шестнадцать"
 
-#: captcha-bws.php:1218
+#: captcha-bws.php:1295
 msgid "seventeen"
 msgstr "семнадцать"
 
-#: captcha-bws.php:1219
+#: captcha-bws.php:1296
 msgid "eighteen"
 msgstr "восемнадцать"
 
-#: captcha-bws.php:1220
+#: captcha-bws.php:1297
 msgid "nineteen"
 msgstr "девятнадцать"
 
-#: captcha-bws.php:1222
+#: captcha-bws.php:1299
 msgid "twenty"
 msgstr "двадцать"
 
-#: captcha-bws.php:1223
+#: captcha-bws.php:1300
 msgid "twenty one"
 msgstr "двадцать один"
 
-#: captcha-bws.php:1224
+#: captcha-bws.php:1301
 msgid "twenty two"
 msgstr "двадцать два"
 
-#: captcha-bws.php:1225
+#: captcha-bws.php:1302
 msgid "twenty three"
 msgstr "двадцать три"
 
-#: captcha-bws.php:1226
+#: captcha-bws.php:1303
 msgid "twenty four"
 msgstr "двадцать четыре"
 
-#: captcha-bws.php:1227
+#: captcha-bws.php:1304
 msgid "twenty five"
 msgstr "двадцать пять"
 
-#: captcha-bws.php:1228
+#: captcha-bws.php:1305
 msgid "twenty six"
 msgstr "двадцать шесть"
 
-#: captcha-bws.php:1229
+#: captcha-bws.php:1306
 msgid "twenty seven"
 msgstr "двадцать семь"
 
-#: captcha-bws.php:1230
+#: captcha-bws.php:1307
 msgid "twenty eight"
 msgstr "двадцать восемь"
 
-#: captcha-bws.php:1231
+#: captcha-bws.php:1308
 msgid "twenty nine"
 msgstr "двадцать девять"
 
-#: captcha-bws.php:1233
+#: captcha-bws.php:1310
 msgid "thirty"
 msgstr "тридцать"
 
-#: captcha-bws.php:1234
+#: captcha-bws.php:1311
 msgid "thirty one"
 msgstr "тридцать один"
 
-#: captcha-bws.php:1235
+#: captcha-bws.php:1312
 msgid "thirty two"
 msgstr "тридцать два"
 
-#: captcha-bws.php:1236
+#: captcha-bws.php:1313
 msgid "thirty three"
 msgstr "тридцать три"
 
-#: captcha-bws.php:1237
+#: captcha-bws.php:1314
 msgid "thirty four"
 msgstr "тридцать четыре"
 
-#: captcha-bws.php:1238
+#: captcha-bws.php:1315
 msgid "thirty five"
 msgstr "тридцать пять"
 
-#: captcha-bws.php:1239
+#: captcha-bws.php:1316
 msgid "thirty six"
 msgstr "тридцать шесть"
 
-#: captcha-bws.php:1240
+#: captcha-bws.php:1317
 msgid "thirty seven"
 msgstr "тридцать семь"
 
-#: captcha-bws.php:1241
+#: captcha-bws.php:1318
 msgid "thirty eight"
 msgstr "тридцать восемь"
 
-#: captcha-bws.php:1242
+#: captcha-bws.php:1319
 msgid "thirty nine"
 msgstr "тридцать девять"
 
-#: captcha-bws.php:1244
+#: captcha-bws.php:1321
 msgid "forty"
 msgstr "сорок"
 
-#: captcha-bws.php:1245
+#: captcha-bws.php:1322
 msgid "forty one"
 msgstr "сорок один"
 
-#: captcha-bws.php:1246
+#: captcha-bws.php:1323
 msgid "forty two"
 msgstr "сорок два"
 
-#: captcha-bws.php:1247
+#: captcha-bws.php:1324
 msgid "forty three"
 msgstr "сорок три"
 
-#: captcha-bws.php:1248
+#: captcha-bws.php:1325
 msgid "forty four"
 msgstr "сорок четыре"
 
-#: captcha-bws.php:1249
+#: captcha-bws.php:1326
 msgid "forty five"
 msgstr "сорок пять"
 
-#: captcha-bws.php:1250
+#: captcha-bws.php:1327
 msgid "forty six"
 msgstr "сорок шесть"
 
-#: captcha-bws.php:1251
+#: captcha-bws.php:1328
 msgid "forty seven"
 msgstr "сорок семь"
 
-#: captcha-bws.php:1252
+#: captcha-bws.php:1329
 msgid "forty eight"
 msgstr "сорок восемь"
 
-#: captcha-bws.php:1253
+#: captcha-bws.php:1330
 msgid "forty nine"
 msgstr "сорок девять"
 
-#: captcha-bws.php:1255
+#: captcha-bws.php:1332
 msgid "fifty"
 msgstr "пятьдесят"
 
-#: captcha-bws.php:1256
+#: captcha-bws.php:1333
 msgid "fifty one"
 msgstr "пятьдесят один"
 
-#: captcha-bws.php:1257
+#: captcha-bws.php:1334
 msgid "fifty two"
 msgstr "пятьдесят два"
 
-#: captcha-bws.php:1258
+#: captcha-bws.php:1335
 msgid "fifty three"
 msgstr "пятьдесят три"
 
-#: captcha-bws.php:1259
+#: captcha-bws.php:1336
 msgid "fifty four"
 msgstr "пятьдесят четыре"
 
-#: captcha-bws.php:1260
+#: captcha-bws.php:1337
 msgid "fifty five"
 msgstr "пятьдесят пять"
 
-#: captcha-bws.php:1261
+#: captcha-bws.php:1338
 msgid "fifty six"
 msgstr "пятьдесят шесть"
 
-#: captcha-bws.php:1262
+#: captcha-bws.php:1339
 msgid "fifty seven"
 msgstr "пятьдесят семь"
 
-#: captcha-bws.php:1263
+#: captcha-bws.php:1340
 msgid "fifty eight"
 msgstr "пятьдесят восемь"
 
-#: captcha-bws.php:1264
+#: captcha-bws.php:1341
 msgid "fifty nine"
 msgstr "пятьдесят девять"
 
-#: captcha-bws.php:1266
+#: captcha-bws.php:1343
 msgid "sixty"
 msgstr "шестьдесят"
 
-#: captcha-bws.php:1267
+#: captcha-bws.php:1344
 msgid "sixty one"
 msgstr "шестьдесят один"
 
-#: captcha-bws.php:1268
+#: captcha-bws.php:1345
 msgid "sixty two"
 msgstr "шестьдесят два"
 
-#: captcha-bws.php:1269
+#: captcha-bws.php:1346
 msgid "sixty three"
 msgstr "шестьдесят три"
 
-#: captcha-bws.php:1270
+#: captcha-bws.php:1347
 msgid "sixty four"
 msgstr "шестьдесят четыре"
 
-#: captcha-bws.php:1271
+#: captcha-bws.php:1348
 msgid "sixty five"
 msgstr "шестьдесят пять"
 
-#: captcha-bws.php:1272
+#: captcha-bws.php:1349
 msgid "sixty six"
 msgstr "шестьдесят шесть"
 
-#: captcha-bws.php:1273
+#: captcha-bws.php:1350
 msgid "sixty seven"
 msgstr "шестьдесят семь"
 
-#: captcha-bws.php:1274
+#: captcha-bws.php:1351
 msgid "sixty eight"
 msgstr "шестьдесят восемь"
 
-#: captcha-bws.php:1275
+#: captcha-bws.php:1352
 msgid "sixty nine"
 msgstr "шестьдесят девять"
 
-#: captcha-bws.php:1277
+#: captcha-bws.php:1354
 msgid "seventy"
 msgstr "семьдесят"
 
-#: captcha-bws.php:1278
+#: captcha-bws.php:1355
 msgid "seventy one"
 msgstr "семьдесят один"
 
-#: captcha-bws.php:1279
+#: captcha-bws.php:1356
 msgid "seventy two"
 msgstr "семьдесят два"
 
-#: captcha-bws.php:1280
+#: captcha-bws.php:1357
 msgid "seventy three"
 msgstr "семьдесят три"
 
-#: captcha-bws.php:1281
+#: captcha-bws.php:1358
 msgid "seventy four"
 msgstr "семьдесят четыре"
 
-#: captcha-bws.php:1282
+#: captcha-bws.php:1359
 msgid "seventy five"
 msgstr "семьдесят пять"
 
-#: captcha-bws.php:1283
+#: captcha-bws.php:1360
 msgid "seventy six"
 msgstr "семьдесят шесть"
 
-#: captcha-bws.php:1284
+#: captcha-bws.php:1361
 msgid "seventy seven"
 msgstr "семьдесят семь"
 
-#: captcha-bws.php:1285
+#: captcha-bws.php:1362
 msgid "seventy eight"
 msgstr "семьдесят восемь"
 
-#: captcha-bws.php:1286
+#: captcha-bws.php:1363
 msgid "seventy nine"
 msgstr "семьдесят девять"
 
-#: captcha-bws.php:1288
+#: captcha-bws.php:1365
 msgid "eighty"
 msgstr "восемьдесят"
 
-#: captcha-bws.php:1289
+#: captcha-bws.php:1366
 msgid "eighty one"
 msgstr "восемьдесят один"
 
-#: captcha-bws.php:1290
+#: captcha-bws.php:1367
 msgid "eighty two"
 msgstr "восемьдесят два"
 
-#: captcha-bws.php:1291
+#: captcha-bws.php:1368
 msgid "eighty three"
 msgstr "восемьдесят три"
 
-#: captcha-bws.php:1292
+#: captcha-bws.php:1369
 msgid "eighty four"
 msgstr "восемьдесят четыре"
 
-#: captcha-bws.php:1293
+#: captcha-bws.php:1370
 msgid "eighty five"
 msgstr "восемьдесят пять"
 
-#: captcha-bws.php:1294
+#: captcha-bws.php:1371
 msgid "eighty six"
 msgstr "восемьдесят шесть"
 
-#: captcha-bws.php:1295
+#: captcha-bws.php:1372
 msgid "eighty seven"
 msgstr "восемьдесят семь"
 
-#: captcha-bws.php:1296
+#: captcha-bws.php:1373
 msgid "eighty eight"
 msgstr "восемьдесят восемь"
 
-#: captcha-bws.php:1297
+#: captcha-bws.php:1374
 msgid "eighty nine"
 msgstr "восемьдесят девять"
 
-#: captcha-bws.php:1299
+#: captcha-bws.php:1376
 msgid "ninety"
 msgstr "девяносто"
 
-#: captcha-bws.php:1300
+#: captcha-bws.php:1377
 msgid "ninety one"
 msgstr "девяносто один"
 
-#: captcha-bws.php:1301
+#: captcha-bws.php:1378
 msgid "ninety two"
 msgstr "девяносто два"
 
-#: captcha-bws.php:1302
+#: captcha-bws.php:1379
 msgid "ninety three"
 msgstr "девяносто три"
 
-#: captcha-bws.php:1303
+#: captcha-bws.php:1380
 msgid "ninety four"
 msgstr "девяносто четыре"
 
-#: captcha-bws.php:1304
+#: captcha-bws.php:1381
 msgid "ninety five"
 msgstr "девяносто пять"
 
-#: captcha-bws.php:1305
+#: captcha-bws.php:1382
 msgid "ninety six"
 msgstr "девяносто шесть"
 
-#: captcha-bws.php:1306
+#: captcha-bws.php:1383
 msgid "ninety seven"
 msgstr "девяносто семь"
 
-#: captcha-bws.php:1307
+#: captcha-bws.php:1384
 msgid "ninety eight"
 msgstr "девяносто восемь"
 
-#: captcha-bws.php:1308
+#: captcha-bws.php:1385
 msgid "ninety nine"
 msgstr "девяносто девять"
 
-#: captcha-bws.php:1373
+#: captcha-bws.php:1450
 msgid "Encryption password is not set"
 msgstr "Пароль для шифрования не установлен"
 
-#: captcha-bws.php:1394
+#: captcha-bws.php:1471
 msgid "Decryption password is not set"
 msgstr "Пароль для дешифровки не установлен"
 
-#: captcha-bws.php:1540
+#: captcha-bws.php:1553
+msgid "Slide to verify"
+msgstr "Проведите вправо для верификации"
+
+#: captcha-bws.php:1554
+msgid "Verification passed"
+msgstr "Верификация пройдена"
+
+#: captcha-bws.php:1628
 msgid "FAQ"
 msgstr "FAQ"
 
-#: captcha-bws.php:1541
+#: captcha-bws.php:1629
 msgid "Support"
 msgstr "Поддержка"
+
+#: captcha-bws.php:1680
+msgid "Could not save captcha response to database."
+msgstr "Не удалось сохранить ответ капчи в базу данных."
+
+#: captcha-bws.php:1726
+msgid "Error"
+msgstr "Ошибка"
 
 #: includes/class-cptch-package-list.php:37
 msgid "package"
@@ -516,8 +525,8 @@ msgstr "Пакеты не найдены"
 msgid "Package"
 msgstr "Пакет"
 
-#: includes/class-cptch-package-list.php:144 includes/pro_banners.php:239
-#: includes/pro_banners.php:266 includes/pro_banners.php:289
+#: includes/class-cptch-package-list.php:144 includes/pro_banners.php:269
+#: includes/pro_banners.php:294 includes/pro_banners.php:317
 msgid "Date Added"
 msgstr "Дата добавления"
 
@@ -563,45 +572,41 @@ msgstr ""
 msgid "Wrong data"
 msgstr "Неправильные данные"
 
-#: includes/class-cptch-settings-tabs.php:26
+#: includes/class-cptch-settings-tabs.php:24
 msgid "Messages"
 msgstr "Уведомления"
 
-#: includes/class-cptch-settings-tabs.php:27
+#: includes/class-cptch-settings-tabs.php:25
 msgid "Misc"
 msgstr "Разное"
 
-#: includes/class-cptch-settings-tabs.php:28
+#: includes/class-cptch-settings-tabs.php:26
 msgid "Custom Code"
 msgstr "Пользовательский код"
 
-#: includes/class-cptch-settings-tabs.php:30
+#: includes/class-cptch-settings-tabs.php:28
 msgid "License Key"
 msgstr "Лицензионный ключ"
 
-#: includes/class-cptch-settings-tabs.php:57
+#: includes/class-cptch-settings-tabs.php:55
 #: includes/class-cptch-settings-tabs.php:69
 msgid "Login form"
 msgstr "Форма входа"
 
-#: includes/class-cptch-settings-tabs.php:58
+#: includes/class-cptch-settings-tabs.php:56
 #: includes/class-cptch-settings-tabs.php:66
 #: includes/class-cptch-settings-tabs.php:70
 msgid "Registration form"
 msgstr "Форма регистрации"
 
-#: includes/class-cptch-settings-tabs.php:59
+#: includes/class-cptch-settings-tabs.php:57
 msgid "Reset password form"
 msgstr "Форма восстановления пароля"
 
-#: includes/class-cptch-settings-tabs.php:60
+#: includes/class-cptch-settings-tabs.php:58
 #: includes/class-cptch-settings-tabs.php:67
 msgid "Comments form"
 msgstr "Форма комментариев"
-
-#: includes/class-cptch-settings-tabs.php:65
-msgid "Mailchimp for Wordpress"
-msgstr ""
 
 #: includes/class-cptch-settings-tabs.php:68
 msgid "Create a Group form"
@@ -617,7 +622,7 @@ msgstr "Форма оформления заказа"
 
 #: includes/class-cptch-settings-tabs.php:73
 msgid "Jetpack Contact Form"
-msgstr ""
+msgstr "Контактная форма плагина Jetpack"
 
 #: includes/class-cptch-settings-tabs.php:74
 msgid "bbPress New Topic form"
@@ -648,52 +653,36 @@ msgid "WordPress default"
 msgstr "Стандартные формы WordPress"
 
 #: includes/class-cptch-settings-tabs.php:126
-#: includes/class-cptch-settings-tabs.php:134
+#: includes/class-cptch-settings-tabs.php:135
 msgid "External plugins"
 msgstr "Внешние плагины"
 
-#: includes/class-cptch-settings-tabs.php:143
-msgid "BbPress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:150
-msgid "BuddyPress"
-msgstr "BuddyPress"
-
-#: includes/class-cptch-settings-tabs.php:158
-msgid "WooCommerce"
-msgstr "WooCommerce"
-
-#: includes/class-cptch-settings-tabs.php:167
-msgid "Forums - wpForo"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:224
-#: includes/class-cptch-settings-tabs.php:318
+#: includes/class-cptch-settings-tabs.php:226
+#: includes/class-cptch-settings-tabs.php:325
 msgid "Arithmetic Actions"
 msgstr "Арифметические действия"
 
-#: includes/class-cptch-settings-tabs.php:225
-#: includes/class-cptch-settings-tabs.php:328
+#: includes/class-cptch-settings-tabs.php:227
+#: includes/class-cptch-settings-tabs.php:335
 msgid "Complexity"
 msgstr "Сложность"
 
-#: includes/class-cptch-settings-tabs.php:226
-#: includes/class-cptch-settings-tabs.php:346 includes/pro_banners.php:109
+#: includes/class-cptch-settings-tabs.php:228
+#: includes/class-cptch-settings-tabs.php:353 includes/pro_banners.php:109
 msgid "Image Packages"
 msgstr "Пакеты изображений"
 
-#: includes/class-cptch-settings-tabs.php:240
+#: includes/class-cptch-settings-tabs.php:242
 msgid "Text fields in the \"Messages\" tab must not be empty."
 msgstr ""
 "Текстовые поля в блоке настроек \"Уведомления\" не должны быть пустыми."
 
-#: includes/class-cptch-settings-tabs.php:251
+#: includes/class-cptch-settings-tabs.php:257
 #, php-format
 msgid "\"%s\" option must not be fully disabled."
 msgstr "Опция \"%s\"  не должна быть полностью отключена."
 
-#: includes/class-cptch-settings-tabs.php:280
+#: includes/class-cptch-settings-tabs.php:286
 msgid ""
 "In order to use \"Optical Character Recognition\" type, please select at "
 "least one of the items in the option \"Image Packages\"."
@@ -702,7 +691,7 @@ msgstr ""
 "пожалуйста, выберите как минимум один элемент в блоке настроек \"Пакеты "
 "изображений\"."
 
-#: includes/class-cptch-settings-tabs.php:283
+#: includes/class-cptch-settings-tabs.php:289
 msgid ""
 "In order to use images in the CAPTCHA, please select at least one of the "
 "items in the option \"Image Packages\". The \"Images\" checkbox in "
@@ -712,197 +701,213 @@ msgstr ""
 "минимум один элемент в блоке настроек \"Пакеты изображений\". Пункт "
 "\"Изображения\" в блоке опций \"Сложность\" отключен"
 
-#: includes/class-cptch-settings-tabs.php:294
+#: includes/class-cptch-settings-tabs.php:300
 msgid "Settings saved."
 msgstr "Настройки сохранены."
 
-#: includes/class-cptch-settings-tabs.php:309
+#: includes/class-cptch-settings-tabs.php:315
 msgid "Captcha Type"
 msgstr "Тип"
 
-#: includes/class-cptch-settings-tabs.php:311
+#: includes/class-cptch-settings-tabs.php:317
 msgid "Arithmetic actions"
 msgstr "Арифметические действия"
 
-#: includes/class-cptch-settings-tabs.php:312
+#: includes/class-cptch-settings-tabs.php:318
 msgid "Optical Character Recognition (OCR)"
 msgstr "Визуальное распознавание символов"
 
-#: includes/class-cptch-settings-tabs.php:313
+#: includes/class-cptch-settings-tabs.php:319
 msgid "Invisible"
 msgstr "Невидимая"
 
 #: includes/class-cptch-settings-tabs.php:320
+msgid "Slide captcha"
+msgstr "Капча-слайдер"
+
+#: includes/class-cptch-settings-tabs.php:327
 msgid "Addition"
 msgstr "Сложение"
 
-#: includes/class-cptch-settings-tabs.php:321
+#: includes/class-cptch-settings-tabs.php:328
 msgid "Subtraction"
 msgstr "Вычитание"
 
-#: includes/class-cptch-settings-tabs.php:322
+#: includes/class-cptch-settings-tabs.php:329
 msgid "Multiplication"
 msgstr "Умножение"
 
-#: includes/class-cptch-settings-tabs.php:330
+#: includes/class-cptch-settings-tabs.php:337
 msgid "Numbers (1, 2, 3, etc.)"
 msgstr "Цифры (1, 2, 3 и т.д.)"
 
-#: includes/class-cptch-settings-tabs.php:331
+#: includes/class-cptch-settings-tabs.php:338
 msgid "Words (one, two, three, etc.)"
 msgstr "Слова (один, два, три и т.д.)"
 
-#: includes/class-cptch-settings-tabs.php:332
+#: includes/class-cptch-settings-tabs.php:339
 msgid "Images"
 msgstr "Изображения"
 
-#: includes/class-cptch-settings-tabs.php:338
+#: includes/class-cptch-settings-tabs.php:345
 msgid "Number of Images"
 msgstr "Количество изображений"
 
-#: includes/class-cptch-settings-tabs.php:341
+#: includes/class-cptch-settings-tabs.php:348
 msgid "Set a number of images to display simultaneously as a captcha question."
 msgstr "Укажите количество изображений отображаемых одновременно."
 
-#: includes/class-cptch-settings-tabs.php:352
+#: includes/class-cptch-settings-tabs.php:359
 msgid "Use several image packages at the same time"
 msgstr "Использовать несколько пакетов изображений одновременно"
 
-#: includes/class-cptch-settings-tabs.php:358
+#: includes/class-cptch-settings-tabs.php:365
 msgid "Enlarge Images"
 msgstr "Увеличение изображений"
 
-#: includes/class-cptch-settings-tabs.php:359
+#: includes/class-cptch-settings-tabs.php:366
 msgid "Enable to enlarge captcha images on mouseover."
 msgstr "Включить увеличение изображений при наведении."
 
-#: includes/class-cptch-settings-tabs.php:364
+#: includes/class-cptch-settings-tabs.php:371
 msgid "Reload Button"
 msgstr "Кнопка перезагрузки"
 
-#: includes/class-cptch-settings-tabs.php:365
+#: includes/class-cptch-settings-tabs.php:372
 msgid "Enable to display reload button for captcha."
 msgstr "Включить отображение кнопки перезагрузки для Captcha."
 
-#: includes/class-cptch-settings-tabs.php:370
+#: includes/class-cptch-settings-tabs.php:377
 msgid "Captcha Title"
 msgstr "Заголовок Captcha"
 
-#: includes/class-cptch-settings-tabs.php:373
+#: includes/class-cptch-settings-tabs.php:380
 msgid "Required Symbol"
 msgstr "Обязательный cимвол"
 
-#: includes/class-cptch-settings-tabs.php:376
+#: includes/class-cptch-settings-tabs.php:383
 msgid "Advanced Protection"
 msgstr "Продвинутая защита"
 
-#: includes/class-cptch-settings-tabs.php:377
+#: includes/class-cptch-settings-tabs.php:384
 msgid "Enable to display captcha when the website page is loaded."
 msgstr ""
 "Включите, чтобы отображать Captcha после того, как страница сайта была "
 "загружена."
 
-#: includes/class-cptch-settings-tabs.php:384
+#: includes/class-cptch-settings-tabs.php:391
 msgid "General"
 msgstr "Общие настройки"
 
-#: includes/class-cptch-settings-tabs.php:387
+#: includes/class-cptch-settings-tabs.php:394
 msgid "Enable Captcha for"
 msgstr "Включить Captcha для"
 
-#: includes/class-cptch-settings-tabs.php:416
+#: includes/class-cptch-settings-tabs.php:431
 msgid "Enable to add the CAPTCHA to forms on their settings pages."
 msgstr "Включите для добавления Captcha на страницах настроек этих форм."
 
-#: includes/class-cptch-settings-tabs.php:537
+#: includes/class-cptch-settings-tabs.php:447
+#: includes/class-cptch-settings-tabs.php:483
+#: includes/class-cptch-settings-tabs.php:623
+#: includes/class-cptch-settings-tabs.php:635
+#: includes/class-cptch-settings-tabs.php:736 includes/pro_banners.php:21
+msgid "Close"
+msgstr "Закрыть"
+
+#: includes/class-cptch-settings-tabs.php:552
 msgid "Enable to activate a time limit required to complete captcha."
 msgstr ""
 "Включите, чтобы активировать ограничение по времени, необходимое для "
 "завершения проверки."
 
-#: includes/class-cptch-settings-tabs.php:548 includes/pro_banners.php:135
+#: includes/class-cptch-settings-tabs.php:563 includes/pro_banners.php:135
 msgid "Time Limit"
 msgstr "Временное ограничение"
 
-#: includes/class-cptch-settings-tabs.php:555
+#: includes/class-cptch-settings-tabs.php:570
 msgid "Time Limit Threshold"
 msgstr "Лимит ограничения по времени"
 
-#: includes/class-cptch-settings-tabs.php:558
+#: includes/class-cptch-settings-tabs.php:573
 msgid "sec"
 msgstr "сек."
 
-#: includes/class-cptch-settings-tabs.php:592
+#: includes/class-cptch-settings-tabs.php:607
 msgid "This option is available only for network or for main blog"
 msgstr "Эта опция доступна только для сетевых настроек или главного блога"
 
-#: includes/class-cptch-settings-tabs.php:599
+#: includes/class-cptch-settings-tabs.php:614
 msgid "Hide from Registered Users"
 msgstr "Скрыть от зарегистрированных пользователей"
 
-#: includes/class-cptch-settings-tabs.php:631
+#: includes/class-cptch-settings-tabs.php:616
+msgid "Enable to hide captcha for registered users."
+msgstr "Включите, чтобы скрыть капчу для зарегистрированных пользователей."
+
+#: includes/class-cptch-settings-tabs.php:646
 msgid "update"
 msgstr "обновите"
 
-#: includes/class-cptch-settings-tabs.php:632
+#: includes/class-cptch-settings-tabs.php:647
 msgid "to the current version"
 msgstr "до текущей версии"
 
-#: includes/class-cptch-settings-tabs.php:639
+#: includes/class-cptch-settings-tabs.php:654
 msgid "install"
 msgstr "установить"
 
-#: includes/class-cptch-settings-tabs.php:644
+#: includes/class-cptch-settings-tabs.php:659
 msgid "activate"
 msgstr "активировать"
 
-#: includes/class-cptch-settings-tabs.php:656
+#: includes/class-cptch-settings-tabs.php:671
 msgid "You should"
 msgstr "Вы должны"
 
-#: includes/class-cptch-settings-tabs.php:659
+#: includes/class-cptch-settings-tabs.php:674
 msgid "to use this functionality."
 msgstr "для того чтобы использовать функционал."
 
-#: includes/class-cptch-settings-tabs.php:682
+#: includes/class-cptch-settings-tabs.php:697
 msgid "Messages Settings"
 msgstr "Настройки сообщений"
 
-#: includes/class-cptch-settings-tabs.php:688
+#: includes/class-cptch-settings-tabs.php:703
 msgid "Captcha Field is Empty"
 msgstr "Пустое поле Captcha"
 
-#: includes/class-cptch-settings-tabs.php:689 includes/helpers.php:31
+#: includes/class-cptch-settings-tabs.php:704 includes/helpers.php:31
 msgid "Please complete the captcha."
 msgstr "Пожалуйста, заполните CAPTCHA."
 
-#: includes/class-cptch-settings-tabs.php:692
+#: includes/class-cptch-settings-tabs.php:707
 msgid "Captcha is Incorrect"
 msgstr "Captcha заполнена некорректно"
 
-#: includes/class-cptch-settings-tabs.php:693 includes/helpers.php:32
+#: includes/class-cptch-settings-tabs.php:708 includes/helpers.php:32
 msgid "Please enter correct captcha value."
 msgstr "Пожалуйста, введите правильное значение CAPTCHA."
 
-#: includes/class-cptch-settings-tabs.php:696
+#: includes/class-cptch-settings-tabs.php:711
 msgid "Captcha Time Limit Exceeded"
 msgstr "Достигнут лимит времени Captcha"
 
-#: includes/class-cptch-settings-tabs.php:697
-#: includes/class-cptch-settings-tabs.php:701 includes/helpers.php:33
+#: includes/class-cptch-settings-tabs.php:712
+#: includes/class-cptch-settings-tabs.php:716 includes/helpers.php:33
 #: includes/helpers.php:34
 msgid "Time limit exceeded. Please complete the captcha once again."
 msgstr "Достигнут лимит времени. Пожалуйста, введите CAPTCHA снова."
 
-#: includes/class-cptch-settings-tabs.php:700
+#: includes/class-cptch-settings-tabs.php:715
 msgid "Answer Time Limit Exceeded"
 msgstr "Достигнут лимит времени для ответа"
 
-#: includes/class-cptch-settings-tabs.php:702
+#: includes/class-cptch-settings-tabs.php:717
 msgid "This message will be displayed above the captcha field."
 msgstr "Это сообщение будет отображено над полем Captcha."
 
-#: includes/class-cptch-settings-tabs.php:828
+#: includes/class-cptch-settings-tabs.php:843
 msgid ""
 "The image packages list is empty. Please restore default settings or re-"
 "install the plugin to fix this error."
@@ -910,11 +915,11 @@ msgstr ""
 "Список пакетов изображений пустой. Пожалуйста, восстановите настройки по "
 "умолчанию или переустановите плагин для исправления этой ошибки."
 
-#: includes/class-cptch-settings-tabs.php:876
+#: includes/class-cptch-settings-tabs.php:891
 msgid "Activate"
 msgstr "Активировать"
 
-#: includes/class-cptch-settings-tabs.php:878
+#: includes/class-cptch-settings-tabs.php:893
 msgid "Install Now"
 msgstr "Установить"
 
@@ -960,10 +965,6 @@ msgstr "Добавить"
 msgid "Default"
 msgstr "По умолчанию"
 
-#: includes/pro_banners.php:55
-msgid "Limit Attempts"
-msgstr "Limit Attempts"
-
 #: includes/pro_banners.php:57
 msgid ""
 "With a whitelist you can hide captcha field for your personal and trusted IP "
@@ -972,7 +973,7 @@ msgstr ""
 "С помощью белого списка вы можете отменить отображение поля CAPTCHA для себя "
 "и доверенных IP адресов."
 
-#: includes/pro_banners.php:67
+#: includes/pro_banners.php:67 includes/pro_banners.php:202
 msgid "Allowed formats"
 msgstr "Доступные форматы"
 
@@ -981,6 +982,7 @@ msgid "Allowed separators for IPs: a comma"
 msgstr "Доступные разделители для ШЗ: запятая"
 
 #: includes/pro_banners.php:68 includes/pro_banners.php:71
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
 msgid "semicolon"
 msgstr "точка с запятой"
 
@@ -988,8 +990,8 @@ msgstr "точка с запятой"
 msgid "ordinary space, tab, new line or carriage return"
 msgstr "обычный пробел, табуляция или новая строка"
 
-#: includes/pro_banners.php:69 includes/pro_banners.php:236
-#: includes/pro_banners.php:286
+#: includes/pro_banners.php:69 includes/pro_banners.php:213
+#: includes/pro_banners.php:266 includes/pro_banners.php:314
 msgid "Reason"
 msgstr "Причина"
 
@@ -1025,50 +1027,95 @@ msgstr "Установить временное ограничение для в
 msgid "Use Several Image Packages at The Same Time"
 msgstr "Использовать несколько пакетов изображений одновременно"
 
-#: includes/pro_banners.php:189
+#: includes/pro_banners.php:187
 msgid "Load IP Address(-es)"
 msgstr "Загрузить IP адрес(-а)"
 
-#: includes/pro_banners.php:192
+#: includes/pro_banners.php:190
 msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
 msgstr "Загрузите IP адреса из белого списка \"Limit Attempts\"."
 
-#: includes/pro_banners.php:194
+#: includes/pro_banners.php:192
+msgid "IP to whitelist"
+msgstr "Добавить IP в белый список"
+
+#: includes/pro_banners.php:198
+msgid "My IP"
+msgstr "Мой IP"
+
+#: includes/pro_banners.php:207
+msgid "Allowed diapason"
+msgstr "Доступные диапазоны"
+
+#: includes/pro_banners.php:209
+msgid "Allowed separators"
+msgstr "Допустимые разделители"
+
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
+msgid "a comma"
+msgstr "запятая"
+
+#: includes/pro_banners.php:209
+msgid "ordinary space, tab, new line or carriage return."
+msgstr "обычный пробел, табуляция, новая строка или возврат каретки."
+
+#: includes/pro_banners.php:217
+msgid "Allowed separators for reasons"
+msgstr "Допустимые разделители для причин:"
+
+#: includes/pro_banners.php:217
+msgid "tab, new line or carriage return."
+msgstr "табуляция, новая строка  или возврат каретки."
+
+#: includes/pro_banners.php:220
+msgid "Add IP to whitelist"
+msgstr "Добавить IP в белый список"
+
+#: includes/pro_banners.php:224
 msgid "search"
-msgstr ""
+msgstr "поиск"
 
-#: includes/pro_banners.php:201 includes/pro_banners.php:299
+#: includes/pro_banners.php:231 includes/pro_banners.php:327
 msgid "Bulk Actions"
-msgstr ""
+msgstr "Групповые действия"
 
-#: includes/pro_banners.php:202 includes/pro_banners.php:253
-#: includes/pro_banners.php:300
+#: includes/pro_banners.php:232 includes/pro_banners.php:283
+#: includes/pro_banners.php:328
 msgid "Trash"
-msgstr ""
+msgstr "Переместить в корзину"
 
-#: includes/pro_banners.php:208 includes/pro_banners.php:306
+#: includes/pro_banners.php:238 includes/pro_banners.php:334
 msgid "All dates"
 msgstr "Всё время"
 
-#: includes/pro_banners.php:209 includes/pro_banners.php:307
+#: includes/pro_banners.php:239 includes/pro_banners.php:335
 msgid "Filter"
 msgstr "Применить фильтр"
 
-#: includes/pro_banners.php:214 includes/pro_banners.php:312
+#: includes/pro_banners.php:244 includes/pro_banners.php:340
 msgid "items"
-msgstr ""
+msgstr "элементы"
 
-#: includes/pro_banners.php:226 includes/pro_banners.php:276
+#: includes/pro_banners.php:256 includes/pro_banners.php:304
 msgid "IP Address"
 msgstr "IP адреса"
 
-#: includes/pro_banners.php:232 includes/pro_banners.php:282
+#: includes/pro_banners.php:262 includes/pro_banners.php:310
 msgid "Range from/to"
 msgstr "Диапазон c / до"
 
-#: includes/pro_banners.php:252
+#: includes/pro_banners.php:282
 msgid "Edit"
-msgstr ""
+msgstr "Редактировать"
+
+#~ msgid "Limit Attempts"
+#~ msgstr "Limit Attempts"
+
+#~ msgid "BuddyPress"
+#~ msgstr "BuddyPress"
+
+#~ msgid "WooCommerce"
+#~ msgstr "WooCommerce"
 
 #~ msgid "Subtruction"
 #~ msgstr "Вычитание"
@@ -1302,33 +1349,6 @@ msgstr ""
 #~ msgid "Save changes"
 #~ msgstr "Сохранить изменения"
 
-#~ msgid "IP to whitelist"
-#~ msgstr "Добавить IP в белый список"
-
-#~ msgid "My IP"
-#~ msgstr "Мой IP"
-
-#~ msgid "Allowed diapason"
-#~ msgstr "Доступные диапазоны"
-
-#~ msgid "Allowed separators"
-#~ msgstr "Допустимые разделители"
-
-#~ msgid "a comma"
-#~ msgstr "запятая"
-
-#~ msgid "ordinary space, tab, new line or carriage return."
-#~ msgstr "обычный пробел, табуляция, новая строка или возврат каретки."
-
-#~ msgid "Allowed separators for reasons"
-#~ msgstr "Допустимые разделители для причин:"
-
-#~ msgid "tab, new line or carriage return."
-#~ msgstr "табуляция, новая строка  или возврат каретки."
-
-#~ msgid "Add IP to whitelist"
-#~ msgstr "Добавить IP в белый список"
-
 #~ msgid "Nothing found"
 #~ msgstr "Ничего не найдено"
 
@@ -1532,9 +1552,6 @@ msgstr ""
 #~ "Добавте CAPTCHA к постам, страницам, пользовательским типам постов или "
 #~ "виджетам используя шорткод:"
 
-#~ msgid "Hide from registered users"
-#~ msgstr "Скрыть от зарегистрированных пользователей"
-
 #~ msgid ""
 #~ "To display images from selected packages, please enable \"Images\" in the "
 #~ "\"Complexity\" block in \"General Options\" tab"
@@ -1594,9 +1611,6 @@ msgstr ""
 #~ msgid "For IP addresses from the whitelist CAPTCHA will not be displayed."
 #~ msgstr ""
 #~ "CAPTCHA не будет отображаться для добавленных в белый список IP адресов."
-
-#~ msgid "Error"
-#~ msgstr "Ошибка"
 
 #~ msgid "check your archive."
 #~ msgstr "проверьте архив."
@@ -1781,9 +1795,6 @@ msgstr ""
 #~ msgid "Time limit exceeded. Please complete hde captcha once again."
 #~ msgstr "Тостигнут лимт времени. Пожалуйста, введите CAPTCHA снова."
 
-#~ msgid "Captcha"
-#~ msgstr "Captcha"
-
 #~ msgid "How to Use Step-by-step Instruction"
 #~ msgstr "Инструкция по использованию"
 
@@ -1882,9 +1893,6 @@ msgstr ""
 
 #~ msgid "These messages will be displayed inside of the CAPTCHA"
 #~ msgstr "Эти сообщения будут отображаться внутри блока CAPTCHA"
-
-#~ msgid "Notification messages"
-#~ msgstr "Уведомления"
 
 #~ msgid "to use this functionality"
 #~ msgstr ", чтобы использовать этот функционал"
@@ -2106,9 +2114,6 @@ msgstr ""
 
 #~ msgid "Diapason"
 #~ msgstr "Диапазон"
-
-#~ msgid "not saved in database."
-#~ msgstr "не сохранён в базу данных."
 
 #~ msgid "is allready in database"
 #~ msgstr "уже в базе данных"

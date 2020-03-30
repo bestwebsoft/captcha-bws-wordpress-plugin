@@ -52,7 +52,7 @@ if ( ! function_exists( 'cptch_use_limit_attempts_whitelist' ) ) {
 				<td>
 					<fieldset>
 						<label><input type="radio" disabled="disabled" checked="checked" /><?php _e( 'Default', 'captcha-bws' ); ?></label><br />
-						<label><input type="radio" disabled="disabled" /><?php _e( 'Limit Attempts', 'captcha-bws' ); ?></label><br />
+						<label><input type="radio" disabled="disabled" />Limit Attempts</label><br />
 					</fieldset>
 					<span class="bws_info"><?php _e( 'With a whitelist you can hide captcha field for your personal and trusted IP addresses.', 'captcha-bws' ); ?></span>
 				</td>
@@ -182,9 +182,7 @@ if ( ! function_exists( 'hide_pro_tabs_beyond_settings_page' ) ) {
 }
 
 if ( ! function_exists( 'cptch_whitelist_block' ) ) {
-	function cptch_whitelist_block( $date_format ) {
-		global $wp_version;
-		$old_wp_version = ( version_compare( $wp_version, '4.3', '<' ) ); ?>
+	function cptch_whitelist_block( $date_format ) { ?>
 		<div>
 			<input type="submit" name="cptch_load_limit_attempts_whitelist" class="button" value="<?php _e( 'Load IP Address(-es)', 'captcha-bws' ); ?>" style="float: left;" disabled="disabled" />
 			<div class="clear"></div>
@@ -193,10 +191,10 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
         <form class="form-table cptch_whitelist_form" method="post" action="admin.php?page=captcha-whitelist.php" style="margin: 10px 0;<?php echo ! ( isset( $_REQUEST['cptch_show_whitelist_form'] ) || isset( $_REQUEST['cptch_add_to_whitelist'] ) ) ? 'display: none;': ''; ?>">
             <label><?php _e( 'IP to whitelist', 'captcha-bws' ) ?></label>
             <br />
-            <textarea rows="2" cols="32" name="cptch_add_to_whitelist"></textarea>
+            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_whitelist"></textarea>
                 <br />
                 <label>
-                    <input type="checkbox" name="cptch_add_to_whitelist_my_ip" value="1" />
+                    <input disabled="disabled" type="checkbox" name="cptch_add_to_whitelist_my_ip" value="1" />
 					<?php _e( 'My IP', 'captcha-bws' ); ?>
                 </label>
             <div class="bws_info">
@@ -214,12 +212,12 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
             <br />
             <label><?php _e( 'Reason', 'captcha-bws' ) ?></label>
             <br />
-            <textarea rows="2" cols="32" name="cptch_add_to_whitelist_reason"></textarea>
+            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_whitelist_reason"></textarea>
             <div class="bws_info">
 				<?php _e( "Allowed separators for reasons", 'captcha-bws' ); ?>: <?php _e( "a comma", 'captcha-bws' )?> (<code>,</code>), <?php _e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php _e( 'tab, new line or carriage return.', 'captcha-bws' ); ?>
             </div>
             <p>
-                <input type="submit" class="button-secondary" value="<?php _e( 'Add IP to whitelist', 'captcha-bws' ); ?>" />
+                <input disabled="disabled" type="submit" class="button-secondary" value="<?php _e( 'Add IP to whitelist', 'captcha-bws' ); ?>" />
             </p>
         </form>
         <p class="search-box">
@@ -247,12 +245,12 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 			</div>
 			<br class="clear">
 		</div>
-		<table class="wp-list-table widefat fixed striped whitelist<?php if ( $old_wp_version ) echo ' whitelist_old_wp'; ?>">
+		<table class="wp-list-table widefat fixed striped whitelist">
 			<thead>
 				<tr>
-					<?php printf( '<%s class="manage-column column-cb check-column">', ( $old_wp_version ? 'th' : 'td' ) ); ?>
+					<td class="manage-column column-cb check-column">
 						<input disabled="disabled" id="cb-select-all-2" type="checkbox" />
-					<?php printf( '</%s>', ( $old_wp_version ? 'th': 'td' ) ); ?>
+					</td>
 					<th scope="col" class="manage-column column-title column-primary sortable desc">
 						<a href="#">
 							<span><?php _e( 'IP Address', 'captcha-bws' ); ?></span>
@@ -284,10 +282,8 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 							<span class="edit"><a href="#"><?php _e( 'Edit', 'captcha-bws' ); ?></a> | </span>
 							<span class="trash"><a class="submitdelete" href="#"><?php _e( 'Trash', 'captcha-bws' ); ?></a></span>
 						</div>
-						<?php if ( ! $old_wp_version ) { ?>
-							<button type="button" class="toggle-row"></button>
-							<button type="button" class="toggle-row"></button>
-						<?php } ?>
+						<button type="button" class="toggle-row"></button>
+						<button type="button" class="toggle-row"></button>
 					</td>
 					<td class="column-range" data-colname="range">
 						<p> - </p>
@@ -300,9 +296,9 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 			</tbody>
 			<tfoot>
 				<tr>
-					<?php printf( '<%s class="manage-column column-cb check-column">', ( $old_wp_version ? 'th' : 'td' ) ); ?>
+					<td class="manage-column column-cb check-column">
 						<input disabled="disabled" id="cb-select-all-2" type="checkbox" />
-					<?php printf( '</%s>', ( $old_wp_version ? 'th': 'td' ) ); ?>
+					</td>
 					<th scope="col" class="manage-column column-title column-primary sortable desc">
 						<a href="#">
 							<span><?php _e( 'IP Address', 'captcha-bws' ); ?></span>

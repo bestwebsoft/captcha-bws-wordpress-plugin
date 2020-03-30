@@ -6,12 +6,12 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.0.7
+Version: 5.0.8
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
 
-/*  © Copyright 2019  BestWebSoft  ( https://support.bestwebsoft.com )
+/*  © Copyright 2020  BestWebSoft  ( https://support.bestwebsoft.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -135,7 +135,7 @@ if ( ! function_exists ( 'cptch_init' ) ) {
 		}
 
 		/* Function check if plugin is compatible with current WP version */
-		bws_wp_min_version_check( plugin_basename( __FILE__ ), $cptch_plugin_info, '3.9' );
+		bws_wp_min_version_check( plugin_basename( __FILE__ ), $cptch_plugin_info, '4.5' );
 
 		$is_admin = is_admin() && ! defined( 'DOING_AJAX' );
 
@@ -161,6 +161,7 @@ if ( ! function_exists ( 'cptch_init' ) ) {
 		if ( $cptch_options['forms']['wp_login']['enable'] ) {
 			add_action( 'login_form', 'cptch_login_form' );
 			add_filter( 'authenticate', 'cptch_login_check', 21, 1 );
+			add_filter( 'wp_authenticate_user', 'cptch_login_check', 21, 1 );
 		}
 
 		/*
@@ -219,13 +220,19 @@ if ( ! function_exists ( 'cptch_init' ) ) {
 
 if ( ! function_exists ( 'cptch_admin_init' ) ) {
 	function cptch_admin_init() {
-		global $bws_plugin_info, $cptch_plugin_info, $bws_shortcode_list;
+		global $pagenow, $bws_plugin_info, $cptch_plugin_info, $bws_shortcode_list, $cptch_options;
 		/* Add variable for bws_menu */
 		if ( empty( $bws_plugin_info ) ) {
 			$bws_plugin_info = array( 'id' => '75', 'version' => $cptch_plugin_info["Version"] );
 		}
 
 		$bws_shortcode_list['cptch'] = array( 'name' => 'Captcha' );
+
+		if ( 'plugins.php' == $pagenow ) {
+			if ( function_exists( 'bws_plugin_banner_go_pro' ) ) {
+				bws_plugin_banner_go_pro( $cptch_options, $cptch_plugin_info, 'cptch', 'captcha', '9701bbd97e61e52baa79c58c3caacf6d', '75', 'captcha-bws' );
+			}
+		}
 	}
 }
 
@@ -252,6 +259,14 @@ if ( ! function_exists( 'cptch_create_table' ) ) {
 			PRIMARY KEY (`id`)
 			) DEFAULT CHARSET=utf8;";
 		dbDelta( $sql );
+
+		$sql = "CREATE TABLE IF NOT EXISTS `{$wpdb->base_prefix}cptch_responses` (
+			`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+			`response` CHAR(100) NOT NULL,
+			`add_time` INT(20) NOT NULL,
+			PRIMARY KEY (`id`)
+			) DEFAULT CHARSET=utf8;";
+		dbDelta( $sql );
 	}
 }
 
@@ -261,12 +276,16 @@ if ( ! function_exists( 'cptch_create_table' ) ) {
 if ( ! function_exists( 'cptch_plugin_activate' ) ) {
 	function cptch_plugin_activate() {
 		if ( is_multisite() ) {
+
 			switch_to_blog( 1 );
 			register_uninstall_hook( __FILE__, 'cptch_delete_options' );
 			restore_current_blog();
 		} else {
 			register_uninstall_hook( __FILE__, 'cptch_delete_options' );
 		}
+
+		/* add all scheduled hooks */
+		cptch_add_scheduled_hook();
 	}
 }
 
@@ -283,7 +302,7 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 		}
 
 		$need_update = false;
-		$db_version = '1.6';
+		$db_version = '1.7';
 
 		$cptch_options = get_option( 'cptch_options' );
 
@@ -363,6 +382,8 @@ if ( ! function_exists( 'cptch_page_router' ) ) {
 		global $cptch_plugin_info; ?>
 		<div class="wrap">
 			<?php if ( 'captcha.php' == $_GET['page'] ) {
+				if ( ! class_exists( 'Bws_Settings_Tabs' ) )
+                    require_once( dirname( __FILE__ ) . '/bws_menu/class-bws-settings.php' );
 				require_once( dirname( __FILE__ ) . '/includes/class-cptch-settings-tabs.php' );
 				require_once( dirname( __FILE__ ) . '/includes/pro_banners.php' );
 				$page = new Cptch_Settings_Tabs( plugin_basename( __FILE__ ) ); ?>
@@ -388,9 +409,6 @@ if ( ! function_exists( 'cptch_page_router' ) ) {
 						return;
 				}
 				$page->display_content();
-				/*pls */
-				bws_plugin_reviews_block( $cptch_plugin_info['Name'], 'captcha-bws' );
-				/* pls*/
 			} ?>
 		</div>
 	<?php }
@@ -445,9 +463,9 @@ if ( ! function_exists( 'cptch_login_form' ) ) {
 
 if ( ! function_exists( 'cptch_login_check' ) ) {
 	function cptch_login_check( $user ) {
-		if ( ! isset( $_POST['wp-submit'] ) ) {
+		/*if ( ! isset( $_POST['wp-submit'] ) ) {
 			return $user;
-		}
+		}*/
 
 		if ( isset( $_SESSION['cptch_login'] ) && true === $_SESSION["cptch_login"] ) {
 			return $user;
@@ -730,19 +748,32 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 
 			$error_code = '';
 
-			/* The time limit is exhausted */
-			if ( cptch_limit_exhausted() ) {
-				$error_code = 'time_limit_off';
-			/* Not enough data to verify the CAPTCHA answer */
-			} elseif (
-				! isset( $_REQUEST['cptch_result'] ) ||
-				! isset( $_REQUEST['cptch_number'] ) ||
-				! isset( $_REQUEST['cptch_time'] )
-			) {
-				$error_code = 'no_answer';
-			/* The CAPTCHA answer is wrong */
-			} elseif ( 0 !== strcasecmp( trim( cptch_decode( $_REQUEST['cptch_result'], $cptch_options['str_key']['key'], $_REQUEST['cptch_time'] ) ), $_REQUEST['cptch_number'] ) ) {
-				$error_code = 'wrong_answer';
+			if ( 'slide' == $cptch_options['type'] ) {
+				/* The time limit is exhausted */
+				if ( cptch_limit_exhausted( $form_slug ) ) {
+					$error_code = 'time_limit_off';
+					/* Not enough data to verify the CAPTCHA answer */
+				} elseif ( empty( $_REQUEST['cptch_result'] ) ) {
+					$error_code = 'no_answer';
+					/* The CAPTCHA answer is wrong */
+				} elseif ( ! cptch_check_slide_captcha_response( $_POST['cptch_result'] ) ) {
+					$error_code = 'wrong_answer';
+				}
+			} else {
+				/* The time limit is exhausted */
+				if ( cptch_limit_exhausted( $form_slug ) ) {
+					$error_code = 'time_limit_off';
+					/* Not enough data to verify the CAPTCHA answer */
+				} elseif (
+					empty( $_REQUEST['cptch_result'] ) ||
+					! isset( $_REQUEST['cptch_number'] ) ||
+					! isset( $_REQUEST['cptch_time'] )
+				) {
+					$error_code = 'no_answer';
+					/* The CAPTCHA answer is wrong */
+				} elseif ( 0 !== strcasecmp( trim( cptch_decode( $_REQUEST['cptch_result'], $cptch_options['str_key']['key'], $_REQUEST['cptch_time'] ) ), $_REQUEST['cptch_number'] ) ) {
+					$error_code = 'wrong_answer';
+				}
 			}
 
 			/* The CAPTCHA answer is right */
@@ -857,6 +888,8 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 			$captcha_content .= '</span>
 				<input id="cptch_input_' . $id_postfix . '" class="cptch_input ' . $class_name . '" type="text" autocomplete="off" name="' . $input_name . '" value="" maxlength="' . $cptch_options['images_count'] . '" size="' . $cptch_options['images_count'] . '" aria-required="true" required="required" style="margin-bottom:0;font-size: 12px;max-width:100%;" />
 				<input type="hidden" name="' . $hidden_result_name . '" value="' . cptch_encode( $string, $str_key, $time ) . '" />';
+		} else if ( 'slide' == $cptch_options['type'] ) {
+			$captcha_content = '<div id="cptch_slide_captcha_container"></div>' . '<input type="hidden" name="cptch_result" value="" />';
 		} else {
 			/*
 			 * array of math actions
@@ -962,6 +995,8 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 					<input type="hidden" name="' . $hidden_result_name . '" value="' . cptch_encode( $array_math_expression[ $rand_input ], $str_key, $time ) . '" />';
 		}
 
+		$cptch_reload_button = ( $cptch_options['type'] !== 'slide' ) ? cptch_add_reload_button( !!$cptch_options['display_reload_button'] ) : "" ;
+
 		return
 			cptch_add_time_limit_notice( $id_postfix ) .
 			cptch_add_scripts() .
@@ -971,7 +1006,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 					'<input type="hidden" name="cptch_time" value="' . $time . '" />
 					<input type="hidden" name="cptch_form" value="' . $form_slug . '" />
 				</label>' .
-				cptch_add_reload_button( !! $cptch_options['display_reload_button'] ) .
+			$cptch_reload_button .
 			'</span>';
 	}
 }
@@ -1510,6 +1545,15 @@ if ( ! function_exists( 'cptch_front_end_scripts' ) ) {
 				'time_limit'	=> $cptch_options['time_limit']
 			);
 			wp_localize_script( 'cptch_front_end_script', 'cptch_vars', $args );
+
+			if ( 'slide' === $cptch_options['type'] ) {
+				wp_enqueue_script( 'slide-captcha-react', plugins_url( 'js/slide_captcha/dist/index-bundle.js', __FILE__ ), array( 'jquery' ), false, true );
+				wp_localize_script( 'slide-captcha-react', 'wpSlideCaptcha', array(
+					'ajax_url' => admin_url( 'admin-ajax.php' ),
+					'start_slide' => __( 'Slide to verify', 'captcha-bws' ),
+					'end_slide' => __( 'Verification passed', 'captcha-bws' )
+				) );
+			}
 		}
 	}
 }
@@ -1613,6 +1657,114 @@ if( ! function_exists( 'cptch_captcha_is_needed' ) ) {
 	}
 }
 
+/* create slide captcha response, g-recaptcha-response analogue */
+if ( ! function_exists( 'cptch_set_slide_captcha_response' ) ) {
+	function cptch_set_slide_captcha_response() {
+		global $wp_hasher, $wpdb;
+
+		// Generate something random for a response key.
+		$key = wp_generate_password( 20, false );
+
+		// Now insert the response, hashed, into the DB.
+		if ( empty( $wp_hasher ) ) {
+			require_once ABSPATH . WPINC . '/class-phpass.php';
+			$wp_hasher = new PasswordHash( 8, true );
+		}
+
+		$hashed    = time() . ':' . $wp_hasher->HashPassword( $key );
+		$time = time();
+
+		$key_saved = $wpdb->insert( $wpdb->base_prefix . 'cptch_responses', array( 'response' => $hashed, 'add_time' => $time ) );
+
+		if ( false === $key_saved ) {
+			return new WP_Error( 'no_response_key_update', __( 'Could not save captcha response to database.', 'captcha-bws' ) );
+		}
+
+		return $hashed;
+	}
+}
+
+if ( ! function_exists( 'cptch_check_slide_captcha_response' ) ) {
+	function cptch_check_slide_captcha_response( $response ) {
+		global $wpdb;
+
+		$allow = false;
+		$expiration_duration  = 55;
+
+		/* sanitize the response */
+		$response = trim( esc_attr( $response ));
+
+		/* check that the key exists and is not expired */
+		$db_response = $wpdb->get_row( "SELECT `response`, `add_time` FROM `{$wpdb->prefix}cptch_responses` WHERE `response` = '{$response}';" );
+		$response_request_time = $db_response->add_time;
+
+		$expiration_time = $response_request_time + $expiration_duration;
+		$is_expired = ( ! $expiration_time || time() > $expiration_time  ) ? true : false;
+
+		if ( $db_response->response && ! $is_expired ) {
+			/* allow to submit form  */
+			$allow = true;
+		}
+
+		return $allow;
+	}
+}
+
+if ( ! function_exists( 'cptch_validate_slide_captcha' ) ) {
+	function cptch_validate_slide_captcha() {
+
+		$result = array();
+
+		/* if slide captcha passed - set response to db */
+		if ( ! empty( $_POST['is_touch_end'] ) ) {
+			$slide_captcha_response = cptch_set_slide_captcha_response();
+
+			if ( is_wp_error( $slide_captcha_response ) ) {
+				$result = array(
+					'error' => array(
+						'code' => '3848',
+						'message' => __( 'Error', 'captcha-bws' )
+					)
+				);
+			} else {
+				$result = array (
+					'slide_captcha_response'   => $slide_captcha_response
+				);
+			}
+		}
+
+		echo json_encode( $result );
+		wp_die();
+	}
+}
+
+if ( ! function_exists( 'cptch_delete_expired_responses' ) ) {
+	function cptch_delete_expired_responses() {
+		global $wpdb;
+
+		$expiration_duration = MINUTE_IN_SECONDS; // captcha life time
+		$expire = ( time() - $expiration_duration );
+
+		$wpdb->query($wpdb->prepare("DELETE FROM `{$wpdb->prefix}cptch_responses` WHERE add_time <= %s", $expire));
+	}
+}
+
+/* activation scheduled hook for delete expired response */
+if ( ! function_exists( 'cptch_add_scheduled_hook' ) ) {
+	function cptch_add_scheduled_hook () {
+		if ( ! wp_next_scheduled ('delete_expired_responses' ) ) {
+			wp_schedule_event (time () + HOUR_IN_SECONDS, 'hourly', 'delete_expired_responses');
+		}
+	}
+}
+
+/* deactivation scheduled hook for delete expired response */
+if ( ! function_exists( 'cptch_clear_scheduled_hook' ) ) {
+	function cptch_clear_scheduled_hook() {
+		wp_clear_scheduled_hook ( 'delete_expired_responses');
+	}
+}
+
 /* Function for delete delete options */
 if ( ! function_exists ( 'cptch_delete_options' ) ) {
 	function cptch_delete_options() {
@@ -1643,6 +1795,9 @@ if ( ! function_exists ( 'cptch_delete_options' ) ) {
 			delete_option( 'cptch_options' );
 			$upload_dir = wp_upload_dir();
 		}
+
+		/* clear all scheduled hooks */
+		cptch_clear_scheduled_hook();
 
 		/* delete images */
 		$wpdb->query( "DROP TABLE `{$wpdb->base_prefix}cptch_images`, `{$wpdb->base_prefix}cptch_packages`;" );
@@ -1702,3 +1857,9 @@ add_filter( 'bws_shortcode_button_content', 'cptch_shortcode_button_content' );
 
 //display captcha for the custom login form which used hook 'wp_login_form'
 add_filter( 'login_form_middle', 'cptch_cf_form' );
+
+add_action( 'wp_ajax_nopriv_validate_slide_captcha', 'cptch_validate_slide_captcha' );
+add_action( 'wp_ajax_validate_slide_captcha', 'cptch_validate_slide_captcha' );
+
+/* scheduled hook for delete expired response */
+add_action ('delete_expired_responses', 'cptch_delete_expired_responses');
