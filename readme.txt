@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
-Tested up to: 5.3.2
-Stable tag: 5.0.8
+Tested up to: 5.5.1
+Stable tag: 5.0.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,13 +26,13 @@ Stop spam now!
     * Reset password form
     * Comments form
     * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f)
-    * [Car Rental V2 Pro](https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24) [NEW]
+    * [Car Rental V2 Pro](https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24)
     * Custom form
 * Choose Captcha type:
     * Invisible
     * Character Recognition
     * Simple math actions such as addition, subtraction, and multiplication
-    * Slide captcha [NEW]
+    * Slide captcha
 * Enhance captcha protection with:
     * Letters
     * Numbers
@@ -90,7 +90,7 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] How to Use](https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/)
+* [[Doc] User Guide](https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/)
 * [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 * [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=r0Noz2bYAq8)
@@ -267,6 +267,13 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.0.9 - 07.10.2020 =
+* NEW : Added RTL support for Slide Captcha.
+* Pro : The compatibility with Ninja Form has been fixed.
+* Bugfix : Fixed display Slide Captcha in Internet Explorer.
+* Update : React libraries have been updated.
+* Update : BWS panel section was updated.
+
 = V5.0.8 - 30.03.2020 = 
 * NEW : New type of Captcha - Slide Captcha has been added.
 
@@ -319,6 +326,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.0.9 =
+* Functionality expanded.
+* Bugs fixed.
 
 = V5.0.8 =
 * New features added.

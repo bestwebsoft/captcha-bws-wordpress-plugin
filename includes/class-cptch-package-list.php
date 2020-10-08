@@ -91,8 +91,9 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 			<?php
 			if ( $this->message ) { ?>
 				<div class="updated fade below-h2"><p><?php echo $this->message; ?></p></div>
-			<?php }
-			$this->prepare_items();
+			<?php } ?>
+            <hr class="wp-header-end">
+			<?php $this->prepare_items();
 			$this->loader->display();
 			?>
 			<form method="post" action="" style="margin: 10px 0;">
@@ -139,7 +140,6 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 */
 		function get_columns() {
 			return array(
-				'cb' => '<input type="checkbox" />',
 				'name'	=> __( 'Package', 'captcha-bws' ),
 				'date'	=> __( 'Date Added', 'captcha-bws' ),
 			);

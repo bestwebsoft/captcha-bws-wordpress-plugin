@@ -13,7 +13,7 @@
 <li>Reset password form</li>
 <li>Comments form</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f" rel="nofollow ugc">Contact Form</a></li>
-<li><a href="https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24" rel="nofollow ugc">Car Rental V2 Pro</a> [NEW]</li>
+<li><a href="https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24" rel="nofollow ugc">Car Rental V2 Pro</a></li>
 <li>Custom form</li>
 </ul>
 </li>
@@ -22,7 +22,7 @@
 <li>Invisible</li>
 <li>Character Recognition</li>
 <li>Simple math actions such as addition, subtraction, and multiplication</li>
-<li>Slide captcha [NEW]</li>
+<li>Slide captcha</li>
 </ul>
 </li>
 <li>Enhance captcha protection with:
@@ -105,7 +105,7 @@
 <p>If you have a feature suggestion or idea you&#8217;d like to see in the plugin, we&#8217;d love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow ugc">Suggest a Feature</a></p>
 <h4>Documentation &amp; Videos</h4>
 <ul>
-<li><a href="https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/" rel="nofollow ugc">[Doc] How to Use</a></li>
+<li><a href="https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/" rel="nofollow ugc">[Doc] User Guide</a></li>
 <li><a href="https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/" rel="nofollow ugc">[Doc] Installation</a></li>
 <li><a href="https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/" rel="nofollow ugc">[Doc] Purchase</a></li>
 <li><a href="https://www.youtube.com/watch?v=r0Noz2bYAq8" rel="nofollow ugc">[Video] Purchase, Installation, Configuration Tutorial</a></li>

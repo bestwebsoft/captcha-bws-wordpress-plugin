@@ -31,7 +31,6 @@
     position: absolute;
     width: 45px;
     height: 45px;
-    left: 2px;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -40,18 +39,19 @@
 }
 #cptch_slide_captcha_container .cptch_slider_arrow {
     position: relative;
-    display: inline-block;
-    padding: 3px;
-    margin-top: 43%;
-    margin-left: 39%;
-    border: solid white;
-    border-width: 0 3px 3px 0;
+    display: inline-block !important;
+    padding: 3px !important;
+    margin-top: 43% !important;
+    margin-left: 39% !important;
+    border: solid white !important;
+    border-width: 0 3px 3px 0 !important;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
 .rtl #cptch_slide_captcha_container .cptch_slider_arrow {
-    margin-right: 39%;
-    margin-left: 0;
+    margin-right: 39% !important;
+    margin-left: 0 !important;
+    border-width: 3px 0 0 3px !important;
 }
 .cptch_success {
     background-color: #43b309 !important;
@@ -78,6 +78,7 @@
 }
 .cptch_loading::after {
     margin-left: 30%;
+    margin-right: 30%;
     margin-top: 30%;
     width: 12px;
     height: 12px;
@@ -107,10 +108,30 @@
         left: 0;
     }
 }
+@keyframes bounce_rtl{
+    0%{
+        right: 2px;
+    }
+    20%{
+        right: 30px;
+    }
+    50%{
+        right: 0;
+    }
+    70%{
+        right: 10px;
+    }
+    100%{
+        right: 0;
+    }
+}
 
 .bounce {
     position: relative;
     animation: bounce .6s linear;
+}
+.rtl .bounce {
+    animation: bounce_rtl .6s linear;
 }
 
 @-webkit-keyframes cptch_animate {

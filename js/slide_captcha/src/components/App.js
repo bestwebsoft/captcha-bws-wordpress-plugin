@@ -25,7 +25,8 @@ class App extends Component {
 		isActive: false,
 		validated: this.validateStatus.init,
 		isMoving: false,
-		isTouchEndSpan: false
+		isTouchEndSpan: false,
+		cptchResult: ''
 	};
 
 	maxSlidedWidth = 0;
@@ -67,7 +68,12 @@ class App extends Component {
 		const clientX = this.getClientX(e);
 		const clientY = this.getClientY(e);
 
-		let offsetX = clientX - this.state.originX;
+		let offsetX;
+		if ( document.dir === "rtl" ) {
+			offsetX = this.state.originX - clientX;
+		} else {
+			offsetX = clientX - this.state.originX;
+		}
 		const offsetY = Math.abs(clientY - this.state.originY);
 
 		const totalY = this.state.totalY + offsetY;
@@ -217,9 +223,7 @@ class App extends Component {
 					is_touch_end: 1
 				}), config )
 		        .then( response => {
-					const cptch_result = this.sliderWidth.closest( 'form' ).querySelector( 'input[name=cptch_result]' );
-
-			        cptch_result.value = response.data['slide_captcha_response'];
+					this.state.cptchResult = response.data['slide_captcha_response'];
 
 			        /* stop loader */
 			        self.setState( {
@@ -227,8 +231,8 @@ class App extends Component {
 			        } );
 
 			        setTimeout( () => {
-				        cptch_result.value = '';
-				        this.resetCaptcha();
+						this.state.cptchResult = '';
+						this.resetCaptcha();
 			        }, 10000 );
 
 		        } )
@@ -330,7 +334,6 @@ class App extends Component {
 	   const slideText = this.state.isTouchEndSpan && ! this.state.isLoader ? wpSlideCaptcha.end_slide : wpSlideCaptcha.start_slide;
 
 	   let slideAfterElem;
-
 	   if ( this.state.isTouchEndSpan && ! this.state.isLoader ) {
 		   slideAfterElem = 'cptch_success';
 	   } else if ( this.state.isTouchEndSpan && this.state.isLoader ) {
@@ -339,27 +342,40 @@ class App extends Component {
 	   	   slideAfterElem = 'cptch_slider_arrow';
 	   }
 
-	    return (
-		    <div id="cptch_slide_container" onMouseMove={this.handlerMouseMove} onMouseUp={this.handlerMouseUp} ref={(el) => { this.ctrlWidth = el; } }>
-			    <div id="cptch_slide_slider" className={`control ${this.state.isBounce ? 'bounce' : ''} ${this.state.isTouchEndSpan && ! this.state.isLoader ? 'cptch_success' : ''}`} onAnimationEnd={this.setBounce}
+		let sliderStyle;
+		if ( document.dir === "rtl" ) {
+			sliderStyle = { right: this.state.offsetX + 'px' };
+		} else {
+			sliderStyle = { left: this.state.offsetX + 'px' };
+		}
 
-			         ref={(el) => { this.sliderWidth = el; }}
-			         style={{ left: `${this.state.offsetX}px` }}
+	    return (
+		    <div id="cptch_slide_container"
+				onMouseMove={this.handlerMouseMove}
+				onMouseUp={this.handlerMouseUp}
+				ref={(el) => { this.ctrlWidth = el; } }>
+			    <div
+					id="cptch_slide_slider"
+					className={`control ${this.state.isBounce ? 'bounce' : ''} ${this.state.isTouchEndSpan && ! this.state.isLoader ? 'cptch_success' : ''}`}
+					onAnimationEnd={this.setBounce}
+
+					ref={(el) => { this.sliderWidth = el; }}
+					style={sliderStyle}
 
 				    /* mobile events */
-			         onTouchStart={this.handleTouchStart}
-			         onTouchMove={this.handleTouchMove}
-			         onTouchEnd={this.handleTouchEnd}
+					onTouchStart={this.handleTouchStart}
+					onTouchMove={this.handleTouchMove}
+					onTouchEnd={this.handleTouchEnd}
 
 				    /* desktop events */
-			         onMouseDown={this.handlerMouseDown}
-			         onMouseOver={this.handleMoveOver}
-			         onMouseOut={this.handleMoveOut}
+					onMouseDown={this.handlerMouseDown}
+					onMouseOver={this.handleMoveOver}
+					onMouseOut={this.handleMoveOut}
 			    >
-                    <span className={slideAfterElem}>
-                    </span>
+                    <span className={slideAfterElem}></span>
 			    </div>
 			    <p id="slide-title">{slideText}</p>
+				<input type="hidden" name="cptch_result" value={this.state.cptchResult} />
 		    </div>
 	    );
     }

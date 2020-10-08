@@ -42,8 +42,6 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'tabs'					=> $tabs,
 				/*pls */
 				'wp_slug'				=> 'captcha-bws',
-				'pro_page'				=> 'admin.php?page=captcha_pro.php',
-				'bws_license_plugin'	=> 'captcha-pro/captcha_pro.php',
 				'link_key'				=> '9701bbd97e61e52baa79c58c3caacf6d',
 				'link_pn'				=> '75'
 				/* pls*/
@@ -217,6 +215,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 		 * @return array    The action results
 		 */
 		public function save_options() {
+			$message = $notice = $error = '';
 			$notices = array();
 
 			/*
@@ -235,7 +234,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			}
 
 			foreach ( $general_strings as $option ) {
-				$value = isset( $_REQUEST["cptch_{$option}"] ) ? trim( stripslashes( esc_html( $_REQUEST["cptch_{$option}"] ) ) ) : '';
+				$value = isset( $_REQUEST["cptch_{$option}"] ) ? stripslashes( sanitize_text_field( $_REQUEST["cptch_{$option}"] ) ) : '';
 
 				if ( ! in_array( $option, array( 'title', 'required_symbol' ) ) && empty( $value ) ) {
 					/* The index has been added in order to prevent the displaying of this message more than once */
@@ -423,16 +422,15 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 
 										$this->add_checkbox_input( compact( 'id', 'name', 'checked', 'value', 'class', 'disabled' ) );
 
-										echo $this->forms[ $form_name ]['name'];
-
-										if ( 'external' == $fieldset_name && $disabled ) {
+										echo $this->forms[ $form_name ]['name']; ?>
+                                    </label>
+										<?php if ( 'external' == $fieldset_name && $disabled ) {
 											echo $this->get_form_message( $form_name );
 											if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) ||
 													is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) { ?>
-												<span class="bws_info"> <?php _e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
+                                                <br /><span class="bws_info"> <?php _e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
 											<?php }
 										} ?>
-									</label>
 									<br />
 								<?php } ?>
 							</fieldset>

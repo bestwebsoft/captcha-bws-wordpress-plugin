@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.0.8
+Version: 5.0.9
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -29,7 +29,7 @@ License: GPLv2 or later
 
 if ( ! function_exists( 'cptch_admin_menu' ) ) {
 	function cptch_admin_menu() {
-		global $cptch_options, $submenu, $wp_version, $cptch_plugin_info;
+		global $submenu, $wp_version, $cptch_plugin_info;
 
 		if ( ! is_plugin_active( 'captcha-pro/captcha_pro.php' ) &&
             ! is_plugin_active( 'captcha-plus/captcha-plus.php' )
@@ -61,16 +61,14 @@ if ( ! function_exists( 'cptch_admin_menu' ) ) {
                 'cptch_page_router'
             );
 
-			if ( ! bws_hide_premium_options_check( $cptch_options ) ) {
-				add_submenu_page(
-					'captcha.php',
-					__( 'Captcha Whitelist', 'captcha-bws' ),
-					__( 'Whitelist', 'captcha-bws' ),
-					'manage_options',
-					'captcha-whitelist.php',
-					'cptch_whitelist_template'
-				);
-			}
+            add_submenu_page(
+                'captcha.php',
+                __( 'Captcha Whitelist', 'captcha-bws' ),
+                __( 'Whitelist', 'captcha-bws' ),
+                'manage_options',
+                'captcha-whitelist.php',
+                'cptch_whitelist_template'
+            );
 
 			add_submenu_page(
                 'captcha.php',
@@ -329,6 +327,9 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 			}
 			$default_options = cptch_get_default_options();
 			$cptch_options = cptch_parse_options( $cptch_options, $default_options );
+
+			/* show pro features */
+			$cptch_options['hide_premium_options'] = array();
 		}
 
 		/* Update tables when update plugin and tables changes*/
@@ -420,27 +421,42 @@ if ( ! function_exists( 'cptch_page_router' ) ) {
 if ( ! function_exists( 'cptch_whitelist_template' ) ) {
 	function cptch_whitelist_template() {
 		global $cptch_plugin_info, $wp_version, $cptch_options;
-		require_once( dirname( __FILE__ ) . '/includes/pro_banners.php' ); ?>
+
+		if ( empty( $cptch_options ) )
+		    cptch_settings();
+		$bws_hide_premium = bws_hide_premium_options_check( $cptch_options ); ?>
         <div class="wrap">
-            <h1><?php echo __( 'Captcha Whitelist', 'captcha-bws' ); ?>
+            <h1>
+                <?php echo __( 'Captcha Whitelist', 'captcha-bws' ); ?>
                 <form method="post" action="admin.php?page=captcha-whitelist.php" style="display: inline;">
                     <button class="page-title-action add-new-h2 hide-if-no-js" name="cptch_show_whitelist_form" value="on"<?php echo ( isset( $_POST['cptch_add_to_whitelist'] ) ) ? ' style="display: none;"' : ''; ?>><?php _e( 'Add New', 'captcha-bws' ); ?></button>
                 </form>
             </h1>
             <br>
-            <div class="bws_pro_version_bloc">
-                <div class="bws_pro_version_table_bloc">
-                    <div class="bws_table_bg"></div>
-                    <div class="bws_pro_version">
-						<?php $date_format = get_option( 'date_format' );
-						cptch_whitelist_block( $date_format );
-						?>
+            <?php if ( $bws_hide_premium ) { ?>
+                <p>
+                    <?php _e( 'This tab contains Pro options only.', 'captcha-bws' );
+                    echo ' ' . sprintf(
+                            __( '%sChange the settings%s to view the Pro options.', 'captcha-bws' ),
+                            '<a href="admin.php?page=captcha.php&bws_active_tab=misc">',
+                            '</a>'
+                        ); ?>
+                </p>
+            <?php } else { ?>
+                <div class="bws_pro_version_bloc">
+                    <div class="bws_pro_version_table_bloc">
+                        <div class="bws_table_bg"></div>
+                        <div class="bws_pro_version">
+				            <?php require_once( dirname( __FILE__ ) . '/includes/pro_banners.php' );
+                            $date_format = get_option( 'date_format' );
+				            cptch_whitelist_block( $date_format ); ?>
+                        </div>
+                    </div>
+                    <div class="bws_pro_version_tooltip">
+                        <a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=9701bbd97e61e52baa79c58c3caacf6d&pn=75&v=<?php echo $cptch_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Captcha Pro Plugin"><?php _e( 'Upgrade to Pro', 'captcha-bws' ); ?></a>
                     </div>
                 </div>
-                <div class="bws_pro_version_tooltip">
-                    <a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=9701bbd97e61e52baa79c58c3caacf6d&pn=75&v=<?php echo $cptch_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Captcha Pro Plugin"><?php _e( 'Upgrade to Pro', 'captcha-bws' ); ?></a>
-                </div>
-            </div>
+            <?php } ?>
         </div>
 	<?php }
 }
@@ -463,11 +479,7 @@ if ( ! function_exists( 'cptch_login_form' ) ) {
 
 if ( ! function_exists( 'cptch_login_check' ) ) {
 	function cptch_login_check( $user ) {
-		/*if ( ! isset( $_POST['wp-submit'] ) ) {
-			return $user;
-		}*/
-
-		if ( isset( $_SESSION['cptch_login'] ) && true === $_SESSION["cptch_login"] ) {
+		if ( ! isset( $_POST['wp-submit'] ) || ( isset( $_SESSION['cptch_login'] ) && true === $_SESSION["cptch_login"] ) ) {
 			return $user;
 		}
 
@@ -749,11 +761,8 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 			$error_code = '';
 
 			if ( 'slide' == $cptch_options['type'] ) {
-				/* The time limit is exhausted */
-				if ( cptch_limit_exhausted( $form_slug ) ) {
-					$error_code = 'time_limit_off';
-					/* Not enough data to verify the CAPTCHA answer */
-				} elseif ( empty( $_REQUEST['cptch_result'] ) ) {
+				/* Not enough data to verify the CAPTCHA answer */
+				if ( empty( $_REQUEST['cptch_result'] ) ) {
 					$error_code = 'no_answer';
 					/* The CAPTCHA answer is wrong */
 				} elseif ( ! cptch_check_slide_captcha_response( $_POST['cptch_result'] ) ) {
@@ -863,6 +872,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		$id_postfix = rand( 0, 100 );
 		$hidden_result_name = 'cptch_number' == $input_name ? 'cptch_result' : $input_name . '-cptch_result';
 		$time = time();
+		$time_limit_notice = cptch_add_time_limit_notice( $id_postfix );
 
 		if ( 'recognition' == $cptch_options['type'] ) {
 			$string = '';
@@ -889,7 +899,8 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 				<input id="cptch_input_' . $id_postfix . '" class="cptch_input ' . $class_name . '" type="text" autocomplete="off" name="' . $input_name . '" value="" maxlength="' . $cptch_options['images_count'] . '" size="' . $cptch_options['images_count'] . '" aria-required="true" required="required" style="margin-bottom:0;font-size: 12px;max-width:100%;" />
 				<input type="hidden" name="' . $hidden_result_name . '" value="' . cptch_encode( $string, $str_key, $time ) . '" />';
 		} else if ( 'slide' == $cptch_options['type'] ) {
-			$captcha_content = '<div id="cptch_slide_captcha_container"></div>' . '<input type="hidden" name="cptch_result" value="" />';
+			$captcha_content = '<div id="cptch_slide_captcha_container"></div>';
+			$time_limit_notice = '';
 		} else {
 			/*
 			 * array of math actions
@@ -998,7 +1009,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 		$cptch_reload_button = ( $cptch_options['type'] !== 'slide' ) ? cptch_add_reload_button( !!$cptch_options['display_reload_button'] ) : "" ;
 
 		return
-			cptch_add_time_limit_notice( $id_postfix ) .
+			$time_limit_notice .
 			cptch_add_scripts() .
 			'<span class="cptch_wrap cptch_' . $cptch_options['type'] . '">
 				<label class="cptch_label" for="cptch_input_' . $id_postfix . '">' .
@@ -1061,16 +1072,9 @@ if ( ! function_exists( 'cptch_add_scripts' ) ) {
 		global $cptch_options;
 
 		if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
-			return
-					defined( 'Cptch_RELOAD_AJAX' )
-				?
-					''
-				:
-					/*
-					 * this script will be included if the from was loaded via AJAX only
-					 * but not during the CAPTCHA reloading
-					 */
-					'<script class="cptch_to_remove" type="text/javascript">
+			/* This script will be included if the from was loaded via AJAX only but not during the CAPTCHA reloading */
+			if ( ! defined( 'CPTCH_RELOAD_AJAX' ) ) {
+			    $script = '<script class="cptch_to_remove" type="text/javascript">
 						( function( d, tag, id ) {
 							var script = d.getElementById( id );
 							if ( script )
@@ -1123,6 +1127,9 @@ if ( ! function_exists( 'cptch_add_scripts' ) ) {
 							}
 						} )( document, "script", "cptch_script_loader" );
 					</script>';
+
+				return $script;
+            }
 		} elseif ( ! wp_script_is( 'cptch_front_end_script', 'registered' ) ) {
 			wp_register_script( 'cptch_front_end_script', plugins_url( 'js/front_end_script.js' , __FILE__ ), array( 'jquery' ), false, $cptch_options['plugin_option_version'] );
 			add_action( 'wp_footer', 'cptch_front_end_scripts' );
@@ -1147,24 +1154,29 @@ if ( ! function_exists( 'cptch_add_time_limit_notice' ) ) {
 	function cptch_add_time_limit_notice( $id_postfix ) {
 		global $cptch_options;
 
-		if ( ! $cptch_options['enable_time_limit'] || ! $cptch_options['time_limit'] ) {
+		if ( ! $cptch_options['enable_time_limit'] ) {
 			return '';
 		}
 		$id = "cptch_time_limit_notice_{$id_postfix}";
-		return
-			'<script class="cptch_to_remove">
-				( function( timeout ) {
-					setTimeout(
-						function() {
-							var notice = document.getElementById("' . $id . '");
-							if ( notice )
-								notice.style.display = "block";
-						},
-						timeout
-					);
-				} )(' . $cptch_options['time_limit'] . '000);
-			</script>
-			<span id="' . $id . '" class="cptch_time_limit_notice cptch_to_remove">' . $cptch_options['time_limit_off_notice'] . '</span>';
+
+		$script = '( function( timeout ) {
+            setTimeout(
+                function() {
+                    var notice = document.getElementById("' . $id . '");
+                    if ( notice )
+                        notice.style.display = "block";
+                },
+                timeout
+            );
+        } )(' . $cptch_options['time_limit'] . '000)';
+
+		wp_register_script( 'cptch_time_limit_notice_script', '//' );
+		wp_enqueue_script( 'cptch_time_limit_notice_script' );
+		wp_add_inline_script( 'cptch_time_limit_notice_script', sprintf( $script ) );
+
+		$html = '<span id="' . $id . '" class="cptch_time_limit_notice cptch_to_remove">' . $cptch_options['time_limit_off_notice'] . '</span>';
+
+		return $html;
 	}
 }
 
@@ -1496,17 +1508,19 @@ if ( ! function_exists( 'cptch_decode' ) ) {
 if ( ! function_exists( 'cptch_limit_exhausted' ) ) {
 	function cptch_limit_exhausted( $form_slug = 'general' ) {
 		global $cptch_options;
+
 		if ( empty( $cptch_options ) ) {
 			$cptch_options = get_option( 'cptch_options' );
 		}
-		return
-				1 == $cptch_options['enable_time_limit'] &&       /* if 'Enable time limit' option is enabled */
-				isset( $_REQUEST['cptch_time'] ) &&            /* if form was sended */
-				$cptch_options['time_limit'] < time() - absint( $_REQUEST['cptch_time'] ) /* if time limit is exhausted */
-			?
-				true
-			:
-				false;
+		if (
+			1 == $cptch_options['enable_time_limit'] &&
+			isset( $_REQUEST['cptch_time'] ) &&
+			$cptch_options['time_limit'] < time() - absint( $_REQUEST['cptch_time'] )
+        ) {
+			return true;
+        } else {
+			return false;
+        }
 	}
 }
 
@@ -1563,12 +1577,11 @@ if ( ! function_exists ( 'cptch_admin_head' ) ) {
 		global $cptch_options;
 
 		/* css for displaing an icon */
-		wp_enqueue_style( 'cptch_admin_page_stylesheet', plugins_url( 'css/admin_page.css', __FILE__ ), array(), $cptch_options['plugin_option_version'] );
+		wp_enqueue_style( 'cptch_icon', plugins_url( 'css/admin_page.css', __FILE__ ) );
 
 		$pages = array(
 			'captcha.php',
-			'captcha-packages.php',
-            'captcha-whitelist.php'
+			'captcha-packages.php'
 		);
 
 		if ( isset( $_REQUEST['page'] ) && in_array( $_REQUEST['page'], $pages ) ) {
