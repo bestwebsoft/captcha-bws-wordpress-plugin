@@ -226,12 +226,13 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'operand_format'	=> __( 'Complexity', 'captcha-bws' ),
 				'used_packages'		=> __( 'Image Packages', 'captcha-bws' )
 			);
-			$general_bool		= array( 'load_via_ajax', 'display_reload_button', 'enlarge_images', 'enable_time_limit' );
+			$general_bool		= array( 'load_via_ajax', 'display_reload_button', 'enlarge_images' );
 			$general_strings	= array( 'type', 'title', 'required_symbol', 'no_answer', 'wrong_answer', 'time_limit_off', 'time_limit_off_notice' );
 
 			foreach ( $general_bool as $option ) {
 				$this->options[ $option ] = ! empty( $_REQUEST["cptch_{$option}"] );
 			}
+            $this->options['forms']['general']['enable_time_limit'] = ! empty( $_REQUEST["cptch_enable_time_limit"] );
 
 			foreach ( $general_strings as $option ) {
 				$value = isset( $_REQUEST["cptch_{$option}"] ) ? stripslashes( sanitize_text_field( $_REQUEST["cptch_{$option}"] ) ) : '';
@@ -258,14 +259,14 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					$this->options[ $option ] = $value;
 				}
 			}
-
+            $this->options['forms']['general']['used_packages'] = $this->options['used_packages'];
 			$this->options['images_count']	= isset( $_REQUEST['cptch_images_count'] ) ? absint( $_REQUEST['cptch_images_count'] ) : 4;
-			$this->options['time_limit']	= isset( $_REQUEST['cptch_time_limit'] ) ? absint( $_REQUEST['cptch_time_limit'] ) : 120;
+            $this->options['forms']['general']['time_limit']	= isset( $_REQUEST['cptch_time_limit'] ) ? absint( $_REQUEST['cptch_time_limit'] ) : 120;
 
 			/*
 			 * Prepare forms options
 			 */
-			$forms		= array_keys( $this->forms );
+			$forms = array_keys( $this->forms );
 			$form_bool = array( 'enable', 'hide_from_registered' );
 			foreach ( $forms as $form_slug ) {
 				foreach ( $form_bool as $option ) {
@@ -279,7 +280,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			 */
 			if (
 				( $this->images_enabled() || 'recognition' == $this->options['type'] ) &&
-				empty( $this->options['used_packages'] )
+				empty( $this->options['forms']['general']['used_packages'] )
 			) {
 				if ( 'recognition' == $this->options['type'] ) {
 					$notices[] = __( 'In order to use "Optical Character Recognition" type, please select at least one of the items in the option "Image Packages".', 'captcha-bws' );
@@ -466,7 +467,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 								</td>
 							</tr>
 						</table>
-						<?php cptch_use_limit_attempts_whitelist(); ?>
+						<?php cptch_use_limit_attempts_allowlist(); ?>
 					</div>
 					<?php $this->bws_pro_block_links(); ?>
 				</div>
@@ -500,7 +501,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 										$id = "cptch_{$key}_{$slug}"; ?>
 										<label for="<?php echo $id; ?>">
 											<?php if (
-												'use_limit_attempts_whitelist' == $key &&
+												'use_limit_attempts_allowlist' == $key &&
 												$slug &&
 												'active' != $this->options['related_plugins_info']['limit_attempts']['status']
 											) { ?>
@@ -516,8 +517,13 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 									<?php }
 								} else {
 									$id = isset( $data['array_options'] ) ? '' : ( isset( $this->options[ $key ] ) ? "cptch_{$key}" : "cptch_form_general_{$key}" );
-									$name		= $id;
-									$value		= $this->options[ $key ];
+                                    if ( ( $this->options[ $key ] != $this->options['used_packages'] ) ) {
+                                        $name    = $id;
+                                        $value   = $this->options[ $key ];
+                                    } else {
+                                        $name    = $id;
+                                        $value   = $this->options['forms']['general']['used_packages'];
+                                    }
 									$checked	= !! $value;
 									if ( 'used_packages' == $key ) {
 										$open_tag = $close_tag = "";
@@ -546,18 +552,18 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				$options = array(
 					array(
 						'id'					=> "cptch_enable_time_limit",
-						'name'					=> "cptch_enable_time_limit",
-						'checked'				=> $this->options['enable_time_limit'],
-						'inline_description'	=> __( 'Enable to activate a time limit required to complete captcha.', 'captcha-bws' )
-					),
+                        'name'					=> "cptch_enable_time_limit",
+                        'checked'				=> $this->options['forms']['general']['enable_time_limit'],
+                        'inline_description'	=> __( 'Enable to activate a time limit required to complete captcha.', 'captcha' )
+                    ),
 					array(
 						'id'	=> "cptch_time_limit",
-						'name'	=> "cptch_time_limit",
-						'value'	=> $this->options['time_limit'],
-						'min'	=> 10,
-						'max'	=> 9999
-					)
-				); ?>
+                        'name'		=> "cptch_time_limit",
+                        'value'		=> ! empty( $this->options['forms']['general']['time_limit'] ) && 10 <= $this->options['forms']['general']['time_limit'] ? $this->options['forms']['general']['time_limit'] : 120,
+                        'min'		=> 10,
+                        'max'		=> 9999
+                    )
+                );?>
 				<tr class="cptch_for_math_actions cptch_for_recognition">
 					<th scope="row"><?php _e( 'Time Limit', 'captcha-bws' ); ?></th>
 					<td>
@@ -714,8 +720,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						'title'			=> __( 'Answer Time Limit Exceeded', 'captcha-bws' ),
 						'message'		=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
 						'description'	=> __( 'This message will be displayed above the captcha field.', 'captcha-bws' )
-					),
-
+					)
 				);
 				foreach ( $messages as $message_name => $data ) { ?>
 					<tr>
@@ -775,7 +780,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				type="checkbox"
 				id="<?php echo $args['id']; ?>"
 				name="<?php echo $args['name']; ?>"
-				value="<?php echo ! empty( $args['value'] ) ? $args['value'] : 1; ?>"
+				value="<?php ! empty( $args['value'] ) ? print_r($args['value']) : print_r(1) ; ?>"
 				<?php echo ( ! empty( $args['disabled'] ) ) ? ' disabled="disabled"' : '';
 				echo $args['checked'] ? ' checked="checked"' : ''; ?> />
 		<?php }
@@ -867,7 +872,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					$id			= "{$args['id']}_{$pack['id']}";
 					$name		= "{$args['name']}[]";
 					$value		= $pack['id'];
-					$checked	= in_array( $pack['id'], $args['value'] ); ?>
+					$checked	= isset($args['value']) && in_array( $pack['id'], $args['value'] ); ?>
 					<li>
 						<span><?php $this->add_checkbox_input( compact( 'id', 'name', 'value', 'checked' ) ); ?></span>
 						<span><label for="<?php echo $id; ?>"><img src="<?php echo "{$packages_url}/{$pack['folder']}/{$pack['image']}"; ?>" title="<?php echo $pack['name']; ?>"<?php echo $styles; ?>/></label></span>
@@ -929,7 +934,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			$default_options = $this->get_related_plugins_info( $default_options );
 
 			/* do not update package selection */
-			$default_options['used_packages'] = $this->options['used_packages'];
+			$default_options['forms']['general']['used_packages'] = $this->options['forms']['general']['used_packages'];
 
 			return $default_options;
 		}

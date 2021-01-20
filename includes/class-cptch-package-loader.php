@@ -310,7 +310,6 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 		private function insert_data() {
 			global $wpdb, $cptch_options;
 			$used_packages = $cptch_options['used_packages'];
-
 			$need_update = false;
 			$insert_data = array();
 			/* insert packages data */

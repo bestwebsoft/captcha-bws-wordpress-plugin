@@ -6,12 +6,12 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.0.9
+Version: 5.1.0
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
 
-/*  © Copyright 2020  BestWebSoft  ( https://support.bestwebsoft.com )
+/*  © Copyright 2021  BestWebSoft  ( https://support.bestwebsoft.com )
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -63,11 +63,11 @@ if ( ! function_exists( 'cptch_admin_menu' ) ) {
 
             add_submenu_page(
                 'captcha.php',
-                __( 'Captcha Whitelist', 'captcha-bws' ),
-                __( 'Whitelist', 'captcha-bws' ),
+                __( 'Captcha Allow List', 'captcha-bws' ),
+                __( 'Allow List', 'captcha-bws' ),
                 'manage_options',
-                'captcha-whitelist.php',
-                'cptch_whitelist_template'
+                'captcha-allowlist.php',
+                'cptch_allowlist_template'
             );
 
 			add_submenu_page(
@@ -300,7 +300,7 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 		}
 
 		$need_update = false;
-		$db_version = '1.7';
+		$db_version = '1.8';
 
 		$cptch_options = get_option( 'cptch_options' );
 
@@ -311,6 +311,38 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 			$cptch_options = cptch_get_default_options();
 			update_option( 'cptch_options', $cptch_options );
 		}
+
+        /* Update tables when update plugin and tables changes*/
+        if ( empty( $cptch_options['plugin_db_version'] ) || $cptch_options['plugin_db_version'] != $db_version ) {
+            /**
+             * @deprecated since 5.1.0
+             * @todo remove after 13.05.2021
+             */
+            if ( isset( $cptch_options['plugin_option_version'] ) &&  version_compare( $cptch_options['plugin_option_version'] , '5.1.0', '<' ) )  {
+                $prefix = $wpdb->prefix . 'cptch_';
+
+                /* Update tables when update plugin and tables changes */
+                $wpdb->query( "RENAME TABLE `" . $prefix . "whitelist` TO `" . $prefix . "allowlist`" );
+
+                /*Update options_default when update plugin*/
+                $cptch_options['allowlist_message'] = $cptch_options['whitelist_message'];
+                $cptch_options['use_limit_attempts_allowlist'] = $cptch_options['use_limit_attempts_whitelist'];
+
+            }
+            /* end deprecated */
+
+            $need_update = true;
+            cptch_create_table();
+
+            if ( empty( $cptch_options['plugin_db_version'] ) ) {
+                if ( ! class_exists( 'Cptch_Package_Loader' ) )
+                    require_once( dirname( __FILE__ ) . '/includes/class-cptch-package-loader.php' );
+                $package_loader = new Cptch_Package_Loader();
+                $package_loader->save_packages( dirname( __FILE__ ) . '/images/package', false );
+            }
+
+            $cptch_options['plugin_db_version'] = $db_version;
+        }
 
 		if ( empty( $cptch_options['plugin_option_version'] ) || $cptch_options['plugin_option_version'] != $cptch_plugin_info["Version"] ) {
 			$need_update = true;
@@ -327,25 +359,13 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 			}
 			$default_options = cptch_get_default_options();
 			$cptch_options = cptch_parse_options( $cptch_options, $default_options );
+            $cptch_options['used_packages'] = $cptch_options['forms']['general']['used_packages'];
+
 
 			/* show pro features */
 			$cptch_options['hide_premium_options'] = array();
 		}
 
-		/* Update tables when update plugin and tables changes*/
-		if ( empty( $cptch_options['plugin_db_version'] ) || $cptch_options['plugin_db_version'] != $db_version ) {
-			$need_update = true;
-			cptch_create_table();
-
-			if ( empty( $cptch_options['plugin_db_version'] ) ) {
-				if ( ! class_exists( 'Cptch_Package_Loader' ) )
-					require_once( dirname( __FILE__ ) . '/includes/class-cptch-package-loader.php' );
-				$package_loader = new Cptch_Package_Loader();
-				$package_loader->save_packages( dirname( __FILE__ ) . '/images/package', false );
-			}
-
-			$cptch_options['plugin_db_version'] = $db_version;
-		}
 		if ( $need_update ) {
 			update_option( 'cptch_options', $cptch_options );
 		}
@@ -416,10 +436,10 @@ if ( ! function_exists( 'cptch_page_router' ) ) {
 }
 
 /**
- * Whitelist page
+ * allow list page
  */
-if ( ! function_exists( 'cptch_whitelist_template' ) ) {
-	function cptch_whitelist_template() {
+if ( ! function_exists( 'cptch_allowlist_template' ) ) {
+	function cptch_allowlist_template() {
 		global $cptch_plugin_info, $wp_version, $cptch_options;
 
 		if ( empty( $cptch_options ) )
@@ -427,9 +447,9 @@ if ( ! function_exists( 'cptch_whitelist_template' ) ) {
 		$bws_hide_premium = bws_hide_premium_options_check( $cptch_options ); ?>
         <div class="wrap">
             <h1>
-                <?php echo __( 'Captcha Whitelist', 'captcha-bws' ); ?>
-                <form method="post" action="admin.php?page=captcha-whitelist.php" style="display: inline;">
-                    <button class="page-title-action add-new-h2 hide-if-no-js" name="cptch_show_whitelist_form" value="on"<?php echo ( isset( $_POST['cptch_add_to_whitelist'] ) ) ? ' style="display: none;"' : ''; ?>><?php _e( 'Add New', 'captcha-bws' ); ?></button>
+                <?php echo __( 'Captcha Allow List', 'captcha-bws' ); ?>
+                <form method="post" action="admin.php?page=captcha-allowlist.php" style="display: inline;">
+                    <button class="page-title-action add-new-h2 hide-if-no-js" name="cptch_show_allowlist_form" value="on"<?php echo ( isset( $_POST['cptch_add_to_allowlist'] ) ) ? ' style="display: none;"' : ''; ?>><?php _e( 'Add New', 'captcha-bws' ); ?></button>
                 </form>
             </h1>
             <br>
@@ -449,7 +469,7 @@ if ( ! function_exists( 'cptch_whitelist_template' ) ) {
                         <div class="bws_pro_version">
 				            <?php require_once( dirname( __FILE__ ) . '/includes/pro_banners.php' );
                             $date_format = get_option( 'date_format' );
-				            cptch_whitelist_block( $date_format ); ?>
+				            cptch_allowlist_block( $date_format ); ?>
                         </div>
                     </div>
                     <div class="bws_pro_version_tooltip">
@@ -701,7 +721,7 @@ if ( ! function_exists( 'cptch_verify_filter' ) ) {
  * Checks the answer for the CAPTCHA
  * @param  mixed   $allow          The result of the pevious checking
  * @param  string  $return_format  The type of the cheking result. Can be set as 'string' or 'wp_error
- * @return mixed                   boolean(true) - in case when the CAPTCHA answer is right, or user`s IP is in the whitelist,
+ * @return mixed                   boolean(true) - in case when the CAPTCHA answer is right, or user`s IP is in the allow list,
  *                                 string or WP_Error object ( depending on the $return_format variable ) - in case when the CAPTCHA answer is wrong
  */
 if ( ! function_exists( 'cptch_check_custom_form' ) ) {
@@ -895,7 +915,7 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 				$string .= $image;
 				$count--;
 			}
-			$captcha_content .= '</span>
+            $captcha_content .= '</span>
 				<input id="cptch_input_' . $id_postfix . '" class="cptch_input ' . $class_name . '" type="text" autocomplete="off" name="' . $input_name . '" value="" maxlength="' . $cptch_options['images_count'] . '" size="' . $cptch_options['images_count'] . '" aria-required="true" required="required" style="margin-bottom:0;font-size: 12px;max-width:100%;" />
 				<input type="hidden" name="' . $hidden_result_name . '" value="' . cptch_encode( $string, $str_key, $time ) . '" />';
 		} else if ( 'slide' == $cptch_options['type'] ) {

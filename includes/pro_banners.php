@@ -44,25 +44,25 @@ if ( ! function_exists( 'cptch_packages_banner' ) ) {
 	<?php }
 }
 
-if ( ! function_exists( 'cptch_use_limit_attempts_whitelist' ) ) {
-	function cptch_use_limit_attempts_whitelist() { ?>
+if ( ! function_exists( 'cptch_use_limit_attempts_allowlist' ) ) {
+	function cptch_use_limit_attempts_allowlist() { ?>
 		<table class="form-table bws_pro_version">
 			<tr>
-				<th scope="row"><?php _e( 'Whitelist', 'captcha-bws' ); ?></th>
+				<th scope="row"><?php _e( 'Allow List', 'captcha-bws' ); ?></th>
 				<td>
 					<fieldset>
 						<label><input type="radio" disabled="disabled" checked="checked" /><?php _e( 'Default', 'captcha-bws' ); ?></label><br />
 						<label><input type="radio" disabled="disabled" />Limit Attempts</label><br />
 					</fieldset>
-					<span class="bws_info"><?php _e( 'With a whitelist you can hide captcha field for your personal and trusted IP addresses.', 'captcha-bws' ); ?></span>
+					<span class="bws_info"><?php _e( 'With a allow list you can hide captcha field for your personal and trusted IP addresses.', 'captcha-bws' ); ?></span>
 				</td>
 			</tr>
 		</table>
 	<?php }
 }
 
-if ( ! function_exists( 'cptch_whitelist_banner' ) ) {
-	function cptch_whitelist_banner() { ?>
+if ( ! function_exists( 'cptch_allowlist_banner' ) ) {
+	function cptch_allowlist_banner() { ?>
 		<div class="bws_pro_version">
 			<div class="bws_info" style="line-height: 2;"><?php _e( "Allowed formats", 'captcha-bws' ); ?>:&nbsp;<code>192.168.0.1, 192.168.0., 192.168., 192., 192.168.0.1/8, 123.126.12.243-185.239.34.54</code></div>
 			<div class="bws_info" style="line-height: 2;"><?php _e( "Allowed separators for IPs: a comma", 'captcha-bws' ); ?> (<code>,</code>), <?php _e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php _e( 'ordinary space, tab, new line or carriage return', 'captcha-bws' ); ?></div>
@@ -77,17 +77,17 @@ if ( ! function_exists( 'cptch_display_messages' ) ) {
 	function cptch_display_messages() { ?>
 	<table class="form-table bws_pro_version">
 		<?php $message = array(
-				'whitelist_message'	=> array(
-				'title'				=> __( 'Whitelisted IP', 'captcha-bws' ),
-				'message'			=> __( 'Your IP address is Whitelisted.', 'captcha-bws' ),
+				'allowlist_message'	=> array(
+				'title'				=> __( 'Allow Listed IP', 'captcha-bws' ),
+				'message'			=> __( 'Your IP address is allow listed.', 'captcha-bws' ),
 				'description'		=> __( 'This message will be displayed instead of the captcha field.', 'captcha-bws' )
 			)
 		); ?>
 		<tr>
-			<th scope="row"><?php echo $message['whitelist_message']['title']; ?></th>
+			<th scope="row"><?php echo $message['allowlist_message']['title']; ?></th>
 			<td>
-				<textarea disabled="disabled"><?php echo $message['whitelist_message']['message']; ?></textarea>
-				<div class="bws_info"><?php echo $message['whitelist_message']['description']; ?></div>
+				<textarea disabled="disabled"><?php echo $message['allowlist_message']['message']; ?></textarea>
+				<div class="bws_info"><?php echo $message['allowlist_message']['description']; ?></div>
 			</td>
 		</tr>
 	</table>
@@ -181,20 +181,20 @@ if ( ! function_exists( 'hide_pro_tabs_beyond_settings_page' ) ) {
 	}
 }
 
-if ( ! function_exists( 'cptch_whitelist_block' ) ) {
-	function cptch_whitelist_block( $date_format ) { ?>
+if ( ! function_exists( 'cptch_allowlist_block' ) ) {
+	function cptch_allowlist_block( $date_format ) { ?>
 		<div>
-			<input type="submit" name="cptch_load_limit_attempts_whitelist" class="button" value="<?php _e( 'Load IP Address(-es)', 'captcha-bws' ); ?>" style="float: left;" disabled="disabled" />
+			<input type="submit" name="cptch_load_limit_attempts_allowlist" class="button" value="<?php _e( 'Load IP Address(-es)', 'captcha-bws' ); ?>" style="float: left;" disabled="disabled" />
 			<div class="clear"></div>
 		</div>
-		<div class="bws_info"><?php _e( 'Load IP addresses from the "Limit Attempts" whitelist.', 'captcha-bws' ); ?></div>
-        <form class="form-table cptch_whitelist_form" method="post" action="admin.php?page=captcha-whitelist.php" style="margin: 10px 0;<?php echo ! ( isset( $_REQUEST['cptch_show_whitelist_form'] ) || isset( $_REQUEST['cptch_add_to_whitelist'] ) ) ? 'display: none;': ''; ?>">
-            <label><?php _e( 'IP to whitelist', 'captcha-bws' ) ?></label>
+		<div class="bws_info"><?php _e( 'Load IP addresses from the "Limit Attempts" allow list.', 'captcha-bws' ); ?></div>
+        <form class="form-table cptch_allowlist_form" method="post" action="admin.php?page=captcha-allowlist.php" style="margin: 10px 0;<?php echo ! ( isset( $_REQUEST['cptch_show_allowlist_form'] ) || isset( $_REQUEST['cptch_add_to_allowlist'] ) ) ? 'display: none;': ''; ?>">
+            <label><?php _e( 'IP to allow list', 'captcha-bws' ) ?></label>
             <br />
-            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_whitelist"></textarea>
+            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_allowlist"></textarea>
                 <br />
                 <label>
-                    <input disabled="disabled" type="checkbox" name="cptch_add_to_whitelist_my_ip" value="1" />
+                    <input disabled="disabled" type="checkbox" name="cptch_add_to_allowlist_my_ip" value="1" />
 					<?php _e( 'My IP', 'captcha-bws' ); ?>
                 </label>
             <div class="bws_info">
@@ -212,18 +212,18 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
             <br />
             <label><?php _e( 'Reason', 'captcha-bws' ) ?></label>
             <br />
-            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_whitelist_reason"></textarea>
+            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_allowlist_reason"></textarea>
             <div class="bws_info">
 				<?php _e( "Allowed separators for reasons", 'captcha-bws' ); ?>: <?php _e( "a comma", 'captcha-bws' )?> (<code>,</code>), <?php _e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php _e( 'tab, new line or carriage return.', 'captcha-bws' ); ?>
             </div>
             <p>
-                <input disabled="disabled" type="submit" class="button-secondary" value="<?php _e( 'Add IP to whitelist', 'captcha-bws' ); ?>" />
+                <input disabled="disabled" type="submit" class="button-secondary" value="<?php _e( 'Add IP to allow list', 'captcha-bws' ); ?>" />
             </p>
         </form>
         <p class="search-box">
 			<label class="screen-reader-text" for="pdfprnt-search-input"><?php _e( 'search', 'captcha-bws' ); ?>:</label>
 			<input disabled="disabled" type="search" name="s" />
-			<input disabled="disabled" type="submit" id="search-submit" class="button" value="search" />
+			<input disabled="disabled" type="submit" id="search-submit" class="button" value="<?php _e( 'search', 'captcha-bws' ); ?>" />
 		</p>
 		<div class="tablenav top">
 			<div class="alignleft actions bulkactions">
@@ -231,21 +231,21 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 					<option value="-1"><?php _e( 'Bulk Actions', 'captcha-bws' ); ?></option>
 					<option value="trash"><?php _e( 'Trash', 'captcha-bws' ); ?></option>
 				</select>
-				<input disabled="disabled" type="submit" id="doaction" class="button action" value="Apply" />
+				<input disabled="disabled" type="submit" id="doaction" class="button action" value="<?php _e( 'Apply', 'captcha-bws' ); ?>" />
 			</div>
 			<div class="alignleft actions bulkactions">
 				<select disabled="disabled" name="action" id="filter-selector-top">
 					<option value="-1"><?php _e( 'All dates', 'captcha-bws' ); ?></option>
 					<option value="filter"><?php _e( 'Filter', 'captcha-bws' ); ?></option>
 				</select>
-				<input disabled="disabled" type="submit" id="doaction2" class="button action" value="Filter" />
+				<input disabled="disabled" type="submit" id="doaction2" class="button action" value="<?php _e( 'Filter', 'captcha-bws' ); ?>" />
 			</div>
 			<div class="tablenav-pages one-page">
 				<span class="displaying-num">1 <?php _e( 'items', 'captcha-bws' ); ?></span>
 			</div>
 			<br class="clear">
 		</div>
-		<table class="wp-list-table widefat fixed striped whitelist">
+		<table class="wp-list-table widefat fixed striped allowlist">
 			<thead>
 				<tr>
 					<td class="manage-column column-cb check-column">
@@ -271,7 +271,7 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 						</a>
 					</th>
 			</thead>
-			<tbody id="the-list" data-wp-lists="list:whitelist">
+			<tbody id="the-list" data-wp-lists="list:allowlist">
 				<tr>
 					<th scope="row" class="check-column">
 						<input disabled="disabled" id="cb_19" type="checkbox" />
@@ -327,14 +327,14 @@ if ( ! function_exists( 'cptch_whitelist_block' ) ) {
 					<option value="-1"><?php _e( 'Bulk Actions', 'captcha-bws' ); ?></option>
 					<option value="trash"><?php _e( 'Trash', 'captcha-bws' ); ?></option>
 				</select>
-				<input disabled="disabled" type="submit" id="doaction3" class="button action" value="Apply" />
+				<input disabled="disabled" type="submit" id="doaction3" class="button action" value="<?php _e( 'Apply', 'captcha-bws' ); ?>" />
 			</div>
 			<div class="alignleft actions bulkactions">
 				<select disabled="disabled" name="action" id="filter-selector-bottom">
 					<option value="-1"><?php _e( 'All dates', 'captcha-bws' ); ?></option>
 					<option value="filter"><?php _e( 'Filter', 'captcha-bws' ); ?></option>
 				</select>
-				<input disabled="disabled" type="submit" id="doaction4" class="button action" value="Filter" />
+				<input disabled="disabled" type="submit" id="doaction4" class="button action" value="<?php _e( 'Filter', 'captcha-bws' ); ?>" />
 			</div>
 			<div class="tablenav-pages one-page">
 				<span class="displaying-num">1 <?php _e( 'items', 'captcha-bws' ); ?></span>

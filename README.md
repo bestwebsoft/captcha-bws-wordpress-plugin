@@ -91,7 +91,7 @@
 </li>
 <li>Hide captcha for:
 <ul>
-<li>Whitelisted IP addresses</li>
+<li>Allowed IP addresses</li>
 </ul>
 </li>
 <li>Merge IP addresses from <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988" rel="nofollow ugc">Limit Attempts</a> plugin with Captcha whitelist</li>

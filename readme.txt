@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
-Tested up to: 5.5.1
-Stable tag: 5.0.9
+Tested up to: 5.6
+Stable tag: 5.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,7 +77,7 @@ Stop spam now!
 >   * New Topic form
 >   * Reply form
 > * Hide captcha for:
->   * Whitelisted IP addresses
+>   * Allowed IP addresses
 > * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988) plugin with Captcha whitelist
 > * Configure all subsites on the network
 > * Captcha submission time limit for separate forms
@@ -263,9 +263,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 7. Login form with Slide Captcha Type.
 8. Captcha Settings page.
 9. Captcha Packages page.
-10. Captcha Whitelist page.
+10. Captcha Allow List page.
 
 == Changelog ===
+
+= V5.1.0 - 19.01.2021 =
+* Update : BWS panel section was updated.
+* Pro : Bug related to incorrect Captcha displaying at used several Image Packages has been fixed.
+* Update : Whitelist replaced with allow list.
+* Update : All functionality was updated for WordPress 5.6
 
 = V5.0.9 - 07.10.2020 =
 * NEW : Added RTL support for Slide Captcha.
@@ -326,6 +332,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.0 =
+* Appearance improved.
+* Bugs fixed.
 
 = V5.0.9 =
 * Functionality expanded.

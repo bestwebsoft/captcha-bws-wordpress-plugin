@@ -150,33 +150,33 @@
 }
 
 @media only screen and ( max-width: 782px ) {
-	#cptch_whitelist_search p.search-box {
+	#cptch_allowlist_search p.search-box {
 		position: static;
 	}
-	#cptch_whitelist .tablenav.top {
+	#cptch_allowlist .tablenav.top {
 		display: none;
 	}
-	#cptch_whitelist .column-ip_from,
-	#cptch_whitelist .column-ip_to,
-	#cptch_whitelist .column-add_time {
+	#cptch_allowlist .column-ip_from,
+	#cptch_allowlist .column-ip_to,
+	#cptch_allowlist .column-add_time {
 		display: none;
 	}
 }
 
 @media only screen and ( max-width: 480px ) {
-	#cptch_whitelist .bulkactions {
+	#cptch_allowlist .bulkactions {
 		float: none;
 	}
-	#cptch_whitelist .tablenav-pages {
+	#cptch_allowlist .tablenav-pages {
 		display: block;
 		margin-bottom: 10px;
 		float: none;
 		clear: both;
 	}
-	#cptch_whitelist .tablenav-pages .displaying-num {
+	#cptch_allowlist .tablenav-pages .displaying-num {
 		position: static;
 	}
-	#cptch_whitelist .column-add_reason {
+	#cptch_allowlist .column-add_reason {
 		display: none;
 	}
 	.cptch_add_ons_link {

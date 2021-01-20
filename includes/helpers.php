@@ -32,9 +32,9 @@ if ( ! function_exists( 'cptch_get_default_options' ) ) {
 			'wrong_answer'					=> __( 'Please enter correct captcha value.', 'captcha-bws' ),
 			'time_limit_off'				=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
 			'time_limit_off_notice'			=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
-			'whitelist_message'				=> __( 'Your IP address is Whitelisted.', 'captcha-bws' ),
+			'allowlist_message'			=> __( 'Your IP address is allow listed.', 'captcha-bws' ),
 			'load_via_ajax'					=> false,
-			'use_limit_attempts_whitelist'	=> false,
+			'use_limit_attempts_allowlist'	=> false,
 			'display_settings_notice'		=> 1,
 			'suggest_feature_banner'		=> 1,
 			'forms'							=> array(),
@@ -46,6 +46,9 @@ if ( ! function_exists( 'cptch_get_default_options' ) ) {
 			$default_options['forms'][ $form ] = array(
 				'enable'				=> in_array( $form, array( 'wp_login', 'wp_register', 'wp_lost_password', 'wp_comments' ) ),
 				'hide_from_registered'	=> 'wp_comments' == $form,
+                'used_packages'			=> array(),
+                'time_limit'			 => 120,
+                'enable_time_limit'		=> false
 			);
 		}
 
@@ -61,7 +64,7 @@ if ( ! function_exists( 'cptch_get_default_options' ) ) {
 if ( ! function_exists( 'cptch_get_default_forms' ) ) {
 	function cptch_get_default_forms() {
 		$defaults = array(
-			'wp_login', 'wp_register',
+			'general', 'wp_login', 'wp_register',
 			'wp_lost_password', 'wp_comments',
 			'bws_contact', 'bws_booking'
 		);

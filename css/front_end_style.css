@@ -21,7 +21,7 @@ form input.cptch_input {
 	padding-left: 8px;
 	padding-right: 8px;
 }
-.cptch_whitelist_message {
+.cptch_allowlist_message {
 	font-style: italic;
 	color: #008000;
 	font-weight: normal !important;
@@ -70,7 +70,7 @@ form input.cptch_input {
 	margin-right: 0px;
 	margin-left: 2px;
 }
-.cptch_img {
+.cptch_img img {
 	width: 40px;
 	max-width: 40px !important;
 	height: 40px;

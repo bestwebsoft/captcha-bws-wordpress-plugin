@@ -46,9 +46,9 @@
 		} );
 
 		// hide/show whitelist "add new form"
-		$( 'button[name="cptch_show_whitelist_form"]' ).click( function() {
+		$( 'button[name="cptch_show_allowlist_form"]' ).click( function() {
 			$( this ).parent( 'form' ).hide();
-			$( '.cptch_whitelist_form' ).show();
+			$( '.cptch_allowlist_form' ).show();
 			return false;
 		} );
 

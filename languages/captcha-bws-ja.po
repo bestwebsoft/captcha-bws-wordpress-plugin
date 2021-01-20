@@ -37,7 +37,7 @@ msgstr ""
 msgid "Packages"
 msgstr ""
 
-#: captcha_pro.php:32 includes/class-cptch-whitelist.php:83
+#: captcha_pro.php:32 includes/class-cptch-allowlist.php:83
 msgid "Captcha Pro Whitelist"
 msgstr ""
 
@@ -635,12 +635,12 @@ msgid "packages"
 msgstr ""
 
 #: includes/class-cptch-package-list.php:100
-#: includes/class-cptch-whitelist.php:86
+#: includes/class-cptch-allowlist.php:86
 msgid "Add New"
 msgstr ""
 
 #: includes/class-cptch-package-list.php:107
-#: includes/class-cptch-whitelist.php:174
+#: includes/class-cptch-allowlist.php:174
 msgid "Search item"
 msgstr ""
 
@@ -653,14 +653,14 @@ msgid "Package"
 msgstr ""
 
 #: includes/class-cptch-package-list.php:140
-#: includes/class-cptch-whitelist.php:241
+#: includes/class-cptch-allowlist.php:241
 msgid "Date Added"
 msgstr ""
 
 #: includes/class-cptch-package-list.php:193
 #: includes/class-cptch-package-list.php:225
-#: includes/class-cptch-whitelist.php:300
-#: includes/class-cptch-whitelist.php:370
+#: includes/class-cptch-allowlist.php:300
+#: includes/class-cptch-allowlist.php:370
 msgid "Delete"
 msgstr ""
 
@@ -1064,7 +1064,7 @@ msgid "install"
 msgstr ""
 
 #: includes/class-cptch-settings-tabs.php:594
-#: includes/class-cptch-whitelist.php:761
+#: includes/class-cptch-allowlist.php:761
 #, fuzzy
 msgid "activate"
 msgstr "有効化"
@@ -1173,229 +1173,229 @@ msgstr ""
 msgid "Activate"
 msgstr "有効化"
 
-#: includes/class-cptch-whitelist.php:46
+#: includes/class-cptch-allowlist.php:46
 msgid "All dates"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:47
+#: includes/class-cptch-allowlist.php:47
 msgid "Last 24 hours"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:48
+#: includes/class-cptch-allowlist.php:48
 msgid "Last week"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:49
+#: includes/class-cptch-allowlist.php:49
 msgid "Last month"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:50
+#: includes/class-cptch-allowlist.php:50
 msgid "Last year"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:116
+#: includes/class-cptch-allowlist.php:116
 msgid "Limit Attempts whitelist is activated."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:117
+#: includes/class-cptch-allowlist.php:117
 msgid "View the whitelist"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:118
+#: includes/class-cptch-allowlist.php:118
 msgid "or"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:119
+#: includes/class-cptch-allowlist.php:119
 msgid "Enable default captcha whitelist"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:122
+#: includes/class-cptch-allowlist.php:122
 msgid "Load IP Address(-es)"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:125
+#: includes/class-cptch-allowlist.php:125
 #, fuzzy
 msgid "Save changes"
 msgstr "変更保存"
 
-#: includes/class-cptch-whitelist.php:130
+#: includes/class-cptch-allowlist.php:130
 msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:137
+#: includes/class-cptch-allowlist.php:137
 msgid "IP to whitelist"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:144
+#: includes/class-cptch-allowlist.php:144
 msgid "My IP"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:150
+#: includes/class-cptch-allowlist.php:150
 msgid "Allowed formats"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:155
+#: includes/class-cptch-allowlist.php:155
 msgid "Allowed diapason"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:157
+#: includes/class-cptch-allowlist.php:157
 msgid "Allowed separators"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:157
-#: includes/class-cptch-whitelist.php:165
+#: includes/class-cptch-allowlist.php:157
+#: includes/class-cptch-allowlist.php:165
 msgid "a comma"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:157
-#: includes/class-cptch-whitelist.php:165
+#: includes/class-cptch-allowlist.php:157
+#: includes/class-cptch-allowlist.php:165
 msgid "semicolon"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:157
+#: includes/class-cptch-allowlist.php:157
 msgid "ordinary space, tab, new line or carriage return."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:161
-#: includes/class-cptch-whitelist.php:240
+#: includes/class-cptch-allowlist.php:161
+#: includes/class-cptch-allowlist.php:240
 msgid "Reason"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:165
+#: includes/class-cptch-allowlist.php:165
 msgid "Allowed separators for reasons"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:165
+#: includes/class-cptch-allowlist.php:165
 msgid "tab, new line or carriage return."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:168
+#: includes/class-cptch-allowlist.php:168
 msgid "Add IP to whitelist"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:230
+#: includes/class-cptch-allowlist.php:230
 msgid "Nothing found"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:230
+#: includes/class-cptch-allowlist.php:230
 msgid "No IP in the whitelist"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:238
+#: includes/class-cptch-allowlist.php:238
 msgid "IP Address"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:239
+#: includes/class-cptch-allowlist.php:239
 msgid "Range from / to"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:337
+#: includes/class-cptch-allowlist.php:337
 msgid "Cancel"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:344
+#: includes/class-cptch-allowlist.php:344
 #, fuzzy
 msgid "Update"
 msgstr "更新"
 
-#: includes/class-cptch-whitelist.php:359
+#: includes/class-cptch-allowlist.php:359
 msgid "Edit reason"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:474
+#: includes/class-cptch-allowlist.php:474
 msgid "Filter"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:505
+#: includes/class-cptch-allowlist.php:505
 msgid "Invalid data. See allowed formats"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:515
+#: includes/class-cptch-allowlist.php:515
 msgid "Range"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:523
+#: includes/class-cptch-allowlist.php:523
 msgid "added to the whitelist successfully."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:525
+#: includes/class-cptch-allowlist.php:525
 msgid "not saved to the whitelist."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:527
+#: includes/class-cptch-allowlist.php:527
 msgid "is already in the whitelist"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:530
+#: includes/class-cptch-allowlist.php:530
 msgid "invalid format. See allowed formats."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:545
+#: includes/class-cptch-allowlist.php:545
 #, php-format
 msgid "%s IP was deleted successfully"
 msgid_plural "%s IPs were deleted successfully"
 msgstr[0] ""
 
-#: includes/class-cptch-whitelist.php:549
-#: includes/class-cptch-whitelist.php:559
+#: includes/class-cptch-allowlist.php:549
+#: includes/class-cptch-allowlist.php:559
 msgid "Some errors occured."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:555
+#: includes/class-cptch-allowlist.php:555
 msgid "One IP was deleted successfully"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:562
+#: includes/class-cptch-allowlist.php:562
 msgid "You have not entered any IP"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:565
+#: includes/class-cptch-allowlist.php:565
 msgid "You have not entered any IP in to the search form."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:567
+#: includes/class-cptch-allowlist.php:567
 msgid "Search results for"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:608
+#: includes/class-cptch-allowlist.php:608
 msgid "IP-address(es) successfully copied to the whitelist."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:622
+#: includes/class-cptch-allowlist.php:622
 #, php-format
 msgid "The reason for %s has been updated successfully."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:625
+#: includes/class-cptch-allowlist.php:625
 #, php-format
 msgid "No changes was made for %s."
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:628
+#: includes/class-cptch-allowlist.php:628
 #: includes/whitelist_reason_updater.php:16
 msgid "Error while updating reason for"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:752
+#: includes/class-cptch-allowlist.php:752
 msgid "use"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:752
+#: includes/class-cptch-allowlist.php:752
 msgid "the whitelist of"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:760
-#: includes/class-cptch-whitelist.php:768
+#: includes/class-cptch-allowlist.php:760
+#: includes/class-cptch-allowlist.php:768
 #, php-format
 msgid "use the whitelist of %s"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:761
+#: includes/class-cptch-allowlist.php:761
 #, php-format
 msgid "you should %s to use this functionality"
 msgstr ""
 
-#: includes/class-cptch-whitelist.php:769
+#: includes/class-cptch-allowlist.php:769
 #, php-format
 msgid "you should install %s to use this functionality"
 msgstr ""
