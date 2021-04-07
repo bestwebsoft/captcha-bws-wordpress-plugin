@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
-Tested up to: 5.6
-Stable tag: 5.1.0
+Tested up to: 5.7
+Stable tag: 5.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,6 +17,8 @@ Captcha plugin is the best security solution that protects your WordPress websit
 It is easy to use and manage, a simple and effective plugin which will always guard your website forms.
 
 Stop spam now!
+
+[View Demo](https://bestwebsoft.com/demo-for-captcha/?ref=readme)
 
 = Free Features =
 
@@ -59,6 +61,7 @@ Stop spam now!
 >   * Jetpack contact form
 >   * MailChimp for WordPress
 >   * Ninja Forms
+>   * Gravity Forms [NEW]
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
@@ -267,6 +270,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.1.1 - 06.04.2021 =
+* Update : BWS panel section was updated.
+* Update : All functionality was updated for WordPress 5.7
+* Pro : The compatibility with Gravity Forms has been added.
+
 = V5.1.0 - 19.01.2021 =
 * Update : BWS panel section was updated.
 * Pro : Bug related to incorrect Captcha displaying at used several Image Packages has been fixed.
@@ -332,6 +340,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.1 =
+* Plugin optimization completed.
+* The compatibility with new WordPress version updated.
 
 = V5.1.0 =
 * Appearance improved.

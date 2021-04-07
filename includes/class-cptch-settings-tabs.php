@@ -61,6 +61,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'cf7_contact'				=> array( 'name' => 'Contact Form 7', 'for_pro' => 1 ),
 				'mailchimp'					=> array( 'name' => 'Mailchimp for Wordpress', 'for_pro' => 1 ),
 				'ninja_form'				=> array( 'name' => 'Ninja Forms', 'for_pro' => 1 ),
+				'gravity_form'				=> array( 'name' => 'Gravity Forms', 'for_pro' => 1 ),
 				'buddypress_register'		=> array( 'name' => __( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_comments'		=> array( 'name' => __( 'Comments form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_group'			=> array( 'name' => __( 'Create a Group form', 'captcha-bws' ), 'for_pro' => 1 ),
@@ -136,7 +137,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 							'cf7_contact',
 							'jetpack_contact_form',
 							'mailchimp',
-							'ninja_form'
+							'ninja_form',
+							'gravity_form'
 						)
 					),
 					'bbpress' => array(

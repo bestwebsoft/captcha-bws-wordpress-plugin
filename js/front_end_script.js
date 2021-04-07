@@ -81,18 +81,29 @@
 				cptch_form_slug:	form_slug,
 			},
 			success: function( result ) {
+				var result = $.parseJSON( result );
 				captcha_block.find( '.cptch_to_remove' ).remove();
 				if ( '' === input_class ) {
-					captcha.replaceWith( result ); /* for default forms */
+					captcha.replaceWith( result['display'] ); /* for default forms */
 				} else {
-					captcha_block.replaceWith(result); /* for custom forms */
+					captcha_block.replaceWith(result['display']); /* for custom forms */
 				}
 
-				if ( $( result ).hasClass( 'cptch_recognition' ) || $( result ).find( '.cptch_wrap' ).hasClass( 'cptch_recognition' ) ) {
+				if ( $( result['display'] ).hasClass( 'cptch_recognition' ) || $( result['display'] ).find( '.cptch_wrap' ).hasClass( 'cptch_recognition' ) ) {
 					$( '.cptch_recognition' ).each( function() {
 						$( this ).find( '.cptch_input' ).css( 'width', $( this ).find( '.cptch_images_wrap' ).css( 'width' ) );
 					} );
 				}
+
+				var id = "cptch_time_limit_notice_" + result['id_postfix'];
+	            setTimeout(
+	                function() {
+	                    var notice = document.getElementById( id );
+	                    if ( notice )
+	                        notice.style.display = "block";
+	                },
+	                result['limit_time'] + '000'
+	            ); 
 			},
 			error : function ( xhr, ajaxOptions, thrownError ) {
 				clearInterval( cptch_reload_events[ index ] );
