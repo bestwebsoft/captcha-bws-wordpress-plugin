@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.1.1
+Version: 5.1.2
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -399,8 +399,7 @@ if ( ! function_exists( 'cptch_generate_key' ) ) {
  * @return void
  */
 if ( ! function_exists( 'cptch_page_router' ) ) {
-	function cptch_page_router() {
-		global $cptch_plugin_info; ?>
+	function cptch_page_router() { ?>
 		<?php if ( 'captcha.php' == $_GET['page'] ) {
 			if ( ! class_exists( 'Bws_Settings_Tabs' ) ) {
                 require_once( dirname( __FILE__ ) . '/bws_menu/class-bws-settings.php' );
@@ -1539,14 +1538,13 @@ if ( ! function_exists( 'cptch_decode' ) ) {
 if ( ! function_exists( 'cptch_limit_exhausted' ) ) {
 	function cptch_limit_exhausted( $form_slug = 'general' ) {
 		global $cptch_options;
-
 		if ( empty( $cptch_options ) ) {
 			cptch_settings();
 		}
 		if (
-			1 == $cptch_options['forms'][ 'general' ]['enable_time_limit'] &&
+			1 == $cptch_options['forms']['general']['enable_time_limit'] &&
 			isset( $_REQUEST['cptch_time'] ) &&
-			$cptch_options['forms'][['general']]['time_limit'] < time() - absint( $_REQUEST['cptch_time'] )
+			$cptch_options['forms']['general']['time_limit'] < time() - absint( $_REQUEST['cptch_time'] )
         ) {
 			return true;
         } else {

@@ -4,7 +4,7 @@ Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
 Tested up to: 5.7
-Stable tag: 5.1.1
+Stable tag: 5.1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -270,6 +270,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.1.2 - 13.04.2021 =
+* Bugfix : Captcha Time Limit Exceeded issue has been fixed.
+
 = V5.1.1 - 06.04.2021 =
 * Update : BWS panel section was updated.
 * Update : All functionality was updated for WordPress 5.7
@@ -340,6 +343,9 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.2 =
+* Bugs fixed.
 
 = V5.1.1 =
 * Plugin optimization completed.
