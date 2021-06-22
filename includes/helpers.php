@@ -23,16 +23,18 @@ if ( ! function_exists( 'cptch_get_default_options' ) ) {
 			'images_count'					=> 5,
 			'title'							=> '',
 			'required_symbol'				=> '*',
+			'text_start_slide'              => esc_html__( 'Slide to verify', 'captcha-bws' ),
+			'text_end_slide'                => esc_html__( 'Verification passed', 'captcha-bws' ),
 			'display_reload_button'			=> true,
 			'enlarge_images'				=> false,
 			'used_packages'					=> array(),
 			'enable_time_limit'				=> false,
 			'time_limit'					=> 120,
-			'no_answer'						=> __( 'Please complete the captcha.', 'captcha-bws' ),
-			'wrong_answer'					=> __( 'Please enter correct captcha value.', 'captcha-bws' ),
-			'time_limit_off'				=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
-			'time_limit_off_notice'			=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
-			'allowlist_message'			=> __( 'Your IP address is allow listed.', 'captcha-bws' ),
+			'no_answer'						=> esc_html__( 'Please complete the captcha.', 'captcha-bws' ),
+			'wrong_answer'					=> esc_html__( 'Please enter correct captcha value.', 'captcha-bws' ),
+			'time_limit_off'				=> esc_html__( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
+			'time_limit_off_notice'			=> esc_html__( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
+			'allowlist_message'				=> esc_html__( 'Your IP address is allow listed.', 'captcha-bws' ),
 			'load_via_ajax'					=> false,
 			'use_limit_attempts_allowlist'	=> false,
 			'display_settings_notice'		=> 1,
@@ -69,6 +71,7 @@ if ( ! function_exists( 'cptch_get_default_forms' ) ) {
 			'bws_contact', 'bws_booking'
 		);
 
+		$defaults = apply_filters( 'cptch_get_additional_forms_slugs', $defaults );
 		/*
 		 * Add user forms to defaults
 		 */
@@ -113,8 +116,9 @@ if ( ! function_exists( 'cptch_parse_options' ) ) {
 			foreach ( $old_fields as $old_field ) {
 				if ( isset( $old_options[ $old_field ] ) ) {
 					$new_options[ $new_field ] = $old_options[ $old_field ];
-					if ( isset( $new_options[ $old_field ] ) )
+					if ( isset( $new_options[ $old_field ] ) ) {
 						unset( $new_options[ $old_field ] );
+					}
 					break;
 				}
 			}
@@ -160,7 +164,7 @@ if ( ! function_exists( 'cptch_parse_options' ) ) {
 		}
 
 		/* Forming the options for the each of the form which are compatible with the plugin */
-		$args =array(
+		$args = array(
 			'wp_login'		=> array(
 				'enable'	=> array( 'cptchpls_login_form', 'cptch_login_form' )
 			),
@@ -181,6 +185,8 @@ if ( ! function_exists( 'cptch_parse_options' ) ) {
 				'enable'		=> array( 'cptchpls_booking_form', 'cptch_booking_form' )
 			)
 		);
+
+		$args = apply_filters( 'cptch_get_additional_plugins_options', $args );
 
 		foreach( $args as $form => $options ) {
 			foreach( $options as $new_fields => $old_fields ) {
@@ -289,9 +295,10 @@ if ( ! function_exists( 'cptch_is_compatible' ) ) {
 				$min_version = '2.0.6';
 				break;
 			default:
-				$min_version = false;
+				$min_version = apply_filters( 'cptch_is_compatible_additional_plugins', false, $plugin );
 				break;
 		}
+
 		return $min_version ? version_compare( $version, $min_version, '>' ) : true;
 	}
 }
@@ -315,6 +322,9 @@ if ( ! function_exists( 'cptch_get_plugin' ) ) {
 			case 'bws_booking':
 				return $form_slug;
 		}
+		if ( in_array( $form_slug, apply_filters( 'cptch_get_additional_forms_slugs', array() ) ) ) {
+			return $form_slug;
+		}
 	}
 }
 
@@ -333,11 +343,11 @@ if ( ! function_exists( 'cptch_get_plugin_link' ) ) {
 				return sprintf( $bws_link, 'contact-form', '9ab9d358ad3a23b8a99a8328595ede2e' );
 			case 'bws-car-rental-pro/bws-car-rental-pro.php':
 				return sprintf( $bws_link, 'car-rental-v2', '3c0c792876c76187abe0381d85d907c1' );
-			//case 'limit-attempts/limit-attempts.php':
-			//case 'limit-attempts-pro/limit-attempts-pro.php':
-				//return sprintf( $bws_link, 'limit-attempts', 'c5ba37f86ebfc2754a71c759a5907888' );
+			case 'limit-attempts/limit-attempts.php':
+			case 'limit-attempts-pro/limit-attempts-pro.php':
+				return sprintf( $bws_link, 'limit-attempts', 'c5ba37f86ebfc2754a71c759a5907888' );
 			default:
-				return '#';
+				return apply_filters( 'cptch_get_links_of_additional_plugins', '#', $bws_link, $plugin );
 		}
 	}
 }
@@ -355,7 +365,7 @@ if ( ! function_exists( 'cptch_get_plugin_name' ) ) {
 			case 'bws_booking':
 				return 'Car Rental V2 by BestWebSoft';
 			default:
-				return 'unknown';
+				return apply_filters( 'cptch_get_additional_plugin_name', 'unknown',  $plugin_slug );
 		}
 	}
 }

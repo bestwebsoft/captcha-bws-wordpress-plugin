@@ -20,12 +20,12 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			global $cptch_options, $cptch_plugin_info;
 
 			$tabs = array(
-				'settings'		=> array( 'label' => __( 'Settings', 'captcha-bws' ) ),
-				'messages'		=> array( 'label' => __( 'Messages', 'captcha-bws' ) ),
-				'misc'			=> array( 'label' => __( 'Misc', 'captcha-bws' ) ),
-				'custom_code'	=> array( 'label' => __( 'Custom Code', 'captcha-bws' ) ),
+				'settings'		=> array( 'label' => esc_html__( 'Settings', 'captcha-bws' ) ),
+				'messages'		=> array( 'label' => esc_html__( 'Messages', 'captcha-bws' ) ),
+				'misc'			=> array( 'label' => esc_html__( 'Misc', 'captcha-bws' ) ),
+				'custom_code'	=> array( 'label' => esc_html__( 'Custom Code', 'captcha-bws' ) ),
 				/*pls */
-				'license'		=> array( 'label' => __( 'License Key', 'captcha-bws' ) )
+				'license'		=> array( 'label' => esc_html__( 'License Key', 'captcha-bws' ) )
 				/* pls*/
 			);
 
@@ -43,17 +43,19 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				/*pls */
 				'wp_slug'				=> 'captcha-bws',
 				'link_key'				=> '9701bbd97e61e52baa79c58c3caacf6d',
-				'link_pn'				=> '75'
+				'link_pn'				=> '75',
 				/* pls*/
+				'doc_link'				=> 'https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/',
+				'doc_video_link'		=> 'https://www.youtube.com/watch?v=5UyK8tS3oqM'
 			) );
 
 			$this->all_plugins = get_plugins();
 
 			$this->forms = array(
-				'wp_login'				=> array( 'name' => __( 'Login form', 'captcha-bws' ) ),
-				'wp_register'			=> array( 'name' => __( 'Registration form', 'captcha-bws' ) ),
-				'wp_lost_password'		=> array( 'name' => __( 'Reset password form', 'captcha-bws' ) ),
-				'wp_comments'			=> array( 'name' => __( 'Comments form', 'captcha-bws' ) ),
+				'wp_login'				=> array( 'name' => esc_html__( 'Login form', 'captcha-bws' ) ),
+				'wp_register'			=> array( 'name' => esc_html__( 'Registration form', 'captcha-bws' ) ),
+				'wp_lost_password'		=> array( 'name' => esc_html__( 'Reset password form', 'captcha-bws' ) ),
+				'wp_comments'			=> array( 'name' => esc_html__( 'Comments form', 'captcha-bws' ) ),
 				'bws_contact'			=> array( 'name' => 'Contact Form' ),
 				'bws_booking'			=> array( 'name' => 'Car Rental V2 Pro' ),
 				/*pls */
@@ -62,23 +64,24 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'mailchimp'					=> array( 'name' => 'Mailchimp for Wordpress', 'for_pro' => 1 ),
 				'ninja_form'				=> array( 'name' => 'Ninja Forms', 'for_pro' => 1 ),
 				'gravity_form'				=> array( 'name' => 'Gravity Forms', 'for_pro' => 1 ),
-				'buddypress_register'		=> array( 'name' => __( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'buddypress_comments'		=> array( 'name' => __( 'Comments form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'buddypress_group'			=> array( 'name' => __( 'Create a Group form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'woocommerce_login'			=> array( 'name' => __( 'Login form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'woocommerce_register'		=> array( 'name' => __( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'woocommerce_lost_password'	=> array( 'name' => __( 'Forgot password form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'woocommerce_checkout'		=> array( 'name' => __( 'Checkout form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'jetpack_contact_form'		=> array( 'name' => __( 'Jetpack Contact Form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'bbpress_new_topic_form'	=> array( 'name' => __( 'bbPress New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'bbpress_reply_form'		=> array( 'name' => __( 'bbPress Reply form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'wpforo_login_form'			=> array( 'name' => __( 'wpForo Login form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'wpforo_register_form'		=> array( 'name' => __( 'wpForo Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'wpforo_new_topic_form'		=> array( 'name' => __( 'wpForo New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'wpforo_reply_form'			=> array( 'name' => __( 'wpForo Reply form', 'captcha-bws' ), 'for_pro' => 1 )
+				'buddypress_register'		=> array( 'name' => esc_html__( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'buddypress_comments'		=> array( 'name' => esc_html__( 'Comments form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'buddypress_group'			=> array( 'name' => esc_html__( 'Create a Group form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'woocommerce_login'			=> array( 'name' => esc_html__( 'Login form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'woocommerce_register'		=> array( 'name' => esc_html__( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'woocommerce_lost_password'	=> array( 'name' => esc_html__( 'Forgot password form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'woocommerce_checkout'		=> array( 'name' => esc_html__( 'Checkout form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'jetpack_contact_form'		=> array( 'name' => esc_html__( 'Jetpack Contact Form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'bbpress_new_topic_form'	=> array( 'name' => esc_html__( 'bbPress New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'bbpress_reply_form'		=> array( 'name' => esc_html__( 'bbPress Reply form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'wpforo_login_form'			=> array( 'name' => esc_html__( 'wpForo Login form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'wpforo_register_form'		=> array( 'name' => esc_html__( 'wpForo Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'wpforo_new_topic_form'		=> array( 'name' => esc_html__( 'wpForo New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
+				'wpforo_reply_form'			=> array( 'name' => esc_html__( 'wpForo Reply form', 'captcha-bws' ), 'for_pro' => 1 )
 				/* pls*/
 			);
 
+			$this->forms = apply_filters( 'cptch_get_additional_forms', $this->forms );
 			/*
 			 * Add users forms to the forms lists
 			 */
@@ -113,7 +116,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			*/
 			$this->form_categories = array(
 				'wp_default' => array(
-					'title' => __( 'WordPress default', 'captcha-bws' ),
+					'title' => esc_html__( 'WordPress default', 'captcha-bws' ),
 					'forms' => array(
 						'wp_login',
 						'wp_register',
@@ -122,7 +125,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					)
 				),
 				'external' => array(
-					'title' => __( 'External plugins', 'captcha-bws' ),
+					'title' => esc_html__( 'External plugins', 'captcha-bws' ),
 					'forms' => array(
 						'bws_contact',
                         'bws_booking'
@@ -131,7 +134,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				/*pls */
 				'other_for_pro' => array(
 					'external' => array(
-						'title' => __( 'External plugins', 'captcha-bws' ),
+						'title' => esc_html__( 'External plugins', 'captcha-bws' ),
 						'forms' => array(
 							'bws_subscriber',
 							'cf7_contact',
@@ -177,6 +180,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				)
 				/* pls*/
 			);
+			$this->form_categories['external'] = apply_filters( 'cptch_get_additional_forms_slugs', $this->form_categories['external'] );
 			/**
 			* create list with default compatible forms
 			*/
@@ -220,16 +224,21 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			$message = $notice = $error = '';
 			$notices = array();
 
+			do_action( 'cptch_notice_cf7', $this->options );
+
 			/*
 			 * Prepare general options
 			 */
 			$general_arrays = array(
-				'math_actions'		=> __( 'Arithmetic Actions', 'captcha-bws' ),
-				'operand_format'	=> __( 'Complexity', 'captcha-bws' ),
-				'used_packages'		=> __( 'Image Packages', 'captcha-bws' )
+				'math_actions'		=> esc_html__( 'Arithmetic Actions', 'captcha-bws' ),
+				'operand_format'	=> esc_html__( 'Complexity', 'captcha-bws' ),
+				'used_packages'		=> esc_html__( 'Image Packages', 'captcha-bws' )
 			);
 			$general_bool		= array( 'load_via_ajax', 'display_reload_button', 'enlarge_images' );
-			$general_strings	= array( 'type', 'title', 'required_symbol', 'no_answer', 'wrong_answer', 'time_limit_off', 'time_limit_off_notice' );
+			$general_strings	= array( 'type', 'title', 'required_symbol', 'no_answer', 'wrong_answer', 'time_limit_off', 'time_limit_off_notice', 'text_start_slide', 'text_end_slide' );
+
+			$general_bool = apply_filters( 'cptch_get_additional_bool_vars', $general_bool );
+			$general_strings = apply_filters( 'cptch_get_additional_strings_vars', $general_strings );
 
 			foreach ( $general_bool as $option ) {
 				$this->options[ $option ] = ! empty( $_REQUEST["cptch_{$option}"] );
@@ -241,7 +250,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 
 				if ( ! in_array( $option, array( 'title', 'required_symbol' ) ) && empty( $value ) ) {
 					/* The index has been added in order to prevent the displaying of this message more than once */
-					$notices['a'] = __( 'Text fields in the "Messages" tab must not be empty.', 'captcha-bws' );
+					$notices['a'] = esc_html__( 'Text fields in the "Messages" tab must not be empty.', 'captcha-bws' );
 				} else {
 					$this->options[ $option ] = $value;
 				}
@@ -255,8 +264,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				$value = isset( $_REQUEST["cptch_{$option}"] ) && is_array( $_REQUEST["cptch_{$option}"] ) ? array_map( 'esc_html', $_REQUEST["cptch_{$option}"] ) : array();
 
 				/* "Arithmetic actions" and "Complexity" must not be empty */
-				if ( empty( $value ) && 'used_packages' != $option && 'recognition' != $this->options['type'] ) {
-					$notices[] = sprintf( __( '"%s" option must not be fully disabled.', 'captcha-bws' ), $option_name );
+				if ( empty( $value ) && 'used_packages' != $option && 'recognition' != $this->options['type'] && 'slide' != $this->options['type'] ) {
+					$notices[] = sprintf( esc_html__( '"%s" option must not be fully disabled.', 'captcha-bws' ), $option_name );
 				} else {
 					$this->options[ $option ] = $value;
 				}
@@ -285,10 +294,10 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				empty( $this->options['forms']['general']['used_packages'] )
 			) {
 				if ( 'recognition' == $this->options['type'] ) {
-					$notices[] = __( 'In order to use "Optical Character Recognition" type, please select at least one of the items in the option "Image Packages".', 'captcha-bws' );
+					$notices[] = esc_html__( 'In order to use "Optical Character Recognition" type, please select at least one of the items in the option "Image Packages".', 'captcha-bws' );
 					$this->options['type'] = 'math_actions';
 				} else {
-					$notices[] = __( 'In order to use images in the CAPTCHA, please select at least one of the items in the option "Image Packages". The "Images" checkbox in "Complexity" option has been disabled.', 'captcha-bws' );
+					$notices[] = esc_html__( 'In order to use images in the CAPTCHA, please select at least one of the items in the option "Image Packages". The "Images" checkbox in "Complexity" option has been disabled.', 'captcha-bws' );
 				}
 				$key = array_keys( $this->options['operand_format'], 'images' );
 				unset( $this->options['operand_format'][ $key[0] ] );
@@ -299,7 +308,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			$this->options = apply_filters( 'cptch_before_save_options', $this->options );
 			update_option( 'cptch_options', $this->options );
 			$notice  = implode( '<br />', $notices );
-			$message = __( "Settings saved.", 'captcha-bws' );
+			$message = esc_html__( "Settings saved.", 'captcha-bws' );
 
 			return compact( 'message', 'notice' );
 		}
@@ -311,101 +320,108 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 		 * @return void
 		 */
 		public function tab_settings() {
-			$options = array(
+
+			$options = apply_filters( 'cptch_get_additional_options', array(), $this->get_form_message( 'limit_attempts' ) );
+			$options += array(
 				'type'	=> array(
 					'type'				=> 'radio',
-					'title'				=> __( 'Captcha Type', 'captcha-bws' ),
+					'title'				=> esc_html__( 'Captcha Type', 'captcha-bws' ),
 					'array_options'		=> array(
-						'math_actions'		=> array( __( 'Arithmetic actions', 'captcha-bws' ) ),
-						'recognition'		=> array( __( 'Optical Character Recognition (OCR)', 'captcha-bws' ) ),
-						'invisible'			=> array( __( 'Invisible', 'captcha-bws' ) ),
-						'slide'			    => array( __( 'Slide captcha', 'captcha-bws' ) )
+						'math_actions'		=> array( esc_html__( 'Arithmetic actions', 'captcha-bws' ) ),
+						'recognition'		=> array( esc_html__( 'Optical Character Recognition (OCR)', 'captcha-bws' ) ),
+						'invisible'			=> array( esc_html__( 'Invisible', 'captcha-bws' ) ),
+						'slide'			    => array( esc_html__( 'Slide captcha', 'captcha-bws' ) )
 					)
 				),
 				'math_actions'	=> array(
 					'type'			=> 'checkbox',
-					'title'			=> __( 'Arithmetic Actions', 'captcha-bws' ),
+					'title'			=> esc_html__( 'Arithmetic Actions', 'captcha-bws' ),
 					'array_options'	=> array(
-						'plus'				=> array( __( 'Addition', 'captcha-bws' ) . '&nbsp;(+)' ),
-						'minus'				=> array( __( 'Subtraction', 'captcha-bws' ) . '&nbsp;(-)' ),
-						'multiplications'	=> array( __( 'Multiplication', 'captcha-bws' ) . '&nbsp;(x)' )
+						'plus'				=> array( esc_html__( 'Addition', 'captcha-bws' ) . '&nbsp;(+)' ),
+						'minus'				=> array( esc_html__( 'Subtraction', 'captcha-bws' ) . '&nbsp;(-)' ),
+						'multiplications'	=> array( esc_html__( 'Multiplication', 'captcha-bws' ) . '&nbsp;(x)' )
 					),
 					'class'			=> 'cptch_for_math_actions'
 				),
 				'operand_format'	=> array(
 					'type'				=> 'checkbox',
-					'title'				=> __( 'Complexity', 'captcha-bws' ),
+					'title'				=> esc_html__( 'Complexity', 'captcha-bws' ),
 					'array_options'		=> array(
-						'numbers'		=> array( __( 'Numbers (1, 2, 3, etc.)', 'captcha-bws' ) ),
-						'words'			=> array( __( 'Words (one, two, three, etc.)', 'captcha-bws' ) ),
-						'images'		=> array( __( 'Images', 'captcha-bws' ) )
+						'numbers'		=> array( esc_html__( 'Numbers (1, 2, 3, etc.)', 'captcha-bws' ) ),
+						'words'			=> array( esc_html__( 'Words (one, two, three, etc.)', 'captcha-bws' ) ),
+						'images'		=> array( esc_html__( 'Images', 'captcha-bws' ) )
 					),
 					'class'				=> 'cptch_for_math_actions'
 				),
 				'images_count'	=> array(
 					'type'		=> 'number',
-					'title'				=> __( 'Number of Images', 'captcha-bws' ),
+					'title'				=> esc_html__( 'Number of Images', 'captcha-bws' ),
 					'min'				=> 1,
 					'max'				=> 10,
-					'block_description'	=> __( 'Set a number of images to display simultaneously as a captcha question.', 'captcha-bws' ),
+					'block_description'	=> esc_html__( 'Set a number of images to display simultaneously as a captcha question.', 'captcha-bws' ),
 					'class'				=> 'cptch_for_recognition'
 				),
 				'used_packages'	=> array(
 					'type'				=> 'pack_list',
-					'title'				=> __( 'Image Packages', 'captcha-bws' ),
+					'title'				=> esc_html__( 'Image Packages', 'captcha-bws' ),
 					'class'				=> 'cptch_images_options cptch_for_math_actions cptch_for_recognition'
 				),
 				/*pls */
 				'use_several_packages'	=> array(
 					'type'		=> 'checkbox',
-					'title'					=> __( 'Use several image packages at the same time', 'captcha-bws' ),
+					'title'					=> esc_html__( 'Use several image packages at the same time', 'captcha-bws' ),
 					'class'					=> 'cptch_images_options cptch_enable_to_use_several_packages.'
 				),
 				/* pls*/
 				'enlarge_images'	=> array(
 					'type'					=> 'checkbox',
-					'title'					=> __( 'Enlarge Images', 'captcha-bws' ),
-					'inline_description'	=> __( 'Enable to enlarge captcha images on mouseover.', 'captcha-bws' ),
+					'title'					=> esc_html__( 'Enlarge Images', 'captcha-bws' ),
+					'inline_description'	=> esc_html__( 'Enable to enlarge captcha images on mouseover.', 'captcha-bws' ),
 					'class'					=> 'cptch_images_options cptch_for_math_actions cptch_for_recognition'
 				),
 				'display_reload_button'	=> array(
 					'type'					=> 'checkbox',
-					'title'					=> __( 'Reload Button', 'captcha-bws' ),
-					'inline_description'	=> __( 'Enable to display reload button for captcha.', 'captcha-bws' ),
+					'title'					=> esc_html__( 'Reload Button', 'captcha-bws' ),
+					'inline_description'	=> esc_html__( 'Enable to display reload button for captcha.', 'captcha-bws' ),
 					'class'					=> 'cptch_for_math_actions cptch_for_recognition'
 				 ),
 				'title'	=> array(
 					'type'					=> 'text',
-					'title'					=> __( 'Captcha Title', 'captcha-bws' ) ),
+					'title'					=> esc_html__( 'Captcha Title', 'captcha-bws' ) ),
 				'required_symbol'			=> array(
 					'type'					=> 'text',
-					'title'					=> __( 'Required Symbol', 'captcha-bws' ) ),
+					'title'					=> esc_html__( 'Required Symbol', 'captcha-bws' ) ),
 				'load_via_ajax'	=> array(
 					'type'					=> 'checkbox',
-					'title'					=> __( 'Advanced Protection', 'captcha-bws' ),
-					'inline_description'	=> __( 'Enable to display captcha when the website page is loaded.', 'captcha-bws' ),
+					'title'					=> esc_html__( 'Advanced Protection', 'captcha-bws' ),
+					'inline_description'	=> esc_html__( 'Enable to display captcha when the website page is loaded.', 'captcha-bws' ),
 					'class'					=> 'cptch_for_math_actions cptch_for_recognition'
 				)
 			); ?>
-			<h3 class="bws_tab_label"><?php _e( 'Captcha Settings', 'captcha-bws' ); ?></h3>
+			<h3 class="bws_tab_label"><?php esc_html_e( 'Captcha Settings', 'captcha-bws' ); ?></h3>
 			<?php $this->help_phrase(); ?>
 			<hr>
-			<div class="bws_tab_sub_label"><?php _e( 'General', 'captcha-bws' ); ?></div>
+			<div class="bws_tab_sub_label"><?php esc_html_e( 'General', 'captcha-bws' ); ?></div>
 			<table class="form-table">
 				<tr>
-					<th scope="row"><?php _e( 'Enable Captcha for', 'captcha-bws' ); ?></th>
+					<th scope="row"><?php esc_html_e( 'Enable Captcha for', 'captcha-bws' ); ?></th>
 					<td>
 						<?php foreach ( $this->form_categories as $fieldset_name => $fieldset_data ) {
+							/*pls */
 							/**
 							* All missed forms will be displayed later in pro blocks
 							*/
 							if ( 'other_for_pro' == $fieldset_name ) {
 								continue;
-							} ?>
-							<p><?php echo $fieldset_data['title']; ?></p>
+							} 
+							/* pls*/ ?>
+							<p><i><?php echo $fieldset_data['title']; ?></i></p>
 							<br>
 							<fieldset id="<?php echo $fieldset_name; ?>">
 								<?php foreach ( $fieldset_data['forms'] as $form_name ) {
+									/**
+									* if plugin is external and it is not active, it's checkbox should be disabled
+									*/
 									$disabled = in_array( $form_name, $this->registered_forms ) && (
                                         ( isset( $this->options['related_plugins_info'][ $form_name ] ) &&
                                             'active' != $this->options['related_plugins_info'][ $form_name ]['status'] ) ||
@@ -428,12 +444,10 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 										echo $this->forms[ $form_name ]['name']; ?>
                                     </label>
 										<?php if ( 'external' == $fieldset_name && $disabled ) {
-											echo $this->get_form_message( $form_name );
-											if ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) ||
-													is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) { ?>
-                                                <br /><span class="bws_info"> <?php _e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
-											<?php }
-										} ?>
+											echo $this->get_form_message( $form_name ); /* show "instal/activate" mesage */
+										} elseif ( 'bws_contact' == $form_name && ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) ) { ?>
+                                            <br /><span class="bws_info"> <?php esc_html_e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
+										<?php } ?>
 									<br />
 								<?php } ?>
 							</fieldset>
@@ -446,7 +460,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			<?php if ( ! $this->hide_pro_tabs ) { ?>
 				<div class="bws_pro_version_bloc">
 					<div class="bws_pro_version_table_bloc">
-						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'captcha-bws' ); ?>"></button>
+						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 						<div class="bws_table_bg"></div>
 						<table class="form-table bws_pro_version">
 							<tr>
@@ -477,12 +491,13 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			<table class="form-table">
 				<!-- end pls -->
 				<?php foreach ( $options as $key => $data ) {
+					/*pls */
 					if ( 'use_several_packages' == $key ) {
 						if ( ! $this->hide_pro_tabs ) { ?>
 							</table>
 							<div class="bws_pro_version_bloc">
 								<div class="bws_pro_version_table_bloc">
-									<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'captcha-bws' ); ?>"></button>
+									<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 									<div class="bws_table_bg"></div>
 									<?php cptch_use_several_packages(); ?>
 								</div>
@@ -491,7 +506,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 							<table class="form-table">
 						<?php }
 						continue;
-					} ?>
+					} 
+					/* pls*/ ?>
 					<tr<?php if ( ! empty( $data['class'] ) ) echo ' class="' . $data['class'] . '"'; ?>>
 						<th scope="row"><?php echo ucwords( $data['title'] ); ?></th>
 						<td>
@@ -556,7 +572,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						'id'					=> "cptch_enable_time_limit",
                         'name'					=> "cptch_enable_time_limit",
                         'checked'				=> $this->options['forms']['general']['enable_time_limit'],
-                        'inline_description'	=> __( 'Enable to activate a time limit required to complete captcha.', 'captcha' )
+                        'inline_description'	=> esc_html__( 'Enable to activate a time limit required to complete captcha.', 'captcha-bws' )
                     ),
 					array(
 						'id'	=> "cptch_time_limit",
@@ -567,23 +583,29 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
                     )
                 );?>
 				<tr class="cptch_for_math_actions cptch_for_recognition">
-					<th scope="row"><?php _e( 'Time Limit', 'captcha-bws' ); ?></th>
+					<th scope="row"><?php esc_html_e( 'Time Limit', 'captcha-bws' ); ?></th>
 					<td>
 						<?php $this->add_checkbox_input( $options[0] ); ?>
 						<span class="bws_info"><?php echo $options[0][ 'inline_description' ]; ?></span>
 					</td>
 				</tr>
 				<tr class="cptch_time_limit" <?php echo $options[0]['checked'] ? '' : ' style="display: none"'; ?>>
-					<th scope="row"><?php _e( 'Time Limit Threshold', 'captcha-bws' ); ?></th>
+					<th scope="row"><?php esc_html_e( 'Time Limit Threshold', 'captcha-bws' ); ?></th>
 					<td>
 						<span class="cptch_time_limit">
-							<?php $this->add_number_input( $options[1] ); echo '&nbsp;' . _e( 'sec', 'captcha-bws' ); ?>
+							<?php $this->add_number_input( $options[1] ); echo '&nbsp;' . esc_html_e( 'sec', 'captcha-bws' ); ?>
 						</span>
 					</td>
 				</tr>
 			</table>
+			<!-- pls -->
+			<div class="bws_pro_version_bloc">
+				<?php cptch_slide_pro_block(); 
+				$this->bws_pro_block_links(); ?>
+			</div>
+			<!-- end pls -->
 			<?php foreach ( $this->forms as $form_slug => $data ) {
-				if ( isset( $data['for_pro'] ) || ( 'wp_comments' != $form_slug && $this->hide_pro_tabs ) )
+				if ( /*pls */ isset( $data['for_pro'] ) || ( /* pls*/ 'wp_comments' != $form_slug /*pls */ && $this->hide_pro_tabs ) /* pls*/ )
 					continue;
 
 				foreach ( $this->form_categories as $category_name => $category_data ) {
@@ -611,35 +633,33 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						in_array( $form_slug, array( 'wp_register', 'wp_lost_password' ) ) &&
 						! in_array( get_current_blog_id(), array( 0, 1 ) )
 					) {
-						$info		= __( 'This option is available only for network or for main blog', 'captcha-bws' );
+						$info		= esc_html__( 'This option is available only for network or for main blog', 'captcha-bws' );
 						$readonly	= ' readonly="readonly" disabled="disabled"';
 					} elseif ( ! $this->options['forms'][ $form_slug ]['enable'] ) {
 						$style = ' style="display: none;"';
 					} ?>
 					<table class="form-table cptch_<?php echo $form_slug; ?>_related_form cptch_related_form_bloc">
 						<tr class="cptch_form_option_hide_from_registered"<?php echo $style; ?>>
-							<th scope="row"><?php _e( 'Hide from Registered Users', 'captcha-bws' ); ?></th>
+							<th scope="row"><?php esc_html_e( 'Hide from Registered Users', 'captcha-bws' ); ?></th>
 							<td>
-								<?php $this->add_checkbox_input( compact( 'id', 'name', 'checked', 'readonly' ) ); ?> <span class="bws_info"><?php _e( 'Enable to hide captcha for registered users.', 'captcha-bws' ); ?></span>
+								<?php $this->add_checkbox_input( compact( 'id', 'name', 'checked', 'readonly' ) ); ?> <span class="bws_info"><?php esc_html_e( 'Enable to hide captcha for registered users.', 'captcha-bws' ); ?></span>
 							</td>
 						</tr>
 					</table><!-- .cptch_$form_slug --><!-- pls -->
 					<?php if ( ! $this->hide_pro_tabs ) { ?>
 						<div class="bws_pro_version_bloc cptch_<?php echo $form_slug; ?>_related_form cptch_related_form_bloc">
 							<div class="bws_pro_version_table_bloc">
-								<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'captcha-bws' ); ?>"></button>
+								<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 								<div class="bws_table_bg"></div>
 								<?php cptch_additional_options(); ?>
 							</div> <!-- .bws_pro_version_table_bloc -->
 							<?php $this->bws_pro_block_links(); ?>
 						</div>
 					<?php } ?>
-					<!-- end pls -->
 				<?php } else { ?>
-					<!-- pls -->
 					<div class="bws_pro_version_bloc cptch_<?php echo $form_slug; ?>_related_form cptch_related_form_bloc">
 						<div class="bws_pro_version_table_bloc">
-							<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'captcha-bws' ); ?>"></button>
+							<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 							<div class="bws_table_bg"></div>
 							<?php $plugin = cptch_get_plugin( $form_slug );
 
@@ -650,20 +670,20 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 								) {
 									$link			= $this->options['related_plugins_info'][ $plugin ]['link'];
 									$plugin_name	= $this->options['related_plugins_info'][ $plugin ]['plugin_info']['Name'];
-									$recommended	= __( 'update', 'captcha-bws' );
-									$to_current		= __( 'to the current version', 'captcha-bws' );
+									$recommended	= esc_html__( 'update', 'captcha-bws' );
+									$to_current		= esc_html__( 'to the current version', 'captcha-bws' );
 								/* Don't display form options for deactivated or not installed plugins */
 								} else {
 									switch ( $this->options['related_plugins_info'][ $plugin ]['status'] ) {
 										case 'not_installed':
 											$link			= $this->options['related_plugins_info'][ $plugin ]['link'];
 											$plugin_name	= cptch_get_plugin_name( $plugin );
-											$recommended	= __( 'install', 'captcha-bws' );
+											$recommended	= esc_html__( 'install', 'captcha-bws' );
 											break;
 										case 'deactivated':
 											$link			= admin_url( '/plugins.php' );
 											$plugin_name	= $this->options['related_plugins_info'][ $plugin ]['plugin_info']['Name'];
-											$recommended	= __( 'activate', 'captcha-bws' );
+											$recommended	= esc_html__( 'activate', 'captcha-bws' );
 											break;
 										default:
 											break;
@@ -675,10 +695,10 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 								<table class="form-table bws_pro_version">
 									<tr>
 										<td colspan="2">
-											<?php echo __( 'You should', 'captcha-bws' ) .
+											<?php echo esc_html__( 'You should', 'captcha-bws' ) .
 											"&nbsp;<a href=\"{$link}\" target=\"_blank\">{$recommended}&nbsp;{$plugin_name}</a>&nbsp;" .
 											( empty( $to_current ) ? '' : $to_current . '&nbsp;' ) .
-											__( 'to use this functionality.', 'captcha-bws' ); ?>
+											esc_html__( 'to use this functionality.', 'captcha-bws' ); ?>
 										</td>
 									</tr>
 								</table>
@@ -690,7 +710,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						<?php $this->bws_pro_block_links(); ?>
 					</div><!-- .bws_pro_version_bloc -->
 					<!-- end pls -->
-				<?php }
+				<?php } 
 			}
 		}
 
@@ -701,31 +721,44 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 		 * @return void
 		 */
 		public function tab_messages() { ?>
-			<h3 class="bws_tab_label"><?php _e( 'Messages Settings', 'captcha-bws' ); ?></h3>
+			<h3 class="bws_tab_label"><?php esc_html_e( 'Messages Settings', 'captcha-bws' ); ?></h3>
 			<?php $this->help_phrase(); ?>
 			<hr>
 			<table class="form-table">
 				<?php $messages = array(
 					'no_answer'				=> array(
-						'title'			=> __( 'Captcha Field is Empty', 'captcha-bws' ),
-						'message'		=> __( 'Please complete the captcha.', 'captcha-bws' )
+						'title'			=> esc_html__( 'Captcha Field is Empty', 'captcha-bws' ),
+						'message'		=> esc_html__( 'Please complete the captcha.', 'captcha-bws' ),
+						'class'			=> 'cptch_for_math_actions cptch_for_recognition'
 					),
 					'wrong_answer'			=> array(
-						'title'			=> __( 'Captcha is Incorrect', 'captcha-bws' ),
-						'message'		=> __( 'Please enter correct captcha value.', 'captcha-bws' )
+						'title'			=> esc_html__( 'Captcha is Incorrect', 'captcha-bws' ),
+						'message'		=> esc_html__( 'Please enter correct captcha value.', 'captcha-bws' ),
+						'class'			=> 'cptch_for_math_actions cptch_for_recognition'
 					),
 					'time_limit_off'		=> array(
-						'title'			=> __( 'Captcha Time Limit Exceeded', 'captcha-bws' ),
-						'message'		=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
+						'title'			=> esc_html__( 'Captcha Time Limit Exceeded', 'captcha-bws' ),
+						'message'		=> esc_html__( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
+						'class'			=> 'cptch_for_math_actions cptch_for_recognition'
 					),
 					'time_limit_off_notice'	=> array(
-						'title'			=> __( 'Answer Time Limit Exceeded', 'captcha-bws' ),
-						'message'		=> __( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
-						'description'	=> __( 'This message will be displayed above the captcha field.', 'captcha-bws' )
+						'title'			=> esc_html__( 'Answer Time Limit Exceeded', 'captcha-bws' ),
+						'message'		=> esc_html__( 'Time limit exceeded. Please complete the captcha once again.', 'captcha-bws' ),
+						'description'	=> esc_html__( 'This message will be displayed above the captcha field.', 'captcha-bws' ),
+						'class'			=> 'cptch_for_math_actions cptch_for_recognition'
+					),
+					'text_start_slide'	=> array(
+						'title'			=> esc_html__( 'Slide Title', 'captcha-bws' ),
+						'class'			=> 'cptch_for_slide'
+					),
+					'text_end_slide'	=> array(
+						'title'			=> esc_html__( 'Successfull Verification', 'captcha-bws' ),
+						'class'			=> 'cptch_for_slide' 
 					)
 				);
+				$messages = apply_filters( 'cptch_get_additional_messages', $messages );
 				foreach ( $messages as $message_name => $data ) { ?>
-					<tr>
+					<tr <?php if ( ! empty( $data['class'] ) ) echo ' class="' . $data['class'] . '"'; ?>>
 						<th scope="row"><?php echo $data['title']; ?></th>
 						<td>
 							<textarea <?php echo 'id="cptch_' . $message_name . '" name="cptch_' . $message_name . '"'; ?>><?php echo trim( $this->options[ $message_name ] ); ?></textarea>
@@ -735,18 +768,19 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						</td>
 					</tr>
 				<?php } ?>
-			</table>
+			</table><!-- pls -->
 			<?php if ( ! $this->hide_pro_tabs ) { ?>
 				<div class="bws_pro_version_bloc">
 					<div class="bws_pro_version_table_bloc">
-						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php _e( 'Close', 'captcha-bws' ); ?>"></button>
+						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 						<div class="bws_table_bg"></div>
 							<?php cptch_display_messages(); ?>
 							<?php $this->bws_pro_block_links(); ?>
 					</div>
 				</div>
-			<?php }
-		}
+			<?php } ?>
+			<!-- end pls -->
+		<?php }
 
 		/**
 		 * Display custom options on the 'misc' tab
@@ -782,7 +816,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				type="checkbox"
 				id="<?php echo $args['id']; ?>"
 				name="<?php echo $args['name']; ?>"
-				value="<?php ! empty( $args['value'] ) ? print_r($args['value']) : print_r(1) ; ?>"
+				value="<?php ! empty( $args['value'] ) ? print_r( $args['value'] ) : print_r( 1 ) ; ?>"
 				<?php echo ( ! empty( $args['disabled'] ) ) ? ' disabled="disabled"' : '';
 				echo $args['checked'] ? ' checked="checked"' : ''; ?> />
 		<?php }
@@ -846,7 +880,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			);
 
 			if ( empty( $package_list ) ) { ?>
-				<span><?php _e( 'The image packages list is empty. Please restore default settings or re-install the plugin to fix this error.', 'captcha-bws' ); ?></span>
+				<span><?php esc_html_e( 'The image packages list is empty. Please restore default settings or re-install the plugin to fix this error.', 'captcha-bws' ); ?></span>
 				<?php return false;
 			}
 
@@ -894,9 +928,9 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 		private function get_form_message( $slug ) {
 			switch ( $this->options['related_plugins_info'][ $slug ]['status'] ) {
 				case 'deactivated':
-					return ' <a href="plugins.php">' . __( 'Activate', 'captcha-bws' ) . '</a>';
+					return ' <a href="plugins.php">' . esc_html__( 'Activate', 'captcha-bws' ) . '</a>';
 				case 'not_installed':
-					return ' <a href="' . $this->options['related_plugins_info'][ $slug ]['link'] . '" target="_blank">' . __( 'Install Now', 'captcha-bws' ) . '</a>';
+					return ' <a href="' . $this->options['related_plugins_info'][ $slug ]['link'] . '" target="_blank">' . esc_html__( 'Install Now', 'captcha-bws' ) . '</a>';
 				default:
 					return '';
 			}
@@ -956,6 +990,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'bws_booking' => 'bws-car-rental-pro/bws-car-rental-pro.php',
 				'limit_attempts' => array( 'limit-attempts/limit-attempts.php', 'limit-attempts-pro/limit-attempts-pro.php' )
 			);
+
+			$compatible_plugins = apply_filters( 'cptch_get_additional_plugins', $compatible_plugins );			
 
 			foreach ( $compatible_plugins as $plugin_slug => $plugin )
 				$options['related_plugins_info'][ $plugin_slug ] = cptch_get_plugin_status( $plugin, $this->all_plugins );

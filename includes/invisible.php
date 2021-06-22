@@ -26,11 +26,11 @@ if ( ! class_exists( 'Cptch_Invisible' ) ) {
 				$this->use_openssl = version_compare( PHP_VERSION, '5.3.0' ) >= 0 && function_exists( 'openssl_encrypt' );
 
 				if ( ! $this->use_openssl && ! function_exists( 'mcrypt_encrypt' ) ) {
-					throw new Exception( __( "Can't handle encrypting/decrypting data.", 'captcha-bws' ), 'cant_crypt' );
+					throw new Exception( esc_html__( "Can't handle encrypting/decrypting data.", 'captcha-bws' ), 'cant_crypt' );
 				}
 
 			} catch( Exception $e ) {
-				$this->add_error( 'cptch_init_error', __( 'ERROR', 'captcha-bws' ) . ': ' . $e->getMessage() );
+				$this->add_error( 'cptch_init_error', esc_html__( 'ERROR', 'captcha-bws' ) . ': ' . $e->getMessage() );
 			}
 		}
 
@@ -59,10 +59,10 @@ if ( ! class_exists( 'Cptch_Invisible' ) ) {
 				$key	= base64_encode( $key );
 				$code	= base64_encode( $code );
 
-				return "<input type=\"hidden\" name=\"cptch_code\" value=\"{$code}\"><input type=\"hidden\" name=\"cptch_key\" value=\"{$key}\">" . sprintf( __( "Protected by %s", 'captcha-bws' ), 'BestWebSoft Captcha' );
+				return "<input type=\"hidden\" name=\"cptch_code\" value=\"{$code}\"><input type=\"hidden\" name=\"cptch_key\" value=\"{$key}\">" . sprintf( esc_html__( "Protected by %s", 'captcha-bws' ), 'BestWebSoft Captcha' );
 
 			} catch( Exception $e ) {
-				$this->add_error( $e->getCode(), __( 'ERROR', 'captcha-bws' ) . ': ' . $e->getMessage() );
+				$this->add_error( $e->getCode(), esc_html__( 'ERROR', 'captcha-bws' ) . ': ' . $e->getMessage() );
 				return false;
 			}
 		}
@@ -75,7 +75,7 @@ if ( ! class_exists( 'Cptch_Invisible' ) ) {
 				$key	= empty( $_REQUEST['cptch_key'] ) ? '' : base64_decode( $_REQUEST['cptch_key'] );
 
 				if ( empty( $code ) || empty( $key ) ) {
-					throw new Exception( __( 'Empty captcha.', 'captcha-bws' ) );
+					throw new Exception( esc_html__( 'Empty captcha.', 'captcha-bws' ) );
 				}
 
 				if ( $this->use_openssl ) {
@@ -91,16 +91,16 @@ if ( ! class_exists( 'Cptch_Invisible' ) ) {
 				$answer = json_decode( $answer, true );
 
 				if ( absint( $answer['time'] ) + $this->data['time_limit'] < $this->data['current_time'] ) {
-					throw new Exception( __( "Captcha time limit exceeded.", 'captcha-bws' ) );
+					throw new Exception( esc_html__( "Captcha time limit exceeded.", 'captcha-bws' ) );
 				}
 
 				if ( 0 !== strcasecmp( $answer['url'], $this->data['url'] ) ||
 					0 !== strcasecmp( $answer['secret'], $this->data['secret_key'] )
 				)
-					throw new Exception( __( "Wrong captcha.", 'captcha-bws' ) );
+					throw new Exception( esc_html__( "Wrong captcha.", 'captcha-bws' ) );
 
 			} catch( Exception $e ) {
-				$this->add_error( 'cptch_check_errors', __( 'ERROR', 'captcha-bws' ) . ': ' . $e->getMessage() );
+				$this->add_error( 'cptch_check_errors', esc_html__( 'ERROR', 'captcha-bws' ) . ': ' . $e->getMessage() );
 			}
 		}
 

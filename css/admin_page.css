@@ -7,10 +7,11 @@
 	content: "\e901";
 	font-family: 'bwsicons' !important;
 }
+/*pls */
 .bws_pro_version_bloc.cptch_pro_block.cptch_packages_banner {
     max-width: 550px;
 }
-
+/* pls*/
 @media screen and (max-width: 782px) {
 	p.search-box input[name="s"] {
 		margin-top: 20px !important;

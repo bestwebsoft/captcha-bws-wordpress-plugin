@@ -40,8 +40,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			if ( ! file_exists( $this->upload_dir ) ) {
 				if ( is_writable( $upload_dir['basedir'] ) )
 					mkdir( $this->upload_dir );
-				else
-					$this->error = __( 'Can not load images in to the "uploads" folder. Please, check your permissions.', 'captcha-bws' );
+				else {
+					$this->error = esc_html__( 'Can not load images in to the "uploads" folder. Please, check your permissions.', 'captcha-bws' );
+				}
 			}
 			$this->basename = plugin_basename( __FILE__ );
 		}
@@ -246,7 +247,7 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			$unsorted	= array();
 
 			if ( 2 >= count( $files ) ) {
-				$this->error = __( 'Archive is empty', 'captcha-bws' );
+				$this->error = esc_html__( 'Archive is empty', 'captcha-bws' );
 				return false;
 			}
 
@@ -316,8 +317,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			if ( ! empty( $this->packages ) ) {
 				$time = date( 'Y-m-d H:i:s', current_time( 'timestamp' ) );
 				foreach ( $this->packages as $package ) {
-					if ( ! in_array( $package['id'], $used_packages ) && ! $package['disabled'] )
+					if ( ! in_array( $package['id'], $used_packages ) && ! $package['disabled'] ) {
 						$used_packages[] = $package['id'];
+					}
 					$insert_data[] = "( {$package['id']}, '{$package['name']}', '{$package['folder']}', '{$package['settings']}', '{$time}' )";
 				}
 				if ( ! empty( $insert_data ) ) {
@@ -482,8 +484,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 
 			$folder = preg_replace( '/\s+/', '_', $folder );
 
-			if ( ! file_exists( "{$this->upload_dir}/{$folder}" ) )
+			if ( ! file_exists( "{$this->upload_dir}/{$folder}" ) ) {
 				mkdir( "{$this->upload_dir}/{$folder}" );
+			}
 
 			/* add package to "saved" in order to detect duplicate packages */
 			$this->saved_packages[ $id ] = $folder;
@@ -604,10 +607,10 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			if ( ! empty( $wrong ) ) {
 				$message =
 					sprintf(
-						__( 'Some settings of the package %s were set incorrectly. They have been skipped.', 'captcha-bws' ),
+						esc_html__( 'Some settings of the package %s were set incorrectly. They have been skipped.', 'captcha-bws' ),
 						"<a href=\"admin.php?page=captcha-packages.php&cptch_action=edit&id={$package_id}\">\"{$package_name}\"</a>"
 					) . '<br />' .
-					__( 'Wrong data', 'captcha-bws' ) . ':&nbsp;' . implode( ',&nbsp;', $wrong );
+					esc_html__( 'Wrong data', 'captcha-bws' ) . ':&nbsp;' . implode( ',&nbsp;', $wrong );
 				$this->notice = ( $this->notice ? $this->notice . '<br/>' : '' ) . $message;
 			}
 
@@ -640,10 +643,12 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			$next_id = 0;
 			foreach ( $this->saved_images as $item ) {
 				$max = max( array_keys( $item ) );
-				if ( ! $next_id )
+				if ( ! $next_id ) {
 					$next_id = $max;
-				else
+				}
+				else {
 					$next_id = $max < $next_id ? $next_id : $max;
+				}
 			}
 			$next_id ++;
 			return $next_id;

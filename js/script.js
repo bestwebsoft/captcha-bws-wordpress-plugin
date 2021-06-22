@@ -4,7 +4,12 @@
  */
 ( function( $ ) {
 	$( document ).ready( function() {
-
+		/*pls */
+		/* include color-picker */
+		if ( $.fn.wpColorPicker ) {
+			$( '.cptch_color_field' ).wpColorPicker();
+		}
+		/* pls*/
 		/**
 		 * Handle the styling of the "Settings" tab on the plugin settings page
 		 * @since 4.2.3
@@ -23,7 +28,7 @@
 		}
 
 		cptch_time_limit();
-		$( $( '#cptch_enable_time_limit' ) ).click( function() {
+		$( $( '#cptch_enable_time_limit' ) ).on( 'click', function() {
 			cptch_time_limit();
 		} );
 
@@ -36,7 +41,7 @@
 
 			$( this ).is( ':checked' ) ? formBlock.show() : formBlock.hide();
 
-			$( this ).click( function() {
+			$( this ).on( 'click', function() {
 				if ( $( this ).is( ':checked' ) ) {
 					formBlock.show();
 				} else {
@@ -46,7 +51,7 @@
 		} );
 
 		// hide/show whitelist "add new form"
-		$( 'button[name="cptch_show_allowlist_form"]' ).click( function() {
+		$( 'button[name="cptch_show_allowlist_form"]' ).on( 'click', function() {
 			$( this ).parent( 'form' ).hide();
 			$( '.cptch_allowlist_form' ).show();
 			return false;
@@ -57,24 +62,29 @@
 			var cptchType = $( 'input[name="cptch_type"]:checked' ).val();
 
 			if ( 'recognition' === cptchType ) {
-				$( '.cptch_for_math_actions' ).hide();
+				$( '.cptch_for_math_actions, .cptch_for_slide' ).hide();
 				$( '.cptch_for_recognition' ).show();
 				imageFormat.attr( 'checked', 'checked' );
 				cptchImageOptions();
 				cptch_time_limit();
-			} else if ( 'invisible' === cptchType || 'slide' === cptchType ) {
+			} else if ( 'slide' === cptchType ) {
 				$( '.cptch_for_recognition, .cptch_for_math_actions, .cptch_time_limit' ).hide();
+				$( '.cptch_for_slide' ).show();
 				imageFormat.removeAttr('checked' );
 				cptchImageOptions();
+			} else if ( 'invisible' === cptchType ){
+				$( '.cptch_for_recognition, .cptch_for_math_actions, .cptch_time_limit, .cptch_for_slide' ).hide();
+				imageFormat.removeAttr( 'checked' );
+				cptchImageOptions();
 			} else {
-				$( '.cptch_for_recognition' ).hide();
+				$( '.cptch_for_recognition, .cptch_for_slide' ).hide();
 				$( '.cptch_for_math_actions' ).show();
 				cptch_time_limit();
 			}
 		}
 
 		cptch_type();
-		$( 'input[name="cptch_type"]' ).click( function() {
+		$( 'input[name="cptch_type"]' ).on( 'click', function() {
 			cptch_type();
 		} );
 
@@ -90,10 +100,10 @@
 			}
 		}
 		cptchImageOptions();
-		imageFormat.click( function() { cptchImageOptions(); } );
+		imageFormat.on( 'click', function() { cptchImageOptions(); } );
 
 		/* Open/hide packages pro tab */
-		$( '#cptch_show_packages_pro_tab_open' ).click( function() {
+		$( '#cptch_show_packages_pro_tab_open' ).on( 'click', function() {
 			$( '#cptch_show_packages_pro_tab' ).toggle();
 		} );
 	} );

@@ -2,32 +2,33 @@ msgid ""
 msgstr ""
 "Project-Id-Version: captcha\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-18 10:36+0300\n"
-"PO-Revision-Date: 2019-04-18 10:36+0300\n"
+"POT-Creation-Date: 2021-05-13 14:47+0300\n"
+"PO-Revision-Date: 2021-05-13 14:47+0300\n"
 "Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
 "Language-Team: Beijing City Tour <beijingtours@foxmail.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_html__;esc_html_e\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:369
-#: includes/class-cptch-settings-tabs.php:383
+#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:427
+#: includes/class-cptch-settings-tabs.php:409
 msgid "Captcha Settings"
 msgstr "验证码设置"
 
-#: captcha-bws.php:49 captcha-bws.php:1568 captcha-bws.php:1581
-#: includes/class-cptch-settings-tabs.php:25
+#: captcha-bws.php:49 captcha-bws.php:1680 captcha-bws.php:1693
+#: includes/class-cptch-settings-tabs.php:23
 msgid "Settings"
 msgstr "设置"
 
-#: captcha-bws.php:57 includes/class-cptch-package-list.php:90
+#: captcha-bws.php:57 includes/class-cptch-package-list.php:91
 msgid "Captcha Packages"
 msgstr "验证码包"
 
@@ -35,459 +36,490 @@ msgstr "验证码包"
 msgid "Packages"
 msgstr "安装包"
 
-#: captcha-bws.php:67 captcha-bws.php:407
-msgid "Captcha Whitelist"
+#: captcha-bws.php:66 captcha-bws.php:468
+#, fuzzy
+#| msgid "Captcha Whitelist"
+msgid "Captcha Allow List"
 msgstr "验证码白名单"
 
-#: captcha-bws.php:68 includes/pro_banners.php:51
-msgid "Whitelist"
-msgstr "白名单"
+#: captcha-bws.php:67 includes/pro_banners.php:51
+#, fuzzy
+#| msgid "Allowed diapason:"
+msgid "Allow List"
+msgstr "允许的均衡："
 
-#: captcha-bws.php:86 captcha-bws.php:423 includes/pro_banners.php:30
+#: captcha-bws.php:84 captcha-bws.php:494 includes/pro_banners.php:30
 msgid "Upgrade to Pro"
 msgstr "升级到专业版"
 
-#: captcha-bws.php:372
+#: captcha-bws.php:353 includes/helpers.php:26
+msgid "Slide to verify"
+msgstr ""
+
+#: captcha-bws.php:354 includes/helpers.php:27
+#, fuzzy
+#| msgid "Notification messages"
+msgid "Verification passed"
+msgstr "通知消息"
+
+#: captcha-bws.php:430
 msgid "WARNING"
 msgstr "警告"
 
-#: captcha-bws.php:372
+#: captcha-bws.php:430
 msgid "The plugin works correctly only if JavaScript is enabled."
 msgstr "只有在启用 javascript 的情况下, 插件才可以正常工作。"
 
-#: captcha-bws.php:409
+#: captcha-bws.php:470
 msgid "Add New"
 msgstr "添加新的"
 
-#: captcha-bws.php:575
+#: captcha-bws.php:476
+msgid "This tab contains Pro options only."
+msgstr ""
+
+#: captcha-bws.php:478
+#, php-format
+msgid "%sChange the settings%s to view the Pro options."
+msgstr ""
+
+#: captcha-bws.php:643
 msgid "Click the BACK button on your browser, and try again."
 msgstr "点击浏览器上的返回按钮，然后重试。"
 
-#: captcha-bws.php:819
+#: captcha-bws.php:902
 msgid "Captcha loading..."
 msgstr "正在检测......"
 
-#: captcha-bws.php:821
+#: captcha-bws.php:904
 #, fuzzy
 #| msgid "In order to pass the CAPTCHA please enable JavaScript"
 msgid "In order to pass the CAPTCHA please enable JavaScript."
 msgstr "为了通过验证码，请启用JavaScript"
 
-#: captcha-bws.php:1241
+#: captcha-bws.php:1330
 msgid "zero"
 msgstr "零"
 
-#: captcha-bws.php:1242
+#: captcha-bws.php:1331
 msgid "one"
 msgstr "一"
 
-#: captcha-bws.php:1243
+#: captcha-bws.php:1332
 msgid "two"
 msgstr "二"
 
-#: captcha-bws.php:1244
+#: captcha-bws.php:1333
 msgid "three"
 msgstr "三"
 
-#: captcha-bws.php:1245
+#: captcha-bws.php:1334
 msgid "four"
 msgstr "四"
 
-#: captcha-bws.php:1246
+#: captcha-bws.php:1335
 msgid "five"
 msgstr "五"
 
-#: captcha-bws.php:1247
+#: captcha-bws.php:1336
 msgid "six"
 msgstr "六"
 
-#: captcha-bws.php:1248
+#: captcha-bws.php:1337
 msgid "seven"
 msgstr "七"
 
-#: captcha-bws.php:1249
+#: captcha-bws.php:1338
 msgid "eight"
 msgstr "八"
 
-#: captcha-bws.php:1250
+#: captcha-bws.php:1339
 msgid "nine"
 msgstr "九"
 
-#: captcha-bws.php:1252
+#: captcha-bws.php:1341
 msgid "ten"
 msgstr "十"
 
-#: captcha-bws.php:1253
+#: captcha-bws.php:1342
 msgid "eleven"
 msgstr "十一"
 
-#: captcha-bws.php:1254
+#: captcha-bws.php:1343
 msgid "twelve"
 msgstr "十二"
 
-#: captcha-bws.php:1255
+#: captcha-bws.php:1344
 msgid "thirteen"
 msgstr "十三"
 
-#: captcha-bws.php:1256
+#: captcha-bws.php:1345
 msgid "fourteen"
 msgstr "十四"
 
-#: captcha-bws.php:1257
+#: captcha-bws.php:1346
 msgid "fifteen"
 msgstr "十五"
 
-#: captcha-bws.php:1258
+#: captcha-bws.php:1347
 msgid "sixteen"
 msgstr "十六"
 
-#: captcha-bws.php:1259
+#: captcha-bws.php:1348
 msgid "seventeen"
 msgstr "十七"
 
-#: captcha-bws.php:1260
+#: captcha-bws.php:1349
 msgid "eighteen"
 msgstr "十八"
 
-#: captcha-bws.php:1261
+#: captcha-bws.php:1350
 msgid "nineteen"
 msgstr "十九"
 
-#: captcha-bws.php:1263
+#: captcha-bws.php:1352
 msgid "twenty"
 msgstr "二十"
 
-#: captcha-bws.php:1264
+#: captcha-bws.php:1353
 msgid "twenty one"
 msgstr "二十一"
 
-#: captcha-bws.php:1265
+#: captcha-bws.php:1354
 msgid "twenty two"
 msgstr "二十二"
 
-#: captcha-bws.php:1266
+#: captcha-bws.php:1355
 msgid "twenty three"
 msgstr "二十三"
 
-#: captcha-bws.php:1267
+#: captcha-bws.php:1356
 msgid "twenty four"
 msgstr "二十四"
 
-#: captcha-bws.php:1268
+#: captcha-bws.php:1357
 msgid "twenty five"
 msgstr "二十五"
 
-#: captcha-bws.php:1269
+#: captcha-bws.php:1358
 msgid "twenty six"
 msgstr "二十六"
 
-#: captcha-bws.php:1270
+#: captcha-bws.php:1359
 msgid "twenty seven"
 msgstr "二十七"
 
-#: captcha-bws.php:1271
+#: captcha-bws.php:1360
 msgid "twenty eight"
 msgstr "二十八"
 
-#: captcha-bws.php:1272
+#: captcha-bws.php:1361
 msgid "twenty nine"
 msgstr "二十九"
 
-#: captcha-bws.php:1274
+#: captcha-bws.php:1363
 msgid "thirty"
 msgstr "三时"
 
-#: captcha-bws.php:1275
+#: captcha-bws.php:1364
 msgid "thirty one"
 msgstr "三十一"
 
-#: captcha-bws.php:1276
+#: captcha-bws.php:1365
 msgid "thirty two"
 msgstr "三十二"
 
-#: captcha-bws.php:1277
+#: captcha-bws.php:1366
 msgid "thirty three"
 msgstr "三十三"
 
-#: captcha-bws.php:1278
+#: captcha-bws.php:1367
 msgid "thirty four"
 msgstr "三十四"
 
-#: captcha-bws.php:1279
+#: captcha-bws.php:1368
 msgid "thirty five"
 msgstr "三十五"
 
-#: captcha-bws.php:1280
+#: captcha-bws.php:1369
 msgid "thirty six"
 msgstr "三十六"
 
-#: captcha-bws.php:1281
+#: captcha-bws.php:1370
 msgid "thirty seven"
 msgstr "三十七"
 
-#: captcha-bws.php:1282
+#: captcha-bws.php:1371
 msgid "thirty eight"
 msgstr "三十八"
 
-#: captcha-bws.php:1283
+#: captcha-bws.php:1372
 msgid "thirty nine"
 msgstr "三十九"
 
-#: captcha-bws.php:1285
+#: captcha-bws.php:1374
 msgid "forty"
 msgstr "四十"
 
-#: captcha-bws.php:1286
+#: captcha-bws.php:1375
 msgid "forty one"
 msgstr "四十一"
 
-#: captcha-bws.php:1287
+#: captcha-bws.php:1376
 msgid "forty two"
 msgstr "四十二"
 
-#: captcha-bws.php:1288
+#: captcha-bws.php:1377
 msgid "forty three"
 msgstr "四十三"
 
-#: captcha-bws.php:1289
+#: captcha-bws.php:1378
 msgid "forty four"
 msgstr "四十四"
 
-#: captcha-bws.php:1290
+#: captcha-bws.php:1379
 msgid "forty five"
 msgstr "四十五"
 
-#: captcha-bws.php:1291
+#: captcha-bws.php:1380
 msgid "forty six"
 msgstr "四十六"
 
-#: captcha-bws.php:1292
+#: captcha-bws.php:1381
 msgid "forty seven"
 msgstr "四十七"
 
-#: captcha-bws.php:1293
+#: captcha-bws.php:1382
 msgid "forty eight"
 msgstr "四十八"
 
-#: captcha-bws.php:1294
+#: captcha-bws.php:1383
 msgid "forty nine"
 msgstr "四十九"
 
-#: captcha-bws.php:1296
+#: captcha-bws.php:1385
 msgid "fifty"
 msgstr "五十"
 
-#: captcha-bws.php:1297
+#: captcha-bws.php:1386
 msgid "fifty one"
 msgstr "五十一"
 
-#: captcha-bws.php:1298
+#: captcha-bws.php:1387
 msgid "fifty two"
 msgstr "五十二"
 
-#: captcha-bws.php:1299
+#: captcha-bws.php:1388
 msgid "fifty three"
 msgstr "五十三"
 
-#: captcha-bws.php:1300
+#: captcha-bws.php:1389
 msgid "fifty four"
 msgstr "五十四"
 
-#: captcha-bws.php:1301
+#: captcha-bws.php:1390
 msgid "fifty five"
 msgstr "五十五"
 
-#: captcha-bws.php:1302
+#: captcha-bws.php:1391
 msgid "fifty six"
 msgstr "五十六"
 
-#: captcha-bws.php:1303
+#: captcha-bws.php:1392
 msgid "fifty seven"
 msgstr "五十七"
 
-#: captcha-bws.php:1304
+#: captcha-bws.php:1393
 msgid "fifty eight"
 msgstr "五十八"
 
-#: captcha-bws.php:1305
+#: captcha-bws.php:1394
 msgid "fifty nine"
 msgstr "五十九"
 
-#: captcha-bws.php:1307
+#: captcha-bws.php:1396
 msgid "sixty"
 msgstr "六十"
 
-#: captcha-bws.php:1308
+#: captcha-bws.php:1397
 msgid "sixty one"
 msgstr "六十一"
 
-#: captcha-bws.php:1309
+#: captcha-bws.php:1398
 msgid "sixty two"
 msgstr "六十二"
 
-#: captcha-bws.php:1310
+#: captcha-bws.php:1399
 msgid "sixty three"
 msgstr "六十三"
 
-#: captcha-bws.php:1311
+#: captcha-bws.php:1400
 msgid "sixty four"
 msgstr "六十四"
 
-#: captcha-bws.php:1312
+#: captcha-bws.php:1401
 msgid "sixty five"
 msgstr "六十五"
 
-#: captcha-bws.php:1313
+#: captcha-bws.php:1402
 msgid "sixty six"
 msgstr "六十六"
 
-#: captcha-bws.php:1314
+#: captcha-bws.php:1403
 msgid "sixty seven"
 msgstr "六十七"
 
-#: captcha-bws.php:1315
+#: captcha-bws.php:1404
 msgid "sixty eight"
 msgstr "六十八"
 
-#: captcha-bws.php:1316
+#: captcha-bws.php:1405
 msgid "sixty nine"
 msgstr "六十九"
 
-#: captcha-bws.php:1318
+#: captcha-bws.php:1407
 msgid "seventy"
 msgstr "七十"
 
-#: captcha-bws.php:1319
+#: captcha-bws.php:1408
 msgid "seventy one"
 msgstr "七十一"
 
-#: captcha-bws.php:1320
+#: captcha-bws.php:1409
 msgid "seventy two"
 msgstr "七十二"
 
-#: captcha-bws.php:1321
+#: captcha-bws.php:1410
 msgid "seventy three"
 msgstr "七十三"
 
-#: captcha-bws.php:1322
+#: captcha-bws.php:1411
 msgid "seventy four"
 msgstr "七十四"
 
-#: captcha-bws.php:1323
+#: captcha-bws.php:1412
 msgid "seventy five"
 msgstr "七十五"
 
-#: captcha-bws.php:1324
+#: captcha-bws.php:1413
 msgid "seventy six"
 msgstr "七十六"
 
-#: captcha-bws.php:1325
+#: captcha-bws.php:1414
 msgid "seventy seven"
 msgstr "七十七"
 
-#: captcha-bws.php:1326
+#: captcha-bws.php:1415
 msgid "seventy eight"
 msgstr "七十八"
 
-#: captcha-bws.php:1327
+#: captcha-bws.php:1416
 msgid "seventy nine"
 msgstr "七十九"
 
-#: captcha-bws.php:1329
+#: captcha-bws.php:1418
 msgid "eighty"
 msgstr "八十"
 
-#: captcha-bws.php:1330
+#: captcha-bws.php:1419
 msgid "eighty one"
 msgstr "八十一"
 
-#: captcha-bws.php:1331
+#: captcha-bws.php:1420
 msgid "eighty two"
 msgstr "八十二"
 
-#: captcha-bws.php:1332
+#: captcha-bws.php:1421
 msgid "eighty three"
 msgstr "八十三"
 
-#: captcha-bws.php:1333
+#: captcha-bws.php:1422
 msgid "eighty four"
 msgstr "八十四"
 
-#: captcha-bws.php:1334
+#: captcha-bws.php:1423
 msgid "eighty five"
 msgstr "八十五"
 
-#: captcha-bws.php:1335
+#: captcha-bws.php:1424
 msgid "eighty six"
 msgstr "八十六"
 
-#: captcha-bws.php:1336
+#: captcha-bws.php:1425
 msgid "eighty seven"
 msgstr "八十七"
 
-#: captcha-bws.php:1337
+#: captcha-bws.php:1426
 msgid "eighty eight"
 msgstr "八十八"
 
-#: captcha-bws.php:1338
+#: captcha-bws.php:1427
 msgid "eighty nine"
 msgstr "八十九"
 
-#: captcha-bws.php:1340
+#: captcha-bws.php:1429
 msgid "ninety"
 msgstr "九十"
 
-#: captcha-bws.php:1341
+#: captcha-bws.php:1430
 msgid "ninety one"
 msgstr "九十一"
 
-#: captcha-bws.php:1342
+#: captcha-bws.php:1431
 msgid "ninety two"
 msgstr "九十二"
 
-#: captcha-bws.php:1343
+#: captcha-bws.php:1432
 msgid "ninety three"
 msgstr "九十三"
 
-#: captcha-bws.php:1344
+#: captcha-bws.php:1433
 msgid "ninety four"
 msgstr "九十四"
 
-#: captcha-bws.php:1345
+#: captcha-bws.php:1434
 msgid "ninety five"
 msgstr "九十五"
 
-#: captcha-bws.php:1346
+#: captcha-bws.php:1435
 msgid "ninety six"
 msgstr "九十六"
 
-#: captcha-bws.php:1347
+#: captcha-bws.php:1436
 msgid "ninety seven"
 msgstr "九十七"
 
-#: captcha-bws.php:1348
+#: captcha-bws.php:1437
 msgid "ninety eight"
 msgstr "九十八"
 
-#: captcha-bws.php:1349
+#: captcha-bws.php:1438
 msgid "ninety nine"
 msgstr "九十九"
 
-#: captcha-bws.php:1414
+#: captcha-bws.php:1503
 msgid "Encryption password is not set"
 msgstr "未设置加密密码"
 
-#: captcha-bws.php:1435
+#: captcha-bws.php:1524
 msgid "Decryption password is not set"
 msgstr "未设置解密密码"
 
-#: captcha-bws.php:1583
+#: captcha-bws.php:1695
 msgid "FAQ"
 msgstr "常见问题"
 
-#: captcha-bws.php:1584
+#: captcha-bws.php:1696
 msgid "Support"
 msgstr "支持"
+
+#: captcha-bws.php:1747
+msgid "Could not save captcha response to database."
+msgstr ""
+
+#: captcha-bws.php:1793
+msgid "Error"
+msgstr "错误"
 
 #: includes/class-cptch-package-list.php:37
 msgid "package"
@@ -497,20 +529,20 @@ msgstr "安装包"
 msgid "packages"
 msgstr "安装包"
 
-#: includes/class-cptch-package-list.php:110
+#: includes/class-cptch-package-list.php:113
 msgid "Search"
 msgstr "搜索IP"
 
-#: includes/class-cptch-package-list.php:132
+#: includes/class-cptch-package-list.php:135
 msgid "No packages found"
 msgstr "没有发现安装包"
 
-#: includes/class-cptch-package-list.php:143
+#: includes/class-cptch-package-list.php:145
 msgid "Package"
 msgstr "安装包"
 
-#: includes/class-cptch-package-list.php:144 includes/pro_banners.php:271
-#: includes/pro_banners.php:298 includes/pro_banners.php:321
+#: includes/class-cptch-package-list.php:146 includes/pro_banners.php:269
+#: includes/pro_banners.php:294 includes/pro_banners.php:317
 msgid "Date Added"
 msgstr "项目已添加。"
 
@@ -520,77 +552,69 @@ msgid ""
 "permissions."
 msgstr "无法上传图像至“uploads”文件夹。请检查权限。"
 
-#: includes/class-cptch-package-loader.php:134
+#: includes/class-cptch-package-loader.php:135
 #, php-format
 msgid "One package has been updated or added to the database."
 msgid_plural "%s packages have been updated or added to the database."
 msgstr[0] "一个数据包已在数据库更新或添加成功。"
 msgstr[1] "%s 个数据包已在数据库更新或添加成功。"
 
-#: includes/class-cptch-package-loader.php:135
+#: includes/class-cptch-package-loader.php:136
 #, php-format
 msgid "One image has been updated or added to the database."
 msgid_plural "%s images have been updated or added to the database."
 msgstr[0] "一个图片已在数据库更新或添加成功。"
 msgstr[1] "%s 个图片已在数据库更新或添加成功。"
 
-#: includes/class-cptch-package-loader.php:249
+#: includes/class-cptch-package-loader.php:250
 msgid "Archive is empty"
 msgstr "存档为空"
 
-#: includes/class-cptch-package-loader.php:608
+#: includes/class-cptch-package-loader.php:610
 #, php-format
 msgid ""
 "Some settings of the package %s were set incorrectly. They have been skipped."
 msgstr "数据包%s的设置不正确，他会被跳过。"
 
-#: includes/class-cptch-package-loader.php:611
+#: includes/class-cptch-package-loader.php:613
 msgid "Wrong data"
 msgstr "数据错误"
 
-#: includes/class-cptch-settings-tabs.php:26
+#: includes/class-cptch-settings-tabs.php:24
 msgid "Messages"
 msgstr "信息"
 
-#: includes/class-cptch-settings-tabs.php:27
+#: includes/class-cptch-settings-tabs.php:25
 msgid "Misc"
 msgstr "其他"
 
-#: includes/class-cptch-settings-tabs.php:28
+#: includes/class-cptch-settings-tabs.php:26
 msgid "Custom Code"
 msgstr "自定义代码"
 
-#: includes/class-cptch-settings-tabs.php:30
+#: includes/class-cptch-settings-tabs.php:28
 msgid "License Key"
 msgstr "授权码"
 
-#: includes/class-cptch-settings-tabs.php:57
+#: includes/class-cptch-settings-tabs.php:55
 #: includes/class-cptch-settings-tabs.php:70
 msgid "Login form"
 msgstr "登录页"
 
-#: includes/class-cptch-settings-tabs.php:58
+#: includes/class-cptch-settings-tabs.php:56
 #: includes/class-cptch-settings-tabs.php:67
 #: includes/class-cptch-settings-tabs.php:71
 msgid "Registration form"
 msgstr "注册表单"
 
-#: includes/class-cptch-settings-tabs.php:59
+#: includes/class-cptch-settings-tabs.php:57
 msgid "Reset password form"
 msgstr "重置密码页"
 
-#: includes/class-cptch-settings-tabs.php:60
+#: includes/class-cptch-settings-tabs.php:58
 #: includes/class-cptch-settings-tabs.php:68
 msgid "Comments form"
 msgstr "评论"
-
-#: includes/class-cptch-settings-tabs.php:65
-msgid "Mailchimp for Wordpress"
-msgstr "Wordpress的Mailchimp"
-
-#: includes/class-cptch-settings-tabs.php:66
-msgid "Ninja Forms"
-msgstr ""
 
 #: includes/class-cptch-settings-tabs.php:69
 msgid "Create a Group form"
@@ -632,62 +656,46 @@ msgstr "wpRoro新话题表单"
 msgid "wpForo Reply form"
 msgstr "wpRoro回复表单"
 
-#: includes/class-cptch-settings-tabs.php:118
+#: includes/class-cptch-settings-tabs.php:121
 msgid "WordPress default"
 msgstr "Wordpress默认"
 
-#: includes/class-cptch-settings-tabs.php:127
-#: includes/class-cptch-settings-tabs.php:135
+#: includes/class-cptch-settings-tabs.php:130
+#: includes/class-cptch-settings-tabs.php:139
 msgid "External plugins"
 msgstr "外部插件"
 
-#: includes/class-cptch-settings-tabs.php:145
-msgid "BbPress"
-msgstr "BbPress"
-
-#: includes/class-cptch-settings-tabs.php:152
-msgid "BuddyPress"
-msgstr "BuddyPress"
-
-#: includes/class-cptch-settings-tabs.php:160
-msgid "WooCommerce"
-msgstr "WooCommerce"
-
-#: includes/class-cptch-settings-tabs.php:169
-msgid "Forums - wpForo"
-msgstr "Forums - wpForo"
-
-#: includes/class-cptch-settings-tabs.php:226
-#: includes/class-cptch-settings-tabs.php:320
+#: includes/class-cptch-settings-tabs.php:236
+#: includes/class-cptch-settings-tabs.php:342
 msgid "Arithmetic Actions"
 msgstr "算术操作"
 
-#: includes/class-cptch-settings-tabs.php:227
-#: includes/class-cptch-settings-tabs.php:330
+#: includes/class-cptch-settings-tabs.php:237
+#: includes/class-cptch-settings-tabs.php:352
 msgid "Complexity"
 msgstr "复杂性"
 
-#: includes/class-cptch-settings-tabs.php:228
-#: includes/class-cptch-settings-tabs.php:348 includes/pro_banners.php:109
+#: includes/class-cptch-settings-tabs.php:238
+#: includes/class-cptch-settings-tabs.php:370 includes/pro_banners.php:109
 msgid "Image Packages"
 msgstr "图像包"
 
-#: includes/class-cptch-settings-tabs.php:242
+#: includes/class-cptch-settings-tabs.php:259
 msgid "Text fields in the \"Messages\" tab must not be empty."
 msgstr "“信息”栏不能为空"
 
-#: includes/class-cptch-settings-tabs.php:253
+#: includes/class-cptch-settings-tabs.php:274
 #, php-format
 msgid "\"%s\" option must not be fully disabled."
 msgstr "\"%s\"设置不能被彻底禁用"
 
-#: includes/class-cptch-settings-tabs.php:282
+#: includes/class-cptch-settings-tabs.php:303
 msgid ""
 "In order to use \"Optical Character Recognition\" type, please select at "
 "least one of the items in the option \"Image Packages\"."
 msgstr "要使用“图像字符识别”类型，请选择“图像包”选项中的至少一个项目。"
 
-#: includes/class-cptch-settings-tabs.php:285
+#: includes/class-cptch-settings-tabs.php:306
 msgid ""
 "In order to use images in the CAPTCHA, please select at least one of the "
 "items in the option \"Image Packages\". The \"Images\" checkbox in "
@@ -696,226 +704,249 @@ msgstr ""
 "要在CAPTCHA中使用图像，请选择“图像包”选项中的至少一个项目。 “复杂性”选项中"
 "的“图像”复选框已被禁用。"
 
-#: includes/class-cptch-settings-tabs.php:296
+#: includes/class-cptch-settings-tabs.php:317
 msgid "Settings saved."
 msgstr "设置已被保存。"
 
-#: includes/class-cptch-settings-tabs.php:311
+#: includes/class-cptch-settings-tabs.php:332
 msgid "Captcha Type"
 msgstr "验证码类型 "
 
-#: includes/class-cptch-settings-tabs.php:313
+#: includes/class-cptch-settings-tabs.php:334
 msgid "Arithmetic actions"
 msgstr "算术操作"
 
-#: includes/class-cptch-settings-tabs.php:314
+#: includes/class-cptch-settings-tabs.php:335
 msgid "Optical Character Recognition (OCR)"
 msgstr "图像字符识别(OCR)"
 
-#: includes/class-cptch-settings-tabs.php:315
+#: includes/class-cptch-settings-tabs.php:336
 msgid "Invisible"
 msgstr "不可见"
 
-#: includes/class-cptch-settings-tabs.php:322
+#: includes/class-cptch-settings-tabs.php:337
+#, fuzzy
+#| msgid "Captcha"
+msgid "Slide captcha"
+msgstr "验证码"
+
+#: includes/class-cptch-settings-tabs.php:344
 msgid "Addition"
 msgstr "添加"
 
-#: includes/class-cptch-settings-tabs.php:323
+#: includes/class-cptch-settings-tabs.php:345
 #, fuzzy
 #| msgid "Subtruction"
 msgid "Subtraction"
 msgstr "减法"
 
-#: includes/class-cptch-settings-tabs.php:324
+#: includes/class-cptch-settings-tabs.php:346
 msgid "Multiplication"
 msgstr "乘法"
 
-#: includes/class-cptch-settings-tabs.php:332
+#: includes/class-cptch-settings-tabs.php:354
 msgid "Numbers (1, 2, 3, etc.)"
 msgstr "数字(例如1,2,3)"
 
-#: includes/class-cptch-settings-tabs.php:333
+#: includes/class-cptch-settings-tabs.php:355
 msgid "Words (one, two, three, etc.)"
 msgstr "文字(例如一，二，三)"
 
-#: includes/class-cptch-settings-tabs.php:334
+#: includes/class-cptch-settings-tabs.php:356
 msgid "Images"
 msgstr "图像"
 
-#: includes/class-cptch-settings-tabs.php:340
+#: includes/class-cptch-settings-tabs.php:362
 msgid "Number of Images"
 msgstr "图片数量"
 
-#: includes/class-cptch-settings-tabs.php:343
+#: includes/class-cptch-settings-tabs.php:365
 msgid "Set a number of images to display simultaneously as a captcha question."
 msgstr "设置多个图像以同时显示为验证码问题。"
 
-#: includes/class-cptch-settings-tabs.php:354
+#: includes/class-cptch-settings-tabs.php:376
 msgid "Use several image packages at the same time"
 msgstr "在同一时间使用多种图像包"
 
-#: includes/class-cptch-settings-tabs.php:360
+#: includes/class-cptch-settings-tabs.php:382
 msgid "Enlarge Images"
 msgstr "放大图片"
 
-#: includes/class-cptch-settings-tabs.php:361
+#: includes/class-cptch-settings-tabs.php:383
 msgid "Enable to enlarge captcha images on mouseover."
 msgstr "允许在鼠标悬停时放大验证码图像。"
 
-#: includes/class-cptch-settings-tabs.php:366
+#: includes/class-cptch-settings-tabs.php:388
 msgid "Reload Button"
 msgstr "重新加载按钮"
 
-#: includes/class-cptch-settings-tabs.php:367
+#: includes/class-cptch-settings-tabs.php:389
 msgid "Enable to display reload button for captcha."
 msgstr "允许显示重新加载按钮"
 
-#: includes/class-cptch-settings-tabs.php:372
+#: includes/class-cptch-settings-tabs.php:394
 msgid "Captcha Title"
 msgstr "验证码标题"
 
-#: includes/class-cptch-settings-tabs.php:375
+#: includes/class-cptch-settings-tabs.php:397
 msgid "Required Symbol"
 msgstr "必须输入标志的标识符"
 
-#: includes/class-cptch-settings-tabs.php:378
+#: includes/class-cptch-settings-tabs.php:400
 msgid "Advanced Protection"
 msgstr "高级防护"
 
-#: includes/class-cptch-settings-tabs.php:379
+#: includes/class-cptch-settings-tabs.php:401
 msgid "Enable to display captcha when the website page is loaded."
 msgstr "允许加载图片在网页加载完成后"
 
-#: includes/class-cptch-settings-tabs.php:386
+#: includes/class-cptch-settings-tabs.php:412
 msgid "General"
 msgstr "通用"
 
-#: includes/class-cptch-settings-tabs.php:389
+#: includes/class-cptch-settings-tabs.php:415
 msgid "Enable Captcha for"
 msgstr "允许验证码用于"
 
-#: includes/class-cptch-settings-tabs.php:418
+#: includes/class-cptch-settings-tabs.php:457
 msgid "Enable to add the CAPTCHA to forms on their settings pages."
 msgstr "启动将CAPTCHA添加到其设置页面上的表单。"
 
-#: includes/class-cptch-settings-tabs.php:434
-#: includes/class-cptch-settings-tabs.php:470
-#: includes/class-cptch-settings-tabs.php:610
-#: includes/class-cptch-settings-tabs.php:622
-#: includes/class-cptch-settings-tabs.php:723 includes/pro_banners.php:21
+#: includes/class-cptch-settings-tabs.php:471
+#: includes/class-cptch-settings-tabs.php:508
+#: includes/class-cptch-settings-tabs.php:660
+#: includes/class-cptch-settings-tabs.php:670
+#: includes/class-cptch-settings-tabs.php:782 includes/pro_banners.php:21
+#: includes/pro_banners.php:350
 msgid "Close"
 msgstr "关闭"
 
-#: includes/class-cptch-settings-tabs.php:539
+#: includes/class-cptch-settings-tabs.php:583
 #, fuzzy
 #| msgid "Enable to activate a time limit requeired to complete captcha."
 msgid "Enable to activate a time limit required to complete captcha."
 msgstr "启动验证码限时时间"
 
-#: includes/class-cptch-settings-tabs.php:550 includes/pro_banners.php:135
+#: includes/class-cptch-settings-tabs.php:594 includes/pro_banners.php:135
 msgid "Time Limit"
 msgstr "限时时间"
 
-#: includes/class-cptch-settings-tabs.php:557
+#: includes/class-cptch-settings-tabs.php:601
 #, fuzzy
 #| msgid "Time Limit Thershold"
 msgid "Time Limit Threshold"
 msgstr "时限阈值"
 
-#: includes/class-cptch-settings-tabs.php:560
+#: includes/class-cptch-settings-tabs.php:604
 msgid "sec"
 msgstr "秒"
 
-#: includes/class-cptch-settings-tabs.php:594
+#: includes/class-cptch-settings-tabs.php:644
 msgid "This option is available only for network or for main blog"
 msgstr "此选项仅适用于网络或主博客"
 
-#: includes/class-cptch-settings-tabs.php:601
+#: includes/class-cptch-settings-tabs.php:651
 msgid "Hide from Registered Users"
 msgstr "对已已登录的用户不显示"
 
-#: includes/class-cptch-settings-tabs.php:633
+#: includes/class-cptch-settings-tabs.php:653
+#, fuzzy
+#| msgid "Hide from registered users"
+msgid "Enable to hide captcha for registered users."
+msgstr "从注册用户隐藏"
+
+#: includes/class-cptch-settings-tabs.php:681
 msgid "update"
 msgstr "更新"
 
-#: includes/class-cptch-settings-tabs.php:634
+#: includes/class-cptch-settings-tabs.php:682
 msgid "to the current version"
 msgstr "到当前版本"
 
-#: includes/class-cptch-settings-tabs.php:641
+#: includes/class-cptch-settings-tabs.php:689
 msgid "install"
 msgstr "安装"
 
-#: includes/class-cptch-settings-tabs.php:646
+#: includes/class-cptch-settings-tabs.php:694
 msgid "activate"
 msgstr "激活"
 
-#: includes/class-cptch-settings-tabs.php:658
+#: includes/class-cptch-settings-tabs.php:706
 msgid "You should"
 msgstr "你应该"
 
-#: includes/class-cptch-settings-tabs.php:661
+#: includes/class-cptch-settings-tabs.php:709
 msgid "to use this functionality."
 msgstr "使用此功能。"
 
-#: includes/class-cptch-settings-tabs.php:684
+#: includes/class-cptch-settings-tabs.php:732
 msgid "Messages Settings"
 msgstr "消息设置"
 
-#: includes/class-cptch-settings-tabs.php:690
+#: includes/class-cptch-settings-tabs.php:738
 msgid "Captcha Field is Empty"
 msgstr "验证码为空"
 
-#: includes/class-cptch-settings-tabs.php:691 includes/helpers.php:31
+#: includes/class-cptch-settings-tabs.php:739 includes/helpers.php:33
 msgid "Please complete the captcha."
 msgstr "请完成验证码。"
 
-#: includes/class-cptch-settings-tabs.php:694
+#: includes/class-cptch-settings-tabs.php:743
 msgid "Captcha is Incorrect"
 msgstr "验证码不正确"
 
-#: includes/class-cptch-settings-tabs.php:695 includes/helpers.php:32
+#: includes/class-cptch-settings-tabs.php:744 includes/helpers.php:34
 msgid "Please enter correct captcha value."
 msgstr "请输入正确的验证码。"
 
-#: includes/class-cptch-settings-tabs.php:698
+#: includes/class-cptch-settings-tabs.php:748
 #, fuzzy
 #| msgid "Captcha time limit exceeded."
 msgid "Captcha Time Limit Exceeded"
 msgstr "超过验证时限。"
 
-#: includes/class-cptch-settings-tabs.php:699
-#: includes/class-cptch-settings-tabs.php:703 includes/helpers.php:33
-#: includes/helpers.php:34
+#: includes/class-cptch-settings-tabs.php:749
+#: includes/class-cptch-settings-tabs.php:754 includes/helpers.php:35
+#: includes/helpers.php:36
 msgid "Time limit exceeded. Please complete the captcha once again."
 msgstr "超出时限。 请再次填写验证码。"
 
-#: includes/class-cptch-settings-tabs.php:702
+#: includes/class-cptch-settings-tabs.php:753
 #, fuzzy
 #| msgid "Time Limit Exceeded"
 msgid "Answer Time Limit Exceeded"
 msgstr "超出时限"
 
-#: includes/class-cptch-settings-tabs.php:704
+#: includes/class-cptch-settings-tabs.php:755
 msgid "This message will be displayed above the captcha field."
 msgstr "此消息将显示在验证码字段上方。"
 
-#: includes/class-cptch-settings-tabs.php:830
+#: includes/class-cptch-settings-tabs.php:759
+msgid "Slide Title"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:763
+msgid "Successfull Verification"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:890
 msgid ""
 "The image packages list is empty. Please restore default settings or re-"
 "install the plugin to fix this error."
 msgstr "图像包列表为空。 请恢复默认设置或重新安装插件以修复此错误。"
 
-#: includes/class-cptch-settings-tabs.php:878
+#: includes/class-cptch-settings-tabs.php:938
 msgid "Activate"
 msgstr "激活"
 
-#: includes/class-cptch-settings-tabs.php:880
+#: includes/class-cptch-settings-tabs.php:940
 msgid "Install Now"
 msgstr "现在安装"
 
-#: includes/helpers.php:35 includes/pro_banners.php:82
-msgid "Your IP address is Whitelisted."
+#: includes/helpers.php:37 includes/pro_banners.php:82
+#, fuzzy
+#| msgid "Your IP address is Whitelisted."
+msgid "Your IP address is allow listed."
 msgstr "你的IP在白名单"
 
 #: includes/invisible.php:29
@@ -958,17 +989,17 @@ msgstr "添加新的"
 msgid "Default"
 msgstr "默认"
 
-#: includes/pro_banners.php:55
-msgid "Limit Attempts"
-msgstr "有限的尝试"
-
 #: includes/pro_banners.php:57
+#, fuzzy
+#| msgid ""
+#| "With a whitelist you can hide captcha field for your personal and trusted "
+#| "IP addresses."
 msgid ""
-"With a whitelist you can hide captcha field for your personal and trusted IP "
-"addresses."
+"With a allow list you can hide captcha field for your personal and trusted "
+"IP addresses."
 msgstr "你可以设置对于你自己或在白名单的IP隐藏验证码。"
 
-#: includes/pro_banners.php:67 includes/pro_banners.php:204
+#: includes/pro_banners.php:67 includes/pro_banners.php:202
 msgid "Allowed formats"
 msgstr "允许的格式"
 
@@ -977,7 +1008,7 @@ msgid "Allowed separators for IPs: a comma"
 msgstr "IP的允许分隔符：逗号"
 
 #: includes/pro_banners.php:68 includes/pro_banners.php:71
-#: includes/pro_banners.php:211 includes/pro_banners.php:219
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
 msgid "semicolon"
 msgstr "分号"
 
@@ -985,8 +1016,8 @@ msgstr "分号"
 msgid "ordinary space, tab, new line or carriage return"
 msgstr "普通空格，制表符，换行符或回车符"
 
-#: includes/pro_banners.php:69 includes/pro_banners.php:215
-#: includes/pro_banners.php:268 includes/pro_banners.php:318
+#: includes/pro_banners.php:69 includes/pro_banners.php:213
+#: includes/pro_banners.php:266 includes/pro_banners.php:314
 msgid "Reason"
 msgstr "原因"
 
@@ -999,7 +1030,9 @@ msgid "tab, new line or carriage return"
 msgstr "标签，换行符或回车符"
 
 #: includes/pro_banners.php:81
-msgid "Whitelisted IP"
+#, fuzzy
+#| msgid "Whitelisted IP"
+msgid "Allow Listed IP"
 msgstr "IP白名单"
 
 #: includes/pro_banners.php:83
@@ -1022,97 +1055,155 @@ msgstr "启动验证码限时时间"
 msgid "Use Several Image Packages at The Same Time"
 msgstr "同时使用多个图像包"
 
-#: includes/pro_banners.php:189
+#: includes/pro_banners.php:187
 msgid "Load IP Address(-es)"
 msgstr "加载IP地址"
 
-#: includes/pro_banners.php:192
-msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
+#: includes/pro_banners.php:190
+#, fuzzy
+#| msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
+msgid "Load IP addresses from the \"Limit Attempts\" allow list."
 msgstr "从“限制尝试”白名单加载IP地址。"
 
-#: includes/pro_banners.php:194
+#: includes/pro_banners.php:192
 #, fuzzy
 #| msgid "Add IP to whitelist"
-msgid "IP to whitelist"
+msgid "IP to allow list"
 msgstr "将IP添加到白名单"
 
-#: includes/pro_banners.php:200
+#: includes/pro_banners.php:198
 msgid "My IP"
 msgstr "我的IP"
 
-#: includes/pro_banners.php:209
+#: includes/pro_banners.php:207
 #, fuzzy
 #| msgid "Allowed diapason:"
 msgid "Allowed diapason"
 msgstr "允许的均衡："
 
-#: includes/pro_banners.php:211
+#: includes/pro_banners.php:209
 #, fuzzy
 msgid "Allowed separators"
 msgstr "IP的允许分隔符：逗号"
 
-#: includes/pro_banners.php:211 includes/pro_banners.php:219
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
 msgid "a comma"
 msgstr ""
 
-#: includes/pro_banners.php:211
+#: includes/pro_banners.php:209
 #, fuzzy
 #| msgid "ordinary space, tab, new line or carriage return"
 msgid "ordinary space, tab, new line or carriage return."
 msgstr "普通空格，制表符，换行符或回车符"
 
-#: includes/pro_banners.php:219
+#: includes/pro_banners.php:217
 #, fuzzy
 #| msgid "Allowed separators for reasons: a comma"
 msgid "Allowed separators for reasons"
 msgstr "允许分隔符的原因：逗号"
 
-#: includes/pro_banners.php:219
+#: includes/pro_banners.php:217
 #, fuzzy
 #| msgid "tab, new line or carriage return"
 msgid "tab, new line or carriage return."
 msgstr "标签，换行符或回车符"
 
-#: includes/pro_banners.php:222
-msgid "Add IP to whitelist"
+#: includes/pro_banners.php:220
+#, fuzzy
+#| msgid "Add IP to whitelist"
+msgid "Add IP to allow list"
 msgstr "将IP添加到白名单"
 
-#: includes/pro_banners.php:226
+#: includes/pro_banners.php:224 includes/pro_banners.php:226
 msgid "search"
 msgstr "搜索"
 
-#: includes/pro_banners.php:233 includes/pro_banners.php:331
+#: includes/pro_banners.php:231 includes/pro_banners.php:327
 msgid "Bulk Actions"
 msgstr "批量操作"
 
-#: includes/pro_banners.php:234 includes/pro_banners.php:285
-#: includes/pro_banners.php:332
+#: includes/pro_banners.php:232 includes/pro_banners.php:283
+#: includes/pro_banners.php:328
 msgid "Trash"
 msgstr "回收站"
 
-#: includes/pro_banners.php:240 includes/pro_banners.php:338
+#: includes/pro_banners.php:234 includes/pro_banners.php:330
+msgid "Apply"
+msgstr ""
+
+#: includes/pro_banners.php:238 includes/pro_banners.php:334
 msgid "All dates"
 msgstr "全部数据(日期)"
 
-#: includes/pro_banners.php:241 includes/pro_banners.php:339
+#: includes/pro_banners.php:239 includes/pro_banners.php:241
+#: includes/pro_banners.php:335 includes/pro_banners.php:337
 msgid "Filter"
 msgstr "筛选"
 
-#: includes/pro_banners.php:246 includes/pro_banners.php:344
+#: includes/pro_banners.php:244 includes/pro_banners.php:340
 msgid "items"
 msgstr "项目"
 
-#: includes/pro_banners.php:258 includes/pro_banners.php:308
+#: includes/pro_banners.php:256 includes/pro_banners.php:304
 msgid "IP Address"
 msgstr "IP 地址"
 
-#: includes/pro_banners.php:264 includes/pro_banners.php:314
+#: includes/pro_banners.php:262 includes/pro_banners.php:310
 msgid "Range from/to"
 msgstr "范围从/到"
 
-#: includes/pro_banners.php:284
+#: includes/pro_banners.php:282
 msgid "Edit"
 msgstr "编辑"
+
+#: includes/pro_banners.php:354
+msgid "Slider Color"
+msgstr ""
+
+#: includes/pro_banners.php:369
+msgid "Successfull Slider Color"
+msgstr ""
+
+#: includes/pro_banners.php:384
+msgid "Slide Container Color"
+msgstr ""
+
+#: includes/pro_banners.php:399
+msgid "Slide Title Color"
+msgstr ""
+
+#: includes/pro_banners.php:414
+msgid "Slide Title Size"
+msgstr ""
+
+#: includes/pro_banners.php:427
+msgid "Set a font-size for title."
+msgstr ""
+
+#: js/slide_captcha/dist/index-bundle.js:6
+msgid "Unhandled promise rejection"
+msgstr ""
+
+#~ msgid "Whitelist"
+#~ msgstr "白名单"
+
+#~ msgid "Mailchimp for Wordpress"
+#~ msgstr "Wordpress的Mailchimp"
+
+#~ msgid "BbPress"
+#~ msgstr "BbPress"
+
+#~ msgid "BuddyPress"
+#~ msgstr "BuddyPress"
+
+#~ msgid "WooCommerce"
+#~ msgstr "WooCommerce"
+
+#~ msgid "Forums - wpForo"
+#~ msgstr "Forums - wpForo"
+
+#~ msgid "Limit Attempts"
+#~ msgstr "有限的尝试"
 
 #~ msgid "Captcha Pro Settings"
 #~ msgstr "验证码设置"
@@ -1309,9 +1400,6 @@ msgstr "编辑"
 #~ msgid "Settings saved"
 #~ msgstr "设置已保存。"
 
-#~ msgid "Hide from registered users"
-#~ msgstr "从注册用户隐藏"
-
 #~ msgid "Allowed formats:"
 #~ msgstr "允许的格式："
 
@@ -1492,9 +1580,6 @@ msgstr "编辑"
 #~ msgid "These messages will be displayed inside of the CAPTCHA"
 #~ msgstr "请输入正确的验证码"
 
-#~ msgid "Notification messages"
-#~ msgstr "通知消息"
-
 #~ msgid "to use this functionality"
 #~ msgstr "以使用此功能"
 
@@ -1552,17 +1637,11 @@ msgstr "编辑"
 #~ msgid "Enable the CAPTCHA for"
 #~ msgstr "启用验证码"
 
-#~ msgid "Captcha"
-#~ msgstr "验证码"
-
 #~ msgid "This setting is available in Pro version"
 #~ msgstr "此设置在Pro版本中可用"
 
 #~ msgid "Go PRO"
 #~ msgstr "收费版"
-
-#~ msgid "Error"
-#~ msgstr "错误"
 
 #~ msgid "Unlock premium options by upgrading to Pro version"
 #~ msgstr "升级到Pro版本即可解锁高级选项"

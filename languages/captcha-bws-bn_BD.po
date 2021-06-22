@@ -3,1123 +3,1698 @@ msgid ""
 msgstr ""
 "Project-Id-Version: captcha-pro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-27 14:57+0300\n"
-"PO-Revision-Date: 2018-07-27 14:57+0300\n"
+"POT-Creation-Date: 2021-05-13 14:31+0300\n"
+"PO-Revision-Date: 2021-05-13 14:31+0300\n"
 "Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
 "Language-Team: SM Mehdi Akram <mehdi.akram@gmail.com>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;esc_html__;esc_html_e\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: captcha-bws.php:34 captcha-bws.php:36 captcha-bws.php:327
-#: includes/class-cptch-settings-tabs.php:378
+#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:427
+#: includes/class-cptch-settings-tabs.php:409
 msgid "Captcha Settings"
 msgstr ""
 
-#: captcha-bws.php:36 captcha-bws.php:1505 captcha-bws.php:1518
-#: includes/class-cptch-settings-tabs.php:25
+#: captcha-bws.php:49 captcha-bws.php:1680 captcha-bws.php:1693
+#: includes/class-cptch-settings-tabs.php:23
 msgid "Settings"
 msgstr "সেটিংস"
 
-#: captcha-bws.php:38 includes/class-cptch-package-list.php:90
+#: captcha-bws.php:57 includes/class-cptch-package-list.php:91
 msgid "Captcha Packages"
 msgstr ""
 
-#: captcha-bws.php:38
+#: captcha-bws.php:58
 msgid "Packages"
 msgstr ""
 
-#: captcha-bws.php:41 captcha-bws.php:364
-msgid "Captcha Whitelist"
+#: captcha-bws.php:66 captcha-bws.php:468
+#, fuzzy
+msgid "Captcha Allow List"
+msgstr "ক্যাপচা সেটিংস"
+
+#: captcha-bws.php:67 includes/pro_banners.php:51
+msgid "Allow List"
 msgstr ""
 
-#: captcha-bws.php:41 includes/pro_banners.php:18
-msgid "Whitelist"
-msgstr ""
-
-#: captcha-bws.php:48 captcha-bws.php:379
+#: captcha-bws.php:84 captcha-bws.php:494 includes/pro_banners.php:30
 msgid "Upgrade to Pro"
 msgstr ""
 
-#: captcha-bws.php:330
+#: captcha-bws.php:353 includes/helpers.php:26
+msgid "Slide to verify"
+msgstr ""
+
+#: captcha-bws.php:354 includes/helpers.php:27
+msgid "Verification passed"
+msgstr ""
+
+#: captcha-bws.php:430
 msgid "WARNING"
 msgstr ""
 
-#: captcha-bws.php:330
+#: captcha-bws.php:430
 msgid "The plugin works correctly only if JavaScript is enabled."
 msgstr ""
 
-#: captcha-bws.php:365
+#: captcha-bws.php:470
 msgid "Add New"
 msgstr ""
 
-#: captcha-bws.php:370 includes/class-cptch-settings-tabs.php:429
-#: includes/class-cptch-settings-tabs.php:465
-#: includes/class-cptch-settings-tabs.php:604
-#: includes/class-cptch-settings-tabs.php:616
-#: includes/class-cptch-settings-tabs.php:717
-msgid "Close"
+#: captcha-bws.php:476
+msgid "This tab contains Pro options only."
 msgstr ""
 
-#: captcha-bws.php:523
+#: captcha-bws.php:478
+#, php-format
+msgid "%sChange the settings%s to view the Pro options."
+msgstr ""
+
+#: captcha-bws.php:643
 #, fuzzy
 msgid "Click the BACK button on your browser, and try again."
 msgstr ""
 "ত্রুটি: আপনি একটি ভুল ক্যাপচা দিয়েছেন। আপনার ব্রাউজারের ব্যাক বোতাম ক্লিক করুন এবং আবার "
 "চেষ্টা করুন।"
 
-#: captcha-bws.php:764
+#: captcha-bws.php:902
 msgid "Captcha loading..."
 msgstr ""
 
-#: captcha-bws.php:766
-msgid "In order to pass the CAPTCHA please enable JavaScript"
+#: captcha-bws.php:904
+msgid "In order to pass the CAPTCHA please enable JavaScript."
 msgstr ""
 
-#: captcha-bws.php:1182
+#: captcha-bws.php:1330
 msgid "zero"
 msgstr "শুন্য"
 
-#: captcha-bws.php:1183
+#: captcha-bws.php:1331
 msgid "one"
 msgstr "এক"
 
-#: captcha-bws.php:1184
+#: captcha-bws.php:1332
 msgid "two"
 msgstr "দুই"
 
-#: captcha-bws.php:1185
+#: captcha-bws.php:1333
 msgid "three"
 msgstr "তিন"
 
-#: captcha-bws.php:1186
+#: captcha-bws.php:1334
 msgid "four"
 msgstr "চার"
 
-#: captcha-bws.php:1187
+#: captcha-bws.php:1335
 msgid "five"
 msgstr "পাঁচ"
 
-#: captcha-bws.php:1188
+#: captcha-bws.php:1336
 msgid "six"
 msgstr "ছয়"
 
-#: captcha-bws.php:1189
+#: captcha-bws.php:1337
 msgid "seven"
 msgstr "সাত"
 
-#: captcha-bws.php:1190
+#: captcha-bws.php:1338
 msgid "eight"
 msgstr "আট"
 
-#: captcha-bws.php:1191
+#: captcha-bws.php:1339
 msgid "nine"
 msgstr "নয়"
 
-#: captcha-bws.php:1193
+#: captcha-bws.php:1341
 msgid "ten"
 msgstr "দশ"
 
-#: captcha-bws.php:1194
+#: captcha-bws.php:1342
 msgid "eleven"
 msgstr "এগার"
 
-#: captcha-bws.php:1195
+#: captcha-bws.php:1343
 msgid "twelve"
 msgstr "বার"
 
-#: captcha-bws.php:1196
+#: captcha-bws.php:1344
 msgid "thirteen"
 msgstr "তের"
 
-#: captcha-bws.php:1197
+#: captcha-bws.php:1345
 msgid "fourteen"
 msgstr "চৌদ্দ"
 
-#: captcha-bws.php:1198
+#: captcha-bws.php:1346
 msgid "fifteen"
 msgstr "পনের"
 
-#: captcha-bws.php:1199
+#: captcha-bws.php:1347
 msgid "sixteen"
 msgstr "ষোল"
 
-#: captcha-bws.php:1200
+#: captcha-bws.php:1348
 msgid "seventeen"
 msgstr "সতের"
 
-#: captcha-bws.php:1201
+#: captcha-bws.php:1349
 msgid "eighteen"
 msgstr "আঠারো"
 
-#: captcha-bws.php:1202
+#: captcha-bws.php:1350
 msgid "nineteen"
 msgstr "উনিশ"
 
-#: captcha-bws.php:1204
+#: captcha-bws.php:1352
 msgid "twenty"
 msgstr "বিশ"
 
-#: captcha-bws.php:1205
+#: captcha-bws.php:1353
 #, fuzzy
 msgid "twenty one"
 msgstr "বিশ"
 
-#: captcha-bws.php:1206
+#: captcha-bws.php:1354
 #, fuzzy
 msgid "twenty two"
 msgstr "বিশ"
 
-#: captcha-bws.php:1207
+#: captcha-bws.php:1355
 #, fuzzy
 msgid "twenty three"
 msgstr "বিশ"
 
-#: captcha-bws.php:1208
+#: captcha-bws.php:1356
 #, fuzzy
 msgid "twenty four"
 msgstr "বিশ"
 
-#: captcha-bws.php:1209
+#: captcha-bws.php:1357
 #, fuzzy
 msgid "twenty five"
 msgstr "বিশ"
 
-#: captcha-bws.php:1210
+#: captcha-bws.php:1358
 #, fuzzy
 msgid "twenty six"
 msgstr "বিশ"
 
-#: captcha-bws.php:1211
+#: captcha-bws.php:1359
 #, fuzzy
 msgid "twenty seven"
 msgstr "বিশ"
 
-#: captcha-bws.php:1212
+#: captcha-bws.php:1360
 #, fuzzy
 msgid "twenty eight"
 msgstr "বিশ"
 
-#: captcha-bws.php:1213
+#: captcha-bws.php:1361
 #, fuzzy
 msgid "twenty nine"
 msgstr "বিশ"
 
-#: captcha-bws.php:1215
+#: captcha-bws.php:1363
 msgid "thirty"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1216
+#: captcha-bws.php:1364
 #, fuzzy
 msgid "thirty one"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1217
+#: captcha-bws.php:1365
 #, fuzzy
 msgid "thirty two"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1218
+#: captcha-bws.php:1366
 #, fuzzy
 msgid "thirty three"
 msgstr "তের"
 
-#: captcha-bws.php:1219
+#: captcha-bws.php:1367
 #, fuzzy
 msgid "thirty four"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1220
+#: captcha-bws.php:1368
 #, fuzzy
 msgid "thirty five"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1221
+#: captcha-bws.php:1369
 #, fuzzy
 msgid "thirty six"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1222
+#: captcha-bws.php:1370
 #, fuzzy
 msgid "thirty seven"
 msgstr "তের"
 
-#: captcha-bws.php:1223
+#: captcha-bws.php:1371
 #, fuzzy
 msgid "thirty eight"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1224
+#: captcha-bws.php:1372
 #, fuzzy
 msgid "thirty nine"
 msgstr "ত্রিশ"
 
-#: captcha-bws.php:1226
+#: captcha-bws.php:1374
 msgid "forty"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1227
+#: captcha-bws.php:1375
 #, fuzzy
 msgid "forty one"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1228
+#: captcha-bws.php:1376
 #, fuzzy
 msgid "forty two"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1229
+#: captcha-bws.php:1377
 #, fuzzy
 msgid "forty three"
 msgstr "তিন"
 
-#: captcha-bws.php:1230
+#: captcha-bws.php:1378
 #, fuzzy
 msgid "forty four"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1231
+#: captcha-bws.php:1379
 #, fuzzy
 msgid "forty five"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1232
+#: captcha-bws.php:1380
 #, fuzzy
 msgid "forty six"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1233
+#: captcha-bws.php:1381
 #, fuzzy
 msgid "forty seven"
 msgstr "সাত"
 
-#: captcha-bws.php:1234
+#: captcha-bws.php:1382
 #, fuzzy
 msgid "forty eight"
 msgstr "আট"
 
-#: captcha-bws.php:1235
+#: captcha-bws.php:1383
 #, fuzzy
 msgid "forty nine"
 msgstr "চল্লিশ"
 
-#: captcha-bws.php:1237
+#: captcha-bws.php:1385
 msgid "fifty"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1238
+#: captcha-bws.php:1386
 #, fuzzy
 msgid "fifty one"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1239
+#: captcha-bws.php:1387
 #, fuzzy
 msgid "fifty two"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1240
+#: captcha-bws.php:1388
 #, fuzzy
 msgid "fifty three"
 msgstr "পনের"
 
-#: captcha-bws.php:1241
+#: captcha-bws.php:1389
 #, fuzzy
 msgid "fifty four"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1242
+#: captcha-bws.php:1390
 #, fuzzy
 msgid "fifty five"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1243
+#: captcha-bws.php:1391
 #, fuzzy
 msgid "fifty six"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1244
+#: captcha-bws.php:1392
 #, fuzzy
 msgid "fifty seven"
 msgstr "পনের"
 
-#: captcha-bws.php:1245
+#: captcha-bws.php:1393
 #, fuzzy
 msgid "fifty eight"
 msgstr "আট"
 
-#: captcha-bws.php:1246
+#: captcha-bws.php:1394
 #, fuzzy
 msgid "fifty nine"
 msgstr "পঞ্চাশ"
 
-#: captcha-bws.php:1248
+#: captcha-bws.php:1396
 msgid "sixty"
 msgstr "ষাট"
 
-#: captcha-bws.php:1249
+#: captcha-bws.php:1397
 #, fuzzy
 msgid "sixty one"
 msgstr "ষাট"
 
-#: captcha-bws.php:1250
+#: captcha-bws.php:1398
 #, fuzzy
 msgid "sixty two"
 msgstr "ষাট"
 
-#: captcha-bws.php:1251
+#: captcha-bws.php:1399
 #, fuzzy
 msgid "sixty three"
 msgstr "ষোল"
 
-#: captcha-bws.php:1252
+#: captcha-bws.php:1400
 #, fuzzy
 msgid "sixty four"
 msgstr "ষাট"
 
-#: captcha-bws.php:1253
+#: captcha-bws.php:1401
 #, fuzzy
 msgid "sixty five"
 msgstr "ষাট"
 
-#: captcha-bws.php:1254
+#: captcha-bws.php:1402
 #, fuzzy
 msgid "sixty six"
 msgstr "ষাট"
 
-#: captcha-bws.php:1255
+#: captcha-bws.php:1403
 #, fuzzy
 msgid "sixty seven"
 msgstr "ষোল"
 
-#: captcha-bws.php:1256
+#: captcha-bws.php:1404
 #, fuzzy
 msgid "sixty eight"
 msgstr "আট"
 
-#: captcha-bws.php:1257
+#: captcha-bws.php:1405
 #, fuzzy
 msgid "sixty nine"
 msgstr "ষাট"
 
-#: captcha-bws.php:1259
+#: captcha-bws.php:1407
 msgid "seventy"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1260
+#: captcha-bws.php:1408
 #, fuzzy
 msgid "seventy one"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1261
+#: captcha-bws.php:1409
 #, fuzzy
 msgid "seventy two"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1262
+#: captcha-bws.php:1410
 #, fuzzy
 msgid "seventy three"
 msgstr "সতের"
 
-#: captcha-bws.php:1263
+#: captcha-bws.php:1411
 #, fuzzy
 msgid "seventy four"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1264
+#: captcha-bws.php:1412
 #, fuzzy
 msgid "seventy five"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1265
+#: captcha-bws.php:1413
 #, fuzzy
 msgid "seventy six"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1266
+#: captcha-bws.php:1414
 #, fuzzy
 msgid "seventy seven"
 msgstr "সতের"
 
-#: captcha-bws.php:1267
+#: captcha-bws.php:1415
 #, fuzzy
 msgid "seventy eight"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1268
+#: captcha-bws.php:1416
 #, fuzzy
 msgid "seventy nine"
 msgstr "সত্তোর"
 
-#: captcha-bws.php:1270
+#: captcha-bws.php:1418
 msgid "eighty"
 msgstr "আশি"
 
-#: captcha-bws.php:1271
+#: captcha-bws.php:1419
 #, fuzzy
 msgid "eighty one"
 msgstr "আশি"
 
-#: captcha-bws.php:1272
+#: captcha-bws.php:1420
 #, fuzzy
 msgid "eighty two"
 msgstr "আশি"
 
-#: captcha-bws.php:1273
+#: captcha-bws.php:1421
 #, fuzzy
 msgid "eighty three"
 msgstr "আঠারো"
 
-#: captcha-bws.php:1274
+#: captcha-bws.php:1422
 #, fuzzy
 msgid "eighty four"
 msgstr "আশি"
 
-#: captcha-bws.php:1275
+#: captcha-bws.php:1423
 #, fuzzy
 msgid "eighty five"
 msgstr "আশি"
 
-#: captcha-bws.php:1276
+#: captcha-bws.php:1424
 #, fuzzy
 msgid "eighty six"
 msgstr "আশি"
 
-#: captcha-bws.php:1277
+#: captcha-bws.php:1425
 #, fuzzy
 msgid "eighty seven"
 msgstr "আঠারো"
 
-#: captcha-bws.php:1278
+#: captcha-bws.php:1426
 #, fuzzy
 msgid "eighty eight"
 msgstr "আশি"
 
-#: captcha-bws.php:1279
+#: captcha-bws.php:1427
 #, fuzzy
 msgid "eighty nine"
 msgstr "আশি"
 
-#: captcha-bws.php:1281
+#: captcha-bws.php:1429
 msgid "ninety"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1282
+#: captcha-bws.php:1430
 #, fuzzy
 msgid "ninety one"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1283
+#: captcha-bws.php:1431
 #, fuzzy
 msgid "ninety two"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1284
+#: captcha-bws.php:1432
 #, fuzzy
 msgid "ninety three"
 msgstr "উনিশ"
 
-#: captcha-bws.php:1285
+#: captcha-bws.php:1433
 #, fuzzy
 msgid "ninety four"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1286
+#: captcha-bws.php:1434
 #, fuzzy
 msgid "ninety five"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1287
+#: captcha-bws.php:1435
 #, fuzzy
 msgid "ninety six"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1288
+#: captcha-bws.php:1436
 #, fuzzy
 msgid "ninety seven"
 msgstr "উনিশ"
 
-#: captcha-bws.php:1289
+#: captcha-bws.php:1437
 #, fuzzy
 msgid "ninety eight"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1290
+#: captcha-bws.php:1438
 #, fuzzy
 msgid "ninety nine"
 msgstr "নব্বয়"
 
-#: captcha-bws.php:1355
+#: captcha-bws.php:1503
 msgid "Encryption password is not set"
 msgstr "এনক্রিপশন পাসওয়ার্ড সেট করা হয় নাই"
 
-#: captcha-bws.php:1376
+#: captcha-bws.php:1524
 msgid "Decryption password is not set"
 msgstr "ডিক্রিপশন পাসওয়ার্ড সেট করা হয় নাই"
 
-#: captcha-bws.php:1520
+#: captcha-bws.php:1695
 msgid "FAQ"
 msgstr "অনবরত জিজ্ঞাসিত প্রশ্ন"
 
-#: captcha-bws.php:1521
+#: captcha-bws.php:1696
 msgid "Support"
 msgstr "সমর্থন"
 
-#: includes/class-cptch-package-list.php:38
+#: captcha-bws.php:1747
+msgid "Could not save captcha response to database."
+msgstr ""
+
+#: captcha-bws.php:1793
+msgid "Error"
+msgstr ""
+
+#: includes/class-cptch-package-list.php:37
 msgid "package"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:39
+#: includes/class-cptch-package-list.php:38
 msgid "packages"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:97
+#: includes/class-cptch-package-list.php:113
 msgid "Search"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:119
+#: includes/class-cptch-package-list.php:135
 msgid "No packages found"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:129
+#: includes/class-cptch-package-list.php:145
 msgid "Package"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:130 includes/pro_banners.php:206
-#: includes/pro_banners.php:233 includes/pro_banners.php:256
+#: includes/class-cptch-package-list.php:146 includes/pro_banners.php:269
+#: includes/pro_banners.php:294 includes/pro_banners.php:317
 msgid "Date Added"
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:43
+#: includes/class-cptch-package-loader.php:44
 msgid ""
 "Can not load images in to the \"uploads\" folder. Please, check your permissions."
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:130
+#: includes/class-cptch-package-loader.php:135
 #, php-format
 msgid "One package has been updated or added to the database."
 msgid_plural "%s packages have been updated or added to the database."
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-cptch-package-loader.php:131
+#: includes/class-cptch-package-loader.php:136
 #, php-format
 msgid "One image has been updated or added to the database."
 msgid_plural "%s images have been updated or added to the database."
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/class-cptch-package-loader.php:239
+#: includes/class-cptch-package-loader.php:250
 msgid "Archive is empty"
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:585
+#: includes/class-cptch-package-loader.php:610
 #, php-format
 msgid "Some settings of the package %s were set incorrectly. They have been skipped."
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:588
+#: includes/class-cptch-package-loader.php:613
 #, fuzzy
 msgid "Wrong data"
 msgstr "ভুল লাইসেন্স কী"
 
-#: includes/class-cptch-settings-tabs.php:26
+#: includes/class-cptch-settings-tabs.php:24
 msgid "Messages"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:27
+#: includes/class-cptch-settings-tabs.php:25
 msgid "Misc"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:28
+#: includes/class-cptch-settings-tabs.php:26
 msgid "Custom Code"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:30
+#: includes/class-cptch-settings-tabs.php:28
 msgid "License Key"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:56 includes/class-cptch-settings-tabs.php:68
+#: includes/class-cptch-settings-tabs.php:55 includes/class-cptch-settings-tabs.php:70
 msgid "Login form"
 msgstr "লগইন ফর্ম"
 
-#: includes/class-cptch-settings-tabs.php:57 includes/class-cptch-settings-tabs.php:65
-#: includes/class-cptch-settings-tabs.php:69
+#: includes/class-cptch-settings-tabs.php:56 includes/class-cptch-settings-tabs.php:67
+#: includes/class-cptch-settings-tabs.php:71
 msgid "Registration form"
 msgstr "রেজিষ্ট্রেশন ফর্ম"
 
-#: includes/class-cptch-settings-tabs.php:58
+#: includes/class-cptch-settings-tabs.php:57
 msgid "Reset password form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:59 includes/class-cptch-settings-tabs.php:66
+#: includes/class-cptch-settings-tabs.php:58 includes/class-cptch-settings-tabs.php:68
 msgid "Comments form"
 msgstr "মন্তব্য ফর্ম"
 
-#: includes/class-cptch-settings-tabs.php:64
-msgid "Mailchimp for Wordpress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:67
+#: includes/class-cptch-settings-tabs.php:69
 msgid "Create a Group form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:70
+#: includes/class-cptch-settings-tabs.php:72
 msgid "Forgot password form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:71
+#: includes/class-cptch-settings-tabs.php:73
 msgid "Checkout form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:72
+#: includes/class-cptch-settings-tabs.php:74
 msgid "Jetpack Contact Form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:73
+#: includes/class-cptch-settings-tabs.php:75
 msgid "bbPress New Topic form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:74
+#: includes/class-cptch-settings-tabs.php:76
 msgid "bbPress Reply form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:75
+#: includes/class-cptch-settings-tabs.php:77
 msgid "wpForo Login form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:76
+#: includes/class-cptch-settings-tabs.php:78
 msgid "wpForo Registration form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:77
+#: includes/class-cptch-settings-tabs.php:79
 msgid "wpForo New Topic form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:78
+#: includes/class-cptch-settings-tabs.php:80
 msgid "wpForo Reply form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:115
+#: includes/class-cptch-settings-tabs.php:121
 #, fuzzy
 msgid "WordPress default"
 msgstr "ওয়ার্ডপ্রেস সংস্করণ"
 
-#: includes/class-cptch-settings-tabs.php:124
-#: includes/class-cptch-settings-tabs.php:132
+#: includes/class-cptch-settings-tabs.php:130
+#: includes/class-cptch-settings-tabs.php:139
 msgid "External plugins"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:141
-msgid "BbPress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:148
-msgid "BuddyPress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:156
-msgid "WooCommerce"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:165
-msgid "Forums - wpForo"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:222
-#: includes/class-cptch-settings-tabs.php:315
+#: includes/class-cptch-settings-tabs.php:236
+#: includes/class-cptch-settings-tabs.php:342
 msgid "Arithmetic Actions"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:223
-#: includes/class-cptch-settings-tabs.php:325
+#: includes/class-cptch-settings-tabs.php:237
+#: includes/class-cptch-settings-tabs.php:352
 msgid "Complexity"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:224
-#: includes/class-cptch-settings-tabs.php:343 includes/pro_banners.php:76
+#: includes/class-cptch-settings-tabs.php:238
+#: includes/class-cptch-settings-tabs.php:370 includes/pro_banners.php:109
 msgid "Image Packages"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:238
+#: includes/class-cptch-settings-tabs.php:259
 msgid "Text fields in the \"Messages\" tab must not be empty."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:249
+#: includes/class-cptch-settings-tabs.php:274
 #, php-format
 msgid "\"%s\" option must not be fully disabled."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:277
+#: includes/class-cptch-settings-tabs.php:303
 msgid ""
 "In order to use \"Optical Character Recognition\" type, please select at least one "
 "of the items in the option \"Image Packages\"."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:280
+#: includes/class-cptch-settings-tabs.php:306
 msgid ""
 "In order to use images in the CAPTCHA, please select at least one of the items in "
 "the option \"Image Packages\". The \"Images\" checkbox in \"Complexity\" option has "
 "been disabled."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:291
+#: includes/class-cptch-settings-tabs.php:317
 msgid "Settings saved."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:306
+#: includes/class-cptch-settings-tabs.php:332
 msgid "Captcha Type"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:308
+#: includes/class-cptch-settings-tabs.php:334
 #, fuzzy
 msgid "Arithmetic actions"
 msgstr "ক্যাপচার জন্য গাণিতিক কর্ম"
 
-#: includes/class-cptch-settings-tabs.php:309
+#: includes/class-cptch-settings-tabs.php:335
 msgid "Optical Character Recognition (OCR)"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:310
+#: includes/class-cptch-settings-tabs.php:336
 msgid "Invisible"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:317
+#: includes/class-cptch-settings-tabs.php:337
+msgid "Slide captcha"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:344
 msgid "Addition"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:318
-msgid "Subtruction"
+#: includes/class-cptch-settings-tabs.php:345
+msgid "Subtraction"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:319
+#: includes/class-cptch-settings-tabs.php:346
 #, fuzzy
 msgid "Multiplication"
 msgstr "গুণ (&times;)"
 
-#: includes/class-cptch-settings-tabs.php:327
+#: includes/class-cptch-settings-tabs.php:354
 msgid "Numbers (1, 2, 3, etc.)"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:328
+#: includes/class-cptch-settings-tabs.php:355
 msgid "Words (one, two, three, etc.)"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:329
+#: includes/class-cptch-settings-tabs.php:356
 msgid "Images"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:335
+#: includes/class-cptch-settings-tabs.php:362
 msgid "Number of Images"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:338
+#: includes/class-cptch-settings-tabs.php:365
 msgid "Set a number of images to display simultaneously as a captcha question."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:349
+#: includes/class-cptch-settings-tabs.php:376
 msgid "Use several image packages at the same time"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:355
+#: includes/class-cptch-settings-tabs.php:382
 msgid "Enlarge Images"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:356
+#: includes/class-cptch-settings-tabs.php:383
 msgid "Enable to enlarge captcha images on mouseover."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:361
+#: includes/class-cptch-settings-tabs.php:388
 msgid "Reload Button"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:362
+#: includes/class-cptch-settings-tabs.php:389
 msgid "Enable to display reload button for captcha."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:367
+#: includes/class-cptch-settings-tabs.php:394
 msgid "Captcha Title"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:370
+#: includes/class-cptch-settings-tabs.php:397
 msgid "Required Symbol"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:373
+#: includes/class-cptch-settings-tabs.php:400
 msgid "Advanced Protection"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:374
+#: includes/class-cptch-settings-tabs.php:401
 msgid "Enable to display captcha when the website page is loaded."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:381
+#: includes/class-cptch-settings-tabs.php:412
 msgid "General"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:384
+#: includes/class-cptch-settings-tabs.php:415
 msgid "Enable Captcha for"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:413
+#: includes/class-cptch-settings-tabs.php:457
 msgid "Enable to add the CAPTCHA to forms on their settings pages."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:534 includes/pro_banners.php:105
-msgid "Enable to activate a time limit requeired to complete captcha."
+#: includes/class-cptch-settings-tabs.php:471
+#: includes/class-cptch-settings-tabs.php:508
+#: includes/class-cptch-settings-tabs.php:660
+#: includes/class-cptch-settings-tabs.php:670
+#: includes/class-cptch-settings-tabs.php:782 includes/pro_banners.php:21
+#: includes/pro_banners.php:350
+msgid "Close"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:545 includes/pro_banners.php:102
+#: includes/class-cptch-settings-tabs.php:583
+msgid "Enable to activate a time limit required to complete captcha."
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:594 includes/pro_banners.php:135
 msgid "Time Limit"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:552
-msgid "Time Limit Thershold"
+#: includes/class-cptch-settings-tabs.php:601
+msgid "Time Limit Threshold"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:555
+#: includes/class-cptch-settings-tabs.php:604
 msgid "sec"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:588
+#: includes/class-cptch-settings-tabs.php:644
 msgid "This option is available only for network or for main blog"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:595
+#: includes/class-cptch-settings-tabs.php:651
 msgid "Hide from Registered Users"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:627
+#: includes/class-cptch-settings-tabs.php:653
+#, fuzzy
+msgid "Enable to hide captcha for registered users."
+msgstr "রেজিষ্টেশনকৃত ব্যবহাকারী থেকে ক্যাপচা লুকাও"
+
+#: includes/class-cptch-settings-tabs.php:681
 #, fuzzy
 msgid "update"
 msgstr "হালনাগাত"
 
-#: includes/class-cptch-settings-tabs.php:628
+#: includes/class-cptch-settings-tabs.php:682
 msgid "to the current version"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:635
+#: includes/class-cptch-settings-tabs.php:689
 #, fuzzy
 msgid "install"
 msgstr "ইনস্টল হয়েছে"
 
-#: includes/class-cptch-settings-tabs.php:640
+#: includes/class-cptch-settings-tabs.php:694
 #, fuzzy
 msgid "activate"
 msgstr "সক্রিয়"
 
-#: includes/class-cptch-settings-tabs.php:652
+#: includes/class-cptch-settings-tabs.php:706
 msgid "You should"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:655
+#: includes/class-cptch-settings-tabs.php:709
 msgid "to use this functionality."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:678
+#: includes/class-cptch-settings-tabs.php:732
 msgid "Messages Settings"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:684
+#: includes/class-cptch-settings-tabs.php:738
 msgid "Captcha Field is Empty"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:685 includes/helpers.php:31
+#: includes/class-cptch-settings-tabs.php:739 includes/helpers.php:33
 msgid "Please complete the captcha."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:688
+#: includes/class-cptch-settings-tabs.php:743
 msgid "Captcha is Incorrect"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:689 includes/helpers.php:32
+#: includes/class-cptch-settings-tabs.php:744 includes/helpers.php:34
 msgid "Please enter correct captcha value."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:692
-#: includes/class-cptch-settings-tabs.php:696
-msgid "Time Limit Exceeded"
+#: includes/class-cptch-settings-tabs.php:748
+msgid "Captcha Time Limit Exceeded"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:693
-#: includes/class-cptch-settings-tabs.php:697 includes/helpers.php:33
-#: includes/helpers.php:34
+#: includes/class-cptch-settings-tabs.php:749
+#: includes/class-cptch-settings-tabs.php:754 includes/helpers.php:35
+#: includes/helpers.php:36
 msgid "Time limit exceeded. Please complete the captcha once again."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:698
+#: includes/class-cptch-settings-tabs.php:753
+msgid "Answer Time Limit Exceeded"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:755
 msgid "This message will be displayed above the captcha field."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:824
+#: includes/class-cptch-settings-tabs.php:759
+msgid "Slide Title"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:763
+msgid "Successfull Verification"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:890
 msgid ""
 "The image packages list is empty. Please restore default settings or re-install the "
 "plugin to fix this error."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:872
+#: includes/class-cptch-settings-tabs.php:938
 #, fuzzy
 msgid "Activate"
 msgstr "সক্রিয়"
 
-#: includes/class-cptch-settings-tabs.php:874
+#: includes/class-cptch-settings-tabs.php:940
 msgid "Install Now"
 msgstr "ইনস্টল করুন"
 
-#: includes/helpers.php:35 includes/pro_banners.php:49
-msgid "Your IP address is Whitelisted."
+#: includes/helpers.php:37 includes/pro_banners.php:82
+msgid "Your IP address is allow listed."
 msgstr ""
 
-#: includes/invisible.php:28
+#: includes/invisible.php:29
 msgid "Can't handle encrypting/decrypting data."
 msgstr ""
 
-#: includes/invisible.php:31 includes/invisible.php:63 includes/invisible.php:98
+#: includes/invisible.php:33 includes/invisible.php:65 includes/invisible.php:103
 msgid "ERROR"
 msgstr "ত্রুটি"
 
-#: includes/invisible.php:60
+#: includes/invisible.php:62
 #, php-format
 msgid "Protected by %s"
 msgstr ""
 
-#: includes/invisible.php:76
+#: includes/invisible.php:78
 msgid "Empty captcha."
 msgstr ""
 
-#: includes/invisible.php:90
+#: includes/invisible.php:94
 msgid "Captcha time limit exceeded."
 msgstr ""
 
-#: includes/invisible.php:95
+#: includes/invisible.php:100
 msgid "Wrong captcha."
 msgstr ""
 
-#: includes/pro_banners.php:21
+#: includes/pro_banners.php:18
+msgid "This options is available in Pro version of plugin"
+msgstr ""
+
+#: includes/pro_banners.php:42
+msgid "Add New "
+msgstr ""
+
+#: includes/pro_banners.php:54
 msgid "Default"
 msgstr ""
 
-#: includes/pro_banners.php:22
-msgid "Limit Attempts"
-msgstr ""
-
-#: includes/pro_banners.php:24
+#: includes/pro_banners.php:57
 msgid ""
-"With a whitelist you can hide captcha field for your personal and trusted IP "
+"With a allow list you can hide captcha field for your personal and trusted IP "
 "addresses."
 msgstr ""
 
-#: includes/pro_banners.php:34
+#: includes/pro_banners.php:67 includes/pro_banners.php:202
 msgid "Allowed formats"
 msgstr ""
 
-#: includes/pro_banners.php:35
+#: includes/pro_banners.php:68
 msgid "Allowed separators for IPs: a comma"
 msgstr ""
 
-#: includes/pro_banners.php:35 includes/pro_banners.php:38
+#: includes/pro_banners.php:68 includes/pro_banners.php:71
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
 msgid "semicolon"
 msgstr ""
 
-#: includes/pro_banners.php:35
+#: includes/pro_banners.php:68
 msgid "ordinary space, tab, new line or carriage return"
 msgstr ""
 
-#: includes/pro_banners.php:36 includes/pro_banners.php:203
-#: includes/pro_banners.php:253
+#: includes/pro_banners.php:69 includes/pro_banners.php:213
+#: includes/pro_banners.php:266 includes/pro_banners.php:314
 msgid "Reason"
 msgstr ""
 
-#: includes/pro_banners.php:38
+#: includes/pro_banners.php:71
 msgid "Allowed separators for reasons: a comma"
 msgstr ""
 
-#: includes/pro_banners.php:38
+#: includes/pro_banners.php:71
 msgid "tab, new line or carriage return"
 msgstr ""
 
-#: includes/pro_banners.php:48
-msgid "Whitelisted IP"
+#: includes/pro_banners.php:81
+msgid "Allow Listed IP"
 msgstr ""
 
-#: includes/pro_banners.php:50
+#: includes/pro_banners.php:83
 msgid "This message will be displayed instead of the captcha field."
 msgstr ""
 
-#: includes/pro_banners.php:69
+#: includes/pro_banners.php:102
 msgid "General Settings"
 msgstr ""
 
-#: includes/pro_banners.php:72
+#: includes/pro_banners.php:105
 msgid "Enable to use general captcha settings."
 msgstr ""
 
-#: includes/pro_banners.php:116
+#: includes/pro_banners.php:138
+msgid "Enable to activate a time limit requeired to complete captcha."
+msgstr ""
+
+#: includes/pro_banners.php:149
 msgid "Use Several Image Packages at The Same Time"
 msgstr ""
 
-#: includes/pro_banners.php:156
+#: includes/pro_banners.php:187
 msgid "Load IP Address(-es)"
 msgstr ""
 
-#: includes/pro_banners.php:159
-msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
+#: includes/pro_banners.php:190
+msgid "Load IP addresses from the \"Limit Attempts\" allow list."
 msgstr ""
 
-#: includes/pro_banners.php:161
+#: includes/pro_banners.php:192
+msgid "IP to allow list"
+msgstr ""
+
+#: includes/pro_banners.php:198
+msgid "My IP"
+msgstr ""
+
+#: includes/pro_banners.php:207
+msgid "Allowed diapason"
+msgstr ""
+
+#: includes/pro_banners.php:209
+msgid "Allowed separators"
+msgstr ""
+
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
+msgid "a comma"
+msgstr ""
+
+#: includes/pro_banners.php:209
+msgid "ordinary space, tab, new line or carriage return."
+msgstr ""
+
+#: includes/pro_banners.php:217
+msgid "Allowed separators for reasons"
+msgstr ""
+
+#: includes/pro_banners.php:217
+msgid "tab, new line or carriage return."
+msgstr ""
+
+#: includes/pro_banners.php:220
+msgid "Add IP to allow list"
+msgstr ""
+
+#: includes/pro_banners.php:224 includes/pro_banners.php:226
 msgid "search"
 msgstr ""
 
-#: includes/pro_banners.php:168 includes/pro_banners.php:266
+#: includes/pro_banners.php:231 includes/pro_banners.php:327
 msgid "Bulk Actions"
 msgstr ""
 
-#: includes/pro_banners.php:169 includes/pro_banners.php:220
-#: includes/pro_banners.php:267
+#: includes/pro_banners.php:232 includes/pro_banners.php:283
+#: includes/pro_banners.php:328
 msgid "Trash"
 msgstr ""
 
-#: includes/pro_banners.php:175 includes/pro_banners.php:273
+#: includes/pro_banners.php:234 includes/pro_banners.php:330
+msgid "Apply"
+msgstr ""
+
+#: includes/pro_banners.php:238 includes/pro_banners.php:334
 msgid "All dates"
 msgstr ""
 
-#: includes/pro_banners.php:176 includes/pro_banners.php:274
+#: includes/pro_banners.php:239 includes/pro_banners.php:241
+#: includes/pro_banners.php:335 includes/pro_banners.php:337
 msgid "Filter"
 msgstr ""
 
-#: includes/pro_banners.php:181 includes/pro_banners.php:279
+#: includes/pro_banners.php:244 includes/pro_banners.php:340
 msgid "items"
 msgstr ""
 
-#: includes/pro_banners.php:193 includes/pro_banners.php:243
+#: includes/pro_banners.php:256 includes/pro_banners.php:304
 msgid "IP Address"
 msgstr ""
 
-#: includes/pro_banners.php:199 includes/pro_banners.php:249
+#: includes/pro_banners.php:262 includes/pro_banners.php:310
 msgid "Range from/to"
 msgstr ""
 
-#: includes/pro_banners.php:219
+#: includes/pro_banners.php:282
 msgid "Edit"
 msgstr ""
 
+#: includes/pro_banners.php:354
+msgid "Slider Color"
+msgstr ""
+
+#: includes/pro_banners.php:369
+msgid "Successfull Slider Color"
+msgstr ""
+
+#: includes/pro_banners.php:384
+msgid "Slide Container Color"
+msgstr ""
+
+#: includes/pro_banners.php:399
+msgid "Slide Title Color"
+msgstr ""
+
+#: includes/pro_banners.php:414
+msgid "Slide Title Size"
+msgstr ""
+
+#: includes/pro_banners.php:427
+msgid "Set a font-size for title."
+msgstr ""
+
+#: js/slide_captcha/dist/index-bundle.js:6
+msgid "Unhandled promise rejection"
+msgstr ""
+
+#~ msgid "requires"
+#~ msgstr "প্রয়োজন"
+
+#~ msgid ""
+#~ "or higher, that is why it has been deactivated! Please upgrade WordPress and try "
+#~ "again."
+#~ msgstr ""
+#~ "বা উচ্চতর, এই কারণে এটি নিষ্ক্রিয় করা হয়েছে ! ওয়ার্ডপ্রেস আপগ্রেড করে আবার চেষ্টা করুন।"
+
+#~ msgid "Back to the WordPress"
+#~ msgstr "ওয়ার্ডপ্রেসে ফিরে যাও"
+
+#~ msgid "Plugins page"
+#~ msgstr "প্লাগইন পাতা"
+
 #, fuzzy
-#~ msgid "Captcha Pro Settings"
-#~ msgstr "ক্যাপচা সেটিংস"
+#~| msgid "Rate the plugin"
+#~ msgid "Like the plugin?"
+#~ msgstr "প্লাগইনটির রেট দিন"
+
+#, fuzzy
+#~| msgid "Preview"
+#~ msgid "%s reviews"
+#~ msgstr "প্রাক্প্রচার"
+
+#~ msgid "Need help?"
+#~ msgstr "সাহায্য প্রয়োজন?"
+
+#, fuzzy
+#~| msgid "Rate the plugin"
+#~ msgid "Want to support the plugin?"
+#~ msgstr "প্লাগইনটির রেট দিন"
+
+#~ msgid "Learn More"
+#~ msgstr "আরো জানুন"
+
+#~ msgid "Learn more"
+#~ msgstr "বিস্তারিত জানুন"
+
+#, fuzzy
+#~| msgid "two"
+#~ msgid "to"
+#~ msgstr "দুই"
+
+#, fuzzy
+#~| msgid "PHP Version"
+#~ msgid "version!"
+#~ msgstr "PHP সংস্করণ"
+
+#, fuzzy
+#~| msgid "Extend standard plugin functionality with new great options"
+#~ msgid "Extend standard plugin functionality with new great options."
+#~ msgstr "বিস্তৃত মানের প্লাগইন কার্যকারিতার সাথে নতুন দারুন অপশনস রয়েছে"
+
+#, fuzzy
+#~| msgid "Thank you for contacting us."
+#~ msgid "Thank you for installing %s plugin!"
+#~ msgstr "আমাদের সাথে যোগাযোগের জন্য ধন্যবাদ"
+
+#, fuzzy
+#~ msgid "or"
+#~ msgstr "চার"
+
+#, fuzzy
+#~| msgid "Thank you for contacting us."
+#~ msgid "Thank you for installing plugins by BestWebSoft!"
+#~ msgstr "আমাদের সাথে যোগাযোগের জন্য ধন্যবাদ"
+
+#, fuzzy
+#~| msgid "Details"
+#~ msgid "More Details"
+#~ msgstr "বিস্তারিত"
+
+#, fuzzy
+#~| msgid "Details"
+#~ msgid "Less Details"
+#~ msgstr "বিস্তারিত"
+
+#, fuzzy
+#~| msgid "Thank you for contacting us."
+#~ msgid "Thank you for choosing %s plugin!"
+#~ msgstr "আমাদের সাথে যোগাযোগের জন্য ধন্যবাদ"
+
+#, fuzzy
+#~ msgid "Notice"
+#~ msgstr "নোটিস:"
+
+#~ msgid "Save Changes"
+#~ msgstr "পরিবর্তণ সংরক্ষন"
+
+#, fuzzy
+#~| msgid "Plugins"
+#~ msgid "Plugin"
+#~ msgstr "প্লাগইন"
+
+#, fuzzy
+#~| msgid "Settings"
+#~ msgid "Shortcode settings"
+#~ msgstr "সেটিংস"
+
+#, fuzzy
+#~| msgid ""
+#~| "Something went wrong. Try again later. If the error will appear again, please, "
+#~| "contact us <a href=https://support.bestwebsoft.com>BestWebSoft</a>. We are "
+#~| "sorry for inconvenience."
+#~ msgid ""
+#~ "Something went wrong. Please try again later. If the error appears again, please "
+#~ "contact us"
+#~ msgstr ""
+#~ "কিছু ভুল হয়েছে। পরে আবার চেষ্টা করুন। যদি ত্রুটি আবার প্রদর্শিত হয়, দয়া করে আমাদের সাথে "
+#~ "যোগাযোগ করুন <a href=https://support.bestwebsoft.com> BestWebSoft </a>. এই "
+#~ "অসুবিধার জন্য আমরা দুঃখিত।"
+
+#, fuzzy
+#~| msgid "This license key is bind to another site"
+#~ msgid ""
+#~ "This license key is bound to another site. Change it via personal Client Area."
+#~ msgstr "এই লাইসেন্স কী অন্য সাইটে আবদ্ধ আছে"
+
+#, fuzzy
+#~| msgid ""
+#~| "Unfortunately, you have exceeded the number of available tries per day. Please, "
+#~| "upload the plugin manually."
+#~ msgid "Unfortunately, you have exceeded the number of available tries per day."
+#~ msgstr ""
+#~ "দুর্ভাগ্যবশত, আপনি প্রতিদিন উপলব্ধ চেষ্টা সংখ্যা অতিক্রম করেছেন।  দযা করে, নিজে প্লাগিন "
+#~ "আপলোড করুন।"
+
+#, fuzzy
+#~| msgid "This license key is bind to another site"
+#~ msgid "The license key is valid."
+#~ msgstr "এই লাইসেন্স কী অন্য সাইটে আবদ্ধ আছে"
+
+#~ msgid ""
+#~ "Something went wrong. Try again later or upload the plugin manually. We are "
+#~ "sorry for inconvenience."
+#~ msgstr ""
+#~ "কিছু ভুল হয়েছে। পরে আবার চেষ্টা করুন অথবা নিজে প্লাগিন আপলোড করুন। এই অসুবিধার জন্য আমরা "
+#~ "দুঃখিত।"
+
+#, fuzzy
+#~| msgid "Please, enter Your license key"
+#~ msgid "Please enter your license key."
+#~ msgstr "দয়া করে, আপনার লাইসেন্স কী লিখুন"
+
+#~ msgid "Not set"
+#~ msgstr "সেট নেই"
+
+#~ msgid "On"
+#~ msgstr "চালু"
+
+#~ msgid "Off"
+#~ msgstr "বন্ধ"
+
+#~ msgid "N/A"
+#~ msgstr "নেই"
+
+#, fuzzy
+#~| msgid " Mb"
+#~ msgid "Mb"
+#~ msgstr " মেগাবাইট"
+
+#~ msgid "Yes"
+#~ msgstr "হা"
+
+#~ msgid "No"
+#~ msgstr "না"
+
+#, fuzzy
+#~| msgid "Environment"
+#~ msgid "WordPress Environment"
+#~ msgstr "পরিবেশ"
+
+#~ msgid "Home URL"
+#~ msgstr "হোম ইউআরএল"
+
+#, fuzzy
+#~| msgid "Site URL"
+#~ msgid "Website URL"
+#~ msgstr "সাইট ইউআরএল"
+
+#, fuzzy
+#~| msgid "PHP Version"
+#~ msgid "WP Version"
+#~ msgstr "PHP সংস্করণ"
+
+#, fuzzy
+#~| msgid "Multisite"
+#~ msgid "WP Multisite"
+#~ msgstr "মাল্টিসাইট"
+
+#, fuzzy
+#~| msgid "PHP Memory Limit"
+#~ msgid "WP Memory Limit"
+#~ msgstr "PHP মেমরি সীমা"
+
+#~ msgid "Active Theme"
+#~ msgstr "সক্রিয় থীম"
+
+#, fuzzy
+#~| msgid "By %s"
+#~ msgid "by %s"
+#~ msgstr "দ্বারা %s"
+
+#, fuzzy
+#~| msgid "Environment"
+#~ msgid "Server Environment"
+#~ msgstr "পরিবেশ"
+
+#~ msgid "Operating System"
+#~ msgstr "অপারেটিং সিস্টেম"
+
+#~ msgid "Server"
+#~ msgstr "সার্ভার"
+
+#~ msgid "PHP Version"
+#~ msgstr "PHP সংস্করণ"
+
+#~ msgid "PHP Allow URL fopen"
+#~ msgstr "PHP ইউআরএল খোলার অনুমতি দিন"
+
+#~ msgid "PHP Memory Limit"
+#~ msgstr "PHP মেমরি সীমা"
+
+#, fuzzy
+#~| msgid "Memory usage"
+#~ msgid "Memory Usage"
+#~ msgstr "মেমরি ব্যবহার"
+
+#~ msgid "PHP Max Upload Size"
+#~ msgstr "PHP সর্বোচ্চ আপলোড ফাইলের আকার"
+
+#~ msgid "PHP Max Post Size"
+#~ msgstr "PHP সর্বোচ্চ পোষ্ট আকার"
+
+#~ msgid "PHP Max Script Execute Time"
+#~ msgstr "PHP স্ক্রিপ্ট সম্পাদন সর্বোচ্চ সময়"
+
+#~ msgid "PHP Exif support"
+#~ msgstr "PHP Exif সমর্থন"
+
+#~ msgid "PHP IPTC support"
+#~ msgstr "PHP IPTC সমর্থন"
+
+#~ msgid "PHP XML support"
+#~ msgstr "PHP XML সমর্থন"
+
+#, fuzzy
+#~| msgid "WordPress DB Version"
+#~ msgid "WP DB version"
+#~ msgstr "ওয়ার্ডপ্রেস ডাটাবেস সংস্করণ"
+
+#, fuzzy
+#~| msgid "MYSQL Version"
+#~ msgid "MySQL version"
+#~ msgstr "MYSQL সংস্করণ"
+
+#~ msgid "SQL Mode"
+#~ msgstr "SQL মোড"
+
+#~ msgid "Active Plugins"
+#~ msgstr "প্লাগিন সক্রিয়"
+
+#~ msgid "Inactive Plugins"
+#~ msgstr "প্লাগিন নিষ্ক্রিয়"
+
+#~ msgid "Please enter a valid email address."
+#~ msgstr "দয়া করে সঠিক ইমেইল লিখুন।"
+
+#, fuzzy
+#~| msgid "Email with system info is sent to "
+#~ msgid "Email with system info is sent to %s."
+#~ msgstr "সিস্টেমের তথ্য সঙ্গে ইমেল প্রেরণ করা হয়"
+
+#~ msgid "Thank you for contacting us."
+#~ msgstr "আমাদের সাথে যোগাযোগের জন্য ধন্যবাদ"
+
+#~ msgid "Sorry, email message could not be delivered."
+#~ msgstr "দুঃখিত, ইমেইল বার্তা বিতরণ করা যাবে না।"
+
+#~ msgid "Plugins"
+#~ msgstr "প্লাগইন"
+
+#~ msgid "Themes"
+#~ msgstr "থীম"
+
+#~ msgid "System status"
+#~ msgstr "সিস্টেমের অবস্থা"
+
+#, fuzzy
+#~| msgid "Please, enter Your license key"
+#~ msgid "Enter your license key"
+#~ msgstr "দয়া করে, আপনার লাইসেন্স কী লিখুন"
+
+#, fuzzy
+#~| msgid "Plugins"
+#~ msgid "Upload Plugin"
+#~ msgstr "প্লাগইন"
+
+#, fuzzy
+#~| msgid "Download contact form"
+#~ msgid "Download Now"
+#~ msgstr "কন্টাক্ট ফর্ম ডাউনলোড"
+
+#, fuzzy
+#~| msgid "Client area"
+#~ msgid "Client Area"
+#~ msgstr "ক্লায়েন্ট এলাকা"
+
+#~ msgid "All"
+#~ msgstr "সকল"
+
+#, fuzzy
+#~ msgid "Installed"
+#~ msgstr "ইনস্টল হয়েছে"
+
+#, fuzzy
+#~| msgid "Already Installed"
+#~ msgid "Not Installed"
+#~ msgstr "ইনস্টল আছে"
+
+#, fuzzy
+#~ msgid "Not installed"
+#~ msgstr "ইনস্টল হয়েছে"
+
+#, fuzzy
+#~ msgid "Update to v %s"
+#~ msgstr "হালনাগাত"
+
+#~ msgid "Activate this plugin"
+#~ msgstr "প্লাগিনটি সক্রিয় করুন"
+
+#, fuzzy
+#~| msgid "Installed plugins"
+#~ msgid "Install this plugin"
+#~ msgstr "প্লাগিন ইনস্টল"
+
+#~ msgid "By %s"
+#~ msgstr "দ্বারা %s"
+
+#~ msgid "Already Installed"
+#~ msgstr "ইনস্টল আছে"
+
+#~ msgid "Send to support"
+#~ msgstr "সমর্থন পাঠান"
+
+#~ msgid "Send to custom email &#187;"
+#~ msgstr "কাস্টম ইমেলে পাঠান &#187;"
+
+#, fuzzy
+#~ msgid "Inactive"
+#~ msgstr "সক্রিয়"
+
+#, fuzzy
+#~ msgid "Active"
+#~ msgstr "সক্রিয়"
+
+#, fuzzy
+#~| msgid "System status"
+#~ msgid "Status"
+#~ msgstr "সিস্টেমের অবস্থা"
+
+#, fuzzy
+#~| msgid "PHP Version"
+#~ msgid "Version"
+#~ msgstr "PHP সংস্করণ"
+
+#, fuzzy
+#~ msgid "Activate custom %s code."
+#~ msgstr "গ্রাহক"
+
+#, fuzzy
+#~| msgid "Learn more"
+#~ msgid "Learn more about %s"
+#~ msgstr "বিস্তারিত জানুন"
+
+#, fuzzy
+#~ msgid "Default Settings"
+#~ msgstr "সেটিংস"
+
+#, fuzzy
+#~ msgid "Restore Settings"
+#~ msgstr "সেটিংস"
+
+#~ msgid ""
+#~ "Unfortunately, you have exceeded the number of available tries per day. Please, "
+#~ "upload the plugin manually."
+#~ msgstr ""
+#~ "দুর্ভাগ্যবশত, আপনি প্রতিদিন উপলব্ধ চেষ্টা সংখ্যা অতিক্রম করেছেন।  দযা করে, নিজে প্লাগিন "
+#~ "আপলোড করুন।"
+
+#, fuzzy
+#~| msgid "Client area"
+#~ msgid "Login to Client Area"
+#~ msgstr "ক্লায়েন্ট এলাকা"
+
+#, fuzzy
+#~| msgid "This license key is bind to another site"
+#~ msgid "This license key is bound to another site."
+#~ msgstr "এই লাইসেন্স কী অন্য সাইটে আবদ্ধ আছে"
+
+#, fuzzy
+#~| msgid ""
+#~| "Unfortunately, you have exceeded the number of available tries per day. Please, "
+#~| "upload the plugin manually."
+#~ msgid "Unfortunately, you have exceeded the number of available tries."
+#~ msgstr ""
+#~ "দুর্ভাগ্যবশত, আপনি প্রতিদিন উপলব্ধ চেষ্টা সংখ্যা অতিক্রম করেছেন।  দযা করে, নিজে প্লাগিন "
+#~ "আপলোড করুন।"
+
+#~ msgid "Please, enter Your license key"
+#~ msgstr "দয়া করে, আপনার লাইসেন্স কী লিখুন"
+
+#, fuzzy
+#~| msgid "Need help?"
+#~ msgid "Need Help?"
+#~ msgstr "সাহায্য প্রয়োজন?"
+
+#, fuzzy
+#~ msgid "Contact Support"
+#~ msgstr "কন্টাক্ট ফর্ম"
+
+#, fuzzy
+#~| msgid "System status"
+#~ msgid "System Status"
+#~ msgstr "সিস্টেমের অবস্থা"
+
+#, fuzzy
+#~| msgid "version of this plugin by entering Your license key."
+#~ msgid "After that, you can activate it by entering your license key."
+#~ msgstr "সংস্করণ এর প্লাগইন আপনার লাইসেন্স কী প্রবেশ করেছে।"
+
+#, fuzzy
+#~| msgid "(your username is the email you specify when purchasing the product)."
+#~ msgid "(your username is the email address specified during the purchase)."
+#~ msgstr "(এই পণ্যটি ক্রয় করার সময় আপনার ব্যবহারকারী নাম যে ইমেল তা  নির্দিষ্ট করুন)।"
+
+#, fuzzy
+#~| msgid ""
+#~| "Congratulations! The PRO version of the plugin is successfully download and "
+#~| "activated."
+#~ msgid "Congratulations! The Pro license of the plugin is activated successfully."
+#~ msgstr "অভিনন্দন! প্লাগইনটির প্রোফেশনাল সংস্করণ সফলভাবে ডাউনলোড এবং সক্রিয় হয়েছে।"
+
+#~ msgid "Please, go to"
+#~ msgstr "দয়া করে, এখানে যান"
+
+#, fuzzy
+#~ msgid "the setting page"
+#~ msgstr "সেটিংস পাতা"
+
+#, fuzzy
+#~ msgid "Restore settings"
+#~ msgstr "সেটিংস"
+
+#, fuzzy
+#~| msgid ""
+#~| "Congratulations! The PRO version of the plugin is successfully download and "
+#~| "activated."
+#~ msgid ""
+#~ "Congratulations! Pro version of the plugin is  installed and activated "
+#~ "successfully."
+#~ msgstr "অভিনন্দন! প্লাগইনটির প্রোফেশনাল সংস্করণ সফলভাবে ডাউনলোড এবং সক্রিয় হয়েছে।"
+
+#, fuzzy
+#~| msgid "Rate the plugin"
+#~ msgid "version of the plugin."
+#~ msgstr "প্লাগইনটির রেট দিন"
+
+#, fuzzy
+#~| msgid "Recommended"
+#~ msgid "eCommerce"
+#~ msgstr "প্রস্তাবিত"
+
+#~ msgid "Recommended"
+#~ msgstr "প্রস্তাবিত"
 
 #, fuzzy
 #~ msgid "has old version"
 #~ msgstr "%s সংস্করণে আপডেট করুন"
-
-#, fuzzy
-#~ msgid "settings page"
-#~ msgstr "সেটিংস পাতা"
 
 #, fuzzy
 #~ msgid "BWS CAPTCHA"
@@ -1133,10 +1708,6 @@ msgstr ""
 #~ msgid "Save changes"
 #~ msgstr "পরিবর্তণ সংরক্ষন"
 
-#, fuzzy
-#~ msgid "Update"
-#~ msgstr "হালনাগাত"
-
 #~ msgid "Register form"
 #~ msgstr "রেজিস্টার ফর্ম"
 
@@ -1144,16 +1715,8 @@ msgstr ""
 #~ msgid "Settings saved"
 #~ msgstr "অপশন সংরক্ষণ।"
 
-#, fuzzy
-#~ msgid "Hide from registered users"
-#~ msgstr "রেজিষ্টেশনকৃত ব্যবহাকারী থেকে ক্যাপচা লুকাও"
-
 #~ msgid "Install now"
 #~ msgstr "ইনস্টল করুন"
-
-#, fuzzy
-#~ msgid "Network Settings"
-#~ msgstr "সেটিংস"
 
 #, fuzzy
 #~ msgid "Please enter a CAPTCHA value."
@@ -1214,13 +1777,6 @@ msgstr ""
 #~ msgid "WooCommerce Checkout Billing form"
 #~ msgstr "মন্তব্য ফর্ম"
 
-#, fuzzy
-#~ msgid "Notice"
-#~ msgstr "নোটিস:"
-
-#~ msgid "Save Changes"
-#~ msgstr "পরিবর্তণ সংরক্ষন"
-
 #~ msgid "Plus"
 #~ msgstr "যোগ "
 
@@ -1239,10 +1795,6 @@ msgstr ""
 
 #~ msgid "Required symbol"
 #~ msgstr "প্রয়োজনীয় প্রতীক"
-
-#, fuzzy
-#~ msgid "for"
-#~ msgstr "চার"
 
 #, fuzzy
 #~ msgid ""
@@ -1277,9 +1829,6 @@ msgstr ""
 #~ msgid "Please select one item in the block Enable image packages"
 #~ msgstr "ক্যাপচার জন্য ব্লক গাণিতিক এবং জটিলতা একটি আইটেম নির্বাচন করুন"
 
-#~ msgid "Plugins"
-#~ msgstr "প্লাগইন"
-
 #, fuzzy
 #~ msgid "Buddypress comments form"
 #~ msgstr "মন্তব্য ফর্ম"
@@ -1294,10 +1843,6 @@ msgstr ""
 
 #, fuzzy
 #~ msgid "Contact Form by BestWebSoft"
-#~ msgstr "কন্টাক্ট ফর্ম"
-
-#, fuzzy
-#~ msgid "Contact Form 7"
 #~ msgstr "কন্টাক্ট ফর্ম"
 
 #, fuzzy
@@ -1331,50 +1876,9 @@ msgstr ""
 #~ msgid "Activate contact form"
 #~ msgstr "কন্টাক্ট ফর্ম সক্রিয়"
 
-#~ msgid "Download contact form"
-#~ msgstr "কন্টাক্ট ফর্ম ডাউনলোড"
-
-#, fuzzy
-#~ msgid "Activate Subscriber"
-#~ msgstr "গ্রাহক"
-
 #, fuzzy
 #~ msgid "Download Subscriber"
 #~ msgstr "গ্রাহক"
-
-#~ msgid "requires"
-#~ msgstr "প্রয়োজন"
-
-#~ msgid ""
-#~ "or higher, that is why it has been deactivated! Please upgrade WordPress and try "
-#~ "again."
-#~ msgstr ""
-#~ "বা উচ্চতর, এই কারণে এটি নিষ্ক্রিয় করা হয়েছে ! ওয়ার্ডপ্রেস আপগ্রেড করে আবার চেষ্টা করুন।"
-
-#~ msgid "Back to the WordPress"
-#~ msgstr "ওয়ার্ডপ্রেসে ফিরে যাও"
-
-#~ msgid "Plugins page"
-#~ msgstr "প্লাগইন পাতা"
-
-#~ msgid ""
-#~ "Something went wrong. Try again later. If the error will appear again, please, "
-#~ "contact us <a href=https://support.bestwebsoft.com>BestWebSoft</a>. We are sorry "
-#~ "for inconvenience."
-#~ msgstr ""
-#~ "কিছু ভুল হয়েছে। পরে আবার চেষ্টা করুন। যদি ত্রুটি আবার প্রদর্শিত হয়, দয়া করে আমাদের সাথে "
-#~ "যোগাযোগ করুন <a href=https://support.bestwebsoft.com> BestWebSoft </a>. এই "
-#~ "অসুবিধার জন্য আমরা দুঃখিত।"
-
-#~ msgid "This license key is bind to another site"
-#~ msgstr "এই লাইসেন্স কী অন্য সাইটে আবদ্ধ আছে"
-
-#~ msgid ""
-#~ "Unfortunately, you have exceeded the number of available tries per day. Please, "
-#~ "upload the plugin manually."
-#~ msgstr ""
-#~ "দুর্ভাগ্যবশত, আপনি প্রতিদিন উপলব্ধ চেষ্টা সংখ্যা অতিক্রম করেছেন।  দযা করে, নিজে প্লাগিন "
-#~ "আপলোড করুন।"
 
 #~ msgid "Failed to open the zip archive. Please, upload the plugin manually"
 #~ msgstr "ZIP আর্কাইভ খুলতে ব্যর্থ হয়েছে। দয়া করে, নিজে প্লাগিন আপলোড করুন"
@@ -1387,16 +1891,6 @@ msgstr ""
 
 #~ msgid "Failed to download the zip archive. Please, upload the plugin manually"
 #~ msgstr "ZIP আর্কাইভ ডাউনলোড করতে ব্যর্থ হয়েছে। দয়া করে, নিজে প্লাগিন আপলোড করুন"
-
-#~ msgid ""
-#~ "Something went wrong. Try again later or upload the plugin manually. We are "
-#~ "sorry for inconvenience."
-#~ msgstr ""
-#~ "কিছু ভুল হয়েছে। পরে আবার চেষ্টা করুন অথবা নিজে প্লাগিন আপলোড করুন। এই অসুবিধার জন্য আমরা "
-#~ "দুঃখিত।"
-
-#~ msgid "Please, enter Your license key"
-#~ msgstr "দয়া করে, আপনার লাইসেন্স কী লিখুন"
 
 #~ msgid "Go PRO"
 #~ msgstr "প্রোফেশনালে যাও"
@@ -1411,28 +1905,14 @@ msgstr ""
 #~ msgid "Unlock premium options by upgrading to a PRO version."
 #~ msgstr "প্রোফেশনাল সংস্করণে আপগ্রেড করে প্রিমিয়াম অপশনস আনলক করুন।"
 
-#~ msgid "Learn More"
-#~ msgstr "আরো জানুন"
-
 #~ msgid "Go"
 #~ msgstr "যাও"
 
 #~ msgid "If you enjoy our plugin, please give it 5 stars on WordPress"
 #~ msgstr "আপনি যদি আমাদের প্লাগিন উপভোগ, দয়া করে এটিতে ওয়ার্ডপ্রেস ৫ ষ্টার দিন"
 
-#~ msgid "Rate the plugin"
-#~ msgstr "প্লাগইনটির রেট দিন"
-
 #~ msgid "If there is something wrong about it, please contact us"
 #~ msgstr "যদি ভুল দেখতে পান, তাহলে আমাদের সাথে যোগাযোগ করুন"
-
-#~ msgid ""
-#~ "Congratulations! The PRO version of the plugin is successfully download and "
-#~ "activated."
-#~ msgstr "অভিনন্দন! প্লাগইনটির প্রোফেশনাল সংস্করণ সফলভাবে ডাউনলোড এবং সক্রিয় হয়েছে।"
-
-#~ msgid "Please, go to"
-#~ msgstr "দয়া করে, এখানে যান"
 
 #~ msgid "You will be redirected automatically in 5 seconds."
 #~ msgstr "আপনি ৫ সেকেন্ডের মধ্যে স্বয়ংক্রিয়ভাবে পুনঃনির্দেশিত হবেন।"
@@ -1440,18 +1920,12 @@ msgstr ""
 #~ msgid "You can download and activate"
 #~ msgstr "আপনি ডাউনলোড এবং সক্রিয় করতে পারবেন"
 
-#~ msgid "version of this plugin by entering Your license key."
-#~ msgstr "সংস্করণ এর প্লাগইন আপনার লাইসেন্স কী প্রবেশ করেছে।"
-
 #~ msgid ""
 #~ "You can find your license key on your personal page Client area, by clicking on "
 #~ "the link"
 #~ msgstr ""
 #~ "এই লিঙ্কে ক্লিক করে, আপনার ব্যক্তিগত ক্লায়েন্ট এলাকা পাতা থেকে আপনি লাইসেন্স কী পেতে "
 #~ "পারেন"
-
-#~ msgid "(your username is the email you specify when purchasing the product)."
-#~ msgstr "(এই পণ্যটি ক্রয় করার সময় আপনার ব্যবহারকারী নাম যে ইমেল তা  নির্দিষ্ট করুন)।"
 
 #~ msgid "Go!"
 #~ msgstr "যাও!"
@@ -1472,128 +1946,8 @@ msgstr ""
 #~ "এখনই সময় আপনার <strong>ক্যাপচা প্লাগইন</strong> টিকে <strong>প্রোফেশনাল</strong> "
 #~ "সংস্করণে আপগ্রেড করার"
 
-#~ msgid "Extend standard plugin functionality with new great options"
-#~ msgstr "বিস্তৃত মানের প্লাগইন কার্যকারিতার সাথে নতুন দারুন অপশনস রয়েছে"
-
-#~ msgid "Not set"
-#~ msgstr "সেট নেই"
-
-#~ msgid "On"
-#~ msgstr "চালু"
-
-#~ msgid "Off"
-#~ msgstr "বন্ধ"
-
-#~ msgid "N/A"
-#~ msgstr "নেই"
-
-#~ msgid " Mb"
-#~ msgstr " মেগাবাইট"
-
-#~ msgid "Yes"
-#~ msgstr "হা"
-
-#~ msgid "No"
-#~ msgstr "না"
-
-#~ msgid "Operating System"
-#~ msgstr "অপারেটিং সিস্টেম"
-
-#~ msgid "Server"
-#~ msgstr "সার্ভার"
-
-#~ msgid "Memory usage"
-#~ msgstr "মেমরি ব্যবহার"
-
-#~ msgid "MYSQL Version"
-#~ msgstr "MYSQL সংস্করণ"
-
-#~ msgid "SQL Mode"
-#~ msgstr "SQL মোড"
-
-#~ msgid "PHP Version"
-#~ msgstr "PHP সংস্করণ"
-
 #~ msgid "PHP Safe Mode"
 #~ msgstr "PHP সেফ মোড"
-
-#~ msgid "PHP Allow URL fopen"
-#~ msgstr "PHP ইউআরএল খোলার অনুমতি দিন"
-
-#~ msgid "PHP Memory Limit"
-#~ msgstr "PHP মেমরি সীমা"
-
-#~ msgid "PHP Max Upload Size"
-#~ msgstr "PHP সর্বোচ্চ আপলোড ফাইলের আকার"
-
-#~ msgid "PHP Max Post Size"
-#~ msgstr "PHP সর্বোচ্চ পোষ্ট আকার"
-
-#~ msgid "PHP Max Script Execute Time"
-#~ msgstr "PHP স্ক্রিপ্ট সম্পাদন সর্বোচ্চ সময়"
-
-#~ msgid "PHP Exif support"
-#~ msgstr "PHP Exif সমর্থন"
-
-#~ msgid "PHP IPTC support"
-#~ msgstr "PHP IPTC সমর্থন"
-
-#~ msgid "PHP XML support"
-#~ msgstr "PHP XML সমর্থন"
-
-#~ msgid "Site URL"
-#~ msgstr "সাইট ইউআরএল"
-
-#~ msgid "Home URL"
-#~ msgstr "হোম ইউআরএল"
-
-#~ msgid "WordPress DB Version"
-#~ msgstr "ওয়ার্ডপ্রেস ডাটাবেস সংস্করণ"
-
-#~ msgid "Multisite"
-#~ msgstr "মাল্টিসাইট"
-
-#~ msgid "Active Theme"
-#~ msgstr "সক্রিয় থীম"
-
-#~ msgid "Please enter a valid email address."
-#~ msgstr "দয়া করে সঠিক ইমেইল লিখুন।"
-
-#~ msgid "Email with system info is sent to "
-#~ msgstr "সিস্টেমের তথ্য সঙ্গে ইমেল প্রেরণ করা হয়"
-
-#~ msgid "Thank you for contacting us."
-#~ msgstr "আমাদের সাথে যোগাযোগের জন্য ধন্যবাদ"
-
-#~ msgid "Sorry, email message could not be delivered."
-#~ msgstr "দুঃখিত, ইমেইল বার্তা বিতরণ করা যাবে না।"
-
-#~ msgid "Need help?"
-#~ msgstr "সাহায্য প্রয়োজন?"
-
-#~ msgid "Client area"
-#~ msgstr "ক্লায়েন্ট এলাকা"
-
-#~ msgid "System status"
-#~ msgstr "সিস্টেমের অবস্থা"
-
-#~ msgid "Themes"
-#~ msgstr "থীম"
-
-#~ msgid "All"
-#~ msgstr "সকল"
-
-#~ msgid "Recommended"
-#~ msgstr "প্রস্তাবিত"
-
-#~ msgid "Installed plugins"
-#~ msgstr "প্লাগিন ইনস্টল"
-
-#~ msgid "Learn more"
-#~ msgstr "বিস্তারিত জানুন"
-
-#~ msgid "Activate this plugin"
-#~ msgstr "প্লাগিনটি সক্রিয় করুন"
 
 #~ msgid "DONATE"
 #~ msgstr "অনুদান"
@@ -1612,30 +1966,3 @@ msgstr ""
 
 #~ msgid "Preview %s"
 #~ msgstr "প্রাক্প্রচার  %s"
-
-#~ msgid "Preview"
-#~ msgstr "প্রাক্প্রচার"
-
-#~ msgid "By %s"
-#~ msgstr "দ্বারা %s"
-
-#~ msgid "Details"
-#~ msgstr "বিস্তারিত"
-
-#~ msgid "Already Installed"
-#~ msgstr "ইনস্টল আছে"
-
-#~ msgid "Environment"
-#~ msgstr "পরিবেশ"
-
-#~ msgid "Active Plugins"
-#~ msgstr "প্লাগিন সক্রিয়"
-
-#~ msgid "Inactive Plugins"
-#~ msgstr "প্লাগিন নিষ্ক্রিয়"
-
-#~ msgid "Send to support"
-#~ msgstr "সমর্থন পাঠান"
-
-#~ msgid "Send to custom email &#187;"
-#~ msgstr "কাস্টম ইমেলে পাঠান &#187;"

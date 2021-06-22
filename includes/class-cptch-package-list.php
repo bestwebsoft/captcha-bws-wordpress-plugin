@@ -34,8 +34,8 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 */
 		function __construct() {
 			parent::__construct( array(
-				'singular'	=> __( 'package', 'captcha-bws' ),
-				'plural'	=> __( 'packages', 'captcha-bws' ),
+				'singular'	=> esc_html__( 'package', 'captcha-bws' ),
+				'plural'	=> esc_html__( 'packages', 'captcha-bws' ),
 				'ajax'		=> false,
 				)
 			);
@@ -56,15 +56,16 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 			}
 			$this->upload_dir	= $upload_dir['basedir'] . '/bws_captcha_images';
 			$this->upload_url	= $upload_dir['baseurl'] . '/bws_captcha_images';
-			$this->order_by		= isset( $_REQUEST['orderby'] ) && in_array( $_REQUEST['orderby'], array( 'name', 'add_time' ) ) ? $_REQUEST['orderby'] : '';
+			$this->order_by		= isset( $_REQUEST['orderby'] ) && in_array( $_REQUEST['orderby'], array_keys( $this->get_sortable_columns() ) ) ? $_REQUEST['orderby'] : '';
 			$this->order		= isset( $_REQUEST['order'] ) && in_array( strtoupper( $_REQUEST['order'] ), array( 'ASC', 'DESC' ) ) ? $_REQUEST['order'] : '';
 			$this->paged		= isset( $_REQUEST['paged'] ) && is_numeric( $_REQUEST['paged'] ) ? $_REQUEST['paged'] : '';
 			$this->s			= isset( $_REQUEST['s'] ) ? esc_html( trim( $_REQUEST['s'] ) ) : '';
 
 			$this->per_page		= $this->get_items_per_page( 'cptch_per_page', 20 );
 			$this->date_format	= get_option( 'date_format' );
-			if ( ! class_exists( 'Cptch_Package_Loader' ) )
+			if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 				require_once( dirname( __FILE__ ) . '/class-cptch-package-loader.php' );
+			}
 			$this->loader = new Cptch_Package_Loader();
 
 			$columns				= $this->get_columns();
@@ -87,28 +88,29 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 */
 		function display_content() {
 			global $cptch_options; ?>
-			<h1 class="wp-heading-inline"><?php _e( 'Captcha Packages', 'captcha-bws' ); ?></h1>
+			<h1 class="wp-heading-inline"><?php esc_html_e( 'Captcha Packages', 'captcha-bws' ); ?></h1>
 			<?php
 			if ( $this->message ) { ?>
 				<div class="updated fade below-h2"><p><?php echo $this->message; ?></p></div>
 			<?php } ?>
             <hr class="wp-header-end">
 			<?php $this->prepare_items();
-			$this->loader->display();
-			?>
+			$this->loader->display(); ?>
+			<!-- pls -->
 			<form method="post" action="" style="margin: 10px 0;">
-			<?php
-			if ( isset( $_POST['bws_hide_premium_options'] ) ) {
-				$cptch_options['hide_premium_options'][0] = 1;
-				update_option( 'cptch_options', $cptch_options );
-			}
-			$display_pro_options_for_packages = get_option( 'cptch_options' );
-			if ( empty( $display_pro_options_for_packages['hide_premium_options'][0] ) ) {
-				cptch_pro_block( 'cptch_packages_banner' );
-			} ?>
+				<?php
+				if ( isset( $_POST['bws_hide_premium_options'] ) ) {
+					$cptch_options['hide_premium_options'][0] = 1;
+					update_option( 'cptch_options', $cptch_options );
+				}
+				$display_pro_options_for_packages = get_option( 'cptch_options' );
+				if ( empty( $display_pro_options_for_packages['hide_premium_options'][0] ) ) {
+					cptch_pro_block( 'cptch_packages_banner' );
+				} ?>
 			</form>
+			<!-- end pls -->
 			<form method="get" action="<?php echo self_admin_url( "admin.php" ); ?>" style="margin: 10px 0;">
-				<?php $this->search_box( __( 'Search', 'captcha-bws' ), 'cptch_packages_search' );
+				<?php $this->search_box( esc_html__( 'Search', 'captcha-bws' ), 'cptch_packages_search' );
 				/* maint content displaing */
 				$this->display(); ?>
 				<input type="hidden" name="page" value="captcha-packages.php" >
@@ -130,7 +132,7 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 * @return void
 		 */
 		function no_items() { ?>
-			<p><?php _e( 'No packages found', 'captcha-bws' ); ?></p>
+			<p><?php esc_html_e( 'No packages found', 'captcha-bws' ); ?></p>
 		<?php }
 
 		/**
@@ -140,8 +142,8 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 */
 		function get_columns() {
 			return array(
-				'name'	=> __( 'Package', 'captcha-bws' ),
-				'date'	=> __( 'Date Added', 'captcha-bws' ),
+				'name'	=> esc_html__( 'Package', 'captcha-bws' ),
+				'date'	=> esc_html__( 'Date Added', 'captcha-bws' ),
 			);
 		}
 

@@ -331,7 +331,7 @@ class App extends Component {
 
     render() {
 
-	   const slideText = this.state.isTouchEndSpan && ! this.state.isLoader ? wpSlideCaptcha.end_slide : wpSlideCaptcha.start_slide;
+	   const textSlide = this.state.isTouchEndSpan && ! this.state.isLoader ? wpSlideCaptcha.text_end_slide : wpSlideCaptcha.text_start_slide;
 
 	   let slideAfterElem;
 	   if ( this.state.isTouchEndSpan && ! this.state.isLoader ) {
@@ -374,7 +374,7 @@ class App extends Component {
 			    >
                     <span className={slideAfterElem}></span>
 			    </div>
-			    <p id="slide-title">{slideText}</p>
+			    <p id="slide-title">{textSlide}</p>
 				<input type="hidden" name="cptch_result" value={this.state.cptchResult} />
 		    </div>
 	    );

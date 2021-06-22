@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
-Tested up to: 5.7
-Stable tag: 5.1.2
+Tested up to: 5.7.2
+Stable tag: 5.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -85,6 +85,7 @@ Stop spam now!
 > * Configure all subsites on the network
 > * Captcha submission time limit for separate forms
 > * Add and enable unlimited number of image packages at the same time
+> * Edit Slide captcha appearance [NEW]
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=2d2d85a3c277bf3489697c9a9ff2d352)
@@ -97,6 +98,7 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 * [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
 * [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=r0Noz2bYAq8)
+* [[Video] User Guide](https://www.youtube.com/watch?v=5UyK8tS3oqM)
 
 = Help & Support =
 
@@ -270,6 +272,14 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ===
 
+= V5.1.3 - 17.06.2021 =
+* NEW : Ability to edit messages of slide captcha has been added.
+* Bugfix : The issue of sending a password reset link on the user edit page has been fixed.
+* Update : All functionality was updated for WordPress 5.7.2
+* Pro : Ability to edit the appearance of slide captcha has been added.
+* Pro : The issue with submitting Contact 7 form has been fixed.
+* Pro : The issue with displaying captcha in the form of creating a new topic and in the reply form in WpForo has been fixed.
+
 = V5.1.2 - 13.04.2021 =
 * Bugfix : Captcha Time Limit Exceeded issue has been fixed.
 
@@ -343,6 +353,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.3 =
+* New features added.
+* Bugs fixed.
+* The compatibility with new WordPress version updated.
 
 = V5.1.2 =
 * Bugs fixed.

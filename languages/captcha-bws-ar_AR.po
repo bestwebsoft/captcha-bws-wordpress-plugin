@@ -2,609 +2,2052 @@ msgid ""
 msgstr ""
 "Project-Id-Version: captcha-pro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-27 14:55+0300\n"
-"PO-Revision-Date: 2018-07-27 14:56+0300\n"
+"POT-Creation-Date: 2021-05-05 11:12+0300\n"
+"PO-Revision-Date: 2021-05-05 11:12+0300\n"
 "Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
 "Language-Team: Albayan Design Hani Aladoli <info@albayan-design.com>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2\n"
+"X-Poedit-KeywordsList: _e;_n:1,2;__;esc_html__;esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: captcha-bws.php:34 captcha-bws.php:36 captcha-bws.php:327
-#: includes/class-cptch-settings-tabs.php:378
-msgid "Captcha Settings"
+#: bws_menu/bws_functions.php:73 bws_menu/bws_functions.php:239
+msgid "requires"
 msgstr ""
 
-#: captcha-bws.php:36 captcha-bws.php:1505 captcha-bws.php:1518
-#: includes/class-cptch-settings-tabs.php:25
+#: bws_menu/bws_functions.php:75
+msgid ""
+"or higher, that is why it has been deactivated! Please upgrade WordPress and "
+"try again."
+msgstr ""
+
+#: bws_menu/bws_functions.php:76
+msgid "Back to the WordPress"
+msgstr ""
+
+#: bws_menu/bws_functions.php:78
+#, fuzzy
+msgid "Plugins page"
+msgstr "Плагины BWS"
+
+#: bws_menu/bws_functions.php:92
+#, fuzzy
+msgid "Like the plugin?"
+msgstr "اضافات موصي بها"
+
+#: bws_menu/bws_functions.php:93
+#, php-format
+msgid "%s reviews"
+msgstr ""
+
+#: bws_menu/bws_functions.php:94
+msgid "Rate it"
+msgstr ""
+
+#: bws_menu/bws_functions.php:103
+msgid "Need help?"
+msgstr ""
+
+#: bws_menu/bws_functions.php:104 bws_menu/bws_functions.php:949
+#: bws_menu/class-bws-settings.php:1082
+msgid "Visit Help Center"
+msgstr ""
+
+#: bws_menu/bws_functions.php:107
+#, fuzzy
+msgid "Want to support the plugin?"
+msgstr "اضافات موصي بها"
+
+#: bws_menu/bws_functions.php:108 bws_menu/bws_menu.php:529
+msgid "Donate"
+msgstr ""
+
+#: bws_menu/bws_functions.php:128
+msgid "WARNING: Illegal use notification"
+msgstr ""
+
+#: bws_menu/bws_functions.php:128
+msgid ""
+"You can use one license of the Pro plugin for one domain only. Please check "
+"and edit your license or domain if necessary using your personal Client "
+"Area. We strongly recommend you to solve the problem within 24 hours, "
+"otherwise the Pro plugin will be deactivated."
+msgstr ""
+
+#: bws_menu/bws_functions.php:128 bws_menu/bws_functions.php:208
+#: bws_menu/bws_menu.php:600 bws_menu/class-bws-settings.php:179
+msgid "Learn More"
+msgstr ""
+
+#: bws_menu/bws_functions.php:145
+msgid ""
+"Notice: Your Pro Trial license has expired. To continue using the plugin, "
+"you should buy a Pro license"
+msgstr ""
+
+#: bws_menu/bws_functions.php:147
+msgid ""
+"Your license has expired. To continue getting top-priority support and "
+"plugin updates, you should extend it."
+msgstr ""
+
+#: bws_menu/bws_functions.php:147 bws_menu/bws_functions.php:226
+msgid "Learn more"
+msgstr ""
+
+#: bws_menu/bws_functions.php:165
+#, php-format
+msgid "Notice: You are using the Pro Trial license of %s plugin."
+msgstr ""
+
+#: bws_menu/bws_functions.php:167
+msgid "Notice: You are using the Pro Trial license of plugin."
+msgstr ""
+
+#: bws_menu/bws_functions.php:170
+msgid "The Pro Trial license will expire on"
+msgstr ""
+
+#: bws_menu/bws_functions.php:199 bws_menu/bws_functions.php:222
+#: bws_menu/bws_functions.php:266 bws_menu/bws_functions.php:276
+#: bws_menu/bws_functions.php:475
+msgid "Close notice"
+msgstr ""
+
+#: bws_menu/bws_functions.php:204
+msgid "It’s time to upgrade your"
+msgstr ""
+
+#: bws_menu/bws_functions.php:204
+#, fuzzy
+#| msgid "two"
+msgid "to"
+msgstr "اتنان"
+
+#: bws_menu/bws_functions.php:204
+msgid "version!"
+msgstr ""
+
+#: bws_menu/bws_functions.php:205
+msgid "Extend standard plugin functionality with new great options."
+msgstr ""
+
+#: bws_menu/bws_functions.php:226
+#, php-format
+msgid ""
+"Your license key for %s expires on %s and you won't be granted TOP-PRIORITY "
+"SUPPORT or UPDATES."
+msgstr ""
+
+#: bws_menu/bws_functions.php:241
+msgid ""
+"or higher! We do not guarantee that our plugin will work correctly. Please "
+"upgrade to WordPress latest version."
+msgstr ""
+
+#: bws_menu/bws_functions.php:256
+#, php-format
+msgid "Thank you for installing %s plugin!"
+msgstr ""
+
+#: bws_menu/bws_functions.php:258
+msgid "Let's get started"
+msgstr ""
+
+#: bws_menu/bws_functions.php:259 bws_menu/bws_functions.php:292
+#: bws_menu/bws_menu.php:533 bws_menu/bws_menu.php:535 captcha-bws.php:49
+#: captcha-bws.php:1680 captcha-bws.php:1693
+#: includes/class-cptch-settings-tabs.php:23
 msgid "Settings"
 msgstr "الاعدادت "
 
-#: captcha-bws.php:38 includes/class-cptch-package-list.php:90
-msgid "Captcha Packages"
-msgstr ""
+#: bws_menu/bws_functions.php:261 bws_menu/bws_menu.php:327
+#: bws_menu/class-bws-settings.php:809 bws_menu/class-bws-settings.php:1084
+#: bws_menu/class-bws-settings.php:1094 bws_menu/deprecated.php:234
+#, fuzzy
+msgid "or"
+msgstr "اربعه"
 
-#: captcha-bws.php:38
-msgid "Packages"
-msgstr ""
-
-#: captcha-bws.php:41 captcha-bws.php:364
-msgid "Captcha Whitelist"
-msgstr ""
-
-#: captcha-bws.php:41 includes/pro_banners.php:18
-msgid "Whitelist"
-msgstr ""
-
-#: captcha-bws.php:48 captcha-bws.php:379
-msgid "Upgrade to Pro"
-msgstr ""
-
-#: captcha-bws.php:330
-msgid "WARNING"
-msgstr ""
-
-#: captcha-bws.php:330
-msgid "The plugin works correctly only if JavaScript is enabled."
-msgstr ""
-
-#: captcha-bws.php:365
+#: bws_menu/bws_functions.php:262 bws_menu/bws_functions.php:294
+#: captcha-bws.php:470
 msgid "Add New"
 msgstr ""
 
-#: captcha-bws.php:370 includes/class-cptch-settings-tabs.php:429
-#: includes/class-cptch-settings-tabs.php:465
-#: includes/class-cptch-settings-tabs.php:604
-#: includes/class-cptch-settings-tabs.php:616
-#: includes/class-cptch-settings-tabs.php:717
+#: bws_menu/bws_functions.php:281
+msgid "Thank you for installing plugins by BestWebSoft!"
+msgstr ""
+
+#: bws_menu/bws_functions.php:283
+msgid "More Details"
+msgstr ""
+
+#: bws_menu/bws_functions.php:284
+msgid "Less Details"
+msgstr ""
+
+#: bws_menu/bws_functions.php:312
+msgid "Deprecated function(-s) is used on the site here:"
+msgstr ""
+
+#: bws_menu/bws_functions.php:326
+msgid ""
+"This function(-s) will be removed over time. Please update the product(-s)."
+msgstr ""
+
+#: bws_menu/bws_functions.php:470
+#, php-format
+msgid "Thank you for choosing %s plugin!"
+msgstr ""
+
+#: bws_menu/bws_functions.php:471
+msgid ""
+"If you have a feature, suggestion or idea you'd like to see in the plugin, "
+"we'd love to hear about it!"
+msgstr ""
+
+#: bws_menu/bws_functions.php:472
+msgid "Suggest a Feature"
+msgstr ""
+
+#: bws_menu/bws_functions.php:488 bws_menu/class-bws-settings.php:580
+#: bws_menu/class-bws-settings.php:583 bws_menu/class-bws-settings.php:635
+#: bws_menu/class-bws-settings.php:638
+msgid "Notice"
+msgstr ""
+
+#: bws_menu/bws_functions.php:488
+msgid "The plugin's settings have been changed."
+msgstr ""
+
+#: bws_menu/bws_functions.php:489 bws_menu/class-bws-settings.php:222
+#: bws_menu/class-bws-settings.php:242
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: bws_menu/bws_functions.php:503
+msgid ""
+"You can always look at premium options by checking the \"Pro Options\" in "
+"the \"Misc\" tab."
+msgstr ""
+
+#: bws_menu/bws_functions.php:679
+msgid "Add shortcode"
+msgstr ""
+
+#: bws_menu/bws_functions.php:679
+msgid "Add BestWebSoft plugins' shortcodes using this button."
+msgstr ""
+
+#: bws_menu/bws_functions.php:765 includes/class-cptch-settings-tabs.php:451
+#: includes/class-cptch-settings-tabs.php:487
+#: includes/class-cptch-settings-tabs.php:638
+#: includes/class-cptch-settings-tabs.php:650
+#: includes/class-cptch-settings-tabs.php:762 includes/pro_banners.php:21
+#: includes/pro_banners.php:350
 msgid "Close"
 msgstr ""
 
-#: captcha-bws.php:523
+#: bws_menu/bws_functions.php:851
+msgid "Are you sure you want to restore default settings?"
+msgstr ""
+
+#: bws_menu/bws_functions.php:854
+msgid "Yes, restore all settings"
+msgstr ""
+
+#: bws_menu/bws_functions.php:855
+msgid "No, go back to the settings page"
+msgstr ""
+
+#: bws_menu/bws_functions.php:897
+#, fuzzy
+msgid "Plugin"
+msgstr "Плагины BWS"
+
+#: bws_menu/bws_functions.php:906
+#, fuzzy
+#| msgid "Settings"
+msgid "Shortcode settings"
+msgstr "الاعدادت "
+
+#: bws_menu/bws_functions.php:911
+msgid "The shortcode will be inserted"
+msgstr ""
+
+#: bws_menu/bws_functions.php:954 captcha-bws.php:1695
+msgid "FAQ"
+msgstr "اسئلة واجوبة"
+
+#: bws_menu/bws_functions.php:960
+msgid "For more information:"
+msgstr ""
+
+#: bws_menu/bws_functions.php:961 bws_menu/bws_menu.php:401
+#: bws_menu/class-bws-settings.php:776
+msgid "Documentation"
+msgstr ""
+
+#: bws_menu/bws_functions.php:962 bws_menu/bws_menu.php:403
+#: bws_menu/class-bws-settings.php:778
+msgid "Video Instructions"
+msgstr ""
+
+#: bws_menu/bws_functions.php:963
+msgid "Submit a Request"
+msgstr ""
+
+#: bws_menu/bws_menu.php:101 bws_menu/class-bws-settings.php:860
+msgid "Wrong license key"
+msgstr ""
+
+#: bws_menu/bws_menu.php:122 bws_menu/class-bws-settings.php:887
+#: bws_menu/class-bws-settings.php:966 bws_menu/class-bws-settings.php:1004
+msgid ""
+"Something went wrong. Please try again later. If the error appears again, "
+"please contact us"
+msgstr ""
+
+#: bws_menu/bws_menu.php:122 bws_menu/class-bws-settings.php:887
+#: bws_menu/class-bws-settings.php:966 bws_menu/class-bws-settings.php:1004
+msgid "We are sorry for inconvenience."
+msgstr ""
+
+#: bws_menu/bws_menu.php:129 bws_menu/class-bws-settings.php:893
+#: bws_menu/class-bws-settings.php:1010
+msgid "Wrong license key."
+msgstr ""
+
+#: bws_menu/bws_menu.php:131
+msgid ""
+"This license key is bound to another site. Change it via personal Client "
+"Area."
+msgstr ""
+
+#: bws_menu/bws_menu.php:131
+msgid "Log in"
+msgstr ""
+
+#: bws_menu/bws_menu.php:133 bws_menu/bws_menu.php:333
+#: bws_menu/deprecated.php:157
+msgid "Unfortunately, you have exceeded the number of available tries per day."
+msgstr ""
+
+#: bws_menu/bws_menu.php:135
+#, php-format
+msgid ""
+"Unfortunately, Your license has expired. To continue getting top-priority "
+"support and plugin updates, you should extend it in your %s"
+msgstr ""
+
+#: bws_menu/bws_menu.php:137 bws_menu/class-bws-settings.php:1018
+msgid ""
+"Unfortunately, the Pro licence was already installed to this domain. The Pro "
+"Trial license can be installed only once."
+msgstr ""
+
+#: bws_menu/bws_menu.php:143 bws_menu/class-bws-settings.php:908
+msgid "The license key is valid."
+msgstr ""
+
+#: bws_menu/bws_menu.php:145 bws_menu/class-bws-settings.php:912
+msgid "Your license will expire on"
+msgstr ""
+
+#: bws_menu/bws_menu.php:147
+msgid "Congratulations! Pro Membership license is activated successfully."
+msgstr ""
+
+#: bws_menu/bws_menu.php:154 bws_menu/class-bws-settings.php:1028
+msgid ""
+"Something went wrong. Try again later or upload the plugin manually. We are "
+"sorry for inconvenience."
+msgstr ""
+
+#: bws_menu/bws_menu.php:164
+msgid "Please enter your license key."
+msgstr ""
+
+#: bws_menu/bws_menu.php:175
+msgid "Not set"
+msgstr ""
+
+#: bws_menu/bws_menu.php:177
+msgid "On"
+msgstr ""
+
+#: bws_menu/bws_menu.php:177
+msgid "Off"
+msgstr ""
+
+#: bws_menu/bws_menu.php:178 bws_menu/bws_menu.php:179
+#: bws_menu/bws_menu.php:180 bws_menu/bws_menu.php:181
+#: bws_menu/bws_menu.php:182 bws_menu/bws_menu.php:183
+#: bws_menu/bws_menu.php:192
+msgid "N/A"
+msgstr ""
+
+#: bws_menu/bws_menu.php:183
+msgid "Mb"
+msgstr ""
+
+#: bws_menu/bws_menu.php:184 bws_menu/bws_menu.php:185
+#: bws_menu/bws_menu.php:186 bws_menu/bws_menu.php:190
+msgid "Yes"
+msgstr ""
+
+#: bws_menu/bws_menu.php:184 bws_menu/bws_menu.php:185
+#: bws_menu/bws_menu.php:186 bws_menu/bws_menu.php:190
+msgid "No"
+msgstr ""
+
+#: bws_menu/bws_menu.php:197
+#, fuzzy
+msgid "WordPress Environment"
+msgstr "اطار التعليقات"
+
+#: bws_menu/bws_menu.php:199
+msgid "Home URL"
+msgstr ""
+
+#: bws_menu/bws_menu.php:200
+msgid "Website URL"
+msgstr ""
+
+#: bws_menu/bws_menu.php:201
+msgid "WP Version"
+msgstr ""
+
+#: bws_menu/bws_menu.php:202
+msgid "WP Multisite"
+msgstr ""
+
+#: bws_menu/bws_menu.php:203
+msgid "WP Memory Limit"
+msgstr ""
+
+#: bws_menu/bws_menu.php:204
+msgid "Active Theme"
+msgstr ""
+
+#: bws_menu/bws_menu.php:204 bws_menu/bws_menu.php:249
+#: bws_menu/bws_menu.php:252
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: bws_menu/bws_menu.php:208
+msgid "Server Environment"
+msgstr ""
+
+#: bws_menu/bws_menu.php:210
+msgid "Operating System"
+msgstr ""
+
+#: bws_menu/bws_menu.php:211
+msgid "Server"
+msgstr ""
+
+#: bws_menu/bws_menu.php:212
+msgid "PHP Version"
+msgstr ""
+
+#: bws_menu/bws_menu.php:213
+msgid "PHP Allow URL fopen"
+msgstr ""
+
+#: bws_menu/bws_menu.php:214
+msgid "PHP Memory Limit"
+msgstr ""
+
+#: bws_menu/bws_menu.php:215
+msgid "Memory Usage"
+msgstr ""
+
+#: bws_menu/bws_menu.php:216
+msgid "PHP Max Upload Size"
+msgstr ""
+
+#: bws_menu/bws_menu.php:217
+msgid "PHP Max Post Size"
+msgstr ""
+
+#: bws_menu/bws_menu.php:218
+msgid "PHP Max Script Execute Time"
+msgstr ""
+
+#: bws_menu/bws_menu.php:219
+msgid "PHP Exif support"
+msgstr ""
+
+#: bws_menu/bws_menu.php:220
+msgid "PHP IPTC support"
+msgstr ""
+
+#: bws_menu/bws_menu.php:221
+msgid "PHP XML support"
+msgstr ""
+
+#: bws_menu/bws_menu.php:227
+msgid "Database"
+msgstr ""
+
+#: bws_menu/bws_menu.php:229
+msgid "WP DB version"
+msgstr ""
+
+#: bws_menu/bws_menu.php:230
+msgid "MySQL version"
+msgstr ""
+
+#: bws_menu/bws_menu.php:231
+msgid "SQL Mode"
+msgstr ""
+
+#: bws_menu/bws_menu.php:235
+#, fuzzy
+msgid "Active Plugins"
+msgstr "Плагины BWS"
+
+#: bws_menu/bws_menu.php:240
+#, fuzzy
+msgid "Inactive Plugins"
+msgstr "Плагины BWS"
+
+#: bws_menu/bws_menu.php:261
+#, fuzzy
+msgid "Please enter a valid email address."
+msgstr "الرجاء تكملة الـ  CAPTCHA ."
+
+#: bws_menu/bws_menu.php:263
+#, php-format
+msgid "Email with system info is sent to %s."
+msgstr ""
+
+#: bws_menu/bws_menu.php:267
+msgid "Thank you for contacting us."
+msgstr ""
+
+#: bws_menu/bws_menu.php:290
+msgid "Sorry, email message could not be delivered."
+msgstr ""
+
+#: bws_menu/bws_menu.php:306 bws_menu/bws_menu.php:310
+#: bws_menu/bws_menu.php:359 bws_menu/deprecated.php:26
+#, fuzzy
+msgid "Plugins"
+msgstr "Плагины BWS"
+
+#: bws_menu/bws_menu.php:307 bws_menu/bws_menu.php:311
+#: bws_menu/bws_menu.php:587 bws_menu/deprecated.php:27
+msgid "Themes"
+msgstr ""
+
+#: bws_menu/bws_menu.php:308 bws_menu/bws_menu.php:312
+#: bws_menu/bws_menu.php:617
+msgid "System status"
+msgstr ""
+
+#: bws_menu/bws_menu.php:316 captcha-bws.php:1696
+msgid "Support"
+msgstr "الدعم"
+
+#: bws_menu/bws_menu.php:317
+msgid "Manage purchased licenses & subscriptions"
+msgstr ""
+
+#: bws_menu/bws_menu.php:325
+#, php-format
+msgid "Get Access to %s+ Premium Plugins"
+msgstr ""
+
+#: bws_menu/bws_menu.php:327
+msgid "Subscribe to Pro Membership"
+msgstr ""
+
+#: bws_menu/bws_menu.php:335 bws_menu/bws_menu.php:346
+#: bws_menu/class-bws-settings.php:822 bws_menu/deprecated.php:123
+msgid "Check license key"
+msgstr ""
+
+#: bws_menu/bws_menu.php:338
+msgid "Enter your license key"
+msgstr ""
+
+#: bws_menu/bws_menu.php:344 bws_menu/bws_menu.php:539
+#: bws_menu/bws_menu.php:548 bws_menu/class-bws-settings.php:801
+#: bws_menu/deprecated.php:155 bws_menu/deprecated.php:163
+#: bws_menu/deprecated.php:240 bws_menu/deprecated.php:249
+#: includes/class-cptch-settings-tabs.php:917
+msgid "Activate"
+msgstr ""
+
+#: bws_menu/bws_menu.php:360
+#, fuzzy
+msgid "Upload Plugin"
+msgstr "Плагины BWS"
+
+#: bws_menu/bws_menu.php:364
+#, php-format
+msgid ""
+"The plugin generated %d characters of <strong>unexpected output</strong> "
+"during activation. If you notice &#8220;headers already sent&#8221; "
+"messages, problems with syndication feeds or other issues, try deactivating "
+"or removing this plugin."
+msgstr ""
+
+#: bws_menu/bws_menu.php:366
+msgid ""
+"Plugin could not be activated because it triggered a <strong>fatal error</"
+"strong>."
+msgstr ""
+
+#: bws_menu/bws_menu.php:369
+msgid "Plugin <strong>activated</strong>."
+msgstr ""
+
+#: bws_menu/bws_menu.php:383
+msgid "Download Pro Plugin"
+msgstr ""
+
+#: bws_menu/bws_menu.php:385 bws_menu/class-bws-settings.php:759
+msgid "Your Pro plugin is ready"
+msgstr ""
+
+#: bws_menu/bws_menu.php:387 bws_menu/class-bws-settings.php:761
+msgid "Your plugin has been zipped, and now is ready to download."
+msgstr ""
+
+#: bws_menu/bws_menu.php:390 bws_menu/class-bws-settings.php:764
+#, fuzzy
+msgid "Download Now"
+msgstr "تحميل"
+
+#: bws_menu/bws_menu.php:394 bws_menu/class-bws-settings.php:768
+msgid "Need help installing the plugin?"
+msgstr ""
+
+#: bws_menu/bws_menu.php:396 bws_menu/class-bws-settings.php:770
+msgid "How to install WordPress plugin from your admin Dashboard (ZIP archive)"
+msgstr ""
+
+#: bws_menu/bws_menu.php:399 bws_menu/class-bws-settings.php:774
+msgid "Get Started"
+msgstr ""
+
+#: bws_menu/bws_menu.php:405 bws_menu/class-bws-settings.php:780
+msgid "Knowledge Base"
+msgstr ""
+
+#: bws_menu/bws_menu.php:408
+msgid "Licenses & Domains"
+msgstr ""
+
+#: bws_menu/bws_menu.php:411
+msgid "Client Area"
+msgstr ""
+
+#: bws_menu/bws_menu.php:413
+msgid "Return to BestWebSoft Panel"
+msgstr ""
+
+#: bws_menu/bws_menu.php:420 bws_menu/bws_menu.php:440
+#: bws_menu/bws_menu.php:569
+msgid "All"
+msgstr ""
+
+#: bws_menu/bws_menu.php:423 bws_menu/bws_menu.php:606
+msgid "Installed"
+msgstr ""
+
+#: bws_menu/bws_menu.php:426
+msgid "Not Installed"
+msgstr ""
+
+#: bws_menu/bws_menu.php:433
+msgid "Filter results"
+msgstr ""
+
+#: bws_menu/bws_menu.php:436 bws_menu/bws_menu.php:565
+msgid "Category"
+msgstr ""
+
+#: bws_menu/bws_menu.php:500
+msgid "Not installed"
+msgstr ""
+
+#: bws_menu/bws_menu.php:504
+msgid "Renew to get updates"
+msgstr ""
+
+#: bws_menu/bws_menu.php:507
+#, php-format
+msgid "Update to v %s"
+msgstr ""
+
+#: bws_menu/bws_menu.php:519 bws_menu/bws_menu.php:542
+msgid "Get Pro"
+msgstr ""
+
+#: bws_menu/bws_menu.php:525 bws_menu/class-bws-settings.php:192
+#: bws_menu/class-bws-settings.php:1091 captcha-bws.php:84 captcha-bws.php:494
+#: includes/pro_banners.php:30
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: bws_menu/bws_menu.php:539 bws_menu/bws_menu.php:548
+#, fuzzy
+msgid "Activate this plugin"
+msgstr "اضافات موصي بها"
+
+#: bws_menu/bws_menu.php:551
+#, fuzzy
+msgid "Install this plugin"
+msgstr "اضافات موصي بها"
+
+#: bws_menu/bws_menu.php:551 includes/class-cptch-settings-tabs.php:919
+msgid "Install Now"
+msgstr ""
+
+#: bws_menu/bws_menu.php:560
+msgid "Nothing found. Try another criteria."
+msgstr ""
+
+#: bws_menu/bws_menu.php:597
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: bws_menu/bws_menu.php:604
+msgid "Already Installed"
+msgstr ""
+
+#: bws_menu/bws_menu.php:614
+msgid "Browse More WordPress Themes"
+msgstr ""
+
+#: bws_menu/bws_menu.php:623
+#, fuzzy
+#| msgid "Support"
+msgid "Send to support"
+msgstr "الدعم"
+
+#: bws_menu/bws_menu.php:630
+msgid "Send to custom email &#187;"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:167
+msgid "Information"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:179
+msgid "Inactive"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:187
+msgid "Expired"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:190
+#, php-format
+msgid "%s day(-s) left"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:196
+#, php-format
+msgid "Expired on %s"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:196
+msgid "Renew Now"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:198
+msgid "Active"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:203
+msgid "License"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:206
+msgid "Status"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:210
+msgid "Version"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:323
+msgid "All plugin settings were restored."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:463
+#: includes/class-cptch-settings-tabs.php:26
+msgid "Custom Code"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:467
+msgid "You do not have sufficient permissions to edit plugins for this site."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:472
+msgid "These styles will be added to the header on all pages of your site."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:475
+#, php-format
+msgid ""
+"This PHP code will be hooked to the %s action and will be printed on front "
+"end only."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:478
+msgid "These code will be added to the header on all pages of your site."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:486
+#, php-format
+msgid ""
+"You need to make this files writable before you can save your changes. See "
+"%s the Codex %s for more information."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:496
+msgid "Browsing"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:501
+#, fuzzy, php-format
+msgid "Activate custom %s code."
+msgstr "الاضافات المفعلة "
+
+#: bws_menu/class-bws-settings.php:509
+#, php-format
+msgid "Learn more about %s"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:571
+msgid "Miscellaneous Settings"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:580 bws_menu/class-bws-settings.php:635
+#, php-format
+msgid ""
+"It is prohibited to change %s settings on this site in the %s network "
+"settings."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:583 bws_menu/class-bws-settings.php:638
+#, php-format
+msgid ""
+"It is prohibited to view %s settings on this site in the %s network settings."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:592
+msgid "Pro Options"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:596
+msgid "Enable to display plugin Pro options."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:602
+msgid "Track Usage"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:606
+msgid ""
+"Enable to allow tracking plugin usage anonymously in order to make it better."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:611
+#, fuzzy
+msgid "Default Settings"
+msgstr "الاعدادت "
+
+#: bws_menu/class-bws-settings.php:613
+#, fuzzy
+msgid "Restore Settings"
+msgstr "الاعدادت "
+
+#: bws_menu/class-bws-settings.php:614
+msgid "This will restore plugin settings to defaults."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:626
+msgid "Import / Export"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:744
+#: includes/class-cptch-settings-tabs.php:28
+msgid "License Key"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:803
+#, php-format
+msgid "Enter your license key to activate %s and get premium plugin features."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:806 bws_menu/class-bws-settings.php:1014
+#: bws_menu/deprecated.php:243
+msgid ""
+"Unfortunately, you have exceeded the number of available tries per day. "
+"Please, upload the plugin manually."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:809 bws_menu/deprecated.php:234
+#, php-format
+msgid "Start Your Free %s-Day Trial Now"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:824
+msgid ""
+"If necessary, you can check if the license key is correct or reenter it in "
+"the field below."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:833
+msgid "Manage License Settings"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:835
+msgid "Login to Client Area"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:837
+msgid ""
+"Manage active licenses, download BWS products, and view your payment history "
+"using BestWebSoft Client Area."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:895 bws_menu/class-bws-settings.php:1012
+msgid "This license key is bound to another site."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:897
+msgid ""
+"This license key is valid, but Your license has expired. If you want to "
+"update our plugin in future, you should extend the license."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:899
+msgid "Unfortunately, you have exceeded the number of available tries."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:901
+msgid ""
+"Unfortunately, the Pro Trial licence was already installed to this domain. "
+"The Pro Trial license can be installed only once."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:906
+msgid "The Pro Trial license key is valid."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:919 bws_menu/deprecated.php:142
+#, php-format
+msgid ""
+"In order to continue using the plugin it is necessary to buy a %s license."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1016
+#, php-format
+msgid ""
+"Unfortunately, Your license has expired. To continue getting top-priority "
+"support and plugin updates, you should extend it in your %s."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1065
+msgid "Please, enter Your license key"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1078
+msgid "Need Help?"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1080
+msgid "Read the Instruction"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1084
+msgid "Watch the Video"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1095
+msgid "Start Your Free Trial"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1130
+msgid "Request a Feature"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1135
+#, php-format
+msgid "How can we improve %s?"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1137
+msgid "We look forward to hear your ideas."
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1139
+msgid "Describe your idea"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1142 bws_menu/deactivation-form.php:120
+msgid "Send website data and allow to contact me back"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1147
+msgid "Submit"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1148 bws_menu/deactivation-form.php:127
+msgid "Processing"
+msgstr ""
+
+#: bws_menu/class-bws-settings.php:1149
+msgid "Thank you!"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:22
+msgid "Need help? We are ready to answer your questions."
+msgstr ""
+
+#: bws_menu/deactivation-form.php:22
+#, fuzzy
+msgid "Contact Support"
+msgstr "تفعيل نموذج الاتصال"
+
+#: bws_menu/deactivation-form.php:27
+msgid "The plugin is not working"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:33
+msgid "The plugin didn't work as expected"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:39
+msgid "The plugin suddenly stopped working"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:46
+msgid "The plugin broke my site"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:53
+msgid "I couldn't understand how to get it work"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:60
+msgid "I found a better plugin"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:66
+msgid "The plugin is great, but I need specific feature that you don't support"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:72
+msgid "I no longer need the plugin"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:78
+msgid "It's a temporary deactivation, I'm just debugging an issue"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:84
+msgid "Other"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:93
+msgid "Quick Feedback"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:95
+msgid "If you have a moment, please let us know why you are deactivating"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:125
+msgid "Submit and Deactivate"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:126
+msgid "Skip and Deactivate"
+msgstr ""
+
+#: bws_menu/deactivation-form.php:272
+msgid "Please tell us the reason so we can improve it."
+msgstr ""
+
+#: bws_menu/deprecated.php:28
+msgid "System Status"
+msgstr ""
+
+#: bws_menu/deprecated.php:119
+msgid ""
+"If necessary, you can check if the license key is correct or reenter it in "
+"the field below. You can find your license key on your personal page - "
+"Client Area - on our website"
+msgstr ""
+
+#: bws_menu/deprecated.php:119
+msgid ""
+"(your username is the email address specified during the purchase). If "
+"necessary, please submit \"Lost your password?\" request."
+msgstr ""
+
+#: bws_menu/deprecated.php:142
+msgid "After that, you can activate it by entering your license key."
+msgstr ""
+
+#: bws_menu/deprecated.php:145 bws_menu/deprecated.php:228
+msgid "License key can be found in the"
+msgstr ""
+
+#: bws_menu/deprecated.php:147 bws_menu/deprecated.php:230
+msgid "(your username is the email address specified during the purchase)."
+msgstr ""
+
+#: bws_menu/deprecated.php:170
+msgid ""
+"Congratulations! The Pro license of the plugin is activated successfully."
+msgstr ""
+
+#: bws_menu/deprecated.php:172 bws_menu/deprecated.php:210
+msgid "Please, go to"
+msgstr ""
+
+#: bws_menu/deprecated.php:172 bws_menu/deprecated.php:210
+#, fuzzy
+msgid "the setting page"
+msgstr "تم حفظ التغييرات"
+
+#: bws_menu/deprecated.php:187
+msgid "Restore all plugin settings to defaults"
+msgstr ""
+
+#: bws_menu/deprecated.php:189
+#, fuzzy
+msgid "Restore settings"
+msgstr "الاعدادت "
+
+#: bws_menu/deprecated.php:208
+msgid ""
+"Congratulations! Pro version of the plugin is  installed and activated "
+"successfully."
+msgstr ""
+
+#: bws_menu/deprecated.php:217
+msgid "Show Pro features"
+msgstr ""
+
+#: bws_menu/deprecated.php:224
+msgid "Enter your license key to install and activate"
+msgstr ""
+
+#: bws_menu/deprecated.php:226
+#, fuzzy
+msgid "version of the plugin."
+msgstr "اضافات موصي بها"
+
+#: bws_menu/product_list.php:8
+msgid "Admin Tools"
+msgstr ""
+
+#: bws_menu/product_list.php:9
+msgid "Content"
+msgstr ""
+
+#: bws_menu/product_list.php:10
+msgid "eCommerce"
+msgstr ""
+
+#: bws_menu/product_list.php:11
+msgid "Marketing"
+msgstr ""
+
+#: bws_menu/product_list.php:12
+msgid "Navigation"
+msgstr ""
+
+#: bws_menu/product_list.php:13
+msgid "Recommended"
+msgstr ""
+
+#: bws_menu/product_list.php:14
+msgid "Security"
+msgstr ""
+
+#: bws_menu/product_list.php:15
+msgid "SEO"
+msgstr ""
+
+#: bws_menu/product_list.php:16
+msgid "SMM"
+msgstr ""
+
+#: bws_menu/product_list.php:23
+msgid "Give a birth for your bike rental and booking WordPress website."
+msgstr ""
+
+#: bws_menu/product_list.php:35
+msgid "Best secure captcha plugin to protect your WordPress forms."
+msgstr ""
+
+#: bws_menu/product_list.php:45
+msgid "Create your own rental website for car renting and booking."
+msgstr ""
+
+#: bws_menu/product_list.php:57
+msgid ""
+"Add columns with custom content to WordPress website pages, posts, widgets, "
+"etc."
+msgstr ""
+
+#: bws_menu/product_list.php:64
+msgid ""
+"Allow customers to reach you using secure contact form plugin any website "
+"must have."
+msgstr ""
+
+#: bws_menu/product_list.php:74
+msgid "Add unlimited number of contact forms to WordPress website."
+msgstr ""
+
+#: bws_menu/product_list.php:84
+msgid "Save and manage Contact Form messages. Never lose important data."
+msgstr ""
+
+#: bws_menu/product_list.php:94
+msgid "Add unlimited custom pages to WordPress admin dashboard."
+msgstr ""
+
+#: bws_menu/product_list.php:104
+msgid ""
+"Add custom post types and taxonomies to WordPress website search results."
+msgstr ""
+
+#: bws_menu/product_list.php:114
+msgid "Add PayPal and 2CO donate buttons to receive charity payments."
+msgstr ""
+
+#: bws_menu/product_list.php:121
+msgid ""
+"Get latest error log messages to diagnose website problems. Define and fix "
+"issues faster."
+msgstr ""
+
+#: bws_menu/product_list.php:128
+msgid ""
+"Add Facebook Follow, Like, and Share buttons to WordPress posts, pages, and "
+"widgets."
+msgstr ""
+
+#: bws_menu/product_list.php:138
+msgid ""
+"Add beautiful galleries, albums & images to your WordPress website in a few "
+"clicks."
+msgstr ""
+
+#: bws_menu/product_list.php:148
+msgid ""
+"Stronger security solution which protects your WordPress website from hacks "
+"and unauthorized login attempts."
+msgstr ""
+
+#: bws_menu/product_list.php:158
+msgid ""
+"Add Adsense ads to WordPress website pages, posts, custom posts, search "
+"results, categories, tags, and widgets."
+msgstr ""
+
+#: bws_menu/product_list.php:168
+msgid "Add Google Analytics code to WordPress website and track basic stats."
+msgstr ""
+
+#: bws_menu/product_list.php:178
+msgid "Protect WordPress website forms from spam entries with reCaptcha."
+msgstr ""
+
+#: bws_menu/product_list.php:188
+msgid "Add customized Google maps to WordPress posts, pages and widgets."
+msgstr ""
+
+#: bws_menu/product_list.php:198
+msgid ""
+"Generate and add XML sitemap to WordPress website. Help search engines index "
+"your blog."
+msgstr ""
+
+#: bws_menu/product_list.php:208
+msgid ""
+"Replace external WordPress website links with Google shortlinks and track "
+"click stats."
+msgstr ""
+
+#: bws_menu/product_list.php:215
+msgid ""
+"Protect WordPress website – allow and deny access for certain IP addresses, "
+"hostnames, etc."
+msgstr ""
+
+#: bws_menu/product_list.php:225
+msgid ""
+"Create your personal job board and listing WordPress website. Search jobs, "
+"submit CV/resumes, choose candidates."
+msgstr ""
+
+#: bws_menu/product_list.php:232
+msgid ""
+"Protect WordPress website against brute force attacks. Limit rate of login "
+"attempts."
+msgstr ""
+
+#: bws_menu/product_list.php:242
+msgid ""
+"Add LinkedIn Share and Follow buttons to WordPress posts, pages and widgets. "
+"5 plugins included – profile, insider, etc."
+msgstr ""
+
+#: bws_menu/product_list.php:252
+msgid ""
+"Translate WordPress website content to other languages manually. Create "
+"multilingual pages, posts, widgets, menus, etc."
+msgstr ""
+
+#: bws_menu/product_list.php:262
+msgid ""
+"Add customizable pagination to WordPress website. Split long content to "
+"multiple pages for better navigation."
+msgstr ""
+
+#: bws_menu/product_list.php:272
+msgid ""
+"Generate PDF files and print WordPress posts/pages. Customize document "
+"header/footer styles and appearance."
+msgstr ""
+
+#: bws_menu/product_list.php:282
+msgid ""
+"Add Pinterest Follow, Pin It buttons and profile widgets (Pin, Board, "
+"Profile) to WordPress posts, pages and widgets."
+msgstr ""
+
+#: bws_menu/product_list.php:292
+msgid ""
+"Create your personal portfolio WordPress website. Manage and showcase past "
+"projects to get more clients."
+msgstr ""
+
+#: bws_menu/product_list.php:302
+msgid "Export WordPress posts to CSV file format easily. Configure data order."
+msgstr ""
+
+#: bws_menu/product_list.php:312
+msgid ""
+"Add extra fields to default WordPress user profile. The easiest way to "
+"create and manage additional custom values."
+msgstr ""
+
+#: bws_menu/product_list.php:322
+msgid ""
+"Add and display HTML advertisement banner on WordPress website. Customize "
+"bar styles and appearance."
+msgstr ""
+
+#: bws_menu/product_list.php:332
+msgid ""
+"Add customizable quotes and tips blocks to WordPress posts, pages and "
+"widgets."
+msgstr ""
+
+#: bws_menu/product_list.php:339
+msgid ""
+"Add rating plugin to your WordPress website to receive feedback from your "
+"customers."
+msgstr ""
+
+#: bws_menu/product_list.php:349
+msgid ""
+"Create your personal real estate WordPress website. Sell, rent and buy "
+"properties. Add, search and browse listings easily."
+msgstr ""
+
+#: bws_menu/product_list.php:359
+msgid ""
+"Add related, featured, latest, and popular posts to your WordPress website. "
+"Connect your blog readers with a relevant content."
+msgstr ""
+
+#: bws_menu/product_list.php:366
+msgid ""
+"Send bulk email messages to WordPress users. Custom templates, advanced "
+"settings and detailed reports."
+msgstr ""
+
+#: bws_menu/product_list.php:376
+msgid ""
+"The best responsive slider plugin for your WordPress website. Create "
+"beautifully animated slides just in a few clicks."
+msgstr ""
+
+#: bws_menu/product_list.php:383
+msgid ""
+"Configure SMTP server to receive email messages from WordPress to Gmail, "
+"Yahoo, Hotmail and other services."
+msgstr ""
+
+#: bws_menu/product_list.php:390
+msgid ""
+"Add social media buttons and widgets to WordPress posts, pages and widgets. "
+"FB, Twitter, Pinterest, LinkedIn."
+msgstr ""
+
+#: bws_menu/product_list.php:400
+msgid ""
+"Add social media login, registration, and commenting to your WordPress "
+"website."
+msgstr ""
+
+#: bws_menu/product_list.php:407
+msgid ""
+"Add email newsletter sign up form to WordPress posts, pages and widgets. "
+"Collect data and subscribe your users."
+msgstr ""
+
+#: bws_menu/product_list.php:417
+msgid ""
+"Add testimonials and feedbacks from your customers to WordPress website "
+"posts, pages, and widgets."
+msgstr ""
+
+#: bws_menu/product_list.php:424
+msgid ""
+"Best timesheet plugin for WordPress. Track employee time, streamline "
+"attendance and generate reports."
+msgstr ""
+
+#: bws_menu/product_list.php:434
+msgid ""
+"Add Twitter Follow, Tweet, Hashtag, and Mention buttons to WordPress posts "
+"and pages."
+msgstr ""
+
+#: bws_menu/product_list.php:444
+msgid ""
+"Automatically check and update WordPress website core with all installed "
+"plugins and themes to the latest versions."
+msgstr ""
+
+#: bws_menu/product_list.php:454
+msgid ""
+"Powerful user role management plugin for WordPress website. Create, edit, "
+"copy, and delete user roles."
+msgstr ""
+
+#: bws_menu/product_list.php:464
+msgid ""
+"Display live count of online visitors who are currently browsing your "
+"WordPress website."
+msgstr ""
+
+#: bws_menu/product_list.php:474
+msgid ""
+"Backup and export Zendesk Help Center content automatically to your "
+"WordPress website database."
+msgstr ""
+
+#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:427
+#: includes/class-cptch-settings-tabs.php:392
+msgid "Captcha Settings"
+msgstr ""
+
+#: captcha-bws.php:57 includes/class-cptch-package-list.php:90
+msgid "Captcha Packages"
+msgstr ""
+
+#: captcha-bws.php:58
+msgid "Packages"
+msgstr ""
+
+#: captcha-bws.php:66 captcha-bws.php:468
+#, fuzzy
+msgid "Captcha Allow List"
+msgstr "خيارات Captcha "
+
+#: captcha-bws.php:67 includes/pro_banners.php:51
+msgid "Allow List"
+msgstr ""
+
+#: captcha-bws.php:353 includes/helpers.php:26
+msgid "Slide to verify"
+msgstr ""
+
+#: captcha-bws.php:354 includes/helpers.php:27
+msgid "Verification passed"
+msgstr ""
+
+#: captcha-bws.php:430
+msgid "WARNING"
+msgstr ""
+
+#: captcha-bws.php:430
+msgid "The plugin works correctly only if JavaScript is enabled."
+msgstr ""
+
+#: captcha-bws.php:476
+msgid "This tab contains Pro options only."
+msgstr ""
+
+#: captcha-bws.php:478
+#, php-format
+msgid "%sChange the settings%s to view the Pro options."
+msgstr ""
+
+#: captcha-bws.php:643
 #, fuzzy
 msgid "Click the BACK button on your browser, and try again."
 msgstr ""
 "خطاء : لقد قمت بأدخال CAPTCHA  غير صحيح ’, اضغظ علي زر الرجوع في متصفحك "
 "والتجربة مرة اخري"
 
-#: captcha-bws.php:764
+#: captcha-bws.php:902
 msgid "Captcha loading..."
 msgstr ""
 
-#: captcha-bws.php:766
-msgid "In order to pass the CAPTCHA please enable JavaScript"
+#: captcha-bws.php:904
+msgid "In order to pass the CAPTCHA please enable JavaScript."
 msgstr ""
 
-#: captcha-bws.php:1182
+#: captcha-bws.php:1330
 msgid "zero"
 msgstr "صفر"
 
-#: captcha-bws.php:1183
+#: captcha-bws.php:1331
 msgid "one"
 msgstr "واحد"
 
-#: captcha-bws.php:1184
+#: captcha-bws.php:1332
 msgid "two"
 msgstr "اتنان"
 
-#: captcha-bws.php:1185
+#: captcha-bws.php:1333
 msgid "three"
 msgstr "ثلاته"
 
-#: captcha-bws.php:1186
+#: captcha-bws.php:1334
 msgid "four"
 msgstr "اربعه"
 
-#: captcha-bws.php:1187
+#: captcha-bws.php:1335
 msgid "five"
 msgstr "خمسة"
 
-#: captcha-bws.php:1188
+#: captcha-bws.php:1336
 msgid "six"
 msgstr "سته"
 
-#: captcha-bws.php:1189
+#: captcha-bws.php:1337
 msgid "seven"
 msgstr "سبعة"
 
-#: captcha-bws.php:1190
+#: captcha-bws.php:1338
 msgid "eight"
 msgstr "ثمانية"
 
-#: captcha-bws.php:1191
+#: captcha-bws.php:1339
 msgid "nine"
 msgstr "تسعة"
 
-#: captcha-bws.php:1193
+#: captcha-bws.php:1341
 msgid "ten"
 msgstr "عشرة"
 
-#: captcha-bws.php:1194
+#: captcha-bws.php:1342
 msgid "eleven"
 msgstr "احدي عشر "
 
-#: captcha-bws.php:1195
+#: captcha-bws.php:1343
 msgid "twelve"
 msgstr "اثني عشر"
 
-#: captcha-bws.php:1196
+#: captcha-bws.php:1344
 msgid "thirteen"
 msgstr "ثلاثة عشر "
 
-#: captcha-bws.php:1197
+#: captcha-bws.php:1345
 msgid "fourteen"
 msgstr "اربعة عشر"
 
-#: captcha-bws.php:1198
+#: captcha-bws.php:1346
 msgid "fifteen"
 msgstr "خمسة عشر"
 
-#: captcha-bws.php:1199
+#: captcha-bws.php:1347
 msgid "sixteen"
 msgstr "ستة عشر"
 
-#: captcha-bws.php:1200
+#: captcha-bws.php:1348
 msgid "seventeen"
 msgstr "سبعة عشر"
 
-#: captcha-bws.php:1201
+#: captcha-bws.php:1349
 msgid "eighteen"
 msgstr "ثمانية عشر"
 
-#: captcha-bws.php:1202
+#: captcha-bws.php:1350
 msgid "nineteen"
 msgstr "تسعة عشر"
 
-#: captcha-bws.php:1204
+#: captcha-bws.php:1352
 msgid "twenty"
 msgstr "عشرون"
 
-#: captcha-bws.php:1205
+#: captcha-bws.php:1353
 #, fuzzy
 msgid "twenty one"
 msgstr "عشرون"
 
-#: captcha-bws.php:1206
+#: captcha-bws.php:1354
 #, fuzzy
 msgid "twenty two"
 msgstr "عشرون"
 
-#: captcha-bws.php:1207
+#: captcha-bws.php:1355
 #, fuzzy
 msgid "twenty three"
 msgstr "عشرون"
 
-#: captcha-bws.php:1208
+#: captcha-bws.php:1356
 #, fuzzy
 msgid "twenty four"
 msgstr "عشرون"
 
-#: captcha-bws.php:1209
+#: captcha-bws.php:1357
 #, fuzzy
 msgid "twenty five"
 msgstr "عشرون"
 
-#: captcha-bws.php:1210
+#: captcha-bws.php:1358
 #, fuzzy
 msgid "twenty six"
 msgstr "عشرون"
 
-#: captcha-bws.php:1211
+#: captcha-bws.php:1359
 #, fuzzy
 msgid "twenty seven"
 msgstr "عشرون"
 
-#: captcha-bws.php:1212
+#: captcha-bws.php:1360
 #, fuzzy
 msgid "twenty eight"
 msgstr "عشرون"
 
-#: captcha-bws.php:1213
+#: captcha-bws.php:1361
 #, fuzzy
 msgid "twenty nine"
 msgstr "عشرون"
 
-#: captcha-bws.php:1215
+#: captcha-bws.php:1363
 msgid "thirty"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1216
+#: captcha-bws.php:1364
 #, fuzzy
 msgid "thirty one"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1217
+#: captcha-bws.php:1365
 #, fuzzy
 msgid "thirty two"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1218
+#: captcha-bws.php:1366
 #, fuzzy
 msgid "thirty three"
 msgstr "ثلاثة عشر "
 
-#: captcha-bws.php:1219
+#: captcha-bws.php:1367
 #, fuzzy
 msgid "thirty four"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1220
+#: captcha-bws.php:1368
 #, fuzzy
 msgid "thirty five"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1221
+#: captcha-bws.php:1369
 #, fuzzy
 msgid "thirty six"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1222
+#: captcha-bws.php:1370
 #, fuzzy
 msgid "thirty seven"
 msgstr "ثلاثة عشر "
 
-#: captcha-bws.php:1223
+#: captcha-bws.php:1371
 #, fuzzy
 msgid "thirty eight"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1224
+#: captcha-bws.php:1372
 #, fuzzy
 msgid "thirty nine"
 msgstr "ثلاثون"
 
-#: captcha-bws.php:1226
+#: captcha-bws.php:1374
 msgid "forty"
 msgstr "اربعون"
 
-#: captcha-bws.php:1227
+#: captcha-bws.php:1375
 #, fuzzy
 msgid "forty one"
 msgstr "اربعون"
 
-#: captcha-bws.php:1228
+#: captcha-bws.php:1376
 #, fuzzy
 msgid "forty two"
 msgstr "اربعون"
 
-#: captcha-bws.php:1229
+#: captcha-bws.php:1377
 #, fuzzy
 msgid "forty three"
 msgstr "ثلاته"
 
-#: captcha-bws.php:1230
+#: captcha-bws.php:1378
 #, fuzzy
 msgid "forty four"
 msgstr "اربعون"
 
-#: captcha-bws.php:1231
+#: captcha-bws.php:1379
 #, fuzzy
 msgid "forty five"
 msgstr "اربعون"
 
-#: captcha-bws.php:1232
+#: captcha-bws.php:1380
 #, fuzzy
 msgid "forty six"
 msgstr "اربعون"
 
-#: captcha-bws.php:1233
+#: captcha-bws.php:1381
 #, fuzzy
 msgid "forty seven"
 msgstr "سبعة"
 
-#: captcha-bws.php:1234
+#: captcha-bws.php:1382
 #, fuzzy
 msgid "forty eight"
 msgstr "ثمانية"
 
-#: captcha-bws.php:1235
+#: captcha-bws.php:1383
 #, fuzzy
 msgid "forty nine"
 msgstr "اربعون"
 
-#: captcha-bws.php:1237
+#: captcha-bws.php:1385
 msgid "fifty"
 msgstr "خمسون"
 
-#: captcha-bws.php:1238
+#: captcha-bws.php:1386
 #, fuzzy
 msgid "fifty one"
 msgstr "خمسون"
 
-#: captcha-bws.php:1239
+#: captcha-bws.php:1387
 #, fuzzy
 msgid "fifty two"
 msgstr "خمسون"
 
-#: captcha-bws.php:1240
+#: captcha-bws.php:1388
 #, fuzzy
 msgid "fifty three"
 msgstr "خمسة عشر"
 
-#: captcha-bws.php:1241
+#: captcha-bws.php:1389
 #, fuzzy
 msgid "fifty four"
 msgstr "خمسون"
 
-#: captcha-bws.php:1242
+#: captcha-bws.php:1390
 #, fuzzy
 msgid "fifty five"
 msgstr "خمسون"
 
-#: captcha-bws.php:1243
+#: captcha-bws.php:1391
 #, fuzzy
 msgid "fifty six"
 msgstr "خمسون"
 
-#: captcha-bws.php:1244
+#: captcha-bws.php:1392
 #, fuzzy
 msgid "fifty seven"
 msgstr "خمسة عشر"
 
-#: captcha-bws.php:1245
+#: captcha-bws.php:1393
 #, fuzzy
 msgid "fifty eight"
 msgstr "ثمانية"
 
-#: captcha-bws.php:1246
+#: captcha-bws.php:1394
 #, fuzzy
 msgid "fifty nine"
 msgstr "خمسون"
 
-#: captcha-bws.php:1248
+#: captcha-bws.php:1396
 msgid "sixty"
 msgstr "ستون"
 
-#: captcha-bws.php:1249
+#: captcha-bws.php:1397
 #, fuzzy
 msgid "sixty one"
 msgstr "ستون"
 
-#: captcha-bws.php:1250
+#: captcha-bws.php:1398
 #, fuzzy
 msgid "sixty two"
 msgstr "ستون"
 
-#: captcha-bws.php:1251
+#: captcha-bws.php:1399
 #, fuzzy
 msgid "sixty three"
 msgstr "ستة عشر"
 
-#: captcha-bws.php:1252
+#: captcha-bws.php:1400
 #, fuzzy
 msgid "sixty four"
 msgstr "ستون"
 
-#: captcha-bws.php:1253
+#: captcha-bws.php:1401
 #, fuzzy
 msgid "sixty five"
 msgstr "ستون"
 
-#: captcha-bws.php:1254
+#: captcha-bws.php:1402
 #, fuzzy
 msgid "sixty six"
 msgstr "ستون"
 
-#: captcha-bws.php:1255
+#: captcha-bws.php:1403
 #, fuzzy
 msgid "sixty seven"
 msgstr "ستة عشر"
 
-#: captcha-bws.php:1256
+#: captcha-bws.php:1404
 #, fuzzy
 msgid "sixty eight"
 msgstr "ثمانية"
 
-#: captcha-bws.php:1257
+#: captcha-bws.php:1405
 #, fuzzy
 msgid "sixty nine"
 msgstr "ستون"
 
-#: captcha-bws.php:1259
+#: captcha-bws.php:1407
 msgid "seventy"
 msgstr "سبعون"
 
-#: captcha-bws.php:1260
+#: captcha-bws.php:1408
 #, fuzzy
 msgid "seventy one"
 msgstr "سبعون"
 
-#: captcha-bws.php:1261
+#: captcha-bws.php:1409
 #, fuzzy
 msgid "seventy two"
 msgstr "سبعون"
 
-#: captcha-bws.php:1262
+#: captcha-bws.php:1410
 #, fuzzy
 msgid "seventy three"
 msgstr "سبعة عشر"
 
-#: captcha-bws.php:1263
+#: captcha-bws.php:1411
 #, fuzzy
 msgid "seventy four"
 msgstr "سبعون"
 
-#: captcha-bws.php:1264
+#: captcha-bws.php:1412
 #, fuzzy
 msgid "seventy five"
 msgstr "سبعون"
 
-#: captcha-bws.php:1265
+#: captcha-bws.php:1413
 #, fuzzy
 msgid "seventy six"
 msgstr "سبعون"
 
-#: captcha-bws.php:1266
+#: captcha-bws.php:1414
 #, fuzzy
 msgid "seventy seven"
 msgstr "سبعة عشر"
 
-#: captcha-bws.php:1267
+#: captcha-bws.php:1415
 #, fuzzy
 msgid "seventy eight"
 msgstr "سبعون"
 
-#: captcha-bws.php:1268
+#: captcha-bws.php:1416
 #, fuzzy
 msgid "seventy nine"
 msgstr "سبعون"
 
-#: captcha-bws.php:1270
+#: captcha-bws.php:1418
 msgid "eighty"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1271
+#: captcha-bws.php:1419
 #, fuzzy
 msgid "eighty one"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1272
+#: captcha-bws.php:1420
 #, fuzzy
 msgid "eighty two"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1273
+#: captcha-bws.php:1421
 #, fuzzy
 msgid "eighty three"
 msgstr "ثمانية عشر"
 
-#: captcha-bws.php:1274
+#: captcha-bws.php:1422
 #, fuzzy
 msgid "eighty four"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1275
+#: captcha-bws.php:1423
 #, fuzzy
 msgid "eighty five"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1276
+#: captcha-bws.php:1424
 #, fuzzy
 msgid "eighty six"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1277
+#: captcha-bws.php:1425
 #, fuzzy
 msgid "eighty seven"
 msgstr "ثمانية عشر"
 
-#: captcha-bws.php:1278
+#: captcha-bws.php:1426
 #, fuzzy
 msgid "eighty eight"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1279
+#: captcha-bws.php:1427
 #, fuzzy
 msgid "eighty nine"
 msgstr "ثمانون"
 
-#: captcha-bws.php:1281
+#: captcha-bws.php:1429
 msgid "ninety"
 msgstr "تسعون"
 
-#: captcha-bws.php:1282
+#: captcha-bws.php:1430
 #, fuzzy
 msgid "ninety one"
 msgstr "تسعون"
 
-#: captcha-bws.php:1283
+#: captcha-bws.php:1431
 #, fuzzy
 msgid "ninety two"
 msgstr "تسعون"
 
-#: captcha-bws.php:1284
+#: captcha-bws.php:1432
 #, fuzzy
 msgid "ninety three"
 msgstr "تسعة عشر"
 
-#: captcha-bws.php:1285
+#: captcha-bws.php:1433
 #, fuzzy
 msgid "ninety four"
 msgstr "تسعون"
 
-#: captcha-bws.php:1286
+#: captcha-bws.php:1434
 #, fuzzy
 msgid "ninety five"
 msgstr "تسعون"
 
-#: captcha-bws.php:1287
+#: captcha-bws.php:1435
 #, fuzzy
 msgid "ninety six"
 msgstr "تسعون"
 
-#: captcha-bws.php:1288
+#: captcha-bws.php:1436
 #, fuzzy
 msgid "ninety seven"
 msgstr "تسعة عشر"
 
-#: captcha-bws.php:1289
+#: captcha-bws.php:1437
 #, fuzzy
 msgid "ninety eight"
 msgstr "تسعون"
 
-#: captcha-bws.php:1290
+#: captcha-bws.php:1438
 #, fuzzy
 msgid "ninety nine"
 msgstr "تسعون"
 
-#: captcha-bws.php:1355
+#: captcha-bws.php:1503
 #, fuzzy
 msgid "Encryption password is not set"
 msgstr "لم يتم تعيين كلمة المرور من فك التشفير"
 
-#: captcha-bws.php:1376
+#: captcha-bws.php:1524
 #, fuzzy
 msgid "Decryption password is not set"
 msgstr "لم يتم تعيين كلمة المرور من فك التشفير"
 
-#: captcha-bws.php:1520
-msgid "FAQ"
-msgstr "اسئلة واجوبة"
+#: captcha-bws.php:1747
+msgid "Could not save captcha response to database."
+msgstr ""
 
-#: captcha-bws.php:1521
-msgid "Support"
-msgstr "الدعم"
+#: captcha-bws.php:1793
+msgid "Error"
+msgstr ""
 
-#: includes/class-cptch-package-list.php:38
+#: includes/class-cptch-package-list.php:37
 msgid "package"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:39
+#: includes/class-cptch-package-list.php:38
 msgid "packages"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:97
+#: includes/class-cptch-package-list.php:111
 msgid "Search"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:119
+#: includes/class-cptch-package-list.php:133
 msgid "No packages found"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:129
+#: includes/class-cptch-package-list.php:143
 msgid "Package"
 msgstr ""
 
-#: includes/class-cptch-package-list.php:130 includes/pro_banners.php:206
-#: includes/pro_banners.php:233 includes/pro_banners.php:256
+#: includes/class-cptch-package-list.php:144 includes/pro_banners.php:269
+#: includes/pro_banners.php:294 includes/pro_banners.php:317
 msgid "Date Added"
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:43
+#: includes/class-cptch-package-loader.php:44
 msgid ""
 "Can not load images in to the \"uploads\" folder. Please, check your "
 "permissions."
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:130
+#: includes/class-cptch-package-loader.php:134
 #, php-format
 msgid "One package has been updated or added to the database."
 msgid_plural "%s packages have been updated or added to the database."
@@ -615,7 +2058,7 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: includes/class-cptch-package-loader.php:131
+#: includes/class-cptch-package-loader.php:135
 #, php-format
 msgid "One image has been updated or added to the database."
 msgid_plural "%s images have been updated or added to the database."
@@ -626,507 +2069,561 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: includes/class-cptch-package-loader.php:239
+#: includes/class-cptch-package-loader.php:249
 msgid "Archive is empty"
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:585
+#: includes/class-cptch-package-loader.php:607
 #, php-format
 msgid ""
 "Some settings of the package %s were set incorrectly. They have been skipped."
 msgstr ""
 
-#: includes/class-cptch-package-loader.php:588
+#: includes/class-cptch-package-loader.php:610
 msgid "Wrong data"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:26
+#: includes/class-cptch-settings-tabs.php:24
 msgid "Messages"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:27
+#: includes/class-cptch-settings-tabs.php:25
 msgid "Misc"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:28
-msgid "Custom Code"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:30
-msgid "License Key"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:56
-#: includes/class-cptch-settings-tabs.php:68
+#: includes/class-cptch-settings-tabs.php:55
+#: includes/class-cptch-settings-tabs.php:70
 msgid "Login form"
 msgstr "اطار تسجيل الدخو"
 
-#: includes/class-cptch-settings-tabs.php:57
-#: includes/class-cptch-settings-tabs.php:65
-#: includes/class-cptch-settings-tabs.php:69
+#: includes/class-cptch-settings-tabs.php:56
+#: includes/class-cptch-settings-tabs.php:67
+#: includes/class-cptch-settings-tabs.php:71
 #, fuzzy
 msgid "Registration form"
 msgstr "اطار التسجيل"
 
-#: includes/class-cptch-settings-tabs.php:58
+#: includes/class-cptch-settings-tabs.php:57
 msgid "Reset password form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:59
-#: includes/class-cptch-settings-tabs.php:66
+#: includes/class-cptch-settings-tabs.php:58
+#: includes/class-cptch-settings-tabs.php:68
 msgid "Comments form"
 msgstr "اطار التعليقات"
 
-#: includes/class-cptch-settings-tabs.php:64
-msgid "Mailchimp for Wordpress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:67
+#: includes/class-cptch-settings-tabs.php:69
 msgid "Create a Group form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:70
+#: includes/class-cptch-settings-tabs.php:72
 msgid "Forgot password form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:71
+#: includes/class-cptch-settings-tabs.php:73
 msgid "Checkout form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:72
+#: includes/class-cptch-settings-tabs.php:74
 msgid "Jetpack Contact Form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:73
+#: includes/class-cptch-settings-tabs.php:75
 msgid "bbPress New Topic form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:74
+#: includes/class-cptch-settings-tabs.php:76
 msgid "bbPress Reply form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:75
+#: includes/class-cptch-settings-tabs.php:77
 msgid "wpForo Login form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:76
+#: includes/class-cptch-settings-tabs.php:78
 msgid "wpForo Registration form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:77
+#: includes/class-cptch-settings-tabs.php:79
 msgid "wpForo New Topic form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:78
+#: includes/class-cptch-settings-tabs.php:80
 msgid "wpForo Reply form"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:115
+#: includes/class-cptch-settings-tabs.php:118
 msgid "WordPress default"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:124
-#: includes/class-cptch-settings-tabs.php:132
+#: includes/class-cptch-settings-tabs.php:127
+#: includes/class-cptch-settings-tabs.php:136
 msgid "External plugins"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:141
-msgid "BbPress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:148
-msgid "BuddyPress"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:156
-msgid "WooCommerce"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:165
-msgid "Forums - wpForo"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:222
-#: includes/class-cptch-settings-tabs.php:315
+#: includes/class-cptch-settings-tabs.php:229
+#: includes/class-cptch-settings-tabs.php:329
 msgid "Arithmetic Actions"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:223
-#: includes/class-cptch-settings-tabs.php:325
+#: includes/class-cptch-settings-tabs.php:230
+#: includes/class-cptch-settings-tabs.php:339
 msgid "Complexity"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:224
-#: includes/class-cptch-settings-tabs.php:343 includes/pro_banners.php:76
+#: includes/class-cptch-settings-tabs.php:231
+#: includes/class-cptch-settings-tabs.php:357 includes/pro_banners.php:109
 msgid "Image Packages"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:238
+#: includes/class-cptch-settings-tabs.php:246
 msgid "Text fields in the \"Messages\" tab must not be empty."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:249
+#: includes/class-cptch-settings-tabs.php:261
 #, php-format
 msgid "\"%s\" option must not be fully disabled."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:277
+#: includes/class-cptch-settings-tabs.php:290
 msgid ""
 "In order to use \"Optical Character Recognition\" type, please select at "
 "least one of the items in the option \"Image Packages\"."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:280
+#: includes/class-cptch-settings-tabs.php:293
 msgid ""
 "In order to use images in the CAPTCHA, please select at least one of the "
 "items in the option \"Image Packages\". The \"Images\" checkbox in "
 "\"Complexity\" option has been disabled."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:291
+#: includes/class-cptch-settings-tabs.php:304
 msgid "Settings saved."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:306
+#: includes/class-cptch-settings-tabs.php:319
 msgid "Captcha Type"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:308
+#: includes/class-cptch-settings-tabs.php:321
 #, fuzzy
 msgid "Arithmetic actions"
 msgstr "الإجراءات الحسابية لCAPTCHA"
 
-#: includes/class-cptch-settings-tabs.php:309
+#: includes/class-cptch-settings-tabs.php:322
 msgid "Optical Character Recognition (OCR)"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:310
+#: includes/class-cptch-settings-tabs.php:323
 msgid "Invisible"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:317
+#: includes/class-cptch-settings-tabs.php:324
+msgid "Slide captcha"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:331
 msgid "Addition"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:318
-msgid "Subtruction"
+#: includes/class-cptch-settings-tabs.php:332
+msgid "Subtraction"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:319
+#: includes/class-cptch-settings-tabs.php:333
 #, fuzzy
 msgid "Multiplication"
 msgstr " ضاعف (&times;)"
 
-#: includes/class-cptch-settings-tabs.php:327
+#: includes/class-cptch-settings-tabs.php:341
 msgid "Numbers (1, 2, 3, etc.)"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:328
+#: includes/class-cptch-settings-tabs.php:342
 msgid "Words (one, two, three, etc.)"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:329
+#: includes/class-cptch-settings-tabs.php:343
 msgid "Images"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:335
+#: includes/class-cptch-settings-tabs.php:349
 msgid "Number of Images"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:338
+#: includes/class-cptch-settings-tabs.php:352
 msgid "Set a number of images to display simultaneously as a captcha question."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:349
+#: includes/class-cptch-settings-tabs.php:363
 msgid "Use several image packages at the same time"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:355
+#: includes/class-cptch-settings-tabs.php:369
 msgid "Enlarge Images"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:356
+#: includes/class-cptch-settings-tabs.php:370
 msgid "Enable to enlarge captcha images on mouseover."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:361
+#: includes/class-cptch-settings-tabs.php:375
 msgid "Reload Button"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:362
+#: includes/class-cptch-settings-tabs.php:376
 msgid "Enable to display reload button for captcha."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:367
+#: includes/class-cptch-settings-tabs.php:381
 msgid "Captcha Title"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:370
+#: includes/class-cptch-settings-tabs.php:384
 msgid "Required Symbol"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:373
+#: includes/class-cptch-settings-tabs.php:387
 msgid "Advanced Protection"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:374
+#: includes/class-cptch-settings-tabs.php:388
 msgid "Enable to display captcha when the website page is loaded."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:381
+#: includes/class-cptch-settings-tabs.php:395
 msgid "General"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:384
+#: includes/class-cptch-settings-tabs.php:398
 msgid "Enable Captcha for"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:413
+#: includes/class-cptch-settings-tabs.php:436
 msgid "Enable to add the CAPTCHA to forms on their settings pages."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:534 includes/pro_banners.php:105
-msgid "Enable to activate a time limit requeired to complete captcha."
+#: includes/class-cptch-settings-tabs.php:561
+msgid "Enable to activate a time limit required to complete captcha."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:545 includes/pro_banners.php:102
+#: includes/class-cptch-settings-tabs.php:572 includes/pro_banners.php:135
 msgid "Time Limit"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:552
-msgid "Time Limit Thershold"
+#: includes/class-cptch-settings-tabs.php:579
+msgid "Time Limit Threshold"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:555
+#: includes/class-cptch-settings-tabs.php:582
 msgid "sec"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:588
+#: includes/class-cptch-settings-tabs.php:622
 msgid "This option is available only for network or for main blog"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:595
+#: includes/class-cptch-settings-tabs.php:629
 msgid "Hide from Registered Users"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:627
+#: includes/class-cptch-settings-tabs.php:631
+#, fuzzy
+msgid "Enable to hide captcha for registered users."
+msgstr "اخفاء CAPTCHA  للاعضاء المسلجين"
+
+#: includes/class-cptch-settings-tabs.php:661
 msgid "update"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:628
+#: includes/class-cptch-settings-tabs.php:662
 msgid "to the current version"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:635
+#: includes/class-cptch-settings-tabs.php:669
 msgid "install"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:640
+#: includes/class-cptch-settings-tabs.php:674
 msgid "activate"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:652
+#: includes/class-cptch-settings-tabs.php:686
 msgid "You should"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:655
+#: includes/class-cptch-settings-tabs.php:689
 msgid "to use this functionality."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:678
+#: includes/class-cptch-settings-tabs.php:712
 msgid "Messages Settings"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:684
+#: includes/class-cptch-settings-tabs.php:718
 msgid "Captcha Field is Empty"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:685 includes/helpers.php:31
+#: includes/class-cptch-settings-tabs.php:719 includes/helpers.php:33
 msgid "Please complete the captcha."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:688
+#: includes/class-cptch-settings-tabs.php:723
 msgid "Captcha is Incorrect"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:689 includes/helpers.php:32
+#: includes/class-cptch-settings-tabs.php:724 includes/helpers.php:34
 msgid "Please enter correct captcha value."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:692
-#: includes/class-cptch-settings-tabs.php:696
-msgid "Time Limit Exceeded"
+#: includes/class-cptch-settings-tabs.php:728
+msgid "Captcha Time Limit Exceeded"
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:693
-#: includes/class-cptch-settings-tabs.php:697 includes/helpers.php:33
-#: includes/helpers.php:34
+#: includes/class-cptch-settings-tabs.php:729
+#: includes/class-cptch-settings-tabs.php:734 includes/helpers.php:35
+#: includes/helpers.php:36
 msgid "Time limit exceeded. Please complete the captcha once again."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:698
+#: includes/class-cptch-settings-tabs.php:733
+msgid "Answer Time Limit Exceeded"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:735
 msgid "This message will be displayed above the captcha field."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:824
+#: includes/class-cptch-settings-tabs.php:739
+msgid "Slide Title"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:743
+msgid "Successfull Verification"
+msgstr ""
+
+#: includes/class-cptch-settings-tabs.php:869
 msgid ""
 "The image packages list is empty. Please restore default settings or re-"
 "install the plugin to fix this error."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:872
-msgid "Activate"
+#: includes/helpers.php:37 includes/pro_banners.php:82
+msgid "Your IP address is allow listed."
 msgstr ""
 
-#: includes/class-cptch-settings-tabs.php:874
-msgid "Install Now"
-msgstr ""
-
-#: includes/helpers.php:35 includes/pro_banners.php:49
-msgid "Your IP address is Whitelisted."
-msgstr ""
-
-#: includes/invisible.php:28
+#: includes/invisible.php:29
 msgid "Can't handle encrypting/decrypting data."
 msgstr ""
 
-#: includes/invisible.php:31 includes/invisible.php:63
-#: includes/invisible.php:98
+#: includes/invisible.php:33 includes/invisible.php:65
+#: includes/invisible.php:103
 msgid "ERROR"
 msgstr "خطاء"
 
-#: includes/invisible.php:60
+#: includes/invisible.php:62
 #, php-format
 msgid "Protected by %s"
 msgstr ""
 
-#: includes/invisible.php:76
+#: includes/invisible.php:78
 msgid "Empty captcha."
 msgstr ""
 
-#: includes/invisible.php:90
+#: includes/invisible.php:94
 msgid "Captcha time limit exceeded."
 msgstr ""
 
-#: includes/invisible.php:95
+#: includes/invisible.php:100
 msgid "Wrong captcha."
 msgstr ""
 
-#: includes/pro_banners.php:21
+#: includes/pro_banners.php:18
+msgid "This options is available in Pro version of plugin"
+msgstr ""
+
+#: includes/pro_banners.php:42
+msgid "Add New "
+msgstr ""
+
+#: includes/pro_banners.php:54
 msgid "Default"
 msgstr ""
 
-#: includes/pro_banners.php:22
-msgid "Limit Attempts"
-msgstr ""
-
-#: includes/pro_banners.php:24
+#: includes/pro_banners.php:57
 msgid ""
-"With a whitelist you can hide captcha field for your personal and trusted IP "
-"addresses."
+"With a allow list you can hide captcha field for your personal and trusted "
+"IP addresses."
 msgstr ""
 
-#: includes/pro_banners.php:34
+#: includes/pro_banners.php:67 includes/pro_banners.php:202
 msgid "Allowed formats"
 msgstr ""
 
-#: includes/pro_banners.php:35
+#: includes/pro_banners.php:68
 msgid "Allowed separators for IPs: a comma"
 msgstr ""
 
-#: includes/pro_banners.php:35 includes/pro_banners.php:38
+#: includes/pro_banners.php:68 includes/pro_banners.php:71
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
 msgid "semicolon"
 msgstr ""
 
-#: includes/pro_banners.php:35
+#: includes/pro_banners.php:68
 msgid "ordinary space, tab, new line or carriage return"
 msgstr ""
 
-#: includes/pro_banners.php:36 includes/pro_banners.php:203
-#: includes/pro_banners.php:253
+#: includes/pro_banners.php:69 includes/pro_banners.php:213
+#: includes/pro_banners.php:266 includes/pro_banners.php:314
 msgid "Reason"
 msgstr ""
 
-#: includes/pro_banners.php:38
+#: includes/pro_banners.php:71
 msgid "Allowed separators for reasons: a comma"
 msgstr ""
 
-#: includes/pro_banners.php:38
+#: includes/pro_banners.php:71
 msgid "tab, new line or carriage return"
 msgstr ""
 
-#: includes/pro_banners.php:48
-msgid "Whitelisted IP"
+#: includes/pro_banners.php:81
+msgid "Allow Listed IP"
 msgstr ""
 
-#: includes/pro_banners.php:50
+#: includes/pro_banners.php:83
 msgid "This message will be displayed instead of the captcha field."
 msgstr ""
 
-#: includes/pro_banners.php:69
+#: includes/pro_banners.php:102
 msgid "General Settings"
 msgstr ""
 
-#: includes/pro_banners.php:72
+#: includes/pro_banners.php:105
 msgid "Enable to use general captcha settings."
 msgstr ""
 
-#: includes/pro_banners.php:116
+#: includes/pro_banners.php:138
+msgid "Enable to activate a time limit requeired to complete captcha."
+msgstr ""
+
+#: includes/pro_banners.php:149
 msgid "Use Several Image Packages at The Same Time"
 msgstr ""
 
-#: includes/pro_banners.php:156
+#: includes/pro_banners.php:187
 msgid "Load IP Address(-es)"
 msgstr ""
 
-#: includes/pro_banners.php:159
-msgid "Load IP addresses from the \"Limit Attempts\" whitelist."
+#: includes/pro_banners.php:190
+msgid "Load IP addresses from the \"Limit Attempts\" allow list."
 msgstr ""
 
-#: includes/pro_banners.php:161
+#: includes/pro_banners.php:192
+msgid "IP to allow list"
+msgstr ""
+
+#: includes/pro_banners.php:198
+msgid "My IP"
+msgstr ""
+
+#: includes/pro_banners.php:207
+msgid "Allowed diapason"
+msgstr ""
+
+#: includes/pro_banners.php:209
+msgid "Allowed separators"
+msgstr ""
+
+#: includes/pro_banners.php:209 includes/pro_banners.php:217
+msgid "a comma"
+msgstr ""
+
+#: includes/pro_banners.php:209
+msgid "ordinary space, tab, new line or carriage return."
+msgstr ""
+
+#: includes/pro_banners.php:217
+msgid "Allowed separators for reasons"
+msgstr ""
+
+#: includes/pro_banners.php:217
+msgid "tab, new line or carriage return."
+msgstr ""
+
+#: includes/pro_banners.php:220
+msgid "Add IP to allow list"
+msgstr ""
+
+#: includes/pro_banners.php:224 includes/pro_banners.php:226
 msgid "search"
 msgstr ""
 
-#: includes/pro_banners.php:168 includes/pro_banners.php:266
+#: includes/pro_banners.php:231 includes/pro_banners.php:327
 msgid "Bulk Actions"
 msgstr ""
 
-#: includes/pro_banners.php:169 includes/pro_banners.php:220
-#: includes/pro_banners.php:267
+#: includes/pro_banners.php:232 includes/pro_banners.php:283
+#: includes/pro_banners.php:328
 msgid "Trash"
 msgstr ""
 
-#: includes/pro_banners.php:175 includes/pro_banners.php:273
+#: includes/pro_banners.php:234 includes/pro_banners.php:330
+msgid "Apply"
+msgstr ""
+
+#: includes/pro_banners.php:238 includes/pro_banners.php:334
 msgid "All dates"
 msgstr ""
 
-#: includes/pro_banners.php:176 includes/pro_banners.php:274
+#: includes/pro_banners.php:239 includes/pro_banners.php:241
+#: includes/pro_banners.php:335 includes/pro_banners.php:337
 msgid "Filter"
 msgstr ""
 
-#: includes/pro_banners.php:181 includes/pro_banners.php:279
+#: includes/pro_banners.php:244 includes/pro_banners.php:340
 msgid "items"
 msgstr ""
 
-#: includes/pro_banners.php:193 includes/pro_banners.php:243
+#: includes/pro_banners.php:256 includes/pro_banners.php:304
 msgid "IP Address"
 msgstr ""
 
-#: includes/pro_banners.php:199 includes/pro_banners.php:249
+#: includes/pro_banners.php:262 includes/pro_banners.php:310
 msgid "Range from/to"
 msgstr ""
 
-#: includes/pro_banners.php:219
+#: includes/pro_banners.php:282
 msgid "Edit"
 msgstr ""
 
-#, fuzzy
-#~ msgid "Captcha Pro Settings"
-#~ msgstr "خيارات Captcha "
+#: includes/pro_banners.php:354
+msgid "Slider Color"
+msgstr ""
 
-#, fuzzy
-#~ msgid "settings page"
-#~ msgstr "تم حفظ التغييرات"
+#: includes/pro_banners.php:369
+msgid "Successfull Slider Color"
+msgstr ""
+
+#: includes/pro_banners.php:384
+msgid "Slide Container Color"
+msgstr ""
+
+#: includes/pro_banners.php:399
+msgid "Slide Title Color"
+msgstr ""
+
+#: includes/pro_banners.php:414
+msgid "Slide Title Size"
+msgstr ""
+
+#: includes/pro_banners.php:427
+msgid "Set a font-size for title."
+msgstr ""
+
+#: js/slide_captcha/dist/index-bundle.js:6
+msgid "Unhandled promise rejection"
+msgstr ""
 
 #, fuzzy
 #~ msgid "Save it as new"
@@ -1141,19 +2638,7 @@ msgstr ""
 #~ msgstr "تم حفظ التغييرات"
 
 #, fuzzy
-#~ msgid "Hide from registered users"
-#~ msgstr "اخفاء CAPTCHA  للاعضاء المسلجين"
-
-#, fuzzy
-#~ msgid "Network Settings"
-#~ msgstr "الاعدادت "
-
-#, fuzzy
 #~ msgid "Please enter a CAPTCHA value."
-#~ msgstr "الرجاء تكملة الـ  CAPTCHA ."
-
-#, fuzzy
-#~ msgid "Please enter a valid CAPTCHA value."
 #~ msgstr "الرجاء تكملة الـ  CAPTCHA ."
 
 #, fuzzy
@@ -1175,10 +2660,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "WordPress Reset Password form"
 #~ msgstr "اطار استرجاع الرقم السري"
-
-#, fuzzy
-#~ msgid "WordPress Comments form"
-#~ msgstr "اطار التعليقات"
 
 #, fuzzy
 #~ msgid "Buddypress Registration form"
@@ -1204,9 +2685,6 @@ msgstr ""
 #~ msgid "WooCommerce Checkout Billing form"
 #~ msgstr "اطار التعليقات"
 
-#~ msgid "Save Changes"
-#~ msgstr "حفظ التغييرات"
-
 #~ msgid "Plus"
 #~ msgstr "أكثر"
 
@@ -1218,10 +2696,6 @@ msgstr ""
 
 #~ msgid "Words"
 #~ msgstr "كلمات"
-
-#, fuzzy
-#~ msgid "for"
-#~ msgstr "اربعه"
 
 #, fuzzy
 #~ msgid "If the CAPTCHA field is empty"
@@ -1269,10 +2743,6 @@ msgstr ""
 #~ msgstr "يرجى تحديد نقطة واحدة في الأعمال الحسابية لـ CAPTCHA"
 
 #, fuzzy
-#~ msgid "Plugins"
-#~ msgstr "Плагины BWS"
-
-#, fuzzy
 #~ msgid "download"
 #~ msgstr "تحميل"
 
@@ -1296,10 +2766,6 @@ msgstr ""
 #~ msgstr "نموذج الاتصال"
 
 #, fuzzy
-#~ msgid "Contact Form 7"
-#~ msgstr "تفعيل نموذج الاتصال"
-
-#, fuzzy
 #~ msgid "WooCommerce login form"
 #~ msgstr "اطار التعليقات"
 
@@ -1309,10 +2775,6 @@ msgstr ""
 
 #~ msgid "and"
 #~ msgstr "و"
-
-#, fuzzy
-#~ msgid "Download"
-#~ msgstr "تحميل"
 
 #, fuzzy
 #~ msgid "Title for CAPTCHA in the form"
@@ -1327,14 +2789,6 @@ msgstr ""
 
 #~ msgid "Download contact form"
 #~ msgstr "تحميل الاتصال بنا "
-
-#, fuzzy
-#~ msgid "Activate Subscriber"
-#~ msgstr "الاضافات المفعلة "
-
-#, fuzzy
-#~ msgid "Rate the plugin"
-#~ msgstr "اضافات موصي بها"
 
 #, fuzzy
 #~ msgid "ERROR:"
