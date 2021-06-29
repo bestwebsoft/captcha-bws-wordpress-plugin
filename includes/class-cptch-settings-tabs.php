@@ -45,7 +45,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'link_key'				=> '9701bbd97e61e52baa79c58c3caacf6d',
 				'link_pn'				=> '75',
 				/* pls*/
-				'doc_link'				=> 'https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/',
+				'doc_link'				=> 'https://bestwebsoft.com/documentation/captcha/captcha-user-guide/',
 				'doc_video_link'		=> 'https://www.youtube.com/watch?v=5UyK8tS3oqM'
 			) );
 

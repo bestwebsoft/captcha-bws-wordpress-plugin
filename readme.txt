@@ -4,7 +4,7 @@ Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
 Tested up to: 5.7.2
-Stable tag: 5.1.3
+Stable tag: 5.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -94,9 +94,9 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Documentation & Videos =
 
-* [[Doc] User Guide](https://docs.google.com/document/d/11_TUSAjMjG7hLa53lmyTZ1xox03hNlEA4tRmllFep3I/)
-* [[Doc] Installation](https://docs.google.com/document/d/1-hvn6WRvWnOqj5v5pLUk7Awyu87lq5B_dO-Tv-MC9JQ/)
-* [[Doc] Purchase](https://docs.google.com/document/d/1EUdBVvnm7IHZ6y0DNyldZypUQKpB8UVPToSc_LdOYQI/)
+* [[Doc] User Guide](https://bestwebsoft.com/documentation/captcha/captcha-user-guide/)
+* [[Doc] Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/)
+* [[Doc] Purchase](https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/)
 * [[Video] Purchase, Installation, Configuration Tutorial](https://www.youtube.com/watch?v=r0Noz2bYAq8)
 * [[Video] User Guide](https://www.youtube.com/watch?v=5UyK8tS3oqM)
 
@@ -162,7 +162,7 @@ Some of these translations are not complete. We are constantly adding new featur
 2. Activate the plugin via the 'Plugins' menu in WordPress.
 3. Plugin settings are located in "Captcha".
 
-[View a Step-by-step Instruction on Captcha Installation](https://docs.google.com/document/d/1DN2yYCvDyK2LqmbWw6xmUNLbb0awOVDZ_dOgIXod-Jw/).
+[View a Step-by-step Instruction on Captcha Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/).
 
 == Frequently Asked Questions ==
 
@@ -255,7 +255,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 - The link to the page where the problem occurs
 - The name of the plugin and its version. If you are using a pro version - your order number.
 - The version of your WordPress installation
-- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://docs.google.com/document/d/1Wi2X8RdRGXk9kMszQy1xItJrpN0ncXgioH935MaBKtc/)
+- Copy and paste into the message your system status report. Please read more here: [Instruction on System Status](https://bestwebsoft.com/documentation/admin-panel-issues/system-status/)
 
 == Screenshots ==
 
@@ -271,6 +271,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 10. Captcha Allow List page.
 
 == Changelog ===
+
+= V5.1.4 - 29.06.2021 =
+* Bugfix : Syntax error has been fixed.
+* Update : BWS panel section was updated.
+* Update : Packages for slide captcha was updated.
 
 = V5.1.3 - 17.06.2021 =
 * NEW : Ability to edit messages of slide captcha has been added.
@@ -353,6 +358,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.4 =
+* Bugs fixed.
+* Plugin optimization completed.
 
 = V5.1.3 =
 * New features added.
