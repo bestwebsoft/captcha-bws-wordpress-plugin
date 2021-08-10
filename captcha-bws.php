@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.1.4
+Version: 5.1.5
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -537,7 +537,7 @@ if ( ! function_exists( 'cptch_login_form' ) ) {
 
 if ( ! function_exists( 'cptch_login_check' ) ) {
 	function cptch_login_check( $user ) {
-		if ( ! isset( $_POST['wp-submit'] ) || ( isset( $_SESSION['cptch_login'] ) && true === $_SESSION["cptch_login"] ) || apply_filters( 'cptch_is_limit_login_attempts_active', true ) ) {
+		if ( ! isset( $_POST['wp-submit'] ) || ( isset( $_SESSION['cptch_login'] ) && true === $_SESSION["cptch_login"] ) || apply_filters( 'cptch_is_limit_login_attempts_active', '') ) {
 			return $user;
 		}
 

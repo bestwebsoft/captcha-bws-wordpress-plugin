@@ -64,6 +64,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'mailchimp'					=> array( 'name' => 'Mailchimp for Wordpress', 'for_pro' => 1 ),
 				'ninja_form'				=> array( 'name' => 'Ninja Forms', 'for_pro' => 1 ),
 				'gravity_form'				=> array( 'name' => 'Gravity Forms', 'for_pro' => 1 ),
+                'wpforms'				    => array( 'name' => 'WPForms', 'for_pro' => 1 ),
 				'buddypress_register'		=> array( 'name' => esc_html__( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_comments'		=> array( 'name' => esc_html__( 'Comments form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_group'			=> array( 'name' => esc_html__( 'Create a Group form', 'captcha-bws' ), 'for_pro' => 1 ),
@@ -77,7 +78,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wpforo_login_form'			=> array( 'name' => esc_html__( 'wpForo Login form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'wpforo_register_form'		=> array( 'name' => esc_html__( 'wpForo Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'wpforo_new_topic_form'		=> array( 'name' => esc_html__( 'wpForo New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
-				'wpforo_reply_form'			=> array( 'name' => esc_html__( 'wpForo Reply form', 'captcha-bws' ), 'for_pro' => 1 )
+				'wpforo_reply_form'			=> array( 'name' => esc_html__( 'wpForo Reply form', 'captcha-bws' ), 'for_pro' => 1 ),
+
 				/* pls*/
 			);
 
@@ -141,7 +143,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 							'jetpack_contact_form',
 							'mailchimp',
 							'ninja_form',
-							'gravity_form'
+							'gravity_form',
+                            'wpforms'
 						)
 					),
 					'bbpress' => array(

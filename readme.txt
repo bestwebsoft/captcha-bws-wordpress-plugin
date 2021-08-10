@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
-Tested up to: 5.7.2
-Stable tag: 5.1.4
+Tested up to: 5.8
+Stable tag: 5.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,7 +61,8 @@ Stop spam now!
 >   * Jetpack contact form
 >   * MailChimp for WordPress
 >   * Ninja Forms
->   * Gravity Forms [NEW]
+>   * Gravity Forms
+>   * WPForms [NEW]
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
@@ -85,7 +86,7 @@ Stop spam now!
 > * Configure all subsites on the network
 > * Captcha submission time limit for separate forms
 > * Add and enable unlimited number of image packages at the same time
-> * Edit Slide captcha appearance [NEW]
+> * Edit Slide captcha appearance
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=2d2d85a3c277bf3489697c9a9ff2d352)
@@ -270,7 +271,12 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 9. Captcha Packages page.
 10. Captcha Allow List page.
 
-== Changelog ===
+== Changelog ==
+
+= V5.1.5 - 10.08.2021 =
+* Update : All functionality was updated for WordPress 5.8
+* Update : Packages for slide captcha was updated.
+* Pro : The compatibility with WPForms has been added.
 
 = V5.1.4 - 29.06.2021 =
 * Bugfix : Syntax error has been fixed.
@@ -358,6 +364,10 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.5 =
+* New features added.
+* The compatibility with new WordPress version updated.
 
 = V5.1.4 =
 * Bugs fixed.
