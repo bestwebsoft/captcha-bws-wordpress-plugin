@@ -1,24 +1,28 @@
 .cptch_ajax_wrap noscript {
 	color: red;
 }
-.cptch_img.cptch_reduce {
+.cptch_img.cptch_reduce img,
+.cptch_img.cptch_reduce svg {
 	cursor: default;
 	position: relative;
 	z-index: 10;
 	transition: 300ms ease-in-out;
 	-webkit-transition: 300ms ease-in-out;
 }
-.cptch_left.cptch_reduce {
+.cptch_left.cptch_reduce img,
+.cptch_left.cptch_reduce svg {
 	/* move to the right and increase the size of image */
 	transform: translateX(100%) scale(3, 3);
 	-webkit-transform: translateX(100%) scale(3, 3);
 }
-.cptch_right.cptch_reduce {
+.cptch_right.cptch_reduce img,
+.cptch_right.cptch_reduce svg {
 	/* move to the left and increase the size of image */
 	transform: translateX(-100%) scale(3, 3);
 	-webkit-transform: translateX(-100%) scale(3, 3);
 }
-.cptch_center.cptch_reduce {
+.cptch_center.cptch_reduce img,
+.cptch_center.cptch_reduce svg {
 	/* increase the size of image */
 	transform: scale(3, 3);
 	-webkit-transform: scale(3, 3);

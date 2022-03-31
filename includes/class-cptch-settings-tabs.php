@@ -426,11 +426,11 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 									* if plugin is external and it is not active, it's checkbox should be disabled
 									*/
 									$disabled = in_array( $form_name, $this->registered_forms ) && (
-                                        ( isset( $this->options['related_plugins_info'][ $form_name ] ) &&
-                                            'active' != $this->options['related_plugins_info'][ $form_name ]['status'] ) ||
-                                        ( isset( $this->options['related_plugins_info'][ $fieldset_name ] ) &&
-                                            'active' != $this->options['related_plugins_info'][ $fieldset_name ]['status'] )
-                                    ); ?>
+																				( isset( $this->options['related_plugins_info'][ $form_name ] ) &&
+																						'active' != $this->options['related_plugins_info'][ $form_name ]['status'] ) ||
+																				( isset( $this->options['related_plugins_info'][ $fieldset_name ] ) &&
+																						'active' != $this->options['related_plugins_info'][ $fieldset_name ]['status'] )
+																		); ?>
 									<label class="cptch_related">
 										<?php $value = $fieldset_name . '_' . $form_name;
 										$id = 'cptch_' . $form_name . '_enable';
@@ -445,11 +445,11 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 										$this->add_checkbox_input( compact( 'id', 'name', 'checked', 'value', 'class', 'disabled' ) );
 
 										echo $this->forms[ $form_name ]['name']; ?>
-                                    </label>
+																		</label>
 										<?php if ( 'external' == $fieldset_name && $disabled ) {
 											echo $this->get_form_message( $form_name ); /* show "instal/activate" mesage */
 										} elseif ( 'bws_contact' == $form_name && ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) ) { ?>
-                                            <br /><span class="bws_info"> <?php esc_html_e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
+																						<br /><span class="bws_info"> <?php esc_html_e( 'Enable to add the CAPTCHA to forms on their settings pages.', 'captcha-bws' ); ?></span>
 										<?php } ?>
 									<br />
 								<?php } ?>
@@ -601,12 +601,14 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					</td>
 				</tr>
 			</table>
-			<!-- pls -->
-			<div class="bws_pro_version_bloc">
-				<?php cptch_slide_pro_block(); 
-				$this->bws_pro_block_links(); ?>
-			</div>
-			<!-- end pls -->
+			<?php
+			if ( ! $this->hide_pro_tabs ) { ?>
+				<div class="bws_pro_version_bloc">
+					<?php cptch_slide_pro_block(); 
+					$this->bws_pro_block_links(); ?>
+				</div>
+			<?php 
+			} ?>
 			<?php foreach ( $this->forms as $form_slug => $data ) {
 				if ( /*pls */ isset( $data['for_pro'] ) || ( /* pls*/ 'wp_comments' != $form_slug /*pls */ && $this->hide_pro_tabs ) /* pls*/ )
 					continue;

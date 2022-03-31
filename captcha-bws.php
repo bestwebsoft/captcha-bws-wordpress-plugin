@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.1.5
+Version: 5.1.6
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
 */
@@ -163,8 +163,8 @@ if ( ! function_exists ( 'cptch_init' ) ) {
 		if ( $cptch_options['forms']['wp_login']['enable'] ) {
 			add_action( 'login_form', 'cptch_login_form' );
 			if ( ! apply_filters ( 'cptch_ip_in_allowlist', false ) ) {
-				add_filter( 'authenticate', 'cptch_login_check', 21, 1 );
-				add_filter( 'wp_authenticate_user', 'cptch_login_check', 21, 1 );
+				add_filter( 'authenticate', 'cptch_login_check', 21, 3 );
+				/* zos add_filter( 'wp_authenticate_user', 'cptch_login_check', 21 ); */
 			}
 		}
 
@@ -536,7 +536,7 @@ if ( ! function_exists( 'cptch_login_form' ) ) {
 }
 
 if ( ! function_exists( 'cptch_login_check' ) ) {
-	function cptch_login_check( $user ) {
+	function cptch_login_check( $user, $username = '', $password = '' ) {
 		if ( ! isset( $_POST['wp-submit'] ) || ( isset( $_SESSION['cptch_login'] ) && true === $_SESSION["cptch_login"] ) || apply_filters( 'cptch_is_limit_login_attempts_active', '') ) {
 			return $user;
 		}
@@ -547,8 +547,8 @@ if ( ! function_exists( 'cptch_login_check' ) ) {
 
 		/*pls */
 		/* Delete errors, if they set */
-		if ( isset( $_SESSION['cptch_error'] ) ) {
-			unset( $_SESSION['cptch_error'] );
+		if ( isset( $_SESSION['cptch_login'] ) ) {
+			unset( $_SESSION['cptch_login'] );
 		}
 		/* pls*/
 		$user = cptch_check_custom_form( $user, 'wp_error', 'wp_login' );
@@ -844,7 +844,7 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 				if ( empty( $_REQUEST['cptch_result'] ) ) {
 					$error_code = 'no_answer';
 					/* The CAPTCHA answer is wrong */
-				} elseif ( ! cptch_check_slide_captcha_response( $_POST['cptch_result'] ) ) {
+				} elseif ( ! cptch_check_slide_captcha_response( $_REQUEST['cptch_result'] ) ) {
 					$error_code = 'wrong_answer';
 				}
 			} else {
@@ -883,6 +883,7 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 				if ( ! is_wp_error( $allow ) ) {
 					$allow = new WP_Error();
 				}
+
 				$allow->add( 'cptch_error', $cptch_options[ $error_code ] );
 				if ( ! empty( $lmtttmpts_error ) && $la_form_slug != $lmtttmpts_error ) {
 					if ( is_wp_error( $allow ) ) {
@@ -1844,7 +1845,11 @@ if ( ! function_exists( 'cptch_check_slide_captcha_response' ) ) {
 		$response = trim( esc_attr( $response ));
 
 		/* check that the key exists and is not expired */
-		$db_response = $wpdb->get_row( $wpdb->prepare( "SELECT `response`, `add_time` FROM `{$wpdb->prefix}cptch_responses` WHERE `response` = %s;", $response ) );
+		if( is_multisite() ) {
+			$db_response = $wpdb->get_row( $wpdb->prepare( "SELECT `response`, `add_time` FROM `{$wpdb->get_blog_prefix(0)}cptch_responses` WHERE `response` = %s;", $response ) );
+		} else {
+			$db_response = $wpdb->get_row( $wpdb->prepare( "SELECT `response`, `add_time` FROM `{$wpdb->prefix}cptch_responses` WHERE `response` = %s;", $response ) );
+		}
 		$response_request_time = $db_response->add_time;
 
 		$expiration_time = $response_request_time + $expiration_duration;

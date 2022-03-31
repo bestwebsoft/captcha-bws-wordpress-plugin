@@ -1,7 +1,8 @@
 .cptch_ajax_wrap noscript {
 	color: red;
 }
-.cptch_img:hover {
+.cptch_img:hover img,
+.cptch_img:hover svg {
 	cursor: default;
 	position: relative;
 	z-index: 10;
@@ -10,7 +11,8 @@
 	-o-transition: 300ms ease-in-out;
 	transition: 300ms ease-in-out;
 }
-.cptch_left:hover {
+.cptch_left:hover img,
+.cptch_left:hover svg {
 	/* move to the right and increase the size of image */
 	-webkit-transform: translateX(100%) scale(3, 3);
 	-moz-transform: translateX(100%) scale(3, 3);
@@ -18,7 +20,8 @@
 	-ms-transform: translateX(100%) scale(3, 3);
 	transform: translateX(100%) scale(3, 3);
 }
-.cptch_right:hover {
+.cptch_right:hover img,
+.cptch_right:hover svg {
 	/* move to the left and increase the size of image */
 	-webkit-transform: translateX(-100%) scale(3, 3);
 	-moz-transform: translateX(-100%) scale(3, 3);
@@ -26,7 +29,8 @@
 	-o-transform: translateX(-100%) scale(3, 3);
 	transform: translateX(-100%) scale(3, 3);
 }
-.cptch_center:hover {
+.cptch_center:hover img,
+.cptch_center:hover svg{
 	/* increase the size of image */
 	-webkit-transform: scale(3, 3);
 	-moz-transform: scale(3, 3);

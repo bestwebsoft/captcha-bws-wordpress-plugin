@@ -1,10 +1,10 @@
-=== Captcha by BestWebSoft ===
+=== Captcha by BestWebSoft - Spam Protection, Security Plugin for WordPress Forms ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 4.5
-Tested up to: 5.8
-Stable tag: 5.1.5
+Tested up to: 5.9
+Stable tag: 5.1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,9 +43,7 @@ Stop spam now!
     * Registered users in comments form
 * Set captcha submission time limit
 * Refresh captcha option
-* Image packages with hand-drawn digits
 * Edit captcha title and notifications
-* Add custom code via plugin settings page
 * Compatible with latest WordPress version
 * Incredibly simple settings for fast setup without modifying code
 * Detailed step-by-step documentations and videos
@@ -62,7 +60,7 @@ Stop spam now!
 >   * MailChimp for WordPress
 >   * Ninja Forms
 >   * Gravity Forms
->   * WPForms [NEW]
+>   * WPForms
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
@@ -80,13 +78,17 @@ Stop spam now!
 >   * Registration form
 >   * New Topic form
 >   * Reply form
+> * Compatible with Elementor Pro:
+>   * Elementor Contact form [NEW]
 > * Hide captcha for:
 >   * Allowed IP addresses
 > * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988) plugin with Captcha whitelist
 > * Configure all subsites on the network
 > * Captcha submission time limit for separate forms
+> * Image packages with hand-drawn digits
 > * Add and enable unlimited number of image packages at the same time
 > * Edit Slide captcha appearance
+> * Add custom code via plugin settings page
 > * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
 >
 > [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=2d2d85a3c277bf3489697c9a9ff2d352)
@@ -104,6 +106,10 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 = Help & Support =
 
 Visit our Help Center if you have any questions, our friendly Support Team is happy to help - <https://support.bestwebsoft.com/>
+
+= Affiliate Program =
+
+Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — https://bestwebsoft.com/affiliate/
 
 = Translation =
 
@@ -273,6 +279,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V5.1.6 - 30.03.2022 =
+* Update : All functionality was updated for WordPress 5.9.
+* Update : BWS Panel section was updated.
+* Pro : The compatibility with Elementor Pro has been added.
+
 = V5.1.5 - 10.08.2021 =
 * Update : All functionality was updated for WordPress 5.8
 * Update : Packages for slide captcha was updated.
@@ -364,6 +375,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.6 =
+* New features added.
+* Plugin optimization completed.
+* The compatibility with new WordPress version updated.
 
 = V5.1.5 =
 * New features added.

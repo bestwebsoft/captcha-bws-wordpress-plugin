@@ -4,6 +4,7 @@
 <p>Captcha plugin is the best security solution that protects your WordPress website forms from spam entries. It can be used for login, registration, password recovery, comments form and much more.</p>
 <p>It is easy to use and manage, a simple and effective plugin which will always guard your website forms.</p>
 <p>Stop spam now!</p>
+<p><a href="https://bestwebsoft.com/demo-for-captcha/?ref=readme" rel="nofollow ugc">View Demo</a></p>
 <h4>Free Features</h4>
 <ul>
 <li>Add captcha to:
@@ -39,9 +40,7 @@
 </li>
 <li>Set captcha submission time limit</li>
 <li>Refresh captcha option</li>
-<li>Image packages with hand-drawn digits</li>
 <li>Edit captcha title and notifications</li>
-<li>Add custom code via plugin settings page</li>
 <li>Compatible with latest WordPress version</li>
 <li>Incredibly simple settings for fast setup without modifying code</li>
 <li>Detailed step-by-step documentations and videos</li>
@@ -58,7 +57,8 @@
 <li>Jetpack contact form</li>
 <li>MailChimp for WordPress</li>
 <li>Ninja Forms</li>
-<li>WPForms [NEW]</li>
+<li>Gravity Forms</li>
+<li>WPForms</li>
 </ul>
 </li>
 <li>Compatible with WooCommerce:
@@ -90,16 +90,23 @@
 <li>Reply form</li>
 </ul>
 </li>
+<li>Compatible with Elementor Pro:
+<ul>
+<li>Elementor Contact form [NEW]</li>
+</ul>
+</li>
 <li>Hide captcha for:
 <ul>
-<li>Whitelisted IP addresses</li>
+<li>Allowed IP addresses</li>
 </ul>
 </li>
 <li>Merge IP addresses from <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988" rel="nofollow ugc">Limit Attempts</a> plugin with Captcha whitelist</li>
 <li>Configure all subsites on the network</li>
 <li>Captcha submission time limit for separate forms</li>
+<li>Image packages with hand-drawn digits</li>
 <li>Add and enable unlimited number of image packages at the same time</li>
-<li>Edit Slide captcha appearance</li>  
+<li>Edit Slide captcha appearance</li>
+<li>Add custom code via plugin settings page</li>
 <li>Get answer to your support question within one business day (<a href="https://bestwebsoft.com/support-policy/" rel="nofollow ugc">Support Policy</a>)</li>
 </ul>
 <p><a href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=2d2d85a3c277bf3489697c9a9ff2d352" rel="nofollow ugc">Upgrade to Pro Now</a></p>
@@ -107,15 +114,16 @@
 <p>If you have a feature suggestion or idea you&#8217;d like to see in the plugin, we&#8217;d love to hear about it! <a href="https://support.bestwebsoft.com/hc/en-us/requests/new" rel="nofollow ugc">Suggest a Feature</a></p>
 <h4>Documentation &amp; Videos</h4>
 <ul>
-<li><a href="https://bestwebsoft.com/documentation/captcha/captcha-user-guide/">[Doc] User Guide</a></li>
+<li><a href="https://bestwebsoft.com/documentation/captcha/captcha-user-guide/" rel="nofollow ugc">[Doc] User Guide</a></li>
 <li><a href="https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/" rel="nofollow ugc">[Doc] Installation</a></li>
 <li><a href="https://bestwebsoft.com/documentation/how-to-purchase-a-wordpress-plugin/how-to-purchase-wordpress-plugin-from-bestwebsoft/" rel="nofollow ugc">[Doc] Purchase</a></li>
-<li><a href="https://www.youtube.com/watch?v=G8q37UZf6aM" rel="nofollow ugc">[Video] Purchase, Installation, Configuration Tutorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=r0Noz2bYAq8" rel="nofollow ugc">[Video] Purchase, Installation, Configuration Tutorial</a></li>
+<li><a href="https://www.youtube.com/watch?v=5UyK8tS3oqM" rel="nofollow ugc">[Video] User Guide</a></li>
 </ul>
 <h4>Help &amp; Support</h4>
 <p>Visit our Help Center if you have any questions, our friendly Support Team is happy to help &#8211; <a href="https://support.bestwebsoft.com/" rel="nofollow ugc">https://support.bestwebsoft.com/</a></p>
 <h4>Affiliate Program</h4>
-<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — <a href="https://bestwebsoft.com/affiliate/" rel="nofollow">https://bestwebsoft.com/affiliate/</a></p>
+<p>Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — https://bestwebsoft.com/affiliate/</p>
 <h4>Translation</h4>
 <ul>
 <li>Arabic (ar_AR) (thanks to Albayan Design Hani Aladoli)</li>
