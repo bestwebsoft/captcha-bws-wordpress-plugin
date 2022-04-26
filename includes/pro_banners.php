@@ -26,7 +26,7 @@ if ( ! function_exists( 'cptch_pro_block' ) ) {
 					</div>
 				</div>
 				<div class="bws_pro_version_tooltip">
-					<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=28d4cf0b4ab6f56e703f46f60d34d039&pn=83&v=<?php echo $cptch_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="Google Captcha Pro (reCAPTCHA)">
+					<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=28d4cf0b4ab6f56e703f46f60d34d039&pn=83&v=<?php echo $cptch_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="<?php echo $cptch_plugin_info["Name"]; ?>">
 						<?php esc_html_e( 'Upgrade to Pro', 'captcha-bws' ); ?>
 					</a>
 					<div class="clear"></div>
