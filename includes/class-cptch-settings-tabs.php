@@ -58,13 +58,13 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wp_comments'			=> array( 'name' => esc_html__( 'Comments form', 'captcha-bws' ) ),
 				'bws_contact'			=> array( 'name' => 'Contact Form' ),
 				'bws_booking'			=> array( 'name' => 'Car Rental V2 Pro' ),
-				/*pls */
 				'bws_subscriber'			=> array( 'name' => 'Subscriber', 'for_pro' => 1 ),
 				'cf7_contact'				=> array( 'name' => 'Contact Form 7', 'for_pro' => 1 ),
 				'mailchimp'					=> array( 'name' => 'Mailchimp for Wordpress', 'for_pro' => 1 ),
 				'ninja_form'				=> array( 'name' => 'Ninja Forms', 'for_pro' => 1 ),
 				'gravity_form'				=> array( 'name' => 'Gravity Forms', 'for_pro' => 1 ),
-                'wpforms'				    => array( 'name' => 'WPForms', 'for_pro' => 1 ),
+				'elementor_contact_form'    => array( 'name' => 'Elementor Pro'),
+        'wpforms'				    => array( 'name' => 'WPForms', 'for_pro' => 1 ),
 				'buddypress_register'		=> array( 'name' => esc_html__( 'Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_comments'		=> array( 'name' => esc_html__( 'Comments form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'buddypress_group'			=> array( 'name' => esc_html__( 'Create a Group form', 'captcha-bws' ), 'for_pro' => 1 ),
@@ -79,8 +79,9 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wpforo_register_form'		=> array( 'name' => esc_html__( 'wpForo Registration form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'wpforo_new_topic_form'		=> array( 'name' => esc_html__( 'wpForo New Topic form', 'captcha-bws' ), 'for_pro' => 1 ),
 				'wpforo_reply_form'			=> array( 'name' => esc_html__( 'wpForo Reply form', 'captcha-bws' ), 'for_pro' => 1 ),
-
-				/* pls*/
+				'learndash_login_form'        => array( 'name' => __( 'LearnDash login form', 'captcha-pro' ) ),
+				'learndash_registration_form' => array( 'name' => __( 'LearnDash registration form', 'captcha-pro' ) ),
+				'bboss_registration_form'     => array( 'name' => __( 'BuddyBoss registration form', 'captcha-pro' ) ),
 			);
 
 			$this->forms = apply_filters( 'cptch_get_additional_forms', $this->forms );
@@ -144,7 +145,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 							'mailchimp',
 							'ninja_form',
 							'gravity_form',
-                            'wpforms'
+              'wpforms',
+							'elementor_contact_form'
 						)
 					),
 					'bbpress' => array(
@@ -179,7 +181,20 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 							'wpforo_new_topic_form',
 							'wpforo_reply_form'
 						)
-					)
+					),
+					'learndash' => array(
+						'title' => 'LearnDash',
+						'forms' => array(
+							'learndash_login_form',
+							'learndash_registration_form',
+						)
+					),
+					'bboss' => array(
+						'title' => 'BuddyBoss',
+						'forms' => array(
+							'bboss_registration_form'
+						)
+					),
 				)
 				/* pls*/
 			);
@@ -195,8 +210,9 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				$this->form_categories['other_for_pro']['buddypress']['forms'],
 				$this->form_categories['other_for_pro']['woocommerce']['forms'],
 				$this->form_categories['other_for_pro']['bbpress']['forms'],
-				$this->form_categories['other_for_pro']['wpforo']['forms']
-				/* pls*/
+				$this->form_categories['other_for_pro']['wpforo']['forms'],
+				$this->form_categories['other_for_pro']['learndash']['forms'],
+				$this->form_categories['other_for_pro']['bboss']['forms']
 			);
 
 			$user_forms = array_diff( array_keys( $this->forms ), $this->registered_forms );
@@ -614,7 +630,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					continue;
 
 				foreach ( $this->form_categories as $category_name => $category_data ) {
-					if ( in_array( $form_slug, $category_data['forms'] ) ) {
+					if ( ! empty( $category_data['forms'] ) && in_array( $form_slug, $category_data['forms'] ) ) {
 						if ( 'wp_default' == $category_name ) {
 							$category_title = 'WordPress - ';
 						} elseif ( 'external' == $category_name ) {
@@ -865,7 +881,9 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 		 */
 		private function add_pack_list_input( $args ) {
 			global $wpdb;
-
+			if ( $this->is_multisite ) {
+				switch_to_blog( 1 );
+			}
 			$package_list = $wpdb->get_results(
 				"SELECT
 					`{$wpdb->base_prefix}cptch_packages`.`id`,
@@ -883,6 +901,9 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				ORDER BY `name` ASC;",
 				ARRAY_A
 			);
+			if ( $this->is_multisite ) {
+				restore_current_blog();
+			}
 
 			if ( empty( $package_list ) ) { ?>
 				<span><?php esc_html_e( 'The image packages list is empty. Please restore default settings or re-install the plugin to fix this error.', 'captcha-bws' ); ?></span>
@@ -991,7 +1012,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			* default compatible plugins
 			*/
 			$compatible_plugins = array(
-				'bws_contact' => array( 'contact-form-plugin/contact_form.php', 'contact-form-pro/contact_form_pro.php' ),
+				'bws_contact' => array( 'contact-form-plugin/contact_form.php', 'contact-form-pro/contact_form_pro.php', 'contact-form-plus/contact-form-plus.php' ),
 				'bws_booking' => 'bws-car-rental-pro/bws-car-rental-pro.php',
 				'limit_attempts' => array( 'limit-attempts/limit-attempts.php', 'limit-attempts-pro/limit-attempts-pro.php' )
 			);

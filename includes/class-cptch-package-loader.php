@@ -151,6 +151,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 				require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 			}
 
+			if ( is_multisite() ) {
+				switch_to_blog( 1 );
+			}
 			if ( ! $wpdb->query( "SHOW TABLES LIKE '{$wpdb->base_prefix}cptch_images';" ) ) {
 				$sql = "CREATE TABLE `{$wpdb->base_prefix}cptch_images` (
 					`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -173,6 +176,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 					PRIMARY KEY (`id`)
 					) DEFAULT CHARSET=utf8;";
 				dbDelta( $sql );
+			}
+			if ( is_multisite() ) {
+				restore_current_blog();
 			}
 		}
 
@@ -314,6 +320,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			$need_update = false;
 			$insert_data = array();
 			/* insert packages data */
+			if ( is_multisite() ) {
+				switch_to_blog( 1 );
+			}
 			if ( ! empty( $this->packages ) ) {
 				$time = date( 'Y-m-d H:i:s', current_time( 'timestamp' ) );
 				foreach ( $this->packages as $package ) {
@@ -370,6 +379,9 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 				}
 				$this->result[1]	+= count( $this->images );
 				$this->images		= array();
+			}
+			if ( is_multisite() ) {
+				restore_current_blog();
 			}
 
 			if ( $need_update ) {

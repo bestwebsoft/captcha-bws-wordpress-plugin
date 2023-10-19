@@ -2,9 +2,9 @@
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
-Requires at least: 4.5
-Tested up to: 5.9
-Stable tag: 5.1.7
+Requires at least: 5.6
+Tested up to: 6.3.1
+Stable tag: 5.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -61,6 +61,7 @@ Stop spam now!
 >   * Ninja Forms
 >   * Gravity Forms
 >   * WPForms
+>   * Caldera Forms
 > * Compatible with WooCommerce:
 >   * Login form
 >   * Register form
@@ -78,11 +79,19 @@ Stop spam now!
 >   * Registration form
 >   * New Topic form
 >   * Reply form
+> * Compatible with Divi :
+>   * Contact Form
+>   * Login Form
+> * Compatible with LearnDash login:
+>   * Login form
+>   * Registration form
+> * Compatible with BuddyBoss:
+>   * Registration form
 > * Compatible with Elementor Pro:
 >   * Elementor Contact form [NEW]
 > * Hide captcha for:
 >   * Allowed IP addresses
-> * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988) plugin with Captcha whitelist
+> * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988) plugin with Captcha Allow List
 > * Configure all subsites on the network
 > * Captcha submission time limit for separate forms
 > * Image packages with hand-drawn digits
@@ -279,6 +288,15 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V5.1.8 - 19.10.2023 =
+* Update : All functionality was updated for WordPress 6.3.1
+* Update : BWS panel section was updated.
+* Bugfix : The issue with multisite settings has been fixed.
+* Pro : The compatibility with Divi Login Form and Divi Contact Form has been added.
+* Pro : The compatibility with Caldera Forms has been added.
+* Pro : The compatibility with LearnDash Forms has been added.
+* Pro : The compatibility with BuddyBoss Registration Form has been added.
+
 = V5.1.7 - 26.04.2022 =
 * Bugfix : Deactivation Feeback fix.
 
@@ -378,6 +396,11 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.1.8 =
+* New features added.
+* Plugin optimization completed.
+* The compatibility with new WordPress version updated.
 
 = V5.1.7 =
 * Bugs fixed.

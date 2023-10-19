@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Captcha by BestWebSoft\n"
-"PO-Revision-Date: 2023-04-05 15:23+0300\n"
+"Project-Id-Version: Plugin Name by BestWebSoft\n"
+"PO-Revision-Date: 2023-04-18 13:32+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: captcha-bws.php\n"
+"X-Poedit-WPHeader: plugin-name.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: "
 "__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,"
@@ -67,7 +67,7 @@ msgid "Need help?"
 msgstr "Preciso de ajuda?"
 
 # automatic translation
-#: bws_menu/bws_functions.php:124 bws_menu/bws_functions.php:1186
+#: bws_menu/bws_functions.php:124 bws_menu/bws_functions.php:1193
 #: bws_menu/class-bws-settings.php:1193
 msgid "Visit Help Center"
 msgstr "Visite a Central de Ajuda"
@@ -78,7 +78,7 @@ msgid "Want to support the plugin?"
 msgstr "Quer apoiar o plugin?"
 
 # automatic translation
-#: bws_menu/bws_functions.php:128 bws_menu/bws_menu.php:651
+#: bws_menu/bws_functions.php:128 bws_menu/bws_menu.php:659
 msgid "Donate"
 msgstr "Doar"
 
@@ -102,7 +102,7 @@ msgstr ""
 
 # automatic translation
 #: bws_menu/bws_functions.php:155 bws_menu/bws_functions.php:247
-#: bws_menu/bws_menu.php:746 bws_menu/class-bws-settings.php:189
+#: bws_menu/bws_menu.php:754 bws_menu/class-bws-settings.php:189
 msgid "Learn More"
 msgstr "Saber mais"
 
@@ -204,9 +204,9 @@ msgstr "Vamos começar"
 
 # automatic translation
 #: bws_menu/bws_functions.php:306 bws_menu/bws_functions.php:339
-#: bws_menu/bws_menu.php:657 bws_menu/bws_menu.php:659 captcha-bws.php:49
-#: captcha-bws.php:1760 captcha-bws.php:1773
-#: includes/class-cptch-settings-tabs.php:23
+#: bws_menu/bws_menu.php:665 bws_menu/bws_menu.php:667
+#: includes/class-plgnnm-settings.php:21 plugin-name.php:35 plugin-name.php:178
+#: plugin-name.php:219 plugin-name.php:233
 msgid "Settings"
 msgstr "Configurações"
 
@@ -219,7 +219,6 @@ msgstr "ou"
 
 # automatic translation
 #: bws_menu/bws_functions.php:309 bws_menu/bws_functions.php:341
-#: captcha-bws.php:487
 msgid "Add New"
 msgstr "Adicionar novo"
 
@@ -334,89 +333,84 @@ msgstr ""
 "\"Diversos\"."
 
 # automatic translation
-#: bws_menu/bws_functions.php:834
+#: bws_menu/bws_functions.php:842
 msgid "Add BWS Shortcode"
 msgstr "Adicionar código curto do BWS"
 
 # automatic translation
-#: bws_menu/bws_functions.php:835
+#: bws_menu/bws_functions.php:843
 msgid "Add BWS Plugins Shortcode"
 msgstr "Adicionar código curto de plug-ins do BWS"
 
 # automatic translation
-#: bws_menu/bws_functions.php:857
+#: bws_menu/bws_functions.php:865
 msgid "Add shortcode"
 msgstr "Adicionar código de acesso"
 
 # automatic translation
-#: bws_menu/bws_functions.php:857
+#: bws_menu/bws_functions.php:865
 msgid "Add BestWebSoft plugins' shortcodes using this button."
 msgstr "Adicione os códigos de acesso dos plugins BestWebSoft usando este botão."
 
 # automatic translation
-#: bws_menu/bws_functions.php:967 includes/class-cptch-settings-tabs.php:466
-#: includes/class-cptch-settings-tabs.php:503
-#: includes/class-cptch-settings-tabs.php:657
-#: includes/class-cptch-settings-tabs.php:667
-#: includes/class-cptch-settings-tabs.php:780 includes/pro_banners.php:21
-#: includes/pro_banners.php:350
+#: bws_menu/bws_functions.php:974 includes/class-plgnnm-settings.php:99
 msgid "Close"
 msgstr "Fechar"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1059
+#: bws_menu/bws_functions.php:1066
 msgid "Are you sure you want to restore default settings?"
 msgstr "Tem certeza de que deseja restaurar as configurações padrão?"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1062
+#: bws_menu/bws_functions.php:1069
 msgid "Yes, restore all settings"
 msgstr "Sim, restaurar todas as configurações"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1063
+#: bws_menu/bws_functions.php:1070
 msgid "No, go back to the settings page"
 msgstr "Não, volte para a página de configurações"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1125
+#: bws_menu/bws_functions.php:1132
 msgid "Plugin"
 msgstr "Plugar"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1134
+#: bws_menu/bws_functions.php:1141
 msgid "Shortcode settings"
 msgstr "Configurações de código curto"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1139
+#: bws_menu/bws_functions.php:1146
 msgid "The shortcode will be inserted"
 msgstr "O shortcode será inserido"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1191 captcha-bws.php:1775
+#: bws_menu/bws_functions.php:1198 plugin-name.php:234
 msgid "FAQ"
 msgstr "Perguntas frequentes"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1197
+#: bws_menu/bws_functions.php:1204
 msgid "For more information:"
 msgstr "Para maiores informações:"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1198 bws_menu/bws_menu.php:475
+#: bws_menu/bws_functions.php:1205 bws_menu/bws_menu.php:475
 #: bws_menu/class-bws-settings.php:870
 msgid "Documentation"
 msgstr "Documentação"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1199 bws_menu/bws_menu.php:477
+#: bws_menu/bws_functions.php:1206 bws_menu/bws_menu.php:477
 #: bws_menu/class-bws-settings.php:872
 msgid "Video Instructions"
 msgstr "Instruções de vídeo"
 
 # automatic translation
-#: bws_menu/bws_functions.php:1200
+#: bws_menu/bws_functions.php:1207
 msgid "Submit a Request"
 msgstr "Envie uma solicitação"
 
@@ -721,18 +715,18 @@ msgstr "Plugins"
 
 # automatic translation
 #: bws_menu/bws_menu.php:329 bws_menu/bws_menu.php:350
-#: bws_menu/bws_menu.php:731 bws_menu/deprecated.php:28
+#: bws_menu/bws_menu.php:739 bws_menu/deprecated.php:28
 msgid "Themes"
 msgstr "Temas"
 
 # automatic translation
 #: bws_menu/bws_menu.php:334 bws_menu/bws_menu.php:358
-#: bws_menu/bws_menu.php:767
+#: bws_menu/bws_menu.php:775
 msgid "System status"
 msgstr "Status do sistema"
 
 # automatic translation
-#: bws_menu/bws_menu.php:365 captcha-bws.php:1776
+#: bws_menu/bws_menu.php:365 plugin-name.php:235
 msgid "Support"
 msgstr "Apoiar"
 
@@ -764,11 +758,10 @@ msgid "Enter your license key"
 msgstr "Digite sua chave de licença"
 
 # automatic translation
-#: bws_menu/bws_menu.php:406 bws_menu/bws_menu.php:665
-#: bws_menu/bws_menu.php:674 bws_menu/class-bws-settings.php:898
+#: bws_menu/bws_menu.php:406 bws_menu/bws_menu.php:673
+#: bws_menu/bws_menu.php:682 bws_menu/class-bws-settings.php:898
 #: bws_menu/deprecated.php:170 bws_menu/deprecated.php:178
 #: bws_menu/deprecated.php:268 bws_menu/deprecated.php:281
-#: includes/class-cptch-settings-tabs.php:936
 msgid "Activate"
 msgstr "Ativar"
 
@@ -864,12 +857,12 @@ msgstr "Voltar ao Painel BestWebSoft"
 
 # automatic translation
 #: bws_menu/bws_menu.php:506 bws_menu/bws_menu.php:541
-#: bws_menu/bws_menu.php:706
+#: bws_menu/bws_menu.php:714
 msgid "All"
 msgstr "Todos"
 
 # automatic translation
-#: bws_menu/bws_menu.php:514 bws_menu/bws_menu.php:754
+#: bws_menu/bws_menu.php:514 bws_menu/bws_menu.php:762
 msgid "Installed"
 msgstr "Instalado"
 
@@ -884,81 +877,80 @@ msgid "Filter results"
 msgstr "Filtrar resultados"
 
 # automatic translation
-#: bws_menu/bws_menu.php:532 bws_menu/bws_menu.php:697
+#: bws_menu/bws_menu.php:532 bws_menu/bws_menu.php:705
 msgid "Category"
 msgstr "Categoria"
 
 # automatic translation
-#: bws_menu/bws_menu.php:617
+#: bws_menu/bws_menu.php:625
 msgid "Not installed"
 msgstr "Não instalado"
 
 # automatic translation
-#: bws_menu/bws_menu.php:621
+#: bws_menu/bws_menu.php:629
 msgid "Renew to get updates"
 msgstr "Renove para receber atualizações"
 
 # automatic translation
-#: bws_menu/bws_menu.php:624
+#: bws_menu/bws_menu.php:632
 #, php-format
 msgid "Update to v %s"
 msgstr "Atualizar para v %s"
 
 # automatic translation
-#: bws_menu/bws_menu.php:639 bws_menu/bws_menu.php:668
+#: bws_menu/bws_menu.php:647 bws_menu/bws_menu.php:676
 msgid "Get Pro"
 msgstr "Obter Pro"
 
 # automatic translation
-#: bws_menu/bws_menu.php:645 bws_menu/class-bws-settings.php:202
-#: bws_menu/class-bws-settings.php:1206 captcha-bws.php:86 captcha-bws.php:511
-#: includes/pro_banners.php:30
+#: bws_menu/bws_menu.php:653 bws_menu/class-bws-settings.php:202
+#: bws_menu/class-bws-settings.php:1206
 msgid "Upgrade to Pro"
-msgstr "Atualizar para Pro"
+msgstr "Atualize para Pro"
 
 # automatic translation
-#: bws_menu/bws_menu.php:665 bws_menu/bws_menu.php:674
+#: bws_menu/bws_menu.php:673 bws_menu/bws_menu.php:682
 msgid "Activate this plugin"
 msgstr "Ative este plug-in"
 
 # automatic translation
-#: bws_menu/bws_menu.php:679
+#: bws_menu/bws_menu.php:687
 msgid "Install this plugin"
 msgstr "Instalar este plug-in"
 
 # automatic translation
-#: bws_menu/bws_menu.php:679 includes/class-cptch-settings-tabs.php:938
+#: bws_menu/bws_menu.php:687
 msgid "Install Now"
 msgstr "instale agora"
 
 # automatic translation
-#: bws_menu/bws_menu.php:692
+#: bws_menu/bws_menu.php:700
 msgid "Nothing found. Try another criteria."
 msgstr "Nada encontrado. Tente outro critério."
 
 # automatic translation
-#: bws_menu/bws_menu.php:743
+#: bws_menu/bws_menu.php:751
 #, php-format
 msgid "By %s"
 msgstr "Por %s"
 
 # automatic translation
-#: bws_menu/bws_menu.php:752
+#: bws_menu/bws_menu.php:760
 msgid "Already Installed"
 msgstr "Já instalado"
 
 # automatic translation
-#: bws_menu/bws_menu.php:764
+#: bws_menu/bws_menu.php:772
 msgid "Browse More WordPress Themes"
 msgstr "Navegue por mais temas do WordPress"
 
 # automatic translation
-#: bws_menu/bws_menu.php:783
+#: bws_menu/bws_menu.php:791
 msgid "Send to support"
 msgstr "Enviar para o suporte"
 
 # automatic translation
-#: bws_menu/bws_menu.php:790
+#: bws_menu/bws_menu.php:798
 msgid "Send to custom email &#187;"
 msgstr "Enviar para e-mail personalizado &#187;"
 
@@ -1020,8 +1012,7 @@ msgid "All plugin settings were restored."
 msgstr "Todas as configurações do plug-in foram restauradas."
 
 # automatic translation
-#: bws_menu/class-bws-settings.php:531
-#: includes/class-cptch-settings-tabs.php:26
+#: bws_menu/class-bws-settings.php:531 includes/class-plgnnm-settings.php:23
 msgid "Custom Code"
 msgstr "Código personalizado"
 
@@ -1151,8 +1142,7 @@ msgid "Import / Export"
 msgstr "Importar / Exportar"
 
 # automatic translation
-#: bws_menu/class-bws-settings.php:837
-#: includes/class-cptch-settings-tabs.php:28
+#: bws_menu/class-bws-settings.php:837 includes/class-plgnnm-settings.php:25
 msgid "License Key"
 msgstr "Chave de licença"
 
@@ -1853,7 +1843,7 @@ msgid ""
 "properties. Add, search and browse listings easily."
 msgstr ""
 "Crie seu site WordPress imobiliário pessoal. Vender, alugar e comprar "
-"propriedades. Adicione, pesquise e navegue nas listas facilmente."
+"propriedades. Adicione, pesquise e navegue nas listagens facilmente."
 
 # automatic translation
 #: bws_menu/product_list.php:360
@@ -1936,7 +1926,7 @@ msgid ""
 "attendance and generate reports."
 msgstr ""
 "Melhor plugin de quadro de horários para WordPress. Acompanhe o tempo dos "
-"funcionários, simplifique o comparecimento e gere relatórios."
+"funcionários, agilize o comparecimento e gere relatórios."
 
 # automatic translation
 #: bws_menu/product_list.php:435
@@ -1984,1363 +1974,94 @@ msgstr ""
 "automaticamente para o banco de dados do seu site WordPress."
 
 # automatic translation
-#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:441
-#: includes/class-cptch-settings-tabs.php:404
-msgid "Captcha Settings"
-msgstr "Configurações de Captcha"
-
-# automatic translation
-#: captcha-bws.php:57 includes/class-cptch-package-list.php:91
-msgid "Captcha Packages"
-msgstr "Pacotes Captcha"
-
-# automatic translation
-#: captcha-bws.php:58
-msgid "Packages"
-msgstr "Pacotes"
-
-# automatic translation
-#: captcha-bws.php:66 captcha-bws.php:485
-msgid "Captcha Allow List"
-msgstr "Lista de Permissões de Captcha"
-
-# automatic translation
-#: captcha-bws.php:67 includes/pro_banners.php:51
-msgid "Allow List"
-msgstr "Lista de permissões"
-
-# automatic translation
-#: captcha-bws.php:444
-msgid "WARNING"
-msgstr "AVISO"
-
-# automatic translation
-#: captcha-bws.php:444
-msgid "The plugin works correctly only if JavaScript is enabled."
-msgstr "O plug-in funciona corretamente apenas se o JavaScript estiver ativado."
-
-# automatic translation
-#: captcha-bws.php:493
-msgid "This tab contains Pro options only."
-msgstr "Esta guia contém apenas opções do Pro."
-
-# automatic translation
-#: captcha-bws.php:495
-#, php-format
-msgid "%sChange the settings%s to view the Pro options."
-msgstr "%sAltere as configurações%s para ver as opções do Pro."
-
-# automatic translation
-#: captcha-bws.php:668
-msgid "Click the BACK button on your browser, and try again."
-msgstr "Clique no botão VOLTAR do seu navegador e tente novamente."
-
-# automatic translation
-#: captcha-bws.php:958
-msgid "Captcha loading..."
-msgstr "Captcha carregando..."
-
-# automatic translation
-#: captcha-bws.php:960
-msgid "In order to pass the CAPTCHA please enable JavaScript."
-msgstr "Para passar o CAPTCHA, habilite o JavaScript."
-
-# automatic translation
-#: captcha-bws.php:1409
-msgid "zero"
-msgstr "zero"
-
-# automatic translation
-#: captcha-bws.php:1410
-msgid "one"
-msgstr "um"
-
-# automatic translation
-#: captcha-bws.php:1411
-msgid "two"
-msgstr "dois"
-
-# automatic translation
-#: captcha-bws.php:1412
-msgid "three"
-msgstr "três"
-
-# automatic translation
-#: captcha-bws.php:1413
-msgid "four"
-msgstr "quatro"
-
-# automatic translation
-#: captcha-bws.php:1414
-msgid "five"
-msgstr "cinco"
-
-# automatic translation
-#: captcha-bws.php:1415
-msgid "six"
-msgstr "seis"
-
-# automatic translation
-#: captcha-bws.php:1416
-msgid "seven"
-msgstr "Sete"
-
-# automatic translation
-#: captcha-bws.php:1417
-msgid "eight"
-msgstr "oito"
-
-# automatic translation
-#: captcha-bws.php:1418
-msgid "nine"
-msgstr "nove"
-
-# automatic translation
-#: captcha-bws.php:1420
-msgid "ten"
-msgstr "dez"
-
-# automatic translation
-#: captcha-bws.php:1421
-msgid "eleven"
-msgstr "onze"
-
-# automatic translation
-#: captcha-bws.php:1422
-msgid "twelve"
-msgstr "doze"
-
-# automatic translation
-#: captcha-bws.php:1423
-msgid "thirteen"
-msgstr "treze"
-
-# automatic translation
-#: captcha-bws.php:1424
-msgid "fourteen"
-msgstr "quatorze"
-
-# automatic translation
-#: captcha-bws.php:1425
-msgid "fifteen"
-msgstr "quinze"
-
-# automatic translation
-#: captcha-bws.php:1426
-msgid "sixteen"
-msgstr "dezesseis"
-
-# automatic translation
-#: captcha-bws.php:1427
-msgid "seventeen"
-msgstr "dezessete"
-
-# automatic translation
-#: captcha-bws.php:1428
-msgid "eighteen"
-msgstr "dezoito"
-
-# automatic translation
-#: captcha-bws.php:1429
-msgid "nineteen"
-msgstr "dezenove"
-
-# automatic translation
-#: captcha-bws.php:1431
-msgid "twenty"
-msgstr "vinte"
-
-# automatic translation
-#: captcha-bws.php:1432
-msgid "twenty one"
-msgstr "vinte e um"
-
-# automatic translation
-#: captcha-bws.php:1433
-msgid "twenty two"
-msgstr "vinte e dois"
-
-# automatic translation
-#: captcha-bws.php:1434
-msgid "twenty three"
-msgstr "vinte e três"
-
-# automatic translation
-#: captcha-bws.php:1435
-msgid "twenty four"
-msgstr "vinte e quatro"
-
-# automatic translation
-#: captcha-bws.php:1436
-msgid "twenty five"
-msgstr "vinte e cinco"
-
-# automatic translation
-#: captcha-bws.php:1437
-msgid "twenty six"
-msgstr "vinte e seis"
-
-# automatic translation
-#: captcha-bws.php:1438
-msgid "twenty seven"
-msgstr "vinte e sete"
-
-# automatic translation
-#: captcha-bws.php:1439
-msgid "twenty eight"
-msgstr "vinte e oito"
-
-# automatic translation
-#: captcha-bws.php:1440
-msgid "twenty nine"
-msgstr "vinte e nove"
-
-# automatic translation
-#: captcha-bws.php:1442
-msgid "thirty"
-msgstr "trinta"
-
-# automatic translation
-#: captcha-bws.php:1443
-msgid "thirty one"
-msgstr "trinta e um"
-
-# automatic translation
-#: captcha-bws.php:1444
-msgid "thirty two"
-msgstr "trinta e dois"
-
-# automatic translation
-#: captcha-bws.php:1445
-msgid "thirty three"
-msgstr "trinta e três"
-
-# automatic translation
-#: captcha-bws.php:1446
-msgid "thirty four"
-msgstr "trinta e quatro"
-
-# automatic translation
-#: captcha-bws.php:1447
-msgid "thirty five"
-msgstr "trinta e cinco"
-
-# automatic translation
-#: captcha-bws.php:1448
-msgid "thirty six"
-msgstr "trinta e seis"
-
-# automatic translation
-#: captcha-bws.php:1449
-msgid "thirty seven"
-msgstr "trinta e sete"
-
-# automatic translation
-#: captcha-bws.php:1450
-msgid "thirty eight"
-msgstr "trinta e oito"
-
-# automatic translation
-#: captcha-bws.php:1451
-msgid "thirty nine"
-msgstr "trinta e nove"
-
-# automatic translation
-#: captcha-bws.php:1453
-msgid "forty"
-msgstr "quarenta"
-
-# automatic translation
-#: captcha-bws.php:1454
-msgid "forty one"
-msgstr "quarenta e um"
-
-# automatic translation
-#: captcha-bws.php:1455
-msgid "forty two"
-msgstr "quarenta e dois"
-
-# automatic translation
-#: captcha-bws.php:1456
-msgid "forty three"
-msgstr "quarenta e três"
-
-# automatic translation
-#: captcha-bws.php:1457
-msgid "forty four"
-msgstr "quarenta e quatro"
-
-# automatic translation
-#: captcha-bws.php:1458
-msgid "forty five"
-msgstr "quarenta e cinco"
-
-# automatic translation
-#: captcha-bws.php:1459
-msgid "forty six"
-msgstr "quarenta e seis"
-
-# automatic translation
-#: captcha-bws.php:1460
-msgid "forty seven"
-msgstr "quarenta e sete"
-
-# automatic translation
-#: captcha-bws.php:1461
-msgid "forty eight"
-msgstr "quarenta e oito"
-
-# automatic translation
-#: captcha-bws.php:1462
-msgid "forty nine"
-msgstr "quarenta e nove"
-
-# automatic translation
-#: captcha-bws.php:1464
-msgid "fifty"
-msgstr "cinquenta"
-
-# automatic translation
-#: captcha-bws.php:1465
-msgid "fifty one"
-msgstr "cinquenta e um"
-
-# automatic translation
-#: captcha-bws.php:1466
-msgid "fifty two"
-msgstr "cinquenta e dois"
-
-# automatic translation
-#: captcha-bws.php:1467
-msgid "fifty three"
-msgstr "cinquenta e três"
-
-# automatic translation
-#: captcha-bws.php:1468
-msgid "fifty four"
-msgstr "cinquenta e quatro"
-
-# automatic translation
-#: captcha-bws.php:1469
-msgid "fifty five"
-msgstr "cinquenta e cinco"
-
-# automatic translation
-#: captcha-bws.php:1470
-msgid "fifty six"
-msgstr "cinquenta e seis"
-
-# automatic translation
-#: captcha-bws.php:1471
-msgid "fifty seven"
-msgstr "cinquenta e sete"
-
-# automatic translation
-#: captcha-bws.php:1472
-msgid "fifty eight"
-msgstr "cinquenta e oito"
-
-# automatic translation
-#: captcha-bws.php:1473
-msgid "fifty nine"
-msgstr "cinquenta e nove"
-
-# automatic translation
-#: captcha-bws.php:1475
-msgid "sixty"
-msgstr "sessenta"
-
-# automatic translation
-#: captcha-bws.php:1476
-msgid "sixty one"
-msgstr "sessenta e um"
-
-# automatic translation
-#: captcha-bws.php:1477
-msgid "sixty two"
-msgstr "sessenta e dois"
-
-# automatic translation
-#: captcha-bws.php:1478
-msgid "sixty three"
-msgstr "sessenta e três"
-
-# automatic translation
-#: captcha-bws.php:1479
-msgid "sixty four"
-msgstr "sessenta e quatro"
-
-# automatic translation
-#: captcha-bws.php:1480
-msgid "sixty five"
-msgstr "sessenta e cinco"
-
-# automatic translation
-#: captcha-bws.php:1481
-msgid "sixty six"
-msgstr "sessenta e seis"
-
-# automatic translation
-#: captcha-bws.php:1482
-msgid "sixty seven"
-msgstr "sessenta e sete"
-
-# automatic translation
-#: captcha-bws.php:1483
-msgid "sixty eight"
-msgstr "sessenta e oito"
-
-# automatic translation
-#: captcha-bws.php:1484
-msgid "sixty nine"
-msgstr "sessenta e nove"
-
-# automatic translation
-#: captcha-bws.php:1486
-msgid "seventy"
-msgstr "setenta"
-
-# automatic translation
-#: captcha-bws.php:1487
-msgid "seventy one"
-msgstr "setenta e um"
-
-# automatic translation
-#: captcha-bws.php:1488
-msgid "seventy two"
-msgstr "setenta e dois"
-
-# automatic translation
-#: captcha-bws.php:1489
-msgid "seventy three"
-msgstr "Setenta e três"
-
-# automatic translation
-#: captcha-bws.php:1490
-msgid "seventy four"
-msgstr "setenta e quatro"
-
-# automatic translation
-#: captcha-bws.php:1491
-msgid "seventy five"
-msgstr "setenta e cinco"
-
-# automatic translation
-#: captcha-bws.php:1492
-msgid "seventy six"
-msgstr "setenta e seis"
-
-# automatic translation
-#: captcha-bws.php:1493
-msgid "seventy seven"
-msgstr "setenta e sete"
-
-# automatic translation
-#: captcha-bws.php:1494
-msgid "seventy eight"
-msgstr "setenta e oito"
-
-# automatic translation
-#: captcha-bws.php:1495
-msgid "seventy nine"
-msgstr "setenta e nove"
-
-# automatic translation
-#: captcha-bws.php:1497
-msgid "eighty"
-msgstr "oitenta"
-
-# automatic translation
-#: captcha-bws.php:1498
-msgid "eighty one"
-msgstr "oitenta e um"
-
-# automatic translation
-#: captcha-bws.php:1499
-msgid "eighty two"
-msgstr "oitenta e dois"
-
-# automatic translation
-#: captcha-bws.php:1500
-msgid "eighty three"
-msgstr "oitenta e três"
-
-# automatic translation
-#: captcha-bws.php:1501
-msgid "eighty four"
-msgstr "oitenta e quatro"
-
-# automatic translation
-#: captcha-bws.php:1502
-msgid "eighty five"
-msgstr "oitenta e cinco"
-
-# automatic translation
-#: captcha-bws.php:1503
-msgid "eighty six"
-msgstr "oitenta e seis"
-
-# automatic translation
-#: captcha-bws.php:1504
-msgid "eighty seven"
-msgstr "oitenta e sete"
-
-# automatic translation
-#: captcha-bws.php:1505
-msgid "eighty eight"
-msgstr "oitenta e oito"
-
-# automatic translation
-#: captcha-bws.php:1506
-msgid "eighty nine"
-msgstr "oitenta e nove"
-
-# automatic translation
-#: captcha-bws.php:1508
-msgid "ninety"
-msgstr "noventa"
-
-# automatic translation
-#: captcha-bws.php:1509
-msgid "ninety one"
-msgstr "noventa e um"
-
-# automatic translation
-#: captcha-bws.php:1510
-msgid "ninety two"
-msgstr "noventa e dois"
-
-# automatic translation
-#: captcha-bws.php:1511
-msgid "ninety three"
-msgstr "noventa e três"
-
-# automatic translation
-#: captcha-bws.php:1512
-msgid "ninety four"
-msgstr "noventa e quatro"
-
-# automatic translation
-#: captcha-bws.php:1513
-msgid "ninety five"
-msgstr "noventa e cinco"
-
-# automatic translation
-#: captcha-bws.php:1514
-msgid "ninety six"
-msgstr "noventa e seis"
-
-# automatic translation
-#: captcha-bws.php:1515
-msgid "ninety seven"
-msgstr "noventa e sete"
-
-# automatic translation
-#: captcha-bws.php:1516
-msgid "ninety eight"
-msgstr "noventa e oito"
-
-# automatic translation
-#: captcha-bws.php:1517
-msgid "ninety nine"
-msgstr "noventa e nove"
-
-# automatic translation
-#: captcha-bws.php:1583
-msgid "Encryption password is not set"
-msgstr "A senha de criptografia não está definida"
-
-# automatic translation
-#: captcha-bws.php:1604
-msgid "Decryption password is not set"
-msgstr "A senha de descriptografia não está definida"
-
-# automatic translation
-#: captcha-bws.php:1830
-msgid "Could not save captcha response to database."
-msgstr "Não foi possível salvar a resposta do captcha no banco de dados."
-
-# automatic translation
-#: captcha-bws.php:1880
-msgid "Error"
-msgstr "Erro"
-
-# automatic translation
-#: includes/class-cptch-package-list.php:37
-msgid "package"
-msgstr "pacote"
-
-# automatic translation
-#: includes/class-cptch-package-list.php:38
-msgid "packages"
-msgstr "pacotes"
-
-# automatic translation
-#: includes/class-cptch-package-list.php:113
-msgid "Search"
-msgstr "Procurar"
-
-# automatic translation
-#: includes/class-cptch-package-list.php:135
-msgid "No packages found"
-msgstr "Nenhum pacote encontrado"
-
-# automatic translation
-#: includes/class-cptch-package-list.php:145
-msgid "Package"
-msgstr "Pacote"
-
-# automatic translation
-#: includes/class-cptch-package-list.php:146 includes/pro_banners.php:269
-#: includes/pro_banners.php:294 includes/pro_banners.php:317
-msgid "Date Added"
-msgstr "data adicionada"
-
-# automatic translation
-#: includes/class-cptch-package-loader.php:44
-msgid ""
-"Can not load images in to the \"uploads\" folder. Please, check your "
-"permissions."
-msgstr ""
-"Não é possível carregar imagens na pasta \"uploads\". Por favor, verifique "
-"suas permissões."
-
-# automatic translation
-#: includes/class-cptch-package-loader.php:135
-#, php-format
-msgid "One package has been updated or added to the database."
-msgid_plural "%s packages have been updated or added to the database."
-msgstr[0] "Um pacote foi atualizado ou adicionado ao banco de dados."
-msgstr[1] ""
-
-# automatic translation
-#: includes/class-cptch-package-loader.php:136
-#, php-format
-msgid "One image has been updated or added to the database."
-msgid_plural "%s images have been updated or added to the database."
-msgstr[0] "Uma imagem foi atualizada ou adicionada ao banco de dados."
-msgstr[1] ""
-
-# automatic translation
-#: includes/class-cptch-package-loader.php:250
-msgid "Archive is empty"
-msgstr "O arquivo está vazio"
-
-# automatic translation
-#: includes/class-cptch-package-loader.php:610
-#, php-format
-msgid ""
-"Some settings of the package %s were set incorrectly. They have been "
-"skipped."
-msgstr ""
-"Algumas configurações do pacote %s foram definidas incorretamente. Eles "
-"foram ignorados."
-
-# automatic translation
-#: includes/class-cptch-package-loader.php:613
-msgid "Wrong data"
-msgstr "Dados errados"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:24
-msgid "Messages"
-msgstr "mensagens"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:25
+#: includes/class-plgnnm-settings.php:22
 msgid "Misc"
 msgstr "Diversos"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:55
-#: includes/class-cptch-settings-tabs.php:71
-msgid "Login form"
-msgstr "Forma de login"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:56
-#: includes/class-cptch-settings-tabs.php:68
-#: includes/class-cptch-settings-tabs.php:72
-msgid "Registration form"
-msgstr "Formulário de registro"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:57
-msgid "Reset password form"
-msgstr "Formulário de redefinição de senha"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:58
-#: includes/class-cptch-settings-tabs.php:69
-msgid "Comments form"
-msgstr "Formulário de comentários"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:70
-msgid "Create a Group form"
-msgstr "Criar um formulário de grupo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:73
-msgid "Forgot password form"
-msgstr "Formulário de senha esquecida"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:74
-msgid "Checkout form"
-msgstr "Formulário de pagamento"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:75
-msgid "Jetpack Contact Form"
-msgstr "Formulário de contato do Jetpack"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:76
-msgid "bbPress New Topic form"
-msgstr "bbPressione o formulário de novo tópico"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:77
-msgid "bbPress Reply form"
-msgstr "bbPressione o formulário de resposta"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:78
-msgid "wpForo Login form"
-msgstr "formulário de login wpForo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:79
-msgid "wpForo Registration form"
-msgstr "Formulário de inscrição wpForo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:80
-msgid "wpForo New Topic form"
-msgstr "wpForo Formulário de novo tópico"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:81
-msgid "wpForo Reply form"
-msgstr "Formulário de resposta wpForo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:121
-msgid "WordPress default"
-msgstr "padrão do WordPress"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:130
-#: includes/class-cptch-settings-tabs.php:139
-msgid "External plugins"
-msgstr "Plug-ins externos"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:236
-#: includes/class-cptch-settings-tabs.php:341
-msgid "Arithmetic Actions"
-msgstr "Ações aritméticas"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:237
-#: includes/class-cptch-settings-tabs.php:351
-msgid "Complexity"
-msgstr "Complexidade"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:238
-#: includes/class-cptch-settings-tabs.php:369 includes/pro_banners.php:109
-msgid "Image Packages"
-msgstr "Pacotes de imagens"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:256
-msgid "Text fields in the \"Messages\" tab must not be empty."
-msgstr "Os campos de texto na guia \"Mensagens\" não devem estar vazios."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:271
-#, php-format
-msgid "\"%s\" option must not be fully disabled."
-msgstr "A opção \"%s\" não deve ser totalmente desativada."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:300
-msgid ""
-"In order to use \"Optical Character Recognition\" type, please select at "
-"least one of the items in the option \"Image Packages\"."
-msgstr ""
-"Para utilizar o tipo \"Reconhecimento Óptico de Caracteres\", selecione "
-"pelo menos um dos itens na opção \"Pacotes de Imagens\"."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:303
-msgid ""
-"In order to use images in the CAPTCHA, please select at least one of the "
-"items in the option \"Image Packages\". The \"Images\" checkbox in "
-"\"Complexity\" option has been disabled."
-msgstr ""
-"Para utilizar imagens no CAPTCHA, selecione pelo menos um dos itens na "
-"opção \"Pacotes de Imagens\". A caixa de seleção \"Imagens\" na opção "
-"\"Complexidade\" foi desativada."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:314
+#: includes/class-plgnnm-settings.php:57
 msgid "Settings saved."
 msgstr "Configurações salvas."
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:331
-msgid "Captcha Type"
-msgstr "Tipo de Captcha"
+#: includes/class-plgnnm-settings.php:68 plugin-name.php:34 plugin-name.php:35
+msgid "Plugin Name Settings"
+msgstr "Configurações de nome de plug-in"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:333
-msgid "Arithmetic actions"
-msgstr "ações aritméticas"
+#: includes/class-plgnnm-settings.php:73
+msgid "Display Button"
+msgstr "Botão de Exibição"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:334
-msgid "Optical Character Recognition (OCR)"
-msgstr "Reconhecimento óptico de caracteres (OCR)"
+#: includes/class-plgnnm-settings.php:76
+msgid "My Page"
+msgstr "Minha página"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:335
-msgid "Invisible"
-msgstr "Invisível"
+#: includes/class-plgnnm-settings.php:78
+msgid "Like"
+msgstr "Como"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:336
-msgid "Slide captcha"
-msgstr "Slide captcha"
+#: includes/class-plgnnm-settings.php:80
+msgid "Share"
+msgstr "Compartilhar"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:343
-msgid "Addition"
-msgstr "Adição"
+#: includes/class-plgnnm-settings.php:85
+msgid "Buttons Position"
+msgstr "Posição dos Botões"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:344
-msgid "Subtraction"
-msgstr "Subtração"
+#: includes/class-plgnnm-settings.php:88
+msgid "Before"
+msgstr "Antes"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:345
-msgid "Multiplication"
-msgstr "Multiplicação"
+#: includes/class-plgnnm-settings.php:89
+msgid "After"
+msgstr "Depois"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:353
-msgid "Numbers (1, 2, 3, etc.)"
-msgstr "Números (1, 2, 3, etc.)"
+#: includes/class-plgnnm-settings.php:90
+msgid "Before and After"
+msgstr "Antes e depois"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:354
-msgid "Words (one, two, three, etc.)"
-msgstr "Palavras (uma, duas, três, etc.)"
+#: includes/class-plgnnm-settings.php:91
+msgid "Shortcode"
+msgstr "Código curto"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:355
-msgid "Images"
-msgstr "Imagens"
+#: includes/class-plgnnm-settings.php:103
+msgid "Verification Methods for Non-registered Users "
+msgstr "Métodos de verificação para usuários não registrados"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:361
-msgid "Number of Images"
-msgstr "Número de Imagens"
+#: includes/class-plgnnm-settings.php:108
+msgid "SMS code"
+msgstr "código SMS"
 
 # automatic translation
-#: includes/class-cptch-settings-tabs.php:364
-msgid "Set a number of images to display simultaneously as a captcha question."
-msgstr ""
-"Defina um número de imagens para exibir simultaneamente como uma pergunta "
-"captcha."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:375
-msgid "Use several image packages at the same time"
-msgstr "Use vários pacotes de imagens ao mesmo tempo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:381
-msgid "Enlarge Images"
-msgstr "Ampliar imagens"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:382
-msgid "Enable to enlarge captcha images on mouseover."
-msgstr "Ative para ampliar as imagens captcha ao passar o mouse."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:387
-msgid "Reload Button"
-msgstr "Botão Recarregar"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:388
-msgid "Enable to display reload button for captcha."
-msgstr "Ative para exibir o botão de recarga para captcha."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:393
-msgid "Captcha Title"
-msgstr "Título Captcha"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:396
-msgid "Required Symbol"
-msgstr "Símbolo obrigatório"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:399
-msgid "Advanced Protection"
-msgstr "Proteção Avançada"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:400
-msgid "Enable to display captcha when the website page is loaded."
-msgstr "Ative para exibir o captcha quando a página do site for carregada."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:407
-msgid "General"
-msgstr "Em geral"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:410
-msgid "Enable Captcha for"
-msgstr "Habilitar Captcha para"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:452
-msgid "Enable to add the CAPTCHA to forms on their settings pages."
-msgstr ""
-"Ative para adicionar o CAPTCHA aos formulários em suas páginas de "
-"configurações."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:578
-msgid "Enable to activate a time limit required to complete captcha."
-msgstr "Ative para ativar um limite de tempo necessário para concluir o captcha."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:589 includes/pro_banners.php:135
-msgid "Time Limit"
-msgstr "Limite de tempo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:596
-msgid "Time Limit Threshold"
-msgstr "Limiar de limite de tempo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:599
-msgid "sec"
-msgstr "segundo"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:641
-msgid "This option is available only for network or for main blog"
-msgstr "Esta opção está disponível apenas para rede ou para blog principal"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:648
-msgid "Hide from Registered Users"
-msgstr "Ocultar de usuários registrados"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:650
-msgid "Enable to hide captcha for registered users."
-msgstr "Ative para ocultar o captcha para usuários registrados."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:678
-msgid "update"
-msgstr "atualizar"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:679
-msgid "to the current version"
-msgstr "para a versão atual"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:686
-msgid "install"
-msgstr "instalar"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:691
-msgid "activate"
-msgstr "ativar"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:703
-msgid "You should"
-msgstr "Você deve"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:706
-msgid "to use this functionality."
-msgstr "para usar esta funcionalidade."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:729
-msgid "Messages Settings"
-msgstr "Configurações de mensagens"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:735
-msgid "Captcha Field is Empty"
-msgstr "O campo Captcha está vazio"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:736 includes/helpers.php:33
-msgid "Please complete the captcha."
-msgstr "Por favor, complete o captcha."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:740
-msgid "Captcha is Incorrect"
-msgstr "Captcha está incorreto"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:741 includes/helpers.php:34
-msgid "Please enter correct captcha value."
-msgstr "Insira o valor correto do captcha."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:745
-msgid "Captcha Time Limit Exceeded"
-msgstr "Limite de tempo do captcha excedido"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:746
-#: includes/class-cptch-settings-tabs.php:751 includes/helpers.php:35
-#: includes/helpers.php:36
-msgid "Time limit exceeded. Please complete the captcha once again."
-msgstr "Limite de tempo excedido. Por favor, complete o captcha mais uma vez."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:750
-msgid "Answer Time Limit Exceeded"
-msgstr "Limite de tempo de resposta excedido"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:752
-msgid "This message will be displayed above the captcha field."
-msgstr "Esta mensagem será exibida acima do campo captcha."
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:756
-msgid "Slide Title"
-msgstr "Título do slide"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:760
-msgid "Successfull Verification"
-msgstr "Verificação bem-sucedida"
-
-# automatic translation
-#: includes/class-cptch-settings-tabs.php:888
-msgid ""
-"The image packages list is empty. Please restore default settings or "
-"re-install the plugin to fix this error."
-msgstr ""
-"A lista de pacotes de imagens está vazia. Restaure as configurações padrão "
-"ou reinstale o plug-in para corrigir esse erro."
-
-# automatic translation
-#: includes/helpers.php:26
-msgid "Slide to verify"
-msgstr "Deslize para verificar"
-
-# automatic translation
-#: includes/helpers.php:27
-msgid "Verification passed"
-msgstr "Verificação aprovada"
-
-# automatic translation
-#: includes/helpers.php:37 includes/pro_banners.php:82
-msgid "Your IP address is allow listed."
-msgstr "Seu endereço IP está listado como permitido."
-
-# automatic translation
-#: includes/invisible.php:29
-msgid "Can't handle encrypting/decrypting data."
-msgstr "Não é possível lidar com dados de criptografia/descriptografia."
-
-# automatic translation
-#: includes/invisible.php:33 includes/invisible.php:65
-#: includes/invisible.php:103
-msgid "ERROR"
-msgstr "ERRO"
-
-# automatic translation
-#: includes/invisible.php:62
-#, php-format
-msgid "Protected by %s"
-msgstr "Protegido por %s"
-
-# automatic translation
-#: includes/invisible.php:78
-msgid "Empty captcha."
-msgstr "Captcha vazio."
-
-# automatic translation
-#: includes/invisible.php:94
-msgid "Captcha time limit exceeded."
-msgstr "Limite de tempo do captcha excedido."
-
-# automatic translation
-#: includes/invisible.php:100
-msgid "Wrong captcha."
-msgstr "CAPTCHA errado."
-
-# automatic translation
-#: includes/pro_banners.php:18
-msgid "This options is available in Pro version of plugin"
-msgstr "Esta opção está disponível na versão Pro do plugin"
-
-# automatic translation
-#: includes/pro_banners.php:42
-msgid "Add New "
-msgstr "Adicionar novo"
-
-# automatic translation
-#: includes/pro_banners.php:54
-msgid "Default"
-msgstr "Padrão"
-
-# automatic translation
-#: includes/pro_banners.php:57
-msgid ""
-"With a allow list you can hide captcha field for your personal and trusted "
-"IP addresses."
-msgstr ""
-"Com uma lista de permissões, você pode ocultar o campo captcha para seus "
-"endereços IP pessoais e confiáveis."
-
-# automatic translation
-#: includes/pro_banners.php:67 includes/pro_banners.php:202
-msgid "Allowed formats"
-msgstr "Formatos permitidos"
-
-# automatic translation
-#: includes/pro_banners.php:68
-msgid "Allowed separators for IPs: a comma"
-msgstr "Separadores permitidos para IPs: uma vírgula"
-
-# automatic translation
-#: includes/pro_banners.php:68 includes/pro_banners.php:71
-#: includes/pro_banners.php:209 includes/pro_banners.php:217
-msgid "semicolon"
-msgstr "ponto e vírgula"
-
-# automatic translation
-#: includes/pro_banners.php:68
-msgid "ordinary space, tab, new line or carriage return"
-msgstr "espaço comum, tabulação, nova linha ou retorno de carro"
-
-# automatic translation
-#: includes/pro_banners.php:69 includes/pro_banners.php:213
-#: includes/pro_banners.php:266 includes/pro_banners.php:314
-msgid "Reason"
-msgstr "Razão"
-
-# automatic translation
-#: includes/pro_banners.php:71
-msgid "Allowed separators for reasons: a comma"
-msgstr "Separadores permitidos por motivos: uma vírgula"
-
-# automatic translation
-#: includes/pro_banners.php:71
-msgid "tab, new line or carriage return"
-msgstr "guia, nova linha ou retorno de carro"
-
-# automatic translation
-#: includes/pro_banners.php:81
-msgid "Allow Listed IP"
-msgstr "Permitir IP listado"
-
-# automatic translation
-#: includes/pro_banners.php:83
-msgid "This message will be displayed instead of the captcha field."
-msgstr "Esta mensagem será exibida em vez do campo captcha."
-
-# automatic translation
-#: includes/pro_banners.php:102
-msgid "General Settings"
-msgstr "Configurações Gerais"
-
-# automatic translation
-#: includes/pro_banners.php:105
-msgid "Enable to use general captcha settings."
-msgstr "Ative para usar as configurações gerais de captcha."
-
-# automatic translation
-#: includes/pro_banners.php:138
-msgid "Enable to activate a time limit requeired to complete captcha."
-msgstr "Ative para ativar um limite de tempo necessário para concluir o captcha."
-
-# automatic translation
-#: includes/pro_banners.php:149
-msgid "Use Several Image Packages at The Same Time"
-msgstr "Use vários pacotes de imagens ao mesmo tempo"
-
-# automatic translation
-#: includes/pro_banners.php:187
-msgid "Load IP Address(-es)"
-msgstr "Carregar Endereço(s) IP"
-
-# automatic translation
-#: includes/pro_banners.php:190
-msgid "Load IP addresses from the \"Limit Attempts\" allow list."
-msgstr "Carregar endereços IP da lista de permissões \"Limitar tentativas\"."
-
-# automatic translation
-#: includes/pro_banners.php:192
-msgid "IP to allow list"
-msgstr "lista de IP para permitir"
-
-# automatic translation
-#: includes/pro_banners.php:198
-msgid "My IP"
-msgstr "Meu IP"
-
-# automatic translation
-#: includes/pro_banners.php:207
-msgid "Allowed diapason"
-msgstr "Diapasão permitido"
-
-# automatic translation
-#: includes/pro_banners.php:209
-msgid "Allowed separators"
-msgstr "Separadores permitidos"
-
-# automatic translation
-#: includes/pro_banners.php:209 includes/pro_banners.php:217
-msgid "a comma"
-msgstr "para vírgula"
-
-# automatic translation
-#: includes/pro_banners.php:209
-msgid "ordinary space, tab, new line or carriage return."
-msgstr "espaço comum, tabulação, nova linha ou retorno de carro."
-
-# automatic translation
-#: includes/pro_banners.php:217
-msgid "Allowed separators for reasons"
-msgstr "Separadores permitidos por motivos"
-
-# automatic translation
-#: includes/pro_banners.php:217
-msgid "tab, new line or carriage return."
-msgstr "tabulação, nova linha ou retorno de carro."
-
-# automatic translation
-#: includes/pro_banners.php:220
-msgid "Add IP to allow list"
-msgstr "Adicionar IP à lista de permissões"
-
-# automatic translation
-#: includes/pro_banners.php:224 includes/pro_banners.php:226
-msgid "search"
-msgstr "procurar"
-
-# automatic translation
-#: includes/pro_banners.php:231 includes/pro_banners.php:327
-msgid "Bulk Actions"
-msgstr "Ações em massa"
-
-# automatic translation
-#: includes/pro_banners.php:232 includes/pro_banners.php:283
-#: includes/pro_banners.php:328
-msgid "Trash"
-msgstr "Lixo"
-
-# automatic translation
-#: includes/pro_banners.php:234 includes/pro_banners.php:330
-msgid "Apply"
-msgstr "Aplicar"
-
-# automatic translation
-#: includes/pro_banners.php:238 includes/pro_banners.php:334
-msgid "All dates"
-msgstr "Todas as datas"
-
-# automatic translation
-#: includes/pro_banners.php:239 includes/pro_banners.php:241
-#: includes/pro_banners.php:335 includes/pro_banners.php:337
-msgid "Filter"
-msgstr "Filtro"
-
-# automatic translation
-#: includes/pro_banners.php:244 includes/pro_banners.php:340
-msgid "items"
-msgstr "Unid"
-
-# automatic translation
-#: includes/pro_banners.php:256 includes/pro_banners.php:304
-msgid "IP Address"
-msgstr "Endereço de IP"
-
-# automatic translation
-#: includes/pro_banners.php:262 includes/pro_banners.php:310
-msgid "Range from/to"
-msgstr "Intervalo de/para"
-
-# automatic translation
-#: includes/pro_banners.php:282
-msgid "Edit"
-msgstr "Editar"
-
-# automatic translation
-#: includes/pro_banners.php:354
-msgid "Slider Color"
-msgstr "Cor do controle deslizante"
-
-# automatic translation
-#: includes/pro_banners.php:369
-msgid "Successfull Slider Color"
-msgstr "Cor do controle deslizante com sucesso"
-
-# automatic translation
-#: includes/pro_banners.php:384
-msgid "Slide Container Color"
-msgstr "Cor do Recipiente do Slide"
-
-# automatic translation
-#: includes/pro_banners.php:399
-msgid "Slide Title Color"
-msgstr "Cor do título do slide"
-
-# automatic translation
-#: includes/pro_banners.php:414
-msgid "Slide Title Size"
-msgstr "Tamanho do título do slide"
-
-# automatic translation
-#: includes/pro_banners.php:427
-msgid "Set a font-size for title."
-msgstr "Defina um tamanho de fonte para o título."
+#: plugin-name.php:189
+msgid "Add buttons to your page or post"
+msgstr "Adicione botões à sua página ou post"
 
 # automatic translation
 #. Plugin Name of the plugin/theme
-msgid "Captcha by BestWebSoft"
-msgstr "Captcha por BestWebSoft"
+msgid "Plugin Name by BestWebSoft"
+msgstr "Nome do plug-in por BestWebSoft"
 
 # automatic translation
 #. Plugin URI of the plugin/theme
-msgid "https://bestwebsoft.com/products/wordpress/plugins/captcha/"
-msgstr "https://bestwebsoft.com/products/wordpress/plugins/captcha/"
+msgid "https://bestwebsoft.com/products/wordpress/plugins/plugin-name/"
+msgstr "https://bestwebsoft.com/products/wordpress/plugins/plugin-name/"
 
 # automatic translation
 #. Description of the plugin/theme
-msgid "#1 super security anti-spam captcha plugin for WordPress forms."
-msgstr ""
-"# 1 plug-in captcha anti-spam de super segurança para formulários do "
-"WordPress."
+msgid "***"
+msgstr "***"
 
 # automatic translation
 #. Author of the plugin/theme

@@ -202,6 +202,9 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 */
 		private function get_packages() {
 			global $wpdb;
+			if ( is_multisite() ) {
+				switch_to_blog( 1 );
+			}
 			$where		= empty( $this->s )			? '' : " WHERE `{$wpdb->base_prefix}cptch_packages`.`name` LIKE '%{$this->s}%'";
 			$order_by	= empty( $this->order_by )	? ' ORDER BY `add_time`' : " ORDER BY `{$this->order_by}`";
 			$order		= empty( $this->order )		? ' DESC' : strtoupper( " {$this->order}" );
@@ -227,6 +230,10 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 				LIMIT {$this->per_page}{$offset};",
 				ARRAY_A
 			);
+			if ( is_multisite() ) {
+				restore_current_blog();
+			}
+
 			return $items;
 		}
 
@@ -237,8 +244,15 @@ if ( ! class_exists( 'Cptch_Package_List' ) ) {
 		 */
 		private function get_items_number() {
 			global $wpdb;
+			if ( is_multisite() ) {
+				switch_to_blog( 1 );
+			}
 			$where = empty( $this->s ) ? '' : " WHERE `name` LIKE '%{$this->s}%'";
-			return absint( $wpdb->get_var( "SELECT COUNT(`id`) FROM `{$wpdb->prefix}cptch_packages`{$where}" ) );
+			$count = absint( $wpdb->get_var( "SELECT COUNT(`id`) FROM `{$wpdb->prefix}cptch_packages`{$where}" ) );
+			if ( is_multisite() ) {
+				restore_current_blog();
+			}
+			return $count;
 		}
 	}
 }

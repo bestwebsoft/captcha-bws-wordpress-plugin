@@ -59,6 +59,7 @@
 <li>Ninja Forms</li>
 <li>Gravity Forms</li>
 <li>WPForms</li>
+<li>Caldera Forms</li>
 </ul>
 </li>
 <li>Compatible with WooCommerce:
@@ -90,6 +91,23 @@
 <li>Reply form</li>
 </ul>
 </li>
+<li>Compatible with Divi :
+<ul>
+<li>Contact Form</li>
+<li>Login Form</li>
+</ul>
+</li>
+<li>Compatible with LearnDash login:
+<ul>
+<li>Login form</li>
+<li>Registration form</li>
+</ul>
+</li>
+<li>Compatible with BuddyBoss:
+<ul>
+<li>Registration form</li>
+</ul>
+</li>
 <li>Compatible with Elementor Pro:
 <ul>
 <li>Elementor Contact form [NEW]</li>
@@ -100,7 +118,7 @@
 <li>Allowed IP addresses</li>
 </ul>
 </li>
-<li>Merge IP addresses from <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988" rel="nofollow ugc">Limit Attempts</a> plugin with Captcha whitelist</li>
+<li>Merge IP addresses from <a href="https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988" rel="nofollow ugc">Limit Attempts</a> plugin with Captcha Allow List</li>
 <li>Configure all subsites on the network</li>
 <li>Captcha submission time limit for separate forms</li>
 <li>Image packages with hand-drawn digits</li>
