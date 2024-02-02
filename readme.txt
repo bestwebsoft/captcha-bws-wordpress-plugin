@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 5.6
-Tested up to: 6.3.1
-Stable tag: 5.1.8
+Tested up to: 6.4.3
+Stable tag: 5.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -172,6 +172,10 @@ Some of these translations are not complete. We are constantly adding new featur
 * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f) - Simple contact form plugin any WordPress website must have.
 * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) - Add email newsletter sign up form to WordPress posts, pages and widgets. Collect data and subscribe your users.
 
+= Credits =
+
+* This plugin incorporates a license verification mechanism to ensure the authenticity of your license key and provide access to premium features and updates. The verification process involves connecting securely to our external service hosted at BestWebSoft website <https://bestwebsoft.com>. Privacy Policy <https://bestwebsoft.com/privacy-policy/>. End user license agreement <https://bestwebsoft.com/end-user-license-agreement/>.
+
 == Installation ==
 
 1. Upload the `captcha-bws` folder to the `/wp-content/plugins/` directory.
@@ -288,6 +292,19 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
+= V5.2.1 - 20.01.2024 =
+* Update : All functionality was updated for WordPress 6.4.3
+* Update : BWS panel section was updated.
+* NEW: Ability to use session to save captcha values has been added.
+* Bugfix : The issue with display captcha has been fixed.
+
+= V5.2.0 - 01.01.2024 =
+* Update : SQL Calls issue has been fixed.
+
+= V5.1.9 - 28.12.2023 =
+* Update : All functionality was updated for WordPress 6.4
+* Syntax errors fixed.
+
 = V5.1.8 - 19.10.2023 =
 * Update : All functionality was updated for WordPress 6.3.1
 * Update : BWS panel section was updated.
@@ -396,6 +413,19 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.2.1 =
+* New features added.
+* The compatibility with new WordPress version updated.
+* Plugin optimization completed.
+* Bugs fixed.
+
+= V5.2.0 =
+* Security standarts update.
+
+= V5.1.9 =
+* Bugs fixed.
+* The compatibility with new WordPress version updated.
 
 = V5.1.8 =
 * New features added.

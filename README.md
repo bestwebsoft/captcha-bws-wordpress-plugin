@@ -193,3 +193,7 @@
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f" rel="nofollow ugc">Contact Form</a> &#8211; Simple contact form plugin any WordPress website must have.</li>
 <li><a href="https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030" rel="nofollow ugc">Subscriber</a> &#8211; Add email newsletter sign up form to WordPress posts, pages and widgets. Collect data and subscribe your users.</li>
 </ul>
+<h4>Credits</h4>
+<ul>
+<li>This plugin incorporates a license verification mechanism to ensure the authenticity of your license key and provide access to premium features and updates. The verification process involves connecting securely to our external service hosted at BestWebSoft website <a href="https://bestwebsoft.com" rel="nofollow ugc">https://bestwebsoft.com</a>. Privacy Policy <a href="https://bestwebsoft.com/privacy-policy/" rel="nofollow ugc">https://bestwebsoft.com/privacy-policy/</a>. End user license agreement <a href="https://bestwebsoft.com/end-user-license-agreement/" rel="nofollow ugc">https://bestwebsoft.com/end-user-license-agreement/</a>.</li>
+</ul>

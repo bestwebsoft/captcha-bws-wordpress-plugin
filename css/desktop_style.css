@@ -38,6 +38,21 @@
 	-ms-transform: scale(3, 3);
 	transform: scale(3, 3);
 }
+.cptch_recognition .cptch_img {
+	display: inline-block;
+	overflow: hidden;
+	padding: 8px 1px;
+}
+.cptch_recognition .cptch_img:hover img,
+.cptch_recognition .cptch_img:hover svg {
+	/* increase the size of image */
+	-webkit-transform: scale(3, 3);
+	-moz-transform: scale(3, 3);
+	-o-transform: scale(3, 3);
+	-ms-transform: scale(3, 3);
+	transform: scale(3, 3);
+}
+
 .cptch_reload_button:hover {
 	cursor:pointer;
 	opacity: 0.7;

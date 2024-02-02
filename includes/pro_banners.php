@@ -1,21 +1,27 @@
 <?php
 /**
  * Display banners on settings page
+ *
  * @package Captcha by BestWebSoft
  * @since 4.1.5
  */
 
-/**
- * Show ads for PRO
- * @param     string     $func        function to call
- * @return    void
- */
+if ( ! defined( 'ABSPATH' ) ) {
+	die();
+}
+
 
 if ( ! function_exists( 'cptch_pro_block' ) ) {
+	/**
+	 * Show ads for PRO
+	 *
+	 * @param string $func Function to call.
+	 * @return    void
+	 */
 	function cptch_pro_block( $func, $show_cross = true, $display_always = false ) {
 		global $cptch_plugin_info, $wp_version, $cptch_options;
 		if ( $display_always || ! bws_hide_premium_options_check( $cptch_options ) ) { ?>
-			<div class="bws_pro_version_bloc cptch_pro_block <?php echo $func;?>" title="<?php esc_html_e( 'This options is available in Pro version of plugin', 'captcha-bws' ); ?>">
+			<div class="bws_pro_version_bloc cptch_pro_block <?php echo esc_attr( $func ); ?>" title="<?php esc_html_e( 'This options is available in Pro version of plugin', 'captcha-bws' ); ?>">
 				<div class="bws_pro_version_table_bloc">
 					<?php if ( $show_cross ) { ?>
 						<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>" value="1"></button>
@@ -26,26 +32,30 @@ if ( ! function_exists( 'cptch_pro_block' ) ) {
 					</div>
 				</div>
 				<div class="bws_pro_version_tooltip">
-					<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=28d4cf0b4ab6f56e703f46f60d34d039&pn=83&v=<?php echo $cptch_plugin_info["Version"]; ?>&wp_v=<?php echo $wp_version; ?>" target="_blank" title="<?php echo $cptch_plugin_info["Name"]; ?>">
+					<a class="bws_button" href="https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=28d4cf0b4ab6f56e703f46f60d34d039&pn=83&v=<?php echo esc_attr( $cptch_plugin_info['Version'] ); ?>&wp_v=<?php echo esc_attr( $wp_version ); ?>" target="_blank" title="<?php echo esc_html( $cptch_plugin_info['Name'] ); ?>">
 						<?php esc_html_e( 'Upgrade to Pro', 'captcha-bws' ); ?>
 					</a>
 					<div class="clear"></div>
 				</div>
 			</div>
-		<?php }
+			<?php
+		}
 	}
 }
 
 if ( ! function_exists( 'cptch_packages_banner' ) ) {
-	function cptch_packages_banner() { ?>
+	function cptch_packages_banner() {
+		?>
 		<div class="bws_pro_version">
 			<button class="button-primary" disabled="disabled"><?php esc_html_e( 'Add New ', 'cptch-bws' ); ?></button>
 		</div>
-	<?php }
+		<?php
+	}
 }
 
 if ( ! function_exists( 'cptch_use_limit_attempts_allowlist' ) ) {
-	function cptch_use_limit_attempts_allowlist() { ?>
+	function cptch_use_limit_attempts_allowlist() {
+		?>
 		<table class="form-table bws_pro_version">
 			<tr>
 				<th scope="row"><?php esc_html_e( 'Allow List', 'captcha-bws' ); ?></th>
@@ -58,45 +68,53 @@ if ( ! function_exists( 'cptch_use_limit_attempts_allowlist' ) ) {
 				</td>
 			</tr>
 		</table>
-	<?php }
+		<?php
+	}
 }
 
 if ( ! function_exists( 'cptch_allowlist_banner' ) ) {
-	function cptch_allowlist_banner() { ?>
+	function cptch_allowlist_banner() {
+		?>
 		<div class="bws_pro_version">
-			<div class="bws_info" style="line-height: 2;"><?php esc_html_e( "Allowed formats", 'captcha-bws' ); ?>:&nbsp;<code>192.168.0.1, 192.168.0., 192.168., 192., 192.168.0.1/8, 123.126.12.243-185.239.34.54</code></div>
-			<div class="bws_info" style="line-height: 2;"><?php esc_html_e( "Allowed separators for IPs: a comma", 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'ordinary space, tab, new line or carriage return', 'captcha-bws' ); ?></div>
+			<div class="bws_info" style="line-height: 2;"><?php esc_html_e( 'Allowed formats', 'captcha-bws' ); ?>:&nbsp;<code>192.168.0.1, 192.168.0., 192.168., 192., 192.168.0.1/8, 123.126.12.243-185.239.34.54</code></div>
+			<div class="bws_info" style="line-height: 2;"><?php esc_html_e( 'Allowed separators for IPs: a comma', 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'ordinary space, tab, new line or carriage return', 'captcha-bws' ); ?></div>
 			<?php esc_html_e( 'Reason', 'captcha-bws' ); ?><br>
 			<textarea disabled></textarea>
-			<div class="bws_info" style="line-height: 2;"><?php esc_html_e( "Allowed separators for reasons: a comma", 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'tab, new line or carriage return', 'captcha-bws' ); ?></div>
+			<div class="bws_info" style="line-height: 2;"><?php esc_html_e( 'Allowed separators for reasons: a comma', 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'tab, new line or carriage return', 'captcha-bws' ); ?></div>
 		</div>
-	<?php }
+		<?php
+	}
 }
 
 if ( ! function_exists( 'cptch_display_messages' ) ) {
-	function cptch_display_messages() { ?>
+	function cptch_display_messages() {
+		?>
 	<table class="form-table bws_pro_version">
-		<?php $message = array(
-				'allowlist_message'	=> array(
-				'title'				=> esc_html__( 'Allow Listed IP', 'captcha-bws' ),
-				'message'			=> esc_html__( 'Your IP address is allow listed.', 'captcha-bws' ),
-				'description'		=> esc_html__( 'This message will be displayed instead of the captcha field.', 'captcha-bws' )
-			)
-		); ?>
+		<?php
+		$message = array(
+			'allowlist_message' => array(
+				'title'             => esc_html__( 'Allow Listed IP', 'captcha-bws' ),
+				'message'           => esc_html__( 'Your IP address is allow listed.', 'captcha-bws' ),
+				'description'       => esc_html__( 'This message will be displayed instead of the captcha field.', 'captcha-bws' ),
+			),
+		);
+		?>
 		<tr>
-			<th scope="row"><?php echo $message['allowlist_message']['title']; ?></th>
+			<th scope="row"><?php echo wp_kses_post( $message['allowlist_message']['title'] ); ?></th>
 			<td>
-				<textarea disabled="disabled"><?php echo $message['allowlist_message']['message']; ?></textarea>
-				<div class="bws_info"><?php echo $message['allowlist_message']['description']; ?></div>
+				<textarea disabled="disabled"><?php echo wp_kses_post( $message['allowlist_message']['message'] ); ?></textarea>
+				<div class="bws_info"><?php echo wp_kses_post( $message['allowlist_message']['description'] ); ?></div>
 			</td>
 		</tr>
 	</table>
-	<?php }
+		<?php
+	}
 }
 
 if ( ! function_exists( 'cptch_additional_options' ) ) {
 	function cptch_additional_options() {
-		$src = plugins_url( 'images/package/', dirname( __FILE__ ) ); ?>
+		$src = plugins_url( 'images/package/', dirname( __FILE__ ) );
+		?>
 		<table class="form-table bws_pro_version">
 			<tr>
 				<th scope="row"><?php esc_html_e( 'General Settings', 'captcha-bws' ); ?></th>
@@ -106,24 +124,24 @@ if ( ! function_exists( 'cptch_additional_options' ) ) {
 				</td>
 			</tr>
 			<tr class="cptch_form_option_used_packages">
-				<th scope="row"><?php esc_html_e( 'Image Packages', 'captcha-bws' );?></th>
+				<th scope="row"><?php esc_html_e( 'Image Packages', 'captcha-bws' ); ?></th>
 				<td>
 					<fieldset>
 						<div class="cptch_tabs_package_list cptch_pro_pack_tab">
 							<ul class="cptch_tabs_package_list_items">
 								<li>
 									<span><input type="checkbox" disabled="disabled" /></span>
-									<span><img src="<?php echo $src; ?>arabic_bt/0.png"></span>
+									<span><img src="<?php echo esc_url( $src ); ?>arabic_bt/0.png"></span>
 									<span>Arabic ( black numbers - transparent background )</span>
 								</li>
 								<li>
 									<span><input type="checkbox" disabled="disabled" /></span>
-									<span><img src="<?php echo $src; ?>arabic_bw/0.png"></span>
+									<span><img src="<?php echo esc_url( $src ); ?>arabic_bw/0.png"></span>
 									<span>Arabic ( black numbers - white background )</span>
 								</li>
 								<li>
 									<span><input type="checkbox" disabled="disabled" /></span>
-									<span><img src="<?php echo $src; ?>arabic_wb/0.png"></span>
+									<span><img src="<?php echo esc_url( $src ); ?>arabic_wb/0.png"></span>
 									<span>Arabic ( white numbers - black background )</span>
 								</li>
 							</ul>
@@ -139,28 +157,32 @@ if ( ! function_exists( 'cptch_additional_options' ) ) {
 				</td>
 			</tr>
 		</table>
-	<?php }
+		<?php
+	}
 }
 
 if ( ! function_exists( 'cptch_use_several_packages' ) ) {
-	function cptch_use_several_packages() { ?>
+	function cptch_use_several_packages() {
+		?>
 		<table class="form-table cptch_enable_to_use_several_packages bws_pro_version">
 			<tr>
-				<th scope="row"><?php esc_html_e( 'Use Several Image Packages at The Same Time', 'captcha-bws' );?></th>
+				<th scope="row"><?php esc_html_e( 'Use Several Image Packages at The Same Time', 'captcha-bws' ); ?></th>
 				<td><fieldset><input type="checkbox" disabled="disabled" /></fieldset></td>
 			</tr>
 		</table>
-	<?php }
+		<?php
+	}
 }
 
 /**
  * Function disable's pro-tabs displaing beyond the main settings page
+ *
  * @since 4.3.1
  * @param  void
  * @return void
  */
-if ( ! function_exists( 'hide_pro_tabs_beyond_settings_page' ) ) {
-	function hide_pro_tabs_beyond_settings_page() {
+if ( ! function_exists( 'cptch_hide_pro_tabs_beyond_settings_page' ) ) {
+	function cptch_hide_pro_tabs_beyond_settings_page() {
 		if ( isset( $_POST['bws_hide_premium_options'] ) ) {
 			global $cptch_options;
 
@@ -168,59 +190,69 @@ if ( ! function_exists( 'hide_pro_tabs_beyond_settings_page' ) ) {
 			$result = bws_hide_premium_options( $cptch_options );
 
 			/* return if options had been disabled earlier */
-			if ( true === $result )
+			if ( true === $result ) {
 				return;
+			}
 
 			/* changin the globol variable */
 			$cptch_options = $result['options'];
 
-			update_option( 'cptch_options', $cptch_options ); ?>
+			update_option( 'cptch_options', $cptch_options );
+			?>
 
-			<div class="updated bws-notice inline"><p><strong><?php if ( ! empty( $result['message'] ) ) echo $result['message']; ?></strong></p></div>
-		<?php }
+			<div class="updated bws-notice inline"><p><strong>
+			<?php
+			if ( ! empty( $result['message'] ) ) {
+				echo wp_kses_post( $result['message'] );
+			}
+			?>
+			</strong></p></div>
+			<?php
+		}
 	}
 }
 
 if ( ! function_exists( 'cptch_allowlist_block' ) ) {
-	function cptch_allowlist_block( $date_format ) { ?>
+	function cptch_allowlist_block( $date_format ) {
+		?>
 		<div>
 			<input type="submit" name="cptch_load_limit_attempts_allowlist" class="button" value="<?php esc_html_e( 'Load IP Address(-es)', 'captcha-bws' ); ?>" style="float: left;" disabled="disabled" />
 			<div class="clear"></div>
 		</div>
 		<div class="bws_info"><?php esc_html_e( 'Load IP addresses from the "Limit Attempts" allow list.', 'captcha-bws' ); ?></div>
-        <form class="form-table cptch_allowlist_form" method="post" action="admin.php?page=captcha-allowlist.php" style="margin: 10px 0;<?php echo ! ( isset( $_REQUEST['cptch_show_allowlist_form'] ) || isset( $_REQUEST['cptch_add_to_allowlist'] ) ) ? 'display: none;': ''; ?>">
-            <label><?php esc_html_e( 'IP to allow list', 'captcha-bws' ) ?></label>
-            <br />
-            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_allowlist"></textarea>
-                <br />
-                <label>
-                    <input disabled="disabled" type="checkbox" name="cptch_add_to_allowlist_my_ip" value="1" />
+		<form class="form-table cptch_allowlist_form" method="post" action="admin.php?page=captcha-allowlist.php" style="margin: 10px 0;<?php echo esc_html( ! ( isset( $_REQUEST['cptch_show_allowlist_form'] ) || isset( $_REQUEST['cptch_add_to_allowlist'] ) ) ? 'display: none;' : '' ); ?>">
+			<label><?php esc_html_e( 'IP to allow list', 'captcha-bws' ); ?></label>
+			<br />
+			<textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_allowlist"></textarea>
+				<br />
+				<label>
+					<input disabled="disabled" type="checkbox" name="cptch_add_to_allowlist_my_ip" value="1" />
 					<?php esc_html_e( 'My IP', 'captcha-bws' ); ?>
-                </label>
-            <div class="bws_info">
-                <div style="line-height: 2;">
-					<?php esc_html_e( "Allowed formats", 'captcha-bws' ); ?>:
-                    <code>
-                        192.168.0.1, 192.168.0., 192.168., 192., 192.168.0.1/8, 123.126.12.243-185.239.34.54
-                    </code>
-                </div>
-                <div style="line-height: 2;"><?php esc_html_e( "Allowed diapason", 'captcha-bws' ); ?>:<code>0.0.0.0 - 255.255.255.255</code></div>
-                <div style="line-height: 2;">
-					<?php esc_html_e( "Allowed separators", 'captcha-bws' ); ?>: <?php esc_html_e( "a comma", 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'ordinary space, tab, new line or carriage return.', 'captcha-bws' ); ?>
-                </div>
-            </div>
-            <br />
-            <label><?php esc_html_e( 'Reason', 'captcha-bws' ) ?></label>
-            <br />
-            <textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_allowlist_reason"></textarea>
-            <div class="bws_info">
-				<?php esc_html_e( "Allowed separators for reasons", 'captcha-bws' ); ?>: <?php esc_html_e( "a comma", 'captcha-bws' )?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'tab, new line or carriage return.', 'captcha-bws' ); ?>
-            </div>
-            <p>
-                <input disabled="disabled" type="submit" class="button-secondary" value="<?php esc_html_e( 'Add IP to allow list', 'captcha-bws' ); ?>" />
-            </p>
-        </form>
-        <p class="search-box">
+				</label>
+			<div class="bws_info">
+				<div style="line-height: 2;">
+					<?php esc_html_e( 'Allowed formats', 'captcha-bws' ); ?>:
+					<code>
+						192.168.0.1, 192.168.0., 192.168., 192., 192.168.0.1/8, 123.126.12.243-185.239.34.54
+					</code>
+				</div>
+				<div style="line-height: 2;"><?php esc_html_e( 'Allowed diapason', 'captcha-bws' ); ?>:<code>0.0.0.0 - 255.255.255.255</code></div>
+				<div style="line-height: 2;">
+					<?php esc_html_e( 'Allowed separators', 'captcha-bws' ); ?>: <?php esc_html_e( 'a comma', 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'ordinary space, tab, new line or carriage return.', 'captcha-bws' ); ?>
+				</div>
+			</div>
+			<br />
+			<label><?php esc_html_e( 'Reason', 'captcha-bws' ); ?></label>
+			<br />
+			<textarea disabled="disabled" rows="2" cols="32" name="cptch_add_to_allowlist_reason"></textarea>
+			<div class="bws_info">
+				<?php esc_html_e( 'Allowed separators for reasons', 'captcha-bws' ); ?>: <?php esc_html_e( 'a comma', 'captcha-bws' ); ?> (<code>,</code>), <?php esc_html_e( 'semicolon', 'captcha-bws' ); ?> (<code>;</code>), <?php esc_html_e( 'tab, new line or carriage return.', 'captcha-bws' ); ?>
+			</div>
+			<p>
+				<input disabled="disabled" type="submit" class="button-secondary" value="<?php esc_html_e( 'Add IP to allow list', 'captcha-bws' ); ?>" />
+			</p>
+		</form>
+		<p class="search-box">
 			<label class="screen-reader-text" for="pdfprnt-search-input"><?php esc_html_e( 'search', 'captcha-bws' ); ?>:</label>
 			<input disabled="disabled" type="search" name="s" />
 			<input disabled="disabled" type="submit" id="search-submit" class="button" value="<?php esc_html_e( 'search', 'captcha-bws' ); ?>" />
@@ -291,7 +323,7 @@ if ( ! function_exists( 'cptch_allowlist_block' ) ) {
 					<td class=" column-reason" data-colname="reason">
 						<p> Lorem Ipsum dolor sit amet</p>
 					</td>
-					<td class="date column-date" data-colname="<?php esc_html_e( 'Date Added', 'captcha-bws' ); ?>"><?php echo date_i18n( $date_format, strtotime( 'May 3, 2017' ) ); ?></td>
+					<td class="date column-date" data-colname="<?php esc_html_e( 'Date Added', 'captcha-bws' ); ?>"><?php echo esc_html( date_i18n( $date_format, strtotime( 'May 3, 2017' ) ) ); ?></td>
 				</tr>
 			</tbody>
 			<tfoot>
@@ -341,11 +373,13 @@ if ( ! function_exists( 'cptch_allowlist_block' ) ) {
 			</div>
 			<br class="clear">
 		</div>
-	<?php }
+		<?php
+	}
 }
 
 if ( ! function_exists( 'cptch_slide_pro_block' ) ) {
-	function cptch_slide_pro_block() { ?>
+	function cptch_slide_pro_block() {
+		?>
 		<div class="bws_pro_version_table_bloc">
 			<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 			<div class="bws_table_bg"></div>
@@ -429,5 +463,6 @@ if ( ! function_exists( 'cptch_slide_pro_block' ) ) {
 				</tr>
 			</table>
 		</div>		
-	<?php }
+		<?php
+	}
 }
