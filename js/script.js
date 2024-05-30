@@ -106,5 +106,14 @@
 		$( '#cptch_show_packages_pro_tab_open' ).on( 'click', function() {
 			$( '#cptch_show_packages_pro_tab' ).toggle();
 		} );
+
+		
+		$( document ).on( 'change', '#cptch_load_via_ajax', function(){
+			if ( $( this).is( ':checked' ) ) {
+				$( 'tr.cptch_enable_session' ).hide();
+			} else {
+				$( 'tr.cptch_enable_session' ).show();
+			}
+		});
 	} );
 } )( jQuery );

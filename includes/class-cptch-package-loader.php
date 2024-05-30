@@ -256,6 +256,7 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 		private function parse_from_json() {
 			$packages_data = json_decode( file_get_contents( "{$this->packages_dir}/packages.json" ), true );
 
+
 			if ( empty( $packages_data ) ) {
 				$this->parse_folders();
 				return false;
@@ -394,16 +395,15 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 					if ( ! in_array( $package['id'], $used_packages ) && ! $package['disabled'] ) {
 						$used_packages[] = $package['id'];
 					}
-					$insert_data[] = array( $package['id'], $package['name'], $package['folder'], $package['settings'], $time );
-				}
-				if ( ! empty( $insert_data ) ) {
-					$insert_data = implode( ',', $insert_data );
+					$insert_data = array( $package['id'], $package['name'], $package['folder'], $package['settings'], $time );
+
 					$wpdb->query(
 						$wpdb->prepare(
 							'INSERT INTO `' . $wpdb->base_prefix . 'cptch_packages`
 								( `id`, `name`, `folder`, `settings`, `add_time` )
-							VALUES
+							VALUES (
 								%d, %s, %s, %s, %s
+							)
 							ON DUPLICATE KEY UPDATE
 								`id` = VALUES( `id` ),
 								`name` = VALUES( `name` ),
@@ -429,16 +429,14 @@ if ( ! class_exists( 'Cptch_Package_Loader' ) ) {
 			/* insert images data */
 			if ( ! empty( $this->images ) ) {
 				foreach ( $this->images as $image ) {
-					$insert_data[] = array( $image['id'], $image['name'], $image['package_id'], $image['number'] );
-				}
-				if ( ! empty( $insert_data ) ) {
-					$insert_data = implode( ',', $insert_data );
+					$insert_data = array( $image['id'], $image['name'], $image['package_id'], $image['number'] );
 					$wpdb->query(
 						$wpdb->prepare(
 							"INSERT INTO `{$wpdb->base_prefix}cptch_images`
 								( `id`, `name`, `package_id`, `number` )
-							VALUES
+							VALUES (
 								%d, %s, %d, %d
+							)
 							ON DUPLICATE KEY UPDATE
 								`id`=VALUES( `id` ),
 								`name`=VALUES( `name` ),

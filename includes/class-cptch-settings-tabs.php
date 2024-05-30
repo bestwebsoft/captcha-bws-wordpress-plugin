@@ -716,7 +716,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					array(
 						'id'                 => 'cptch_enable_session',
 						'name'               => 'cptch_enable_session',
-						'checked'            => $this->options['forms']['general']['enable_session'],
+						'checked'            => isset( $this->options['forms']['general']['enable_session'] ) ? $this->options['forms']['general']['enable_session'] : true,
 						'inline_description' => esc_html__( 'Enable to use a session to save captcha values (all Captcha types except Slide captcha).', 'captcha-bws' ),
 					),
 				);
@@ -739,7 +739,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						</span>
 					</td>
 				</tr>
-				<tr class="cptch_enable_session">
+				<tr class="cptch_enable_session" <?php echo true === $this->options['load_via_ajax'] ? 'style="display:none"' : ''; ?>>
 					<th scope="row"><?php esc_html_e( 'Use Session', 'captcha-bws' ); ?></th>
 					<td>
 						<?php $this->add_checkbox_input( $options[2] ); ?>

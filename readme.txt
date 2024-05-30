@@ -3,8 +3,8 @@ Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
 Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
 Requires at least: 5.6
-Tested up to: 6.4.3
-Stable tag: 5.2.1
+Tested up to: 6.5
+Stable tag: 5.2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -292,8 +292,8 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Changelog ==
 
-= V5.2.1 - 20.01.2024 =
-* Update : All functionality was updated for WordPress 6.4.3
+= V5.2.2 - 30.05.2024 =
+* Update : All functionality was updated for WordPress 6.5
 * Update : BWS panel section was updated.
 * NEW: Ability to use session to save captcha values has been added.
 * Bugfix : The issue with display captcha has been fixed.
@@ -414,7 +414,7 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 
 == Upgrade Notice ==
 
-= V5.2.1 =
+= V5.2.2 =
 * New features added.
 * The compatibility with new WordPress version updated.
 * Plugin optimization completed.

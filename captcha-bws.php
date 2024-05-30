@@ -6,7 +6,7 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.2.1
+Version: 5.2.2
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
  */
@@ -171,6 +171,11 @@ if ( ! function_exists( 'cptch_init' ) ) {
 
 		if ( ! session_id() ) {
 			@session_start();
+			if ( ! isset( $_SESSION['test'] ) ) {
+				$_SESSION['test'] = 1;
+			} else {
+				$_SESSION['test'] += 1;
+			}
 		}
 
 		$user_loggged_in = is_user_logged_in();
@@ -394,7 +399,7 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 					require_once( dirname( __FILE__ ) . '/includes/class-cptch-package-loader.php' );
 				}
 				$package_loader = new Cptch_Package_Loader();
-				$package_loader->save_packages( dirname( __FILE__ ) . '/images/package', false );
+				$package_loader->save_packages( dirname( __FILE__ ) . '/images/package', false, 'update' );
 			}
 
 			$cptch_options['plugin_db_version'] = $db_version;
@@ -426,8 +431,9 @@ if ( ! function_exists( 'cptch_settings' ) ) {
 						$cptch_options['forms'][ $key ]['enable_time_limit'] = true;
 						$cptch_options['forms'][ $key ]['time_limit']        = 120;
 					}
-					$cptch_options['forms']['general']['enable_session'] = true;
+					
 				}
+				$cptch_options['forms']['general']['enable_session'] = true;
 			}
 		}
 
@@ -795,7 +801,7 @@ if ( ! function_exists( 'cptch_check_bws_contact_form' ) ) {
 	 * @return bool flag
 	 */
 	function cptch_check_bws_contact_form( $allow ) {
-		if ( true !== $allow ) {
+		if ( ! $allow || is_string( $allow ) || is_wp_error( $allow ) ) {
 			return $allow;
 		}
 		return cptch_check_custom_form( true, 'string', 'bws_contact' );
@@ -964,7 +970,7 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 				return $allow;
 			}
 		} else {
-
+			
 			/**
 			 * Escaping the form slug before using it in case when the form slug
 			 * was not sended via function parameters or if we use the CAPTCHA in custom forms
@@ -978,7 +984,7 @@ if ( ! function_exists( 'cptch_check_custom_form' ) ) {
 
 			$error_code = '';
 
-			if ( true === $cptch_options['forms']['general']['enable_session'] && isset( $_SESSION[ $form_slug . '_cptch_time' ] ) && isset( $_SESSION[ $form_slug . '_cptch_result' ] ) ) {
+			if ( true === $cptch_options['forms']['general']['enable_session'] && isset( $_SESSION[ $form_slug . '_cptch_time' ] ) && isset( $_SESSION[ $form_slug . '_cptch_result' ] ) && 'slide' !== $cptch_options['type'] && true !== $cptch_options['load_via_ajax'] ) {
 				$cptch_time   = sanitize_text_field( wp_unslash( $_SESSION[ $form_slug . '_cptch_time' ] ) );
 				$cptch_result = sanitize_text_field( wp_unslash( $_SESSION[ $form_slug . '_cptch_result' ] ) );
 			} else {
@@ -1272,12 +1278,14 @@ if ( ! function_exists( 'cptch_display_captcha' ) ) {
 
 		$cptch_reload_button = ( 'slide' !== $cptch_options['type'] ) ? cptch_add_reload_button( ! ! $cptch_options['display_reload_button'] ) : '';
 
-		if ( true === $cptch_options['forms']['general']['enable_session'] ) {
+		if ( true === $cptch_options['forms']['general']['enable_session'] && true !== $cptch_options['load_via_ajax'] ) {
 			$_SESSION[ $form_slug . '_' . $hidden_result_name ] = $value_encode;
 			$_SESSION[ $form_slug . '_cptch_time' ]             = $time;
 		} else {
-			$captcha_content .= '<input type="hidden" name="' . $hidden_result_name . '" value="' . $value_encode . '" />
-				<input type="hidden" name="cptch_time" value="' . $time . '" />';
+			if ( 'slide' !== $cptch_options['type'] ) {
+				$captcha_content .= '<input type="hidden" name="' . $hidden_result_name . '" value="' . $value_encode . '" />';
+			}
+			$captcha_content .= '<input type="hidden" name="cptch_time" value="' . $time . '" />';
 		}
 
 		return $time_limit_notice .
@@ -1858,8 +1866,8 @@ if ( ! function_exists( 'cptch_limit_exhausted' ) ) {
 		if ( empty( $cptch_options ) ) {
 			cptch_settings();
 		}
-		if ( true === $cptch_options['forms']['general']['enable_session'] && isset( $_COOKIE[ $form_slug . '_cptch_time' ] ) ) {
-			$cptch_time = sanitize_text_field( wp_unslash( $_COOKIE[ $form_slug . '_cptch_time' ] ) );
+		if ( true === $cptch_options['forms']['general']['enable_session'] && isset( $_SESSION[ $form_slug . '_cptch_time' ] ) && true !== $cptch_options['load_via_ajax'] ) {
+			$cptch_time = sanitize_text_field( wp_unslash( $_SESSION[ $form_slug . '_cptch_time' ] ) );
 		} else {
 			$cptch_time = isset( $_REQUEST['cptch_time'] ) ? sanitize_text_field( wp_unslash( $_REQUEST['cptch_time'] ) ) : null;
 		}
