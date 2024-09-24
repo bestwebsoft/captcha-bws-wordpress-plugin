@@ -6,13 +6,13 @@ Description: #1 super security anti-spam captcha plugin for WordPress forms.
 Author: BestWebSoft
 Text Domain: captcha-bws
 Domain Path: /languages
-Version: 5.2.2
+Version: 5.2.4
 Author URI: https://bestwebsoft.com/
 License: GPLv2 or later
  */
 
 /**
-© Copyright 2021  BestWebSoft  ( https://support.bestwebsoft.com )
+© Copyright 2024  BestWebSoft  ( https://support.bestwebsoft.com )
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License, version 2, as
@@ -494,7 +494,11 @@ if ( ! function_exists( 'cptch_page_router' ) ) {
 						<p><strong><?php esc_html_e( 'WARNING', 'captcha-bws' ); ?>:</strong> <?php esc_html_e( 'The plugin works correctly only if JavaScript is enabled.', 'captcha-bws' ); ?></p>
 					</div>
 				</noscript>
-				<?php $page->display_content(); ?>
+				<?php
+				if ( function_exists( 'bws_plugin_promo_banner' ) ) {
+				echo bws_plugin_promo_banner( $cptch_plugin_info, 'cptch_options', 'captcha-bws', 'https://bestwebsoft.com/products/wordpress/plugins/captcha/?utm_source=wordpress&utm_medium=plugin_banner&utm_campaign=upgrade' );
+			}
+				$page->display_content(); ?>
 			</div>
 		<?php } else { ?>
 			<div class="wrap">
@@ -2076,6 +2080,9 @@ if ( ! function_exists( 'cptch_plugin_banner' ) ) {
 
 		if ( 'plugins.php' == $hook_suffix ) {
 			bws_plugin_banner_to_settings( $cptch_plugin_info, 'cptch_options', 'captcha-bws', 'admin.php?page=captcha.php' );
+			if ( function_exists( 'bws_plugin_banner_to_promo' ) ) {
+    bws_plugin_banner_to_promo( $cptch_plugin_info, 'cptch_options', 'captcha-bws', 'admin.php?page=captcha.php', array( __( 'Test your Captcha settings', 'bestwebsoft' ), __( "Ensure your captcha is correctly configured. Check your settings now!", 'bestwebsoft' ) ) );
+}
 		}
 		if ( isset( $_GET['page'] ) && 'captcha.php' == $_GET['page'] ) {
 			bws_plugin_suggest_feature_banner( $cptch_plugin_info, 'cptch_options', 'captcha-bws' );

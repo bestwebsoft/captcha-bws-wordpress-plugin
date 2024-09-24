@@ -2,1220 +2,1184 @@ msgid ""
 msgstr ""
 "Project-Id-Version: captcha-pro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-13 14:34+0300\n"
-"PO-Revision-Date: 2021-05-13 14:34+0300\n"
+"POT-Creation-Date: 2024-09-24 16:28+0300\n"
+"PO-Revision-Date: 2024-09-24 16:31+0300\n"
 "Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
 "Language-Team: Aris <paraxeno.net>\n"
 "Language: el_GR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;esc_html__;esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 2.4.3\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:427
-#: includes/class-cptch-settings-tabs.php:409
+#: captcha-bws.php:46 captcha-bws.php:56 captcha-bws.php:491
+#: includes/class-cptch-settings-tabs.php:503
 msgid "Captcha Settings"
-msgstr ""
+msgstr "Ρυθμίσεις Captcha"
 
-#: captcha-bws.php:49 captcha-bws.php:1680 captcha-bws.php:1693
-#: includes/class-cptch-settings-tabs.php:23
+#: captcha-bws.php:57 captcha-bws.php:2041 captcha-bws.php:2061
+#: includes/class-cptch-settings-tabs.php:44
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#: captcha-bws.php:57 includes/class-cptch-package-list.php:91
+#: captcha-bws.php:65 includes/class-cptch-package-list.php:148
 msgid "Captcha Packages"
-msgstr ""
+msgstr "Πακέτα Captcha"
 
-#: captcha-bws.php:58
+#: captcha-bws.php:66
 msgid "Packages"
-msgstr ""
+msgstr "Πακέτα"
 
-#: captcha-bws.php:66 captcha-bws.php:468
-#, fuzzy
+#: captcha-bws.php:74 captcha-bws.php:547
 msgid "Captcha Allow List"
-msgstr "Επιλογές Captcha"
+msgstr "Captcha Επιτρέψτε τη λίστα"
 
-#: captcha-bws.php:67 includes/pro_banners.php:51
+#: captcha-bws.php:75 includes/pro_banners.php:61
 msgid "Allow List"
-msgstr ""
+msgstr "Επιτρέψτε τη λίστα"
 
-#: captcha-bws.php:84 captcha-bws.php:494 includes/pro_banners.php:30
+#: captcha-bws.php:92 captcha-bws.php:577 includes/pro_banners.php:36
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Αναβάθμιση σε Pro Πακέτα"
 
-#: captcha-bws.php:353 includes/helpers.php:26
-msgid "Slide to verify"
-msgstr ""
-
-#: captcha-bws.php:354 includes/helpers.php:27
-msgid "Verification passed"
-msgstr ""
-
-#: captcha-bws.php:430
+#: captcha-bws.php:494
 msgid "WARNING"
-msgstr ""
+msgstr "ΠΡΟΕΙΔΟΠΟΙΗΣΗ"
 
-#: captcha-bws.php:430
+#: captcha-bws.php:494
 msgid "The plugin works correctly only if JavaScript is enabled."
 msgstr ""
+"Η προσθήκη λειτουργεί σωστά μόνο εάν είναι ενεργοποιημένη η JavaScript."
 
-#: captcha-bws.php:470
+#: captcha-bws.php:549
 msgid "Add New"
-msgstr ""
+msgstr "Προσθήκη Νέου"
 
-#: captcha-bws.php:476
+#: captcha-bws.php:556
 msgid "This tab contains Pro options only."
-msgstr ""
+msgstr "Αυτή η καρτέλα περιέχει μόνο επιλογές Pro."
 
-#: captcha-bws.php:478
+#: captcha-bws.php:558
 #, php-format
-msgid "%sChange the settings%s to view the Pro options."
-msgstr ""
+msgid "%1$sChange the settings%2$s to view the Pro options."
+msgstr "%1$sΑλλάξτε τις ρυθμίσεις%2$s για να δείτε τις επιλογές Pro."
 
-#: captcha-bws.php:643
-#, fuzzy
+#: captcha-bws.php:779
 msgid "Click the BACK button on your browser, and try again."
 msgstr ""
 "Σφάλμα: Έχετε εισάγει λάθος φράση στο CAPTCHA . Πατήστε το κουμπί πίσω στο "
 "προγράμμα περιήγησης (browser) και προσπαθήστε ξανά."
 
-#: captcha-bws.php:902
+#: captcha-bws.php:1129
 msgid "Captcha loading..."
-msgstr ""
+msgstr "Φόρτωση Captcha ..."
 
-#: captcha-bws.php:904
+#: captcha-bws.php:1131
 msgid "In order to pass the CAPTCHA please enable JavaScript."
-msgstr ""
+msgstr "Για να περάσετε το CAPTCHA, ενεργοποιήστε τη JavaScript."
 
-#: captcha-bws.php:1330
+#: captcha-bws.php:1620
 msgid "zero"
 msgstr "μηδέν"
 
-#: captcha-bws.php:1331
+#: captcha-bws.php:1621
 msgid "one"
 msgstr "ένα"
 
-#: captcha-bws.php:1332
+#: captcha-bws.php:1622
 msgid "two"
 msgstr "δυο"
 
-#: captcha-bws.php:1333
+#: captcha-bws.php:1623
 msgid "three"
 msgstr "τρία"
 
-#: captcha-bws.php:1334
+#: captcha-bws.php:1624
 msgid "four"
 msgstr "τέσσερα"
 
-#: captcha-bws.php:1335
+#: captcha-bws.php:1625
 msgid "five"
 msgstr "πέντε"
 
-#: captcha-bws.php:1336
+#: captcha-bws.php:1626
 msgid "six"
 msgstr "έξι"
 
-#: captcha-bws.php:1337
+#: captcha-bws.php:1627
 msgid "seven"
 msgstr "επτά"
 
-#: captcha-bws.php:1338
+#: captcha-bws.php:1628
 msgid "eight"
 msgstr "οκτώ"
 
-#: captcha-bws.php:1339
+#: captcha-bws.php:1629
 msgid "nine"
 msgstr "εννέα"
 
-#: captcha-bws.php:1341
+#: captcha-bws.php:1631
 msgid "ten"
 msgstr "δέκα"
 
-#: captcha-bws.php:1342
+#: captcha-bws.php:1632
 msgid "eleven"
 msgstr "έντεκα"
 
-#: captcha-bws.php:1343
+#: captcha-bws.php:1633
 msgid "twelve"
 msgstr "δώδεκα"
 
-#: captcha-bws.php:1344
+#: captcha-bws.php:1634
 msgid "thirteen"
 msgstr "δεκατρία"
 
-#: captcha-bws.php:1345
+#: captcha-bws.php:1635
 msgid "fourteen"
 msgstr "δεκατέσσερα"
 
-#: captcha-bws.php:1346
+#: captcha-bws.php:1636
 msgid "fifteen"
 msgstr "δεκαπέντε"
 
-#: captcha-bws.php:1347
+#: captcha-bws.php:1637
 msgid "sixteen"
 msgstr "δεκαέξι"
 
-#: captcha-bws.php:1348
+#: captcha-bws.php:1638
 msgid "seventeen"
 msgstr "δεκαεπτά"
 
-#: captcha-bws.php:1349
+#: captcha-bws.php:1639
 msgid "eighteen"
 msgstr "δεκαοκτώ"
 
-#: captcha-bws.php:1350
+#: captcha-bws.php:1640
 msgid "nineteen"
 msgstr "δεκαεννέα"
 
-#: captcha-bws.php:1352
+#: captcha-bws.php:1642
 msgid "twenty"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1353
-#, fuzzy
+#: captcha-bws.php:1643
 msgid "twenty one"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1354
-#, fuzzy
+#: captcha-bws.php:1644
 msgid "twenty two"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1355
-#, fuzzy
+#: captcha-bws.php:1645
 msgid "twenty three"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1356
-#, fuzzy
+#: captcha-bws.php:1646
 msgid "twenty four"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1357
-#, fuzzy
+#: captcha-bws.php:1647
 msgid "twenty five"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1358
-#, fuzzy
+#: captcha-bws.php:1648
 msgid "twenty six"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1359
-#, fuzzy
+#: captcha-bws.php:1649
 msgid "twenty seven"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1360
-#, fuzzy
+#: captcha-bws.php:1650
 msgid "twenty eight"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1361
-#, fuzzy
+#: captcha-bws.php:1651
 msgid "twenty nine"
 msgstr "είκοσι"
 
-#: captcha-bws.php:1363
+#: captcha-bws.php:1653
 msgid "thirty"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1364
-#, fuzzy
+#: captcha-bws.php:1654
 msgid "thirty one"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1365
-#, fuzzy
+#: captcha-bws.php:1655
 msgid "thirty two"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1366
-#, fuzzy
+#: captcha-bws.php:1656
 msgid "thirty three"
 msgstr "δεκατρία"
 
-#: captcha-bws.php:1367
-#, fuzzy
+#: captcha-bws.php:1657
 msgid "thirty four"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1368
-#, fuzzy
+#: captcha-bws.php:1658
 msgid "thirty five"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1369
-#, fuzzy
+#: captcha-bws.php:1659
 msgid "thirty six"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1370
-#, fuzzy
+#: captcha-bws.php:1660
 msgid "thirty seven"
 msgstr "δεκατρία"
 
-#: captcha-bws.php:1371
-#, fuzzy
+#: captcha-bws.php:1661
 msgid "thirty eight"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1372
-#, fuzzy
+#: captcha-bws.php:1662
 msgid "thirty nine"
 msgstr "τριάντα"
 
-#: captcha-bws.php:1374
+#: captcha-bws.php:1664
 msgid "forty"
 msgstr "σαράντα"
 
-#: captcha-bws.php:1375
-#, fuzzy
+#: captcha-bws.php:1665
 msgid "forty one"
 msgstr "σαράντα"
 
-#: captcha-bws.php:1376
-#, fuzzy
+#: captcha-bws.php:1666
 msgid "forty two"
 msgstr "σαράντα"
 
-#: captcha-bws.php:1377
-#, fuzzy
+#: captcha-bws.php:1667
 msgid "forty three"
 msgstr "τρία"
 
-#: captcha-bws.php:1378
-#, fuzzy
+#: captcha-bws.php:1668
 msgid "forty four"
 msgstr "σαράντα"
 
-#: captcha-bws.php:1379
-#, fuzzy
+#: captcha-bws.php:1669
 msgid "forty five"
 msgstr "σαράντα"
 
-#: captcha-bws.php:1380
-#, fuzzy
+#: captcha-bws.php:1670
 msgid "forty six"
-msgstr "σαράντα"
+msgstr "σαράντα έξι"
 
-#: captcha-bws.php:1381
-#, fuzzy
+#: captcha-bws.php:1671
 msgid "forty seven"
 msgstr "επτά"
 
-#: captcha-bws.php:1382
-#, fuzzy
+#: captcha-bws.php:1672
 msgid "forty eight"
 msgstr "οκτώ"
 
-#: captcha-bws.php:1383
-#, fuzzy
+#: captcha-bws.php:1673
 msgid "forty nine"
-msgstr "σαράντα"
+msgstr "σαράντα εννέα"
 
-#: captcha-bws.php:1385
+#: captcha-bws.php:1675
 msgid "fifty"
 msgstr "πενήντα"
 
-#: captcha-bws.php:1386
-#, fuzzy
+#: captcha-bws.php:1676
 msgid "fifty one"
 msgstr "πενήντα"
 
-#: captcha-bws.php:1387
-#, fuzzy
+#: captcha-bws.php:1677
 msgid "fifty two"
-msgstr "πενήντα"
+msgstr "πενήντα δύο"
 
-#: captcha-bws.php:1388
-#, fuzzy
+#: captcha-bws.php:1678
 msgid "fifty three"
 msgstr "δεκαπέντε"
 
-#: captcha-bws.php:1389
-#, fuzzy
+#: captcha-bws.php:1679
 msgid "fifty four"
-msgstr "πενήντα"
+msgstr "πενήντα τέσσερα"
 
-#: captcha-bws.php:1390
-#, fuzzy
+#: captcha-bws.php:1680
 msgid "fifty five"
-msgstr "πενήντα"
+msgstr "πενήντα πέντε"
 
-#: captcha-bws.php:1391
-#, fuzzy
+#: captcha-bws.php:1681
 msgid "fifty six"
 msgstr "πενήντα"
 
-#: captcha-bws.php:1392
-#, fuzzy
+#: captcha-bws.php:1682
 msgid "fifty seven"
 msgstr "δεκαπέντε"
 
-#: captcha-bws.php:1393
-#, fuzzy
+#: captcha-bws.php:1683
 msgid "fifty eight"
-msgstr "οκτώ"
+msgstr "πενήντα οκτώ"
 
-#: captcha-bws.php:1394
-#, fuzzy
+#: captcha-bws.php:1684
 msgid "fifty nine"
 msgstr "πενήντα"
 
-#: captcha-bws.php:1396
+#: captcha-bws.php:1686
 msgid "sixty"
 msgstr "εξήντα"
 
-#: captcha-bws.php:1397
-#, fuzzy
+#: captcha-bws.php:1687
 msgid "sixty one"
-msgstr "εξήντα"
+msgstr "εξήντα ένα"
 
-#: captcha-bws.php:1398
-#, fuzzy
+#: captcha-bws.php:1688
 msgid "sixty two"
 msgstr "εξήντα"
 
-#: captcha-bws.php:1399
-#, fuzzy
+#: captcha-bws.php:1689
 msgid "sixty three"
-msgstr "δεκαέξι"
+msgstr "εξήντα τρία"
 
-#: captcha-bws.php:1400
-#, fuzzy
+#: captcha-bws.php:1690
 msgid "sixty four"
 msgstr "εξήντα"
 
-#: captcha-bws.php:1401
-#, fuzzy
+#: captcha-bws.php:1691
 msgid "sixty five"
-msgstr "εξήντα"
+msgstr "εξήντα πέντε"
 
-#: captcha-bws.php:1402
-#, fuzzy
+#: captcha-bws.php:1692
 msgid "sixty six"
 msgstr "εξήντα"
 
-#: captcha-bws.php:1403
-#, fuzzy
+#: captcha-bws.php:1693
 msgid "sixty seven"
-msgstr "δεκαέξι"
+msgstr "εξήντα επτά"
 
-#: captcha-bws.php:1404
-#, fuzzy
+#: captcha-bws.php:1694
 msgid "sixty eight"
 msgstr "οκτώ"
 
-#: captcha-bws.php:1405
-#, fuzzy
+#: captcha-bws.php:1695
 msgid "sixty nine"
-msgstr "εξήντα"
+msgstr "εξήντα εννέα"
 
-#: captcha-bws.php:1407
+#: captcha-bws.php:1697
 msgid "seventy"
 msgstr "εβδομήντα"
 
-#: captcha-bws.php:1408
-#, fuzzy
+#: captcha-bws.php:1698
 msgid "seventy one"
 msgstr "εβδομήντα"
 
-#: captcha-bws.php:1409
-#, fuzzy
+#: captcha-bws.php:1699
 msgid "seventy two"
-msgstr "εβδομήντα"
+msgstr "εβδομήντα δύο"
 
-#: captcha-bws.php:1410
-#, fuzzy
+#: captcha-bws.php:1700
 msgid "seventy three"
 msgstr "δεκαεπτά"
 
-#: captcha-bws.php:1411
-#, fuzzy
+#: captcha-bws.php:1701
 msgid "seventy four"
-msgstr "εβδομήντα"
+msgstr "εβδομήντα τέσσερα"
 
-#: captcha-bws.php:1412
-#, fuzzy
+#: captcha-bws.php:1702
 msgid "seventy five"
 msgstr "εβδομήντα"
 
-#: captcha-bws.php:1413
-#, fuzzy
+#: captcha-bws.php:1703
 msgid "seventy six"
-msgstr "εβδομήντα"
+msgstr "εβδομήντα έξι"
 
-#: captcha-bws.php:1414
-#, fuzzy
+#: captcha-bws.php:1704
 msgid "seventy seven"
 msgstr "δεκαεπτά"
 
-#: captcha-bws.php:1415
-#, fuzzy
+#: captcha-bws.php:1705
 msgid "seventy eight"
-msgstr "εβδομήντα"
+msgstr "εβδομήντα οκτώ"
 
-#: captcha-bws.php:1416
-#, fuzzy
+#: captcha-bws.php:1706
 msgid "seventy nine"
 msgstr "εβδομήντα"
 
-#: captcha-bws.php:1418
+#: captcha-bws.php:1708
 msgid "eighty"
 msgstr "ογδόντα"
 
-#: captcha-bws.php:1419
-#, fuzzy
+#: captcha-bws.php:1709
 msgid "eighty one"
-msgstr "ογδόντα"
+msgstr "ογδόντα ένα"
 
-#: captcha-bws.php:1420
-#, fuzzy
+#: captcha-bws.php:1710
 msgid "eighty two"
 msgstr "ογδόντα"
 
-#: captcha-bws.php:1421
-#, fuzzy
+#: captcha-bws.php:1711
 msgid "eighty three"
-msgstr "δεκαοκτώ"
+msgstr "ογδόντα τρία"
 
-#: captcha-bws.php:1422
-#, fuzzy
+#: captcha-bws.php:1712
 msgid "eighty four"
 msgstr "ογδόντα"
 
-#: captcha-bws.php:1423
-#, fuzzy
+#: captcha-bws.php:1713
 msgid "eighty five"
-msgstr "ογδόντα"
+msgstr "ογδόντα πέντε"
 
-#: captcha-bws.php:1424
-#, fuzzy
+#: captcha-bws.php:1714
 msgid "eighty six"
 msgstr "ογδόντα"
 
-#: captcha-bws.php:1425
-#, fuzzy
+#: captcha-bws.php:1715
 msgid "eighty seven"
-msgstr "δεκαοκτώ"
+msgstr "ογδόντα επτά"
 
-#: captcha-bws.php:1426
-#, fuzzy
+#: captcha-bws.php:1716
 msgid "eighty eight"
 msgstr "ογδόντα"
 
-#: captcha-bws.php:1427
-#, fuzzy
+#: captcha-bws.php:1717
 msgid "eighty nine"
-msgstr "ογδόντα"
+msgstr "ογδόντα εννέα"
 
-#: captcha-bws.php:1429
+#: captcha-bws.php:1719
 msgid "ninety"
 msgstr "ενενήντα"
 
-#: captcha-bws.php:1430
-#, fuzzy
+#: captcha-bws.php:1720
 msgid "ninety one"
 msgstr "ενενήντα"
 
-#: captcha-bws.php:1431
-#, fuzzy
+#: captcha-bws.php:1721
 msgid "ninety two"
-msgstr "ενενήντα"
+msgstr "ενενήντα δύο"
 
-#: captcha-bws.php:1432
-#, fuzzy
+#: captcha-bws.php:1722
 msgid "ninety three"
 msgstr "δεκαεννέα"
 
-#: captcha-bws.php:1433
-#, fuzzy
+#: captcha-bws.php:1723
 msgid "ninety four"
 msgstr "ενενήντα"
 
-#: captcha-bws.php:1434
-#, fuzzy
+#: captcha-bws.php:1724
 msgid "ninety five"
-msgstr "ενενήντα"
+msgstr "ενενήντα πέντε"
 
-#: captcha-bws.php:1435
-#, fuzzy
+#: captcha-bws.php:1725
 msgid "ninety six"
 msgstr "ενενήντα"
 
-#: captcha-bws.php:1436
-#, fuzzy
+#: captcha-bws.php:1726
 msgid "ninety seven"
-msgstr "δεκαεννέα"
+msgstr "ενενήντα επτά"
 
-#: captcha-bws.php:1437
-#, fuzzy
+#: captcha-bws.php:1727
 msgid "ninety eight"
-msgstr "ενενήντα"
+msgstr "ενενήντα οκτώ"
 
-#: captcha-bws.php:1438
-#, fuzzy
+#: captcha-bws.php:1728
 msgid "ninety nine"
 msgstr "ενενήντα"
 
-#: captcha-bws.php:1503
-#, fuzzy
+#: captcha-bws.php:1809
 msgid "Encryption password is not set"
 msgstr "Ο κωδικός πρόσβασης της αποκωδικοποίησης δεν έχει οριστεί"
 
-#: captcha-bws.php:1524
-#, fuzzy
+#: captcha-bws.php:1839
 msgid "Decryption password is not set"
-msgstr "Ο κωδικός πρόσβασης της αποκωδικοποίησης δεν έχει οριστεί"
+msgstr "Δεν έχει οριστεί κωδικός πρόσβασης αποκρυπτογράφησης"
 
-#: captcha-bws.php:1695
+#: captcha-bws.php:2063
 msgid "FAQ"
 msgstr "Συνήθεις Ερωτήσεις (FAQ)"
 
-#: captcha-bws.php:1696
+#: captcha-bws.php:2064
 msgid "Support"
 msgstr "Υποστήριξη"
 
-#: captcha-bws.php:1747
+#: captcha-bws.php:2084
+msgid "Test your Captcha settings"
+msgstr "Ελέγξτε τις ρυθμίσεις Captcha"
+
+#: captcha-bws.php:2084
+msgid "Ensure your captcha is correctly configured. Check your settings now!"
+msgstr ""
+"Βεβαιωθείτε ότι το captcha είναι σωστά ρυθμισμένο. Ελέγξτε τις ρυθμίσεις σας "
+"τώρα!"
+
+#: captcha-bws.php:2141
 msgid "Could not save captcha response to database."
-msgstr ""
+msgstr "Δεν ήταν δυνατή η αποθήκευση της απάντησης captcha στη βάση δεδομένων."
 
-#: captcha-bws.php:1793
+#: captcha-bws.php:2200
 msgid "Error"
-msgstr ""
+msgstr "Σφάλμα"
 
-#: includes/class-cptch-package-list.php:37
+#: includes/class-cptch-package-list.php:97
 msgid "package"
-msgstr ""
+msgstr "πακέτο"
 
-#: includes/class-cptch-package-list.php:38
+#: includes/class-cptch-package-list.php:98
 msgid "packages"
-msgstr ""
+msgstr "πακέτα"
 
-#: includes/class-cptch-package-list.php:113
+#: includes/class-cptch-package-list.php:173
 msgid "Search"
-msgstr ""
+msgstr "Αναζήτηση"
 
-#: includes/class-cptch-package-list.php:135
+#: includes/class-cptch-package-list.php:194
 msgid "No packages found"
-msgstr ""
+msgstr "Δεν βρέθηκαν πακέτα"
 
-#: includes/class-cptch-package-list.php:145
+#: includes/class-cptch-package-list.php:203
 msgid "Package"
-msgstr ""
+msgstr "Πακέτο"
 
-#: includes/class-cptch-package-list.php:146 includes/pro_banners.php:269
-#: includes/pro_banners.php:294 includes/pro_banners.php:317
+#: includes/class-cptch-package-list.php:204 includes/pro_banners.php:301
+#: includes/pro_banners.php:326 includes/pro_banners.php:349
 msgid "Date Added"
-msgstr ""
+msgstr "Ημερομηνία προσθήκης"
 
-#: includes/class-cptch-package-loader.php:44
+#: includes/class-cptch-package-loader.php:104
 msgid ""
 "Can not load images in to the \"uploads\" folder. Please, check your "
 "permissions."
 msgstr ""
+"Δεν είναι δυνατή η φόρτωση εικόνων στο φάκελο \"μεταφορτώσεις\". Παρακαλώ, "
+"ελέγξτε τα δικαιώματά σας."
 
-#: includes/class-cptch-package-loader.php:135
-#, php-format
-msgid "One package has been updated or added to the database."
-msgid_plural "%s packages have been updated or added to the database."
-msgstr[0] ""
-msgstr[1] ""
-
-#: includes/class-cptch-package-loader.php:136
-#, php-format
-msgid "One image has been updated or added to the database."
-msgid_plural "%s images have been updated or added to the database."
-msgstr[0] ""
-msgstr[1] ""
-
-#: includes/class-cptch-package-loader.php:250
+#: includes/class-cptch-package-loader.php:322
 msgid "Archive is empty"
-msgstr ""
+msgstr "Το αρχείο είναι άδειο"
 
-#: includes/class-cptch-package-loader.php:610
+#: includes/class-cptch-package-loader.php:706
 #, php-format
 msgid ""
 "Some settings of the package %s were set incorrectly. They have been skipped."
 msgstr ""
+"Ορισμένες ρυθμίσεις του πακέτου %s δεν είχαν οριστεί σωστά. Έχουν "
+"παραλειφθεί."
 
-#: includes/class-cptch-package-loader.php:613
+#: includes/class-cptch-package-loader.php:709
 msgid "Wrong data"
-msgstr ""
+msgstr "Λάθος δεδομένα"
 
-#: includes/class-cptch-settings-tabs.php:24
+#: includes/class-cptch-settings-tabs.php:45
 msgid "Messages"
-msgstr ""
+msgstr "Μηνύματα"
 
-#: includes/class-cptch-settings-tabs.php:25
+#: includes/class-cptch-settings-tabs.php:46
 msgid "Misc"
-msgstr ""
+msgstr "Διάφορα"
 
-#: includes/class-cptch-settings-tabs.php:26
+#: includes/class-cptch-settings-tabs.php:47
 msgid "Custom Code"
-msgstr ""
+msgstr "Προσαρμοσμένος Κώδικας"
 
-#: includes/class-cptch-settings-tabs.php:28
+#: includes/class-cptch-settings-tabs.php:48
 msgid "License Key"
-msgstr ""
+msgstr "Κλειδί Άδειας Χρήσης"
 
-#: includes/class-cptch-settings-tabs.php:55
-#: includes/class-cptch-settings-tabs.php:70
+#: includes/class-cptch-settings-tabs.php:74
+#: includes/class-cptch-settings-tabs.php:118
 msgid "Login form"
 msgstr "Φόρμα Είσοδου"
 
-#: includes/class-cptch-settings-tabs.php:56
-#: includes/class-cptch-settings-tabs.php:67
-#: includes/class-cptch-settings-tabs.php:71
-#, fuzzy
+#: includes/class-cptch-settings-tabs.php:75
+#: includes/class-cptch-settings-tabs.php:106
+#: includes/class-cptch-settings-tabs.php:122
 msgid "Registration form"
 msgstr "Φόρμα εγγραφής"
 
-#: includes/class-cptch-settings-tabs.php:57
+#: includes/class-cptch-settings-tabs.php:76
 msgid "Reset password form"
-msgstr ""
+msgstr "Επαναφορά φόρμας κωδικού πρόσβασης"
 
-#: includes/class-cptch-settings-tabs.php:58
-#: includes/class-cptch-settings-tabs.php:68
+#: includes/class-cptch-settings-tabs.php:77
+#: includes/class-cptch-settings-tabs.php:110
 msgid "Comments form"
 msgstr "Φόρμα Σχολίων"
 
-#: includes/class-cptch-settings-tabs.php:69
+#: includes/class-cptch-settings-tabs.php:114
 msgid "Create a Group form"
-msgstr ""
+msgstr "Δημιουργία φόρμας ομάδας"
 
-#: includes/class-cptch-settings-tabs.php:72
+#: includes/class-cptch-settings-tabs.php:126
 msgid "Forgot password form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:73
-msgid "Checkout form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:74
-msgid "Jetpack Contact Form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:75
-msgid "bbPress New Topic form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:76
-msgid "bbPress Reply form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:77
-msgid "wpForo Login form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:78
-msgid "wpForo Registration form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:79
-msgid "wpForo New Topic form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:80
-msgid "wpForo Reply form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:121
-msgid "WordPress default"
-msgstr ""
+msgstr "Φόρμα ξεχασμένου κωδικού πρόσβασης"
 
 #: includes/class-cptch-settings-tabs.php:130
-#: includes/class-cptch-settings-tabs.php:139
+msgid "Checkout form"
+msgstr "Φόρμα πληρωμής"
+
+#: includes/class-cptch-settings-tabs.php:134
+msgid "Jetpack Contact Form"
+msgstr "Φόρμα επικοινωνίας Jetpack"
+
+#: includes/class-cptch-settings-tabs.php:138
+msgid "bbPress New Topic form"
+msgstr "bbPress Νέα φόρμα θέματος"
+
+#: includes/class-cptch-settings-tabs.php:142
+msgid "bbPress Reply form"
+msgstr "bbPress Φόρμα απάντησης"
+
+#: includes/class-cptch-settings-tabs.php:146
+msgid "wpForo Login form"
+msgstr "wpForo Φόρμα σύνδεσης"
+
+#: includes/class-cptch-settings-tabs.php:150
+msgid "wpForo Registration form"
+msgstr "wpForo Φόρμα εγγραφής"
+
+#: includes/class-cptch-settings-tabs.php:154
+msgid "wpForo New Topic form"
+msgstr "wpForo Φόρμα νέου θέματος"
+
+#: includes/class-cptch-settings-tabs.php:158
+msgid "wpForo Reply form"
+msgstr "wpForo Φόρμα απάντησης"
+
+#: includes/class-cptch-settings-tabs.php:161
+msgid "LearnDash login form"
+msgstr "Φόρμα σύνδεσης LearnDash"
+
+#: includes/class-cptch-settings-tabs.php:162
+msgid "LearnDash registration form"
+msgstr "Φόρμα εγγραφής LearnDash"
+
+#: includes/class-cptch-settings-tabs.php:163
+msgid "BuddyBoss registration form"
+msgstr "Φόρμα εγγραφής BuddyBoss"
+
+#: includes/class-cptch-settings-tabs.php:203
+msgid "WordPress default"
+msgstr "Προεπιλογή WordPress"
+
+#: includes/class-cptch-settings-tabs.php:212
+#: includes/class-cptch-settings-tabs.php:220
 msgid "External plugins"
-msgstr ""
+msgstr "Εξωτερικά plugins"
 
-#: includes/class-cptch-settings-tabs.php:236
-#: includes/class-cptch-settings-tabs.php:342
+#: includes/class-cptch-settings-tabs.php:334
+#: includes/class-cptch-settings-tabs.php:440
 msgid "Arithmetic Actions"
-msgstr ""
+msgstr "Αριθμητικές ενέργειες"
 
-#: includes/class-cptch-settings-tabs.php:237
-#: includes/class-cptch-settings-tabs.php:352
+#: includes/class-cptch-settings-tabs.php:335
+#: includes/class-cptch-settings-tabs.php:450
 msgid "Complexity"
-msgstr ""
+msgstr "Πολυπλοκότητα"
 
-#: includes/class-cptch-settings-tabs.php:238
-#: includes/class-cptch-settings-tabs.php:370 includes/pro_banners.php:109
+#: includes/class-cptch-settings-tabs.php:336
+#: includes/class-cptch-settings-tabs.php:468 includes/pro_banners.php:127
 msgid "Image Packages"
-msgstr ""
+msgstr "Πακέτα εικόνας"
 
-#: includes/class-cptch-settings-tabs.php:259
+#: includes/class-cptch-settings-tabs.php:355
 msgid "Text fields in the \"Messages\" tab must not be empty."
-msgstr ""
+msgstr "Τα πεδία κειμένου στην καρτέλα \"Μηνύματα\" δεν πρέπει να είναι κενά."
 
-#: includes/class-cptch-settings-tabs.php:274
+#: includes/class-cptch-settings-tabs.php:370
 #, php-format
 msgid "\"%s\" option must not be fully disabled."
-msgstr ""
+msgstr "η επιλογή \"%s\" δεν πρέπει να είναι πλήρως απενεργοποιημένη."
 
-#: includes/class-cptch-settings-tabs.php:303
+#: includes/class-cptch-settings-tabs.php:399
 msgid ""
 "In order to use \"Optical Character Recognition\" type, please select at "
 "least one of the items in the option \"Image Packages\"."
 msgstr ""
+"Για να χρησιμοποιήσετε τον τύπο \"Αναγνώριση οπτικών χαρακτήρων\", επιλέξτε "
+"τουλάχιστον ένα από τα στοιχεία στην επιλογή \"Πακέτα εικόνων\"."
 
-#: includes/class-cptch-settings-tabs.php:306
+#: includes/class-cptch-settings-tabs.php:402
 msgid ""
 "In order to use images in the CAPTCHA, please select at least one of the "
 "items in the option \"Image Packages\". The \"Images\" checkbox in "
 "\"Complexity\" option has been disabled."
 msgstr ""
+"Για να χρησιμοποιήσετε εικόνες στο CAPTCHA, επιλέξτε τουλάχιστον ένα από τα "
+"στοιχεία στην επιλογή \"Πακέτα εικόνων\". Το πλαίσιο ελέγχου \"Εικόνες\" "
+"στην επιλογή \"Πολυπλοκότητα\" έχει απενεργοποιηθεί."
 
-#: includes/class-cptch-settings-tabs.php:317
+#: includes/class-cptch-settings-tabs.php:414
 msgid "Settings saved."
-msgstr ""
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν."
 
-#: includes/class-cptch-settings-tabs.php:332
+#: includes/class-cptch-settings-tabs.php:430
 msgid "Captcha Type"
-msgstr ""
+msgstr "Τύπος Captcha"
 
-#: includes/class-cptch-settings-tabs.php:334
-#, fuzzy
+#: includes/class-cptch-settings-tabs.php:432
 msgid "Arithmetic actions"
 msgstr "Αριθμητικές πράξεις για το CAPTCHA"
 
-#: includes/class-cptch-settings-tabs.php:335
+#: includes/class-cptch-settings-tabs.php:433
 msgid "Optical Character Recognition (OCR)"
-msgstr ""
+msgstr "Οπτική αναγνώριση χαρακτήρων (OCR)"
 
-#: includes/class-cptch-settings-tabs.php:336
+#: includes/class-cptch-settings-tabs.php:434
 msgid "Invisible"
-msgstr ""
+msgstr "Αόρατος"
 
-#: includes/class-cptch-settings-tabs.php:337
+#: includes/class-cptch-settings-tabs.php:435
 msgid "Slide captcha"
-msgstr ""
+msgstr "Captcha διαφάνειας"
 
-#: includes/class-cptch-settings-tabs.php:344
+#: includes/class-cptch-settings-tabs.php:442
 msgid "Addition"
-msgstr ""
+msgstr "Προσθήκη"
 
-#: includes/class-cptch-settings-tabs.php:345
+#: includes/class-cptch-settings-tabs.php:443
 msgid "Subtraction"
-msgstr ""
+msgstr "Αφαίρεση"
 
-#: includes/class-cptch-settings-tabs.php:346
-#, fuzzy
+#: includes/class-cptch-settings-tabs.php:444
 msgid "Multiplication"
-msgstr "Πολλαπλασιασμός (&times;)"
+msgstr "Πολλαπλασιασμός"
 
-#: includes/class-cptch-settings-tabs.php:354
+#: includes/class-cptch-settings-tabs.php:452
 msgid "Numbers (1, 2, 3, etc.)"
-msgstr ""
+msgstr "Αριθμοί (1, 2, 3 κ.λπ.)"
 
-#: includes/class-cptch-settings-tabs.php:355
+#: includes/class-cptch-settings-tabs.php:453
 msgid "Words (one, two, three, etc.)"
-msgstr ""
+msgstr "Λέξεις (ένα, δύο, τρία κ.λπ.)"
 
-#: includes/class-cptch-settings-tabs.php:356
+#: includes/class-cptch-settings-tabs.php:454
 msgid "Images"
-msgstr ""
+msgstr "Εικόνες"
 
-#: includes/class-cptch-settings-tabs.php:362
+#: includes/class-cptch-settings-tabs.php:460
 msgid "Number of Images"
-msgstr ""
+msgstr "Αριθμός εικόνων"
 
-#: includes/class-cptch-settings-tabs.php:365
+#: includes/class-cptch-settings-tabs.php:463
 msgid "Set a number of images to display simultaneously as a captcha question."
-msgstr ""
+msgstr "Ορίστε έναν αριθμό εικόνων για εμφάνιση ταυτόχρονα ως ερώτηση captcha."
 
-#: includes/class-cptch-settings-tabs.php:376
+#: includes/class-cptch-settings-tabs.php:473
 msgid "Use several image packages at the same time"
-msgstr ""
+msgstr "Χρήση πολλών πακέτων εικόνας ταυτόχρονα"
 
-#: includes/class-cptch-settings-tabs.php:382
+#: includes/class-cptch-settings-tabs.php:478
 msgid "Enlarge Images"
-msgstr ""
+msgstr "Μεγέθυνση εικόνων"
 
-#: includes/class-cptch-settings-tabs.php:383
+#: includes/class-cptch-settings-tabs.php:479
 msgid "Enable to enlarge captcha images on mouseover."
-msgstr ""
+msgstr "Ενεργοποιήστε τη μεγέθυνση των εικόνων captcha με το mouseover."
 
-#: includes/class-cptch-settings-tabs.php:388
+#: includes/class-cptch-settings-tabs.php:484
 msgid "Reload Button"
-msgstr ""
+msgstr "Επαναφόρτωση κουμπιού"
 
-#: includes/class-cptch-settings-tabs.php:389
+#: includes/class-cptch-settings-tabs.php:485
 msgid "Enable to display reload button for captcha."
-msgstr ""
+msgstr "Ενεργοποίηση εμφάνισης κουμπιού επαναφόρτωσης για captcha."
 
-#: includes/class-cptch-settings-tabs.php:394
+#: includes/class-cptch-settings-tabs.php:490
 msgid "Captcha Title"
-msgstr ""
+msgstr "Τίτλος Captcha"
 
-#: includes/class-cptch-settings-tabs.php:397
+#: includes/class-cptch-settings-tabs.php:494
 msgid "Required Symbol"
-msgstr ""
+msgstr "Απαιτούμενο σύμβολο"
 
-#: includes/class-cptch-settings-tabs.php:400
+#: includes/class-cptch-settings-tabs.php:498
 msgid "Advanced Protection"
-msgstr ""
+msgstr "Προηγμένη προστασία"
 
-#: includes/class-cptch-settings-tabs.php:401
+#: includes/class-cptch-settings-tabs.php:499
 msgid "Enable to display captcha when the website page is loaded."
-msgstr ""
+msgstr "Ενεργοποίηση εμφάνισης captcha όταν φορτώνεται η σελίδα του ιστότοπου."
 
-#: includes/class-cptch-settings-tabs.php:412
+#: includes/class-cptch-settings-tabs.php:506
 msgid "General"
-msgstr ""
+msgstr "Γενικά"
 
-#: includes/class-cptch-settings-tabs.php:415
+#: includes/class-cptch-settings-tabs.php:509
 msgid "Enable Captcha for"
-msgstr ""
+msgstr "Ενεργοποίηση Captcha για"
 
-#: includes/class-cptch-settings-tabs.php:457
+#: includes/class-cptch-settings-tabs.php:557
 msgid "Enable to add the CAPTCHA to forms on their settings pages."
-msgstr ""
+msgstr "Ενεργοποίηση προσθήκης του CAPTCHA σε φόρμες στις σελίδες ρυθμίσεων."
 
-#: includes/class-cptch-settings-tabs.php:471
-#: includes/class-cptch-settings-tabs.php:508
-#: includes/class-cptch-settings-tabs.php:660
-#: includes/class-cptch-settings-tabs.php:670
-#: includes/class-cptch-settings-tabs.php:782 includes/pro_banners.php:21
-#: includes/pro_banners.php:350
+#: includes/class-cptch-settings-tabs.php:571
+#: includes/class-cptch-settings-tabs.php:610
+#: includes/class-cptch-settings-tabs.php:814
+#: includes/class-cptch-settings-tabs.php:824
+#: includes/class-cptch-settings-tabs.php:951 includes/pro_banners.php:27
+#: includes/pro_banners.php:384
 msgid "Close"
-msgstr ""
+msgstr "Κλείσιμο"
 
-#: includes/class-cptch-settings-tabs.php:583
+#: includes/class-cptch-settings-tabs.php:707
 msgid "Enable to activate a time limit required to complete captcha."
 msgstr ""
+"Ενεργοποιήστε την ενεργοποίηση ενός χρονικού ορίου που απαιτείται για την "
+"ολοκλήρωση του captcha."
 
-#: includes/class-cptch-settings-tabs.php:594 includes/pro_banners.php:135
+#: includes/class-cptch-settings-tabs.php:720
+msgid ""
+"Enable to use a session to save captcha values (all Captcha types except "
+"Slide captcha)."
+msgstr ""
+"Ενεργοποίηση της χρήσης μιας περιόδου λειτουργίας για την αποθήκευση των "
+"τιμών captcha (όλοι οι τύποι captcha εκτός από το Slide captcha)."
+
+#: includes/class-cptch-settings-tabs.php:725 includes/pro_banners.php:153
 msgid "Time Limit"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:601
-msgid "Time Limit Threshold"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:604
-msgid "sec"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:644
-msgid "This option is available only for network or for main blog"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:651
-msgid "Hide from Registered Users"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:653
-#, fuzzy
-msgid "Enable to hide captcha for registered users."
-msgstr "Απόκρυψη CAPTCHA για τους εγγεγραμμένους χρήστες"
-
-#: includes/class-cptch-settings-tabs.php:681
-msgid "update"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:682
-msgid "to the current version"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:689
-msgid "install"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:694
-msgid "activate"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:706
-msgid "You should"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:709
-msgid "to use this functionality."
-msgstr ""
+msgstr "Χρονικό Όριο"
 
 #: includes/class-cptch-settings-tabs.php:732
-msgid "Messages Settings"
-msgstr ""
+msgid "Time Limit Threshold"
+msgstr "Κατώφλι χρονικού ορίου"
 
-#: includes/class-cptch-settings-tabs.php:738
-msgid "Captcha Field is Empty"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:739 includes/helpers.php:33
-msgid "Please complete the captcha."
-msgstr ""
+#: includes/class-cptch-settings-tabs.php:737
+msgid "sec"
+msgstr "δευτερόλεπτα"
 
 #: includes/class-cptch-settings-tabs.php:743
+msgid "Use Session"
+msgstr "Χρήση συνεδρίας"
+
+#: includes/class-cptch-settings-tabs.php:797
+msgid "This option is available only for network or for main blog"
+msgstr ""
+"Αυτή η επιλογή είναι διαθέσιμη μόνο για το δίκτυο ή για το κύριο ιστολόγιο"
+
+#: includes/class-cptch-settings-tabs.php:805
+msgid "Hide from Registered Users"
+msgstr "Απόκρυψη από εγγεγραμμένους χρήστες"
+
+#: includes/class-cptch-settings-tabs.php:807
+msgid "Enable to hide captcha for registered users."
+msgstr ""
+"Ενεργοποιήστε την απόκρυψη του captcha για τους εγγεγραμμένους χρήστες."
+
+#: includes/class-cptch-settings-tabs.php:836
+msgid "update"
+msgstr "ενημερωση"
+
+#: includes/class-cptch-settings-tabs.php:837
+msgid "to the current version"
+msgstr "στην τρέχουσα έκδοση"
+
+#: includes/class-cptch-settings-tabs.php:844
+msgid "install"
+msgstr "εγκατάσταση"
+
+#: includes/class-cptch-settings-tabs.php:849
+msgid "activate"
+msgstr "ενεργοποίηση"
+
+#: includes/class-cptch-settings-tabs.php:863
+msgid "You should"
+msgstr "Θα πρέπει"
+
+#: includes/class-cptch-settings-tabs.php:866
+msgid "to use this functionality."
+msgstr "για να χρησιμοποιήσετε αυτή τη λειτουργικότητα."
+
+#: includes/class-cptch-settings-tabs.php:893
+msgid "Messages Settings"
+msgstr "Ρυθμίσεις μηνυμάτων"
+
+#: includes/class-cptch-settings-tabs.php:900
+msgid "Captcha Field is Empty"
+msgstr "Το πεδίο Captcha είναι άδειο"
+
+#: includes/class-cptch-settings-tabs.php:901 includes/helpers.php:42
+msgid "Please complete the captcha."
+msgstr "Συμπληρώστε το captcha."
+
+#: includes/class-cptch-settings-tabs.php:905
 msgid "Captcha is Incorrect"
-msgstr ""
+msgstr "Το Captcha είναι λανθασμένο"
 
-#: includes/class-cptch-settings-tabs.php:744 includes/helpers.php:34
+#: includes/class-cptch-settings-tabs.php:906 includes/helpers.php:43
 msgid "Please enter correct captcha value."
-msgstr ""
+msgstr "Εισαγάγετε τη σωστή τιμή captcha."
 
-#: includes/class-cptch-settings-tabs.php:748
+#: includes/class-cptch-settings-tabs.php:910
 msgid "Captcha Time Limit Exceeded"
-msgstr ""
+msgstr "Υπέρβαση του χρονικού ορίου Captcha"
 
-#: includes/class-cptch-settings-tabs.php:749
-#: includes/class-cptch-settings-tabs.php:754 includes/helpers.php:35
-#: includes/helpers.php:36
+#: includes/class-cptch-settings-tabs.php:911
+#: includes/class-cptch-settings-tabs.php:916 includes/helpers.php:44
+#: includes/helpers.php:45
 msgid "Time limit exceeded. Please complete the captcha once again."
-msgstr ""
+msgstr "Υπέρβαση χρονικού ορίου. Συμπληρώστε ξανά το captcha."
 
-#: includes/class-cptch-settings-tabs.php:753
+#: includes/class-cptch-settings-tabs.php:915
 msgid "Answer Time Limit Exceeded"
-msgstr ""
+msgstr "Υπέρβαση του χρονικού ορίου απάντησης"
 
-#: includes/class-cptch-settings-tabs.php:755
+#: includes/class-cptch-settings-tabs.php:917
 msgid "This message will be displayed above the captcha field."
-msgstr ""
+msgstr "Αυτό το μήνυμα θα εμφανιστεί πάνω από το πεδίο captcha."
 
-#: includes/class-cptch-settings-tabs.php:759
+#: includes/class-cptch-settings-tabs.php:921
 msgid "Slide Title"
-msgstr ""
+msgstr "Τίτλος slide"
 
-#: includes/class-cptch-settings-tabs.php:763
+#: includes/class-cptch-settings-tabs.php:925
 msgid "Successfull Verification"
-msgstr ""
+msgstr "Επιτυχής επαλήθευση"
 
-#: includes/class-cptch-settings-tabs.php:890
+#: includes/class-cptch-settings-tabs.php:1084
 msgid ""
 "The image packages list is empty. Please restore default settings or re-"
 "install the plugin to fix this error."
 msgstr ""
+"Η λίστα πακέτων εικόνας είναι κενή. Παρακαλούμε επαναφέρετε τις "
+"προεπιλεγμένες ρυθμίσεις ή επανεγκαταστήστε το πρόσθετο για να διορθώσετε "
+"αυτό το σφάλμα."
 
-#: includes/class-cptch-settings-tabs.php:938
+#: includes/class-cptch-settings-tabs.php:1139
 msgid "Activate"
-msgstr ""
+msgstr "Ενεργοποίηση"
 
-#: includes/class-cptch-settings-tabs.php:940
+#: includes/class-cptch-settings-tabs.php:1141
 msgid "Install Now"
-msgstr ""
+msgstr "Εγκατάσταση τώρα"
 
-#: includes/helpers.php:37 includes/pro_banners.php:82
+#: includes/helpers.php:34
+msgid "Slide to verify"
+msgstr "Διαφάνεια για επαλήθευση"
+
+#: includes/helpers.php:35
+msgid "Verification passed"
+msgstr "Η επαλήθευση πέρασε"
+
+#: includes/helpers.php:46 includes/pro_banners.php:97
 msgid "Your IP address is allow listed."
-msgstr ""
+msgstr "Η διεύθυνση IP σας επιτρέπεται να αναγράφεται."
 
-#: includes/invisible.php:29
+#: includes/invisible.php:57
 msgid "Can't handle encrypting/decrypting data."
 msgstr ""
+"Δεν είναι δυνατή η διαχείριση δεδομένων κρυπτογράφησης / αποκρυπτογράφησης."
 
-#: includes/invisible.php:33 includes/invisible.php:65
-#: includes/invisible.php:103
+#: includes/invisible.php:60 includes/invisible.php:112
+#: includes/invisible.php:166
 msgid "ERROR"
 msgstr "ΣΦΑΛΜΑ"
 
-#: includes/invisible.php:62
+#: includes/invisible.php:109
 #, php-format
 msgid "Protected by %s"
-msgstr ""
+msgstr "Προστατεύεται από %s"
 
-#: includes/invisible.php:78
+#: includes/invisible.php:139
 msgid "Empty captcha."
-msgstr ""
+msgstr "Άδειο captcha."
 
-#: includes/invisible.php:94
+#: includes/invisible.php:155
 msgid "Captcha time limit exceeded."
-msgstr ""
+msgstr "Υπέρβαση του χρονικού ορίου Captcha."
 
-#: includes/invisible.php:100
+#: includes/invisible.php:161
 msgid "Wrong captcha."
-msgstr ""
+msgstr "Λάθος captcha."
 
-#: includes/pro_banners.php:18
+#: includes/pro_banners.php:24
 msgid "This options is available in Pro version of plugin"
-msgstr ""
+msgstr "Αυτές οι επιλογές είναι διαθέσιμες στην έκδοση Pro του πρόσθετου"
 
-#: includes/pro_banners.php:42
+#: includes/pro_banners.php:50
 msgid "Add New "
-msgstr ""
+msgstr "Προσθήκη Νέου "
 
-#: includes/pro_banners.php:54
+#: includes/pro_banners.php:64
 msgid "Default"
-msgstr ""
+msgstr "Προεπιλογή"
 
-#: includes/pro_banners.php:57
+#: includes/pro_banners.php:67
 msgid ""
 "With a allow list you can hide captcha field for your personal and trusted "
 "IP addresses."
 msgstr ""
+"Με μια λίστα allow μπορείτε να αποκρύψετε το πεδίο captcha για τις "
+"προσωπικές και αξιόπιστες διευθύνσεις IP σας."
 
-#: includes/pro_banners.php:67 includes/pro_banners.php:202
+#: includes/pro_banners.php:79 includes/pro_banners.php:234
 msgid "Allowed formats"
-msgstr ""
+msgstr "Επιτρεπόμενες μορφές"
 
-#: includes/pro_banners.php:68
+#: includes/pro_banners.php:80
 msgid "Allowed separators for IPs: a comma"
-msgstr ""
+msgstr "Επιτρεπόμενα διαχωριστικά για τις IP: ένα κόμμα"
 
-#: includes/pro_banners.php:68 includes/pro_banners.php:71
-#: includes/pro_banners.php:209 includes/pro_banners.php:217
+#: includes/pro_banners.php:80 includes/pro_banners.php:83
+#: includes/pro_banners.php:241 includes/pro_banners.php:249
 msgid "semicolon"
-msgstr ""
+msgstr "άνω τελεία"
 
-#: includes/pro_banners.php:68
+#: includes/pro_banners.php:80
 msgid "ordinary space, tab, new line or carriage return"
-msgstr ""
+msgstr "συνηθισμένο κενό, tab, νέα γραμμή ή carriage return"
 
-#: includes/pro_banners.php:69 includes/pro_banners.php:213
-#: includes/pro_banners.php:266 includes/pro_banners.php:314
+#: includes/pro_banners.php:81 includes/pro_banners.php:245
+#: includes/pro_banners.php:298 includes/pro_banners.php:346
 msgid "Reason"
-msgstr ""
-
-#: includes/pro_banners.php:71
-msgid "Allowed separators for reasons: a comma"
-msgstr ""
-
-#: includes/pro_banners.php:71
-msgid "tab, new line or carriage return"
-msgstr ""
-
-#: includes/pro_banners.php:81
-msgid "Allow Listed IP"
-msgstr ""
+msgstr "Αιτία"
 
 #: includes/pro_banners.php:83
+msgid "Allowed separators for reasons: a comma"
+msgstr "Επιτρεπόμενα διαχωριστικά για λόγους: κόμμα"
+
+#: includes/pro_banners.php:83
+msgid "tab, new line or carriage return"
+msgstr "tab, νέα γραμμή ή carriage return"
+
+#: includes/pro_banners.php:96
+msgid "Allow Listed IP"
+msgstr "Επιτρέψτε την καταγεγραμμένη IP"
+
+#: includes/pro_banners.php:98
 msgid "This message will be displayed instead of the captcha field."
-msgstr ""
+msgstr "Αυτό το μήνυμα θα εμφανιστεί αντί για το πεδίο captcha."
 
-#: includes/pro_banners.php:102
+#: includes/pro_banners.php:120
 msgid "General Settings"
-msgstr ""
+msgstr "Γενικές Ρυθμίσεις"
 
-#: includes/pro_banners.php:105
+#: includes/pro_banners.php:123
 msgid "Enable to use general captcha settings."
-msgstr ""
+msgstr "Ενεργοποίηση για χρήση γενικών ρυθμίσεων captcha."
 
-#: includes/pro_banners.php:138
+#: includes/pro_banners.php:156
 msgid "Enable to activate a time limit requeired to complete captcha."
 msgstr ""
+"Ενεργοποιήστε την ενεργοποίηση ενός χρονικού ορίου που απαιτείται για την "
+"ολοκλήρωση του captcha."
 
-#: includes/pro_banners.php:149
+#: includes/pro_banners.php:169
 msgid "Use Several Image Packages at The Same Time"
-msgstr ""
+msgstr "Χρήση πολλών πακέτων εικόνων ταυτόχρονα"
 
-#: includes/pro_banners.php:187
+#: includes/pro_banners.php:219
 msgid "Load IP Address(-es)"
-msgstr ""
+msgstr "Φόρτωση διεύθυνσης IP (-es)"
 
-#: includes/pro_banners.php:190
+#: includes/pro_banners.php:222
 msgid "Load IP addresses from the \"Limit Attempts\" allow list."
 msgstr ""
+"Φορτώστε διευθύνσεις IP από τη λίστα \"Limit Attempts\" (Περιορισμός "
+"προσπαθειών)."
 
-#: includes/pro_banners.php:192
+#: includes/pro_banners.php:224
 msgid "IP to allow list"
-msgstr ""
+msgstr "IP για να επιτρέψετε τη λίστα"
 
-#: includes/pro_banners.php:198
+#: includes/pro_banners.php:230
 msgid "My IP"
-msgstr ""
+msgstr "Η IP μου"
 
-#: includes/pro_banners.php:207
+#: includes/pro_banners.php:239
 msgid "Allowed diapason"
-msgstr ""
+msgstr "Επιτρεπόμενη διαπασών"
 
-#: includes/pro_banners.php:209
+#: includes/pro_banners.php:241
 msgid "Allowed separators"
-msgstr ""
+msgstr "Επιτρεπόμενοι διαχωριστές"
 
-#: includes/pro_banners.php:209 includes/pro_banners.php:217
+#: includes/pro_banners.php:241 includes/pro_banners.php:249
 msgid "a comma"
-msgstr ""
+msgstr "ένα κόμμα"
 
-#: includes/pro_banners.php:209
+#: includes/pro_banners.php:241
 msgid "ordinary space, tab, new line or carriage return."
-msgstr ""
+msgstr "συνηθισμένο κενό, tab, νέα γραμμή ή carriage return."
 
-#: includes/pro_banners.php:217
+#: includes/pro_banners.php:249
 msgid "Allowed separators for reasons"
-msgstr ""
+msgstr "Επιτρεπόμενοι διαχωριστές για λόγους"
 
-#: includes/pro_banners.php:217
+#: includes/pro_banners.php:249
 msgid "tab, new line or carriage return."
-msgstr ""
+msgstr "tab, νέα γραμμή ή carriage return."
 
-#: includes/pro_banners.php:220
+#: includes/pro_banners.php:252
 msgid "Add IP to allow list"
-msgstr ""
+msgstr "Προσθήκη IP στη λίστα αδειών"
 
-#: includes/pro_banners.php:224 includes/pro_banners.php:226
+#: includes/pro_banners.php:256 includes/pro_banners.php:258
 msgid "search"
-msgstr ""
+msgstr "αναζήτηση"
 
-#: includes/pro_banners.php:231 includes/pro_banners.php:327
+#: includes/pro_banners.php:263 includes/pro_banners.php:359
 msgid "Bulk Actions"
-msgstr ""
+msgstr "Μαζικές Ενέργειες"
 
-#: includes/pro_banners.php:232 includes/pro_banners.php:283
-#: includes/pro_banners.php:328
+#: includes/pro_banners.php:264 includes/pro_banners.php:315
+#: includes/pro_banners.php:360
 msgid "Trash"
-msgstr ""
+msgstr "Κάδος"
 
-#: includes/pro_banners.php:234 includes/pro_banners.php:330
+#: includes/pro_banners.php:266 includes/pro_banners.php:362
 msgid "Apply"
-msgstr ""
+msgstr "Εφαρμογή"
 
-#: includes/pro_banners.php:238 includes/pro_banners.php:334
+#: includes/pro_banners.php:270 includes/pro_banners.php:366
 msgid "All dates"
-msgstr ""
+msgstr "Όλες οι ημερομηνίες"
 
-#: includes/pro_banners.php:239 includes/pro_banners.php:241
-#: includes/pro_banners.php:335 includes/pro_banners.php:337
+#: includes/pro_banners.php:271 includes/pro_banners.php:273
+#: includes/pro_banners.php:367 includes/pro_banners.php:369
 msgid "Filter"
-msgstr ""
+msgstr "Φίλτρο"
 
-#: includes/pro_banners.php:244 includes/pro_banners.php:340
+#: includes/pro_banners.php:276 includes/pro_banners.php:372
 msgid "items"
-msgstr ""
+msgstr "προϊόντα"
 
-#: includes/pro_banners.php:256 includes/pro_banners.php:304
+#: includes/pro_banners.php:288 includes/pro_banners.php:336
 msgid "IP Address"
-msgstr ""
+msgstr "Διεύθυνση IP"
 
-#: includes/pro_banners.php:262 includes/pro_banners.php:310
+#: includes/pro_banners.php:294 includes/pro_banners.php:342
 msgid "Range from/to"
-msgstr ""
+msgstr "Εύρος από/έως"
 
-#: includes/pro_banners.php:282
+#: includes/pro_banners.php:314
 msgid "Edit"
-msgstr ""
+msgstr "Επεξεργασία"
 
-#: includes/pro_banners.php:354
+#: includes/pro_banners.php:388
 msgid "Slider Color"
-msgstr ""
+msgstr "Χρώμα ρυθμιστικού"
 
-#: includes/pro_banners.php:369
+#: includes/pro_banners.php:403
 msgid "Successfull Slider Color"
-msgstr ""
+msgstr "Επιτυχής Slider Χρώμα"
 
-#: includes/pro_banners.php:384
+#: includes/pro_banners.php:418
 msgid "Slide Container Color"
-msgstr ""
+msgstr "Χρώμα δοχείου διαφανειών"
 
-#: includes/pro_banners.php:399
+#: includes/pro_banners.php:433
 msgid "Slide Title Color"
-msgstr ""
+msgstr "Χρώμα τίτλου διαφάνειας"
 
-#: includes/pro_banners.php:414
+#: includes/pro_banners.php:448
 msgid "Slide Title Size"
-msgstr ""
+msgstr "Τίτλος διαφάνειας Μέγεθος"
 
-#: includes/pro_banners.php:427
+#: includes/pro_banners.php:461
 msgid "Set a font-size for title."
-msgstr ""
+msgstr "Ορίστε ένα μέγεθος γραμματοσειράς για τον τίτλο."
 
 #: js/slide_captcha/dist/index-bundle.js:6
 msgid "Unhandled promise rejection"
-msgstr ""
+msgstr "Μη επεξεργασμένη απόρριψη υπόσχεσης"
 
 #, fuzzy
 #~ msgid "settings page"
@@ -1268,10 +1232,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "WordPress Comments form"
 #~ msgstr "Φόρμα Σχολίων"
-
-#, fuzzy
-#~ msgid "Buddypress Registration form"
-#~ msgstr "Φόρμα εγγραφής"
 
 #, fuzzy
 #~ msgid "Buddypress Comments form"

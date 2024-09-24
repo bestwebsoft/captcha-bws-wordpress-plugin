@@ -3,1217 +3,1165 @@ msgid ""
 msgstr ""
 "Project-Id-Version: captcha-pro\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-13 14:31+0300\n"
-"PO-Revision-Date: 2021-05-13 14:31+0300\n"
+"POT-Creation-Date: 2024-09-24 16:17+0300\n"
+"PO-Revision-Date: 2024-09-24 16:20+0300\n"
 "Last-Translator: BestWebSoft team <wp@bestwebsoft.com>\n"
 "Language-Team: SM Mehdi Akram <mehdi.akram@gmail.com>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;esc_html__;esc_html_e\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: bws_menu\n"
 
-#: captcha-bws.php:38 captcha-bws.php:48 captcha-bws.php:427
-#: includes/class-cptch-settings-tabs.php:409
+#: captcha-bws.php:46 captcha-bws.php:56 captcha-bws.php:491
+#: includes/class-cptch-settings-tabs.php:503
 msgid "Captcha Settings"
-msgstr ""
+msgstr "Captcha indstillinger"
 
-#: captcha-bws.php:49 captcha-bws.php:1680 captcha-bws.php:1693
-#: includes/class-cptch-settings-tabs.php:23
+#: captcha-bws.php:57 captcha-bws.php:2041 captcha-bws.php:2061
+#: includes/class-cptch-settings-tabs.php:44
 msgid "Settings"
-msgstr "সেটিংস"
+msgstr "Indstillinger"
 
-#: captcha-bws.php:57 includes/class-cptch-package-list.php:91
+#: captcha-bws.php:65 includes/class-cptch-package-list.php:148
 msgid "Captcha Packages"
-msgstr ""
+msgstr "Captcha-pakker"
 
-#: captcha-bws.php:58
+#: captcha-bws.php:66
 msgid "Packages"
-msgstr ""
+msgstr "Pakker"
 
-#: captcha-bws.php:66 captcha-bws.php:468
-#, fuzzy
+#: captcha-bws.php:74 captcha-bws.php:547
 msgid "Captcha Allow List"
-msgstr "ক্যাপচা সেটিংস"
+msgstr "Captcha tillader liste"
 
-#: captcha-bws.php:67 includes/pro_banners.php:51
+#: captcha-bws.php:75 includes/pro_banners.php:61
 msgid "Allow List"
-msgstr ""
+msgstr "Tillad liste"
 
-#: captcha-bws.php:84 captcha-bws.php:494 includes/pro_banners.php:30
+#: captcha-bws.php:92 captcha-bws.php:577 includes/pro_banners.php:36
 msgid "Upgrade to Pro"
-msgstr ""
+msgstr "Opgrader til Pro"
 
-#: captcha-bws.php:353 includes/helpers.php:26
-msgid "Slide to verify"
-msgstr ""
-
-#: captcha-bws.php:354 includes/helpers.php:27
-msgid "Verification passed"
-msgstr ""
-
-#: captcha-bws.php:430
+#: captcha-bws.php:494
 msgid "WARNING"
-msgstr ""
+msgstr "ADVARSEL"
 
-#: captcha-bws.php:430
+#: captcha-bws.php:494
 msgid "The plugin works correctly only if JavaScript is enabled."
-msgstr ""
+msgstr "Plugin'et fungerer kun korrekt, hvis JavaScript er aktiveret."
 
-#: captcha-bws.php:470
+#: captcha-bws.php:549
 msgid "Add New"
-msgstr ""
+msgstr "Tilføj ny"
 
-#: captcha-bws.php:476
+#: captcha-bws.php:556
 msgid "This tab contains Pro options only."
-msgstr ""
+msgstr "Denne fane indeholder kun Pro-indstillinger."
 
-#: captcha-bws.php:478
+#: captcha-bws.php:558
 #, php-format
-msgid "%sChange the settings%s to view the Pro options."
-msgstr ""
+msgid "%1$sChange the settings%2$s to view the Pro options."
+msgstr "%1$sSkift indstillinger%2$s for at se Pro-indstillingerne."
 
-#: captcha-bws.php:643
-#, fuzzy
+#: captcha-bws.php:779
 msgid "Click the BACK button on your browser, and try again."
-msgstr ""
-"ত্রুটি: আপনি একটি ভুল ক্যাপচা দিয়েছেন। আপনার ব্রাউজারের ব্যাক বোতাম ক্লিক করুন এবং আবার "
-"চেষ্টা করুন।"
+msgstr "Klik på knappen TILBAGE i din browser, og prøv igen."
 
-#: captcha-bws.php:902
+#: captcha-bws.php:1129
 msgid "Captcha loading..."
-msgstr ""
+msgstr "Captcha indlæses..."
 
-#: captcha-bws.php:904
+#: captcha-bws.php:1131
 msgid "In order to pass the CAPTCHA please enable JavaScript."
-msgstr ""
+msgstr "For at bestå CAPTCHA'en skal du aktivere JavaScript."
 
-#: captcha-bws.php:1330
+#: captcha-bws.php:1620
 msgid "zero"
-msgstr "শুন্য"
+msgstr "nul"
 
-#: captcha-bws.php:1331
+#: captcha-bws.php:1621
 msgid "one"
-msgstr "এক"
+msgstr "en"
 
-#: captcha-bws.php:1332
+#: captcha-bws.php:1622
 msgid "two"
-msgstr "দুই"
+msgstr "to"
 
-#: captcha-bws.php:1333
+#: captcha-bws.php:1623
 msgid "three"
-msgstr "তিন"
+msgstr "tre"
 
-#: captcha-bws.php:1334
+#: captcha-bws.php:1624
 msgid "four"
-msgstr "চার"
+msgstr "fire"
 
-#: captcha-bws.php:1335
+#: captcha-bws.php:1625
 msgid "five"
-msgstr "পাঁচ"
+msgstr "fem"
 
-#: captcha-bws.php:1336
+#: captcha-bws.php:1626
 msgid "six"
-msgstr "ছয়"
+msgstr "seks"
 
-#: captcha-bws.php:1337
+#: captcha-bws.php:1627
 msgid "seven"
-msgstr "সাত"
+msgstr "syv"
 
-#: captcha-bws.php:1338
+#: captcha-bws.php:1628
 msgid "eight"
-msgstr "আট"
+msgstr "otte"
 
-#: captcha-bws.php:1339
+#: captcha-bws.php:1629
 msgid "nine"
-msgstr "নয়"
+msgstr "ni"
 
-#: captcha-bws.php:1341
+#: captcha-bws.php:1631
 msgid "ten"
-msgstr "দশ"
+msgstr "ti"
 
-#: captcha-bws.php:1342
+#: captcha-bws.php:1632
 msgid "eleven"
-msgstr "এগার"
+msgstr "elleve"
 
-#: captcha-bws.php:1343
+#: captcha-bws.php:1633
 msgid "twelve"
-msgstr "বার"
+msgstr "tolv"
 
-#: captcha-bws.php:1344
+#: captcha-bws.php:1634
 msgid "thirteen"
-msgstr "তের"
+msgstr "tretten"
 
-#: captcha-bws.php:1345
+#: captcha-bws.php:1635
 msgid "fourteen"
-msgstr "চৌদ্দ"
+msgstr "fjorten"
 
-#: captcha-bws.php:1346
+#: captcha-bws.php:1636
 msgid "fifteen"
-msgstr "পনের"
+msgstr "femten"
 
-#: captcha-bws.php:1347
+#: captcha-bws.php:1637
 msgid "sixteen"
-msgstr "ষোল"
+msgstr "seksten"
 
-#: captcha-bws.php:1348
+#: captcha-bws.php:1638
 msgid "seventeen"
-msgstr "সতের"
+msgstr "sytten"
 
-#: captcha-bws.php:1349
+#: captcha-bws.php:1639
 msgid "eighteen"
-msgstr "আঠারো"
+msgstr "atten"
 
-#: captcha-bws.php:1350
+#: captcha-bws.php:1640
 msgid "nineteen"
-msgstr "উনিশ"
+msgstr "nitten"
 
-#: captcha-bws.php:1352
+#: captcha-bws.php:1642
 msgid "twenty"
-msgstr "বিশ"
+msgstr "tyve"
 
-#: captcha-bws.php:1353
-#, fuzzy
+#: captcha-bws.php:1643
 msgid "twenty one"
-msgstr "বিশ"
+msgstr "enogtyve"
 
-#: captcha-bws.php:1354
-#, fuzzy
+#: captcha-bws.php:1644
 msgid "twenty two"
-msgstr "বিশ"
+msgstr "toogtyve"
 
-#: captcha-bws.php:1355
-#, fuzzy
+#: captcha-bws.php:1645
 msgid "twenty three"
-msgstr "বিশ"
+msgstr "treogtyve"
 
-#: captcha-bws.php:1356
-#, fuzzy
+#: captcha-bws.php:1646
 msgid "twenty four"
-msgstr "বিশ"
+msgstr "fireogtyve"
 
-#: captcha-bws.php:1357
-#, fuzzy
+#: captcha-bws.php:1647
 msgid "twenty five"
-msgstr "বিশ"
+msgstr "femogtyve"
 
-#: captcha-bws.php:1358
-#, fuzzy
+#: captcha-bws.php:1648
 msgid "twenty six"
-msgstr "বিশ"
+msgstr "seksogtyve"
 
-#: captcha-bws.php:1359
-#, fuzzy
+#: captcha-bws.php:1649
 msgid "twenty seven"
-msgstr "বিশ"
+msgstr "syvogtyve"
 
-#: captcha-bws.php:1360
-#, fuzzy
+#: captcha-bws.php:1650
 msgid "twenty eight"
-msgstr "বিশ"
+msgstr "otteogtyve"
 
-#: captcha-bws.php:1361
-#, fuzzy
+#: captcha-bws.php:1651
 msgid "twenty nine"
-msgstr "বিশ"
+msgstr "niogtyve"
 
-#: captcha-bws.php:1363
+#: captcha-bws.php:1653
 msgid "thirty"
-msgstr "ত্রিশ"
+msgstr "tredive"
 
-#: captcha-bws.php:1364
-#, fuzzy
+#: captcha-bws.php:1654
 msgid "thirty one"
-msgstr "ত্রিশ"
+msgstr "enogtredive"
 
-#: captcha-bws.php:1365
-#, fuzzy
+#: captcha-bws.php:1655
 msgid "thirty two"
-msgstr "ত্রিশ"
+msgstr "toogtredive"
 
-#: captcha-bws.php:1366
-#, fuzzy
+#: captcha-bws.php:1656
 msgid "thirty three"
-msgstr "তের"
+msgstr "treogtredive"
 
-#: captcha-bws.php:1367
-#, fuzzy
+#: captcha-bws.php:1657
 msgid "thirty four"
-msgstr "ত্রিশ"
+msgstr "fireogtredive"
 
-#: captcha-bws.php:1368
-#, fuzzy
+#: captcha-bws.php:1658
 msgid "thirty five"
-msgstr "ত্রিশ"
+msgstr "femogtredive"
 
-#: captcha-bws.php:1369
-#, fuzzy
+#: captcha-bws.php:1659
 msgid "thirty six"
-msgstr "ত্রিশ"
+msgstr "seksogtredive"
 
-#: captcha-bws.php:1370
-#, fuzzy
+#: captcha-bws.php:1660
 msgid "thirty seven"
-msgstr "তের"
+msgstr "syvogtredive"
 
-#: captcha-bws.php:1371
-#, fuzzy
+#: captcha-bws.php:1661
 msgid "thirty eight"
-msgstr "ত্রিশ"
+msgstr "otteogtredive"
 
-#: captcha-bws.php:1372
-#, fuzzy
+#: captcha-bws.php:1662
 msgid "thirty nine"
-msgstr "ত্রিশ"
+msgstr "niogtredive"
 
-#: captcha-bws.php:1374
+#: captcha-bws.php:1664
 msgid "forty"
-msgstr "চল্লিশ"
+msgstr "fyrre"
 
-#: captcha-bws.php:1375
-#, fuzzy
+#: captcha-bws.php:1665
 msgid "forty one"
-msgstr "চল্লিশ"
+msgstr "enogfyrre"
 
-#: captcha-bws.php:1376
-#, fuzzy
+#: captcha-bws.php:1666
 msgid "forty two"
-msgstr "চল্লিশ"
+msgstr "toogfyrre"
 
-#: captcha-bws.php:1377
-#, fuzzy
+#: captcha-bws.php:1667
 msgid "forty three"
-msgstr "তিন"
+msgstr "treogfyrre"
 
-#: captcha-bws.php:1378
-#, fuzzy
+#: captcha-bws.php:1668
 msgid "forty four"
-msgstr "চল্লিশ"
+msgstr "fireogfyrre"
 
-#: captcha-bws.php:1379
-#, fuzzy
+#: captcha-bws.php:1669
 msgid "forty five"
-msgstr "চল্লিশ"
+msgstr "femogfyrre"
 
-#: captcha-bws.php:1380
-#, fuzzy
+#: captcha-bws.php:1670
 msgid "forty six"
-msgstr "চল্লিশ"
+msgstr "seksogfyrre"
 
-#: captcha-bws.php:1381
-#, fuzzy
+#: captcha-bws.php:1671
 msgid "forty seven"
-msgstr "সাত"
+msgstr "syvogfyrre"
 
-#: captcha-bws.php:1382
-#, fuzzy
+#: captcha-bws.php:1672
 msgid "forty eight"
-msgstr "আট"
+msgstr "otteogfyrre"
 
-#: captcha-bws.php:1383
-#, fuzzy
+#: captcha-bws.php:1673
 msgid "forty nine"
-msgstr "চল্লিশ"
+msgstr "niogfyrre"
 
-#: captcha-bws.php:1385
+#: captcha-bws.php:1675
 msgid "fifty"
-msgstr "পঞ্চাশ"
+msgstr "halvtreds"
 
-#: captcha-bws.php:1386
-#, fuzzy
+#: captcha-bws.php:1676
 msgid "fifty one"
-msgstr "পঞ্চাশ"
+msgstr "enoghalvtreds"
 
-#: captcha-bws.php:1387
-#, fuzzy
+#: captcha-bws.php:1677
 msgid "fifty two"
-msgstr "পঞ্চাশ"
+msgstr "tooghalvtreds"
 
-#: captcha-bws.php:1388
-#, fuzzy
+#: captcha-bws.php:1678
 msgid "fifty three"
-msgstr "পনের"
+msgstr "treoghalvtreds"
 
-#: captcha-bws.php:1389
-#, fuzzy
+#: captcha-bws.php:1679
 msgid "fifty four"
-msgstr "পঞ্চাশ"
+msgstr "fireoghalvtreds"
 
-#: captcha-bws.php:1390
-#, fuzzy
+#: captcha-bws.php:1680
 msgid "fifty five"
-msgstr "পঞ্চাশ"
+msgstr "femoghalvtreds"
 
-#: captcha-bws.php:1391
-#, fuzzy
+#: captcha-bws.php:1681
 msgid "fifty six"
-msgstr "পঞ্চাশ"
+msgstr "seksoghalvtreds"
 
-#: captcha-bws.php:1392
-#, fuzzy
+#: captcha-bws.php:1682
 msgid "fifty seven"
-msgstr "পনের"
+msgstr "syvoghalvtreds"
 
-#: captcha-bws.php:1393
-#, fuzzy
+#: captcha-bws.php:1683
 msgid "fifty eight"
-msgstr "আট"
+msgstr "otteoghalvtreds"
 
-#: captcha-bws.php:1394
-#, fuzzy
+#: captcha-bws.php:1684
 msgid "fifty nine"
-msgstr "পঞ্চাশ"
+msgstr "nioghalvtreds"
 
-#: captcha-bws.php:1396
+#: captcha-bws.php:1686
 msgid "sixty"
-msgstr "ষাট"
+msgstr "tres"
 
-#: captcha-bws.php:1397
-#, fuzzy
+#: captcha-bws.php:1687
 msgid "sixty one"
-msgstr "ষাট"
+msgstr "enogtres"
 
-#: captcha-bws.php:1398
-#, fuzzy
+#: captcha-bws.php:1688
 msgid "sixty two"
-msgstr "ষাট"
+msgstr "toogtres"
 
-#: captcha-bws.php:1399
-#, fuzzy
+#: captcha-bws.php:1689
 msgid "sixty three"
-msgstr "ষোল"
+msgstr "treogtres"
 
-#: captcha-bws.php:1400
-#, fuzzy
+#: captcha-bws.php:1690
 msgid "sixty four"
-msgstr "ষাট"
+msgstr "fireogtres"
 
-#: captcha-bws.php:1401
-#, fuzzy
+#: captcha-bws.php:1691
 msgid "sixty five"
-msgstr "ষাট"
+msgstr "femogtres"
 
-#: captcha-bws.php:1402
-#, fuzzy
+#: captcha-bws.php:1692
 msgid "sixty six"
-msgstr "ষাট"
+msgstr "seksogtres"
 
-#: captcha-bws.php:1403
-#, fuzzy
+#: captcha-bws.php:1693
 msgid "sixty seven"
-msgstr "ষোল"
+msgstr "syvogtres"
 
-#: captcha-bws.php:1404
-#, fuzzy
+#: captcha-bws.php:1694
 msgid "sixty eight"
-msgstr "আট"
-
-#: captcha-bws.php:1405
-#, fuzzy
-msgid "sixty nine"
-msgstr "ষাট"
-
-#: captcha-bws.php:1407
-msgid "seventy"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1408
-#, fuzzy
-msgid "seventy one"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1409
-#, fuzzy
-msgid "seventy two"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1410
-#, fuzzy
-msgid "seventy three"
-msgstr "সতের"
-
-#: captcha-bws.php:1411
-#, fuzzy
-msgid "seventy four"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1412
-#, fuzzy
-msgid "seventy five"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1413
-#, fuzzy
-msgid "seventy six"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1414
-#, fuzzy
-msgid "seventy seven"
-msgstr "সতের"
-
-#: captcha-bws.php:1415
-#, fuzzy
-msgid "seventy eight"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1416
-#, fuzzy
-msgid "seventy nine"
-msgstr "সত্তোর"
-
-#: captcha-bws.php:1418
-msgid "eighty"
-msgstr "আশি"
-
-#: captcha-bws.php:1419
-#, fuzzy
-msgid "eighty one"
-msgstr "আশি"
-
-#: captcha-bws.php:1420
-#, fuzzy
-msgid "eighty two"
-msgstr "আশি"
-
-#: captcha-bws.php:1421
-#, fuzzy
-msgid "eighty three"
-msgstr "আঠারো"
-
-#: captcha-bws.php:1422
-#, fuzzy
-msgid "eighty four"
-msgstr "আশি"
-
-#: captcha-bws.php:1423
-#, fuzzy
-msgid "eighty five"
-msgstr "আশি"
-
-#: captcha-bws.php:1424
-#, fuzzy
-msgid "eighty six"
-msgstr "আশি"
-
-#: captcha-bws.php:1425
-#, fuzzy
-msgid "eighty seven"
-msgstr "আঠারো"
-
-#: captcha-bws.php:1426
-#, fuzzy
-msgid "eighty eight"
-msgstr "আশি"
-
-#: captcha-bws.php:1427
-#, fuzzy
-msgid "eighty nine"
-msgstr "আশি"
-
-#: captcha-bws.php:1429
-msgid "ninety"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1430
-#, fuzzy
-msgid "ninety one"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1431
-#, fuzzy
-msgid "ninety two"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1432
-#, fuzzy
-msgid "ninety three"
-msgstr "উনিশ"
-
-#: captcha-bws.php:1433
-#, fuzzy
-msgid "ninety four"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1434
-#, fuzzy
-msgid "ninety five"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1435
-#, fuzzy
-msgid "ninety six"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1436
-#, fuzzy
-msgid "ninety seven"
-msgstr "উনিশ"
-
-#: captcha-bws.php:1437
-#, fuzzy
-msgid "ninety eight"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1438
-#, fuzzy
-msgid "ninety nine"
-msgstr "নব্বয়"
-
-#: captcha-bws.php:1503
-msgid "Encryption password is not set"
-msgstr "এনক্রিপশন পাসওয়ার্ড সেট করা হয় নাই"
-
-#: captcha-bws.php:1524
-msgid "Decryption password is not set"
-msgstr "ডিক্রিপশন পাসওয়ার্ড সেট করা হয় নাই"
+msgstr "otteogtres"
 
 #: captcha-bws.php:1695
+msgid "sixty nine"
+msgstr "niogtres"
+
+#: captcha-bws.php:1697
+msgid "seventy"
+msgstr "halvfjerds"
+
+#: captcha-bws.php:1698
+msgid "seventy one"
+msgstr "enoghalvfjerds"
+
+#: captcha-bws.php:1699
+msgid "seventy two"
+msgstr "tooghalvfjerds"
+
+#: captcha-bws.php:1700
+msgid "seventy three"
+msgstr "treoghalvfjerds"
+
+#: captcha-bws.php:1701
+msgid "seventy four"
+msgstr "fireoghalvfjerds"
+
+#: captcha-bws.php:1702
+msgid "seventy five"
+msgstr "femoghalvfjerds"
+
+#: captcha-bws.php:1703
+msgid "seventy six"
+msgstr "seksoghalvfjerds"
+
+#: captcha-bws.php:1704
+msgid "seventy seven"
+msgstr "syvoghalvfjerds"
+
+#: captcha-bws.php:1705
+msgid "seventy eight"
+msgstr "otteoghalvfjerds"
+
+#: captcha-bws.php:1706
+msgid "seventy nine"
+msgstr "nioghalvfjerds"
+
+#: captcha-bws.php:1708
+msgid "eighty"
+msgstr "firs"
+
+#: captcha-bws.php:1709
+msgid "eighty one"
+msgstr "enogfirs"
+
+#: captcha-bws.php:1710
+msgid "eighty two"
+msgstr "toogfirs"
+
+#: captcha-bws.php:1711
+msgid "eighty three"
+msgstr "treogfirs"
+
+#: captcha-bws.php:1712
+msgid "eighty four"
+msgstr "fireogfirs"
+
+#: captcha-bws.php:1713
+msgid "eighty five"
+msgstr "femogfirs"
+
+#: captcha-bws.php:1714
+msgid "eighty six"
+msgstr "seksogfirs"
+
+#: captcha-bws.php:1715
+msgid "eighty seven"
+msgstr "syvogfirs"
+
+#: captcha-bws.php:1716
+msgid "eighty eight"
+msgstr "otteogfirs"
+
+#: captcha-bws.php:1717
+msgid "eighty nine"
+msgstr "niogfirs"
+
+#: captcha-bws.php:1719
+msgid "ninety"
+msgstr "halvfems"
+
+#: captcha-bws.php:1720
+msgid "ninety one"
+msgstr "enoghalvfems"
+
+#: captcha-bws.php:1721
+msgid "ninety two"
+msgstr "tooghalvfems"
+
+#: captcha-bws.php:1722
+msgid "ninety three"
+msgstr "treoghalvfems"
+
+#: captcha-bws.php:1723
+msgid "ninety four"
+msgstr "fireoghalvfems"
+
+#: captcha-bws.php:1724
+msgid "ninety five"
+msgstr "femoghalvfems"
+
+#: captcha-bws.php:1725
+msgid "ninety six"
+msgstr "seksoghalvfems"
+
+#: captcha-bws.php:1726
+msgid "ninety seven"
+msgstr "syvoghalvfems"
+
+#: captcha-bws.php:1727
+msgid "ninety eight"
+msgstr "otteoghalvfems"
+
+#: captcha-bws.php:1728
+msgid "ninety nine"
+msgstr "nioghalvfems"
+
+#: captcha-bws.php:1809
+msgid "Encryption password is not set"
+msgstr "Krypteringsadgangskode er ikke indstillet"
+
+#: captcha-bws.php:1839
+msgid "Decryption password is not set"
+msgstr "Adgangskoden til dekryptering er ikke indstillet"
+
+#: captcha-bws.php:2063
 msgid "FAQ"
-msgstr "অনবরত জিজ্ঞাসিত প্রশ্ন"
+msgstr "FAQ"
 
-#: captcha-bws.php:1696
+#: captcha-bws.php:2064
 msgid "Support"
-msgstr "সমর্থন"
+msgstr "Support"
 
-#: captcha-bws.php:1747
+#: captcha-bws.php:2084
+msgid "Test your Captcha settings"
+msgstr "Test dine Captcha-indstillinger"
+
+#: captcha-bws.php:2084
+msgid "Ensure your captcha is correctly configured. Check your settings now!"
+msgstr "Sørg for, at din captcha er korrekt konfigureret. Tjek dine indstillinger nu!"
+
+#: captcha-bws.php:2141
 msgid "Could not save captcha response to database."
-msgstr ""
+msgstr "Kunne ikke gemme captcha-svar i databasen."
 
-#: captcha-bws.php:1793
+#: captcha-bws.php:2200
 msgid "Error"
-msgstr ""
+msgstr "Fejl"
 
-#: includes/class-cptch-package-list.php:37
+#: includes/class-cptch-package-list.php:97
 msgid "package"
-msgstr ""
+msgstr "pakke"
 
-#: includes/class-cptch-package-list.php:38
+#: includes/class-cptch-package-list.php:98
 msgid "packages"
-msgstr ""
+msgstr "pakker"
 
-#: includes/class-cptch-package-list.php:113
+#: includes/class-cptch-package-list.php:173
 msgid "Search"
-msgstr ""
+msgstr "Søg"
 
-#: includes/class-cptch-package-list.php:135
+#: includes/class-cptch-package-list.php:194
 msgid "No packages found"
-msgstr ""
+msgstr "Ingen abonnementer fundet"
 
-#: includes/class-cptch-package-list.php:145
+#: includes/class-cptch-package-list.php:203
 msgid "Package"
-msgstr ""
+msgstr "Pakke"
 
-#: includes/class-cptch-package-list.php:146 includes/pro_banners.php:269
-#: includes/pro_banners.php:294 includes/pro_banners.php:317
+#: includes/class-cptch-package-list.php:204 includes/pro_banners.php:301
+#: includes/pro_banners.php:326 includes/pro_banners.php:349
 msgid "Date Added"
-msgstr ""
+msgstr "Tilføjet den"
 
-#: includes/class-cptch-package-loader.php:44
+#: includes/class-cptch-package-loader.php:104
 msgid ""
 "Can not load images in to the \"uploads\" folder. Please, check your permissions."
 msgstr ""
+"Kan ikke indlæse billeder i mappen \"uploads\". Tjek venligst dine tilladelser."
 
-#: includes/class-cptch-package-loader.php:135
-#, php-format
-msgid "One package has been updated or added to the database."
-msgid_plural "%s packages have been updated or added to the database."
-msgstr[0] ""
-msgstr[1] ""
-
-#: includes/class-cptch-package-loader.php:136
-#, php-format
-msgid "One image has been updated or added to the database."
-msgid_plural "%s images have been updated or added to the database."
-msgstr[0] ""
-msgstr[1] ""
-
-#: includes/class-cptch-package-loader.php:250
+#: includes/class-cptch-package-loader.php:322
 msgid "Archive is empty"
-msgstr ""
+msgstr "Arkivet er tomt"
 
-#: includes/class-cptch-package-loader.php:610
+#: includes/class-cptch-package-loader.php:706
 #, php-format
 msgid "Some settings of the package %s were set incorrectly. They have been skipped."
 msgstr ""
+"Nogle indstillinger for pakken %s var indstillet forkert. De er blevet sprunget "
+"over."
 
-#: includes/class-cptch-package-loader.php:613
-#, fuzzy
+#: includes/class-cptch-package-loader.php:709
 msgid "Wrong data"
-msgstr "ভুল লাইসেন্স কী"
+msgstr "Forkerte data"
 
-#: includes/class-cptch-settings-tabs.php:24
+#: includes/class-cptch-settings-tabs.php:45
 msgid "Messages"
-msgstr ""
+msgstr "Beskeder"
 
-#: includes/class-cptch-settings-tabs.php:25
+#: includes/class-cptch-settings-tabs.php:46
 msgid "Misc"
-msgstr ""
+msgstr "Div"
 
-#: includes/class-cptch-settings-tabs.php:26
+#: includes/class-cptch-settings-tabs.php:47
 msgid "Custom Code"
-msgstr ""
+msgstr "Brugerdefineret kode"
 
-#: includes/class-cptch-settings-tabs.php:28
+#: includes/class-cptch-settings-tabs.php:48
 msgid "License Key"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:55 includes/class-cptch-settings-tabs.php:70
-msgid "Login form"
-msgstr "লগইন ফর্ম"
-
-#: includes/class-cptch-settings-tabs.php:56 includes/class-cptch-settings-tabs.php:67
-#: includes/class-cptch-settings-tabs.php:71
-msgid "Registration form"
-msgstr "রেজিষ্ট্রেশন ফর্ম"
-
-#: includes/class-cptch-settings-tabs.php:57
-msgid "Reset password form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:58 includes/class-cptch-settings-tabs.php:68
-msgid "Comments form"
-msgstr "মন্তব্য ফর্ম"
-
-#: includes/class-cptch-settings-tabs.php:69
-msgid "Create a Group form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:72
-msgid "Forgot password form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:73
-msgid "Checkout form"
-msgstr ""
+msgstr "Licensnøgle"
 
 #: includes/class-cptch-settings-tabs.php:74
-msgid "Jetpack Contact Form"
-msgstr ""
+#: includes/class-cptch-settings-tabs.php:118
+msgid "Login form"
+msgstr "Login-formular"
 
 #: includes/class-cptch-settings-tabs.php:75
-msgid "bbPress New Topic form"
-msgstr ""
+#: includes/class-cptch-settings-tabs.php:106
+#: includes/class-cptch-settings-tabs.php:122
+msgid "Registration form"
+msgstr "Registreringsformular"
 
 #: includes/class-cptch-settings-tabs.php:76
-msgid "bbPress Reply form"
-msgstr ""
+msgid "Reset password form"
+msgstr "Formular til nulstilling af adgangskode"
 
 #: includes/class-cptch-settings-tabs.php:77
-msgid "wpForo Login form"
-msgstr ""
+#: includes/class-cptch-settings-tabs.php:110
+msgid "Comments form"
+msgstr "Formular til kommentarer"
 
-#: includes/class-cptch-settings-tabs.php:78
-msgid "wpForo Registration form"
-msgstr ""
+#: includes/class-cptch-settings-tabs.php:114
+msgid "Create a Group form"
+msgstr "Opret en gruppeformular"
 
-#: includes/class-cptch-settings-tabs.php:79
-msgid "wpForo New Topic form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:80
-msgid "wpForo Reply form"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:121
-#, fuzzy
-msgid "WordPress default"
-msgstr "ওয়ার্ডপ্রেস সংস্করণ"
+#: includes/class-cptch-settings-tabs.php:126
+msgid "Forgot password form"
+msgstr "Formular til glemt adgangskode"
 
 #: includes/class-cptch-settings-tabs.php:130
-#: includes/class-cptch-settings-tabs.php:139
+msgid "Checkout form"
+msgstr "Bestilling form"
+
+#: includes/class-cptch-settings-tabs.php:134
+msgid "Jetpack Contact Form"
+msgstr "Jetpack kontaktformular"
+
+#: includes/class-cptch-settings-tabs.php:138
+msgid "bbPress New Topic form"
+msgstr "bbPress-formular til nyt emne"
+
+#: includes/class-cptch-settings-tabs.php:142
+msgid "bbPress Reply form"
+msgstr "bbPress-svarformular"
+
+#: includes/class-cptch-settings-tabs.php:146
+msgid "wpForo Login form"
+msgstr "wpForo login-formular"
+
+#: includes/class-cptch-settings-tabs.php:150
+msgid "wpForo Registration form"
+msgstr "wpForo Registreringsformular"
+
+#: includes/class-cptch-settings-tabs.php:154
+msgid "wpForo New Topic form"
+msgstr "wpForo formular til nyt emne"
+
+#: includes/class-cptch-settings-tabs.php:158
+msgid "wpForo Reply form"
+msgstr "wpForo Svarformular"
+
+#: includes/class-cptch-settings-tabs.php:161
+msgid "LearnDash login form"
+msgstr "LearnDash-loginformular"
+
+#: includes/class-cptch-settings-tabs.php:162
+msgid "LearnDash registration form"
+msgstr "LearnDash-registreringsformular"
+
+#: includes/class-cptch-settings-tabs.php:163
+msgid "BuddyBoss registration form"
+msgstr "BuddyBoss-registreringsformular"
+
+#: includes/class-cptch-settings-tabs.php:203
+msgid "WordPress default"
+msgstr "WordPress standard"
+
+#: includes/class-cptch-settings-tabs.php:212
+#: includes/class-cptch-settings-tabs.php:220
 msgid "External plugins"
-msgstr ""
+msgstr "Eksterne plugins"
 
-#: includes/class-cptch-settings-tabs.php:236
-#: includes/class-cptch-settings-tabs.php:342
+#: includes/class-cptch-settings-tabs.php:334
+#: includes/class-cptch-settings-tabs.php:440
 msgid "Arithmetic Actions"
-msgstr ""
+msgstr "Beregningshandlinger"
 
-#: includes/class-cptch-settings-tabs.php:237
-#: includes/class-cptch-settings-tabs.php:352
+#: includes/class-cptch-settings-tabs.php:335
+#: includes/class-cptch-settings-tabs.php:450
 msgid "Complexity"
-msgstr ""
+msgstr "Kompleksitet"
 
-#: includes/class-cptch-settings-tabs.php:238
-#: includes/class-cptch-settings-tabs.php:370 includes/pro_banners.php:109
+#: includes/class-cptch-settings-tabs.php:336
+#: includes/class-cptch-settings-tabs.php:468 includes/pro_banners.php:127
 msgid "Image Packages"
-msgstr ""
+msgstr "Billedpakker"
 
-#: includes/class-cptch-settings-tabs.php:259
+#: includes/class-cptch-settings-tabs.php:355
 msgid "Text fields in the \"Messages\" tab must not be empty."
-msgstr ""
+msgstr "Tekstfelterne i fanen \"Beskeder\" må ikke være tomme."
 
-#: includes/class-cptch-settings-tabs.php:274
+#: includes/class-cptch-settings-tabs.php:370
 #, php-format
 msgid "\"%s\" option must not be fully disabled."
-msgstr ""
+msgstr "\"%s\"-indstillingen må ikke være helt deaktiveret."
 
-#: includes/class-cptch-settings-tabs.php:303
+#: includes/class-cptch-settings-tabs.php:399
 msgid ""
 "In order to use \"Optical Character Recognition\" type, please select at least one "
 "of the items in the option \"Image Packages\"."
 msgstr ""
+"For at bruge typen \"Optical Character Recognition\" skal du vælge mindst et af "
+"elementerne i indstillingen \"Image Packages\"."
 
-#: includes/class-cptch-settings-tabs.php:306
+#: includes/class-cptch-settings-tabs.php:402
 msgid ""
 "In order to use images in the CAPTCHA, please select at least one of the items in "
 "the option \"Image Packages\". The \"Images\" checkbox in \"Complexity\" option has "
 "been disabled."
 msgstr ""
+"For at bruge billeder i CAPTCHA'en skal du vælge mindst et af elementerne i "
+"indstillingen \"Billedpakker\". Afkrydsningsfeltet \"Billeder\" i indstillingen "
+"\"Kompleksitet\" er blevet deaktiveret."
 
-#: includes/class-cptch-settings-tabs.php:317
+#: includes/class-cptch-settings-tabs.php:414
 msgid "Settings saved."
-msgstr ""
+msgstr "Indstillinger gemt."
 
-#: includes/class-cptch-settings-tabs.php:332
+#: includes/class-cptch-settings-tabs.php:430
 msgid "Captcha Type"
-msgstr ""
+msgstr "Captcha type"
 
-#: includes/class-cptch-settings-tabs.php:334
-#, fuzzy
+#: includes/class-cptch-settings-tabs.php:432
 msgid "Arithmetic actions"
-msgstr "ক্যাপচার জন্য গাণিতিক কর্ম"
+msgstr "Aritmetiske handlinger"
 
-#: includes/class-cptch-settings-tabs.php:335
+#: includes/class-cptch-settings-tabs.php:433
 msgid "Optical Character Recognition (OCR)"
-msgstr ""
+msgstr "Optisk tegngenkendelse (OCR)"
 
-#: includes/class-cptch-settings-tabs.php:336
+#: includes/class-cptch-settings-tabs.php:434
 msgid "Invisible"
-msgstr ""
+msgstr "Usynlig"
 
-#: includes/class-cptch-settings-tabs.php:337
+#: includes/class-cptch-settings-tabs.php:435
 msgid "Slide captcha"
-msgstr ""
+msgstr "Skub captcha"
 
-#: includes/class-cptch-settings-tabs.php:344
+#: includes/class-cptch-settings-tabs.php:442
 msgid "Addition"
-msgstr ""
+msgstr "Læg sammen"
 
-#: includes/class-cptch-settings-tabs.php:345
+#: includes/class-cptch-settings-tabs.php:443
 msgid "Subtraction"
-msgstr ""
+msgstr "Trække fra"
 
-#: includes/class-cptch-settings-tabs.php:346
-#, fuzzy
+#: includes/class-cptch-settings-tabs.php:444
 msgid "Multiplication"
-msgstr "গুণ (&times;)"
+msgstr "Multiplikation"
 
-#: includes/class-cptch-settings-tabs.php:354
+#: includes/class-cptch-settings-tabs.php:452
 msgid "Numbers (1, 2, 3, etc.)"
-msgstr ""
+msgstr "Tal (1, 2, 3 osv.)"
 
-#: includes/class-cptch-settings-tabs.php:355
+#: includes/class-cptch-settings-tabs.php:453
 msgid "Words (one, two, three, etc.)"
-msgstr ""
+msgstr "Ord (et, to, tre osv.)"
 
-#: includes/class-cptch-settings-tabs.php:356
+#: includes/class-cptch-settings-tabs.php:454
 msgid "Images"
-msgstr ""
+msgstr "Billeder"
 
-#: includes/class-cptch-settings-tabs.php:362
+#: includes/class-cptch-settings-tabs.php:460
 msgid "Number of Images"
-msgstr ""
+msgstr "Antal billeder"
 
-#: includes/class-cptch-settings-tabs.php:365
+#: includes/class-cptch-settings-tabs.php:463
 msgid "Set a number of images to display simultaneously as a captcha question."
-msgstr ""
+msgstr "Indstil et antal billeder, der skal vises samtidigt som et captcha-spørgsmål."
 
-#: includes/class-cptch-settings-tabs.php:376
+#: includes/class-cptch-settings-tabs.php:473
 msgid "Use several image packages at the same time"
-msgstr ""
+msgstr "Brug flere billedpakker på samme tid"
 
-#: includes/class-cptch-settings-tabs.php:382
+#: includes/class-cptch-settings-tabs.php:478
 msgid "Enlarge Images"
-msgstr ""
+msgstr "Forstørre billeder"
 
-#: includes/class-cptch-settings-tabs.php:383
+#: includes/class-cptch-settings-tabs.php:479
 msgid "Enable to enlarge captcha images on mouseover."
-msgstr ""
+msgstr "Gør det muligt at forstørre captcha-billeder ved mouseover."
 
-#: includes/class-cptch-settings-tabs.php:388
+#: includes/class-cptch-settings-tabs.php:484
 msgid "Reload Button"
-msgstr ""
+msgstr "Genindlæsningsknap"
 
-#: includes/class-cptch-settings-tabs.php:389
+#: includes/class-cptch-settings-tabs.php:485
 msgid "Enable to display reload button for captcha."
-msgstr ""
+msgstr "Gør det muligt at vise genindlæsningsknappen for captcha."
 
-#: includes/class-cptch-settings-tabs.php:394
+#: includes/class-cptch-settings-tabs.php:490
 msgid "Captcha Title"
-msgstr ""
+msgstr "Captcha titel"
 
-#: includes/class-cptch-settings-tabs.php:397
+#: includes/class-cptch-settings-tabs.php:494
 msgid "Required Symbol"
-msgstr ""
+msgstr "Nødvendigt symbol"
 
-#: includes/class-cptch-settings-tabs.php:400
+#: includes/class-cptch-settings-tabs.php:498
 msgid "Advanced Protection"
-msgstr ""
+msgstr "Avanceret beskyttelse"
 
-#: includes/class-cptch-settings-tabs.php:401
+#: includes/class-cptch-settings-tabs.php:499
 msgid "Enable to display captcha when the website page is loaded."
-msgstr ""
+msgstr "Gør det muligt at vise captcha, når websiden indlæses."
 
-#: includes/class-cptch-settings-tabs.php:412
+#: includes/class-cptch-settings-tabs.php:506
 msgid "General"
-msgstr ""
+msgstr "Generelt"
 
-#: includes/class-cptch-settings-tabs.php:415
+#: includes/class-cptch-settings-tabs.php:509
 msgid "Enable Captcha for"
-msgstr ""
+msgstr "Aktivér Captcha for"
 
-#: includes/class-cptch-settings-tabs.php:457
+#: includes/class-cptch-settings-tabs.php:557
 msgid "Enable to add the CAPTCHA to forms on their settings pages."
-msgstr ""
+msgstr "Gør det muligt at tilføje CAPTCHA til formularer på deres indstillingssider."
 
-#: includes/class-cptch-settings-tabs.php:471
-#: includes/class-cptch-settings-tabs.php:508
-#: includes/class-cptch-settings-tabs.php:660
-#: includes/class-cptch-settings-tabs.php:670
-#: includes/class-cptch-settings-tabs.php:782 includes/pro_banners.php:21
-#: includes/pro_banners.php:350
+#: includes/class-cptch-settings-tabs.php:571
+#: includes/class-cptch-settings-tabs.php:610
+#: includes/class-cptch-settings-tabs.php:814
+#: includes/class-cptch-settings-tabs.php:824
+#: includes/class-cptch-settings-tabs.php:951 includes/pro_banners.php:27
+#: includes/pro_banners.php:384
 msgid "Close"
-msgstr ""
+msgstr "Luk"
 
-#: includes/class-cptch-settings-tabs.php:583
+#: includes/class-cptch-settings-tabs.php:707
 msgid "Enable to activate a time limit required to complete captcha."
-msgstr ""
+msgstr "Aktiver for at aktivere en tidsgrænse, der kræves for at gennemføre captcha."
 
-#: includes/class-cptch-settings-tabs.php:594 includes/pro_banners.php:135
+#: includes/class-cptch-settings-tabs.php:720
+msgid ""
+"Enable to use a session to save captcha values (all Captcha types except Slide "
+"captcha)."
+msgstr ""
+"Gør det muligt at bruge en session til at gemme captcha-værdier (alle Captcha-typer "
+"undtagen Slide captcha)."
+
+#: includes/class-cptch-settings-tabs.php:725 includes/pro_banners.php:153
 msgid "Time Limit"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:601
-msgid "Time Limit Threshold"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:604
-msgid "sec"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:644
-msgid "This option is available only for network or for main blog"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:651
-msgid "Hide from Registered Users"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:653
-#, fuzzy
-msgid "Enable to hide captcha for registered users."
-msgstr "রেজিষ্টেশনকৃত ব্যবহাকারী থেকে ক্যাপচা লুকাও"
-
-#: includes/class-cptch-settings-tabs.php:681
-#, fuzzy
-msgid "update"
-msgstr "হালনাগাত"
-
-#: includes/class-cptch-settings-tabs.php:682
-msgid "to the current version"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:689
-#, fuzzy
-msgid "install"
-msgstr "ইনস্টল হয়েছে"
-
-#: includes/class-cptch-settings-tabs.php:694
-#, fuzzy
-msgid "activate"
-msgstr "সক্রিয়"
-
-#: includes/class-cptch-settings-tabs.php:706
-msgid "You should"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:709
-msgid "to use this functionality."
-msgstr ""
+msgstr "Tidsfrist"
 
 #: includes/class-cptch-settings-tabs.php:732
-msgid "Messages Settings"
-msgstr ""
+msgid "Time Limit Threshold"
+msgstr "Tærskel for tidsbegrænsning"
 
-#: includes/class-cptch-settings-tabs.php:738
-msgid "Captcha Field is Empty"
-msgstr ""
-
-#: includes/class-cptch-settings-tabs.php:739 includes/helpers.php:33
-msgid "Please complete the captcha."
-msgstr ""
+#: includes/class-cptch-settings-tabs.php:737
+msgid "sec"
+msgstr "sek"
 
 #: includes/class-cptch-settings-tabs.php:743
+msgid "Use Session"
+msgstr "Brug sessionen"
+
+#: includes/class-cptch-settings-tabs.php:797
+msgid "This option is available only for network or for main blog"
+msgstr "Denne mulighed er kun tilgængelig for netværk eller for hovedbloggen"
+
+#: includes/class-cptch-settings-tabs.php:805
+msgid "Hide from Registered Users"
+msgstr "Skjul for registrerede brugere"
+
+#: includes/class-cptch-settings-tabs.php:807
+msgid "Enable to hide captcha for registered users."
+msgstr "Gør det muligt at skjule captcha for registrerede brugere."
+
+#: includes/class-cptch-settings-tabs.php:836
+msgid "update"
+msgstr "opdatering"
+
+#: includes/class-cptch-settings-tabs.php:837
+msgid "to the current version"
+msgstr "til den aktuelle version"
+
+#: includes/class-cptch-settings-tabs.php:844
+msgid "install"
+msgstr "installer"
+
+#: includes/class-cptch-settings-tabs.php:849
+msgid "activate"
+msgstr "aktiver"
+
+#: includes/class-cptch-settings-tabs.php:863
+msgid "You should"
+msgstr "Du bør"
+
+#: includes/class-cptch-settings-tabs.php:866
+msgid "to use this functionality."
+msgstr "for at bruge denne funktionalitet."
+
+#: includes/class-cptch-settings-tabs.php:893
+msgid "Messages Settings"
+msgstr "Beskedindstillinger"
+
+#: includes/class-cptch-settings-tabs.php:900
+msgid "Captcha Field is Empty"
+msgstr "Captcha-feltet er tomt"
+
+#: includes/class-cptch-settings-tabs.php:901 includes/helpers.php:42
+msgid "Please complete the captcha."
+msgstr "Udfyld venligst captcha'en."
+
+#: includes/class-cptch-settings-tabs.php:905
 msgid "Captcha is Incorrect"
-msgstr ""
+msgstr "Captcha er forkert"
 
-#: includes/class-cptch-settings-tabs.php:744 includes/helpers.php:34
+#: includes/class-cptch-settings-tabs.php:906 includes/helpers.php:43
 msgid "Please enter correct captcha value."
-msgstr ""
+msgstr "Indtast venligst den korrekte captcha-værdi."
 
-#: includes/class-cptch-settings-tabs.php:748
+#: includes/class-cptch-settings-tabs.php:910
 msgid "Captcha Time Limit Exceeded"
-msgstr ""
+msgstr "Captcha tidsgrænse overskredet"
 
-#: includes/class-cptch-settings-tabs.php:749
-#: includes/class-cptch-settings-tabs.php:754 includes/helpers.php:35
-#: includes/helpers.php:36
+#: includes/class-cptch-settings-tabs.php:911
+#: includes/class-cptch-settings-tabs.php:916 includes/helpers.php:44
+#: includes/helpers.php:45
 msgid "Time limit exceeded. Please complete the captcha once again."
-msgstr ""
+msgstr "Tidsgrænsen er overskredet. Udfyld venligst captchaen igen."
 
-#: includes/class-cptch-settings-tabs.php:753
+#: includes/class-cptch-settings-tabs.php:915
 msgid "Answer Time Limit Exceeded"
-msgstr ""
+msgstr "Tidsgrænse for svar overskredet"
 
-#: includes/class-cptch-settings-tabs.php:755
+#: includes/class-cptch-settings-tabs.php:917
 msgid "This message will be displayed above the captcha field."
-msgstr ""
+msgstr "Denne besked vil blive vist over captcha-feltet."
 
-#: includes/class-cptch-settings-tabs.php:759
+#: includes/class-cptch-settings-tabs.php:921
 msgid "Slide Title"
-msgstr ""
+msgstr "Slide titel"
 
-#: includes/class-cptch-settings-tabs.php:763
+#: includes/class-cptch-settings-tabs.php:925
 msgid "Successfull Verification"
-msgstr ""
+msgstr "Vellykket verifikation"
 
-#: includes/class-cptch-settings-tabs.php:890
+#: includes/class-cptch-settings-tabs.php:1084
 msgid ""
 "The image packages list is empty. Please restore default settings or re-install the "
 "plugin to fix this error."
 msgstr ""
+"Listen over billedpakker er tom. Gendan venligst standardindstillingerne eller "
+"geninstaller pluginet for at løse denne fejl."
 
-#: includes/class-cptch-settings-tabs.php:938
-#, fuzzy
+#: includes/class-cptch-settings-tabs.php:1139
 msgid "Activate"
-msgstr "সক্রিয়"
+msgstr "Aktiver"
 
-#: includes/class-cptch-settings-tabs.php:940
+#: includes/class-cptch-settings-tabs.php:1141
 msgid "Install Now"
-msgstr "ইনস্টল করুন"
+msgstr "Installer Nu"
 
-#: includes/helpers.php:37 includes/pro_banners.php:82
+#: includes/helpers.php:34
+msgid "Slide to verify"
+msgstr "Skub for at bekræfte"
+
+#: includes/helpers.php:35
+msgid "Verification passed"
+msgstr "Verifikation bestået"
+
+#: includes/helpers.php:46 includes/pro_banners.php:97
 msgid "Your IP address is allow listed."
-msgstr ""
+msgstr "Din IP-adresse er tilladt på listen."
 
-#: includes/invisible.php:29
+#: includes/invisible.php:57
 msgid "Can't handle encrypting/decrypting data."
-msgstr ""
+msgstr "Kan ikke håndtere kryptering/dekryptering af data."
 
-#: includes/invisible.php:33 includes/invisible.php:65 includes/invisible.php:103
+#: includes/invisible.php:60 includes/invisible.php:112 includes/invisible.php:166
 msgid "ERROR"
-msgstr "ত্রুটি"
+msgstr "FEJL"
 
-#: includes/invisible.php:62
+#: includes/invisible.php:109
 #, php-format
 msgid "Protected by %s"
-msgstr ""
+msgstr "Beskyttet af %s"
 
-#: includes/invisible.php:78
+#: includes/invisible.php:139
 msgid "Empty captcha."
-msgstr ""
+msgstr "Tom captcha."
 
-#: includes/invisible.php:94
+#: includes/invisible.php:155
 msgid "Captcha time limit exceeded."
-msgstr ""
+msgstr "Captcha-tidsgrænsen er overskredet."
 
-#: includes/invisible.php:100
+#: includes/invisible.php:161
 msgid "Wrong captcha."
-msgstr ""
+msgstr "Forkert captcha."
 
-#: includes/pro_banners.php:18
+#: includes/pro_banners.php:24
 msgid "This options is available in Pro version of plugin"
-msgstr ""
+msgstr "Denne mulighed er tilgængelig i Pro-versionen af plugin"
 
-#: includes/pro_banners.php:42
+#: includes/pro_banners.php:50
 msgid "Add New "
-msgstr ""
+msgstr "Tilføj ny "
 
-#: includes/pro_banners.php:54
+#: includes/pro_banners.php:64
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
-#: includes/pro_banners.php:57
+#: includes/pro_banners.php:67
 msgid ""
 "With a allow list you can hide captcha field for your personal and trusted IP "
 "addresses."
 msgstr ""
+"Med en tilladelsesliste kan du skjule captcha-feltet for dine personlige og "
+"betroede IP-adresser."
 
-#: includes/pro_banners.php:67 includes/pro_banners.php:202
+#: includes/pro_banners.php:79 includes/pro_banners.php:234
 msgid "Allowed formats"
-msgstr ""
+msgstr "Tilladte formater"
 
-#: includes/pro_banners.php:68
+#: includes/pro_banners.php:80
 msgid "Allowed separators for IPs: a comma"
-msgstr ""
+msgstr "Tilladte separatorer for IP'er: et komma"
 
-#: includes/pro_banners.php:68 includes/pro_banners.php:71
-#: includes/pro_banners.php:209 includes/pro_banners.php:217
+#: includes/pro_banners.php:80 includes/pro_banners.php:83
+#: includes/pro_banners.php:241 includes/pro_banners.php:249
 msgid "semicolon"
-msgstr ""
+msgstr "semikolon"
 
-#: includes/pro_banners.php:68
+#: includes/pro_banners.php:80
 msgid "ordinary space, tab, new line or carriage return"
-msgstr ""
+msgstr "almindeligt mellemrum, tabulator, ny linje eller vognretur"
 
-#: includes/pro_banners.php:69 includes/pro_banners.php:213
-#: includes/pro_banners.php:266 includes/pro_banners.php:314
+#: includes/pro_banners.php:81 includes/pro_banners.php:245
+#: includes/pro_banners.php:298 includes/pro_banners.php:346
 msgid "Reason"
-msgstr ""
-
-#: includes/pro_banners.php:71
-msgid "Allowed separators for reasons: a comma"
-msgstr ""
-
-#: includes/pro_banners.php:71
-msgid "tab, new line or carriage return"
-msgstr ""
-
-#: includes/pro_banners.php:81
-msgid "Allow Listed IP"
-msgstr ""
+msgstr "Årsag"
 
 #: includes/pro_banners.php:83
+msgid "Allowed separators for reasons: a comma"
+msgstr "Tilladte separatorer for årsager: et komma"
+
+#: includes/pro_banners.php:83
+msgid "tab, new line or carriage return"
+msgstr "tabulator, ny linje eller vognretur"
+
+#: includes/pro_banners.php:96
+msgid "Allow Listed IP"
+msgstr "Tillad opført IP"
+
+#: includes/pro_banners.php:98
 msgid "This message will be displayed instead of the captcha field."
-msgstr ""
+msgstr "Denne besked vises i stedet for captcha-feltet."
 
-#: includes/pro_banners.php:102
+#: includes/pro_banners.php:120
 msgid "General Settings"
-msgstr ""
+msgstr "Generelle indstillinger"
 
-#: includes/pro_banners.php:105
+#: includes/pro_banners.php:123
 msgid "Enable to use general captcha settings."
-msgstr ""
+msgstr "Aktivér for at bruge generelle captcha-indstillinger."
 
-#: includes/pro_banners.php:138
+#: includes/pro_banners.php:156
 msgid "Enable to activate a time limit requeired to complete captcha."
-msgstr ""
+msgstr "Aktiver for at aktivere en tidsgrænse, der kræves for at gennemføre captcha."
 
-#: includes/pro_banners.php:149
+#: includes/pro_banners.php:169
 msgid "Use Several Image Packages at The Same Time"
-msgstr ""
+msgstr "Brug flere billedpakker på samme tid"
 
-#: includes/pro_banners.php:187
+#: includes/pro_banners.php:219
 msgid "Load IP Address(-es)"
-msgstr ""
+msgstr "Indlæs IP-adresse(r)"
 
-#: includes/pro_banners.php:190
+#: includes/pro_banners.php:222
 msgid "Load IP addresses from the \"Limit Attempts\" allow list."
-msgstr ""
+msgstr "Indlæs IP-adresser fra tilladelseslisten \"Limit Attempts\"."
 
-#: includes/pro_banners.php:192
+#: includes/pro_banners.php:224
 msgid "IP to allow list"
-msgstr ""
+msgstr "IP til tilladelsesliste"
 
-#: includes/pro_banners.php:198
+#: includes/pro_banners.php:230
 msgid "My IP"
-msgstr ""
+msgstr "Min IP"
 
-#: includes/pro_banners.php:207
+#: includes/pro_banners.php:239
 msgid "Allowed diapason"
-msgstr ""
+msgstr "Tilladt diapason"
 
-#: includes/pro_banners.php:209
+#: includes/pro_banners.php:241
 msgid "Allowed separators"
-msgstr ""
+msgstr "Tilladte separatorer"
 
-#: includes/pro_banners.php:209 includes/pro_banners.php:217
+#: includes/pro_banners.php:241 includes/pro_banners.php:249
 msgid "a comma"
-msgstr ""
+msgstr "et komma"
 
-#: includes/pro_banners.php:209
+#: includes/pro_banners.php:241
 msgid "ordinary space, tab, new line or carriage return."
-msgstr ""
+msgstr "almindeligt mellemrum, tabulator, ny linje eller vognretur."
 
-#: includes/pro_banners.php:217
+#: includes/pro_banners.php:249
 msgid "Allowed separators for reasons"
-msgstr ""
+msgstr "Tilladte separatorer for årsager"
 
-#: includes/pro_banners.php:217
+#: includes/pro_banners.php:249
 msgid "tab, new line or carriage return."
-msgstr ""
+msgstr "tabulator, ny linje eller vognretur."
 
-#: includes/pro_banners.php:220
+#: includes/pro_banners.php:252
 msgid "Add IP to allow list"
-msgstr ""
+msgstr "Tilføj IP til tilladelseslisten"
 
-#: includes/pro_banners.php:224 includes/pro_banners.php:226
+#: includes/pro_banners.php:256 includes/pro_banners.php:258
 msgid "search"
-msgstr ""
+msgstr "søg"
 
-#: includes/pro_banners.php:231 includes/pro_banners.php:327
+#: includes/pro_banners.php:263 includes/pro_banners.php:359
 msgid "Bulk Actions"
-msgstr ""
+msgstr "Massehandling"
 
-#: includes/pro_banners.php:232 includes/pro_banners.php:283
-#: includes/pro_banners.php:328
+#: includes/pro_banners.php:264 includes/pro_banners.php:315
+#: includes/pro_banners.php:360
 msgid "Trash"
-msgstr ""
+msgstr "Papirkurv"
 
-#: includes/pro_banners.php:234 includes/pro_banners.php:330
+#: includes/pro_banners.php:266 includes/pro_banners.php:362
 msgid "Apply"
-msgstr ""
+msgstr "Anvend"
 
-#: includes/pro_banners.php:238 includes/pro_banners.php:334
+#: includes/pro_banners.php:270 includes/pro_banners.php:366
 msgid "All dates"
-msgstr ""
+msgstr "Alle datoer"
 
-#: includes/pro_banners.php:239 includes/pro_banners.php:241
-#: includes/pro_banners.php:335 includes/pro_banners.php:337
+#: includes/pro_banners.php:271 includes/pro_banners.php:273
+#: includes/pro_banners.php:367 includes/pro_banners.php:369
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
-#: includes/pro_banners.php:244 includes/pro_banners.php:340
+#: includes/pro_banners.php:276 includes/pro_banners.php:372
 msgid "items"
-msgstr ""
+msgstr "varer"
 
-#: includes/pro_banners.php:256 includes/pro_banners.php:304
+#: includes/pro_banners.php:288 includes/pro_banners.php:336
 msgid "IP Address"
-msgstr ""
+msgstr "IP-adresse"
 
-#: includes/pro_banners.php:262 includes/pro_banners.php:310
+#: includes/pro_banners.php:294 includes/pro_banners.php:342
 msgid "Range from/to"
-msgstr ""
+msgstr "Område fra/til"
 
-#: includes/pro_banners.php:282
+#: includes/pro_banners.php:314
 msgid "Edit"
-msgstr ""
+msgstr "Rediger"
 
-#: includes/pro_banners.php:354
+#: includes/pro_banners.php:388
 msgid "Slider Color"
-msgstr ""
+msgstr "Slider-farve"
 
-#: includes/pro_banners.php:369
+#: includes/pro_banners.php:403
 msgid "Successfull Slider Color"
-msgstr ""
+msgstr "Vellykket slider-farve"
 
-#: includes/pro_banners.php:384
+#: includes/pro_banners.php:418
 msgid "Slide Container Color"
-msgstr ""
+msgstr "Farve på diasbeholder"
 
-#: includes/pro_banners.php:399
+#: includes/pro_banners.php:433
 msgid "Slide Title Color"
-msgstr ""
+msgstr "Tekstfarve til slide"
 
-#: includes/pro_banners.php:414
+#: includes/pro_banners.php:448
 msgid "Slide Title Size"
-msgstr ""
+msgstr "Titel på dias Størrelse"
 
-#: includes/pro_banners.php:427
+#: includes/pro_banners.php:461
 msgid "Set a font-size for title."
-msgstr ""
+msgstr "Indstil en skriftstørrelse for titlen."
 
 #: js/slide_captcha/dist/index-bundle.js:6
 msgid "Unhandled promise rejection"
-msgstr ""
+msgstr "Uhåndteret afvisning af løfte"
 
 #~ msgid "requires"
 #~ msgstr "প্রয়োজন"
@@ -1667,10 +1615,6 @@ msgstr ""
 #~ msgstr "সেটিংস পাতা"
 
 #, fuzzy
-#~ msgid "Restore settings"
-#~ msgstr "সেটিংস"
-
-#, fuzzy
 #~| msgid ""
 #~| "Congratulations! The PRO version of the plugin is successfully download and "
 #~| "activated."
@@ -1748,10 +1692,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "WordPress Comments form"
 #~ msgstr "মন্তব্য ফর্ম"
-
-#, fuzzy
-#~ msgid "Buddypress Registration form"
-#~ msgstr "রেজিষ্ট্রেশন ফর্ম"
 
 #, fuzzy
 #~ msgid "Buddypress Comments form"
