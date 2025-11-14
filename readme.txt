@@ -1,108 +1,118 @@
-=== Captcha by BestWebSoft - Spam Protection, Security Plugin for WordPress Forms ===
+=== Captcha by BestWebSoft - Advanced Spam Protection, Math & OCR-Friendly Captcha for Site Forms ===
 Contributors: bestwebsoft
 Donate link: https://bestwebsoft.com/donate/
-Tags: captcha, capctha, security, antispam, captcha bws, protect forms, wordpress, secure wordpress, popular captcha, prevent spam, wordpress captcha, simple capctha
-Requires at least: 5.6
-Tested up to: 6.6
-Stable tag: 5.2.4
+Tags: captcha, spam protection, security, antispam, captcha WooCommerce, OCR-friendly captcha, Math captcha, WordPress captcha, human verification, security plugin, spam prevention, CAPTCHA plugin, WordPress security, form protection
+Requires at least: 6.2
+Tested up to: 6.8.2
+Stable tag: 5.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-#1 super security anti-spam captcha plugin for WordPress forms.
+#1 The Ultimate Spam Protection Plugin Using Captcha for WordPress Forms.
 
 == Description ==
 
-Captcha plugin is the best security solution that protects your WordPress website forms from spam entries. It can be used for login, registration, password recovery, comments form and much more.
+**Captcha by BestWebSoft** is the premier spam protection and security plugin for WordPress, designed to safeguard your website's forms from spam and malicious submissions. This plugin provides robust protection for login, registration, password recovery, comments, WooCommerce checkout, and custom forms using advanced captcha solutions, including Math captcha and OCR-friendly captcha.
 
-It is easy to use and manage, a simple and effective plugin which will always guard your website forms.
+Enhance your website's security and user experience with versatile captcha options that are easy to set up and manage, ensuring uninterrupted protection against spam without the need for code modifications. Choose from Invisible captcha, Character recognition captcha, and Slide captcha to customize your protection strategy. Block bots effectively with powerful math-based challenges or smooth, user-friendly sliding interactions.
 
-Stop spam now!
+Captcha by BestWebSoft integrates seamlessly with popular plugins and is optimized for spam protection on WordPress forms, making it ideal for WooCommerce, Contact Form 7, and other integrations. Secure your site today with a lightweight, fast, and reliable solution that prioritizes both security and user experience.
+
+**Stop spam now with the most effective WordPress captcha solution!**
 
 [View Demo](https://bestwebsoft.com/demo-for-captcha/?ref=readme)
 
 = Free Features =
 
-* Add captcha to:
+* **Add Captcha to:**
     * Login form
     * Registration form
     * Reset password form
     * Comments form
+    * Protected post password form
     * [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f)
     * [Car Rental V2 Pro](https://bestwebsoft.com/products/wordpress/plugins/car-rental-v2/?k=9feda3ea8564e0b0707c5434786ddf24)
-    * Custom form
-* Choose Captcha type:
-    * Invisible
-    * Character Recognition
-    * Simple math actions such as addition, subtraction, and multiplication
-    * Slide captcha
-* Enhance captcha protection with:
+    * Custom forms
+* **Choose Captcha Type:**
+    * Invisible Captcha
+    * Character Recognition Captcha
+    * Math Captcha (simple math operations like addition, subtraction, multiplication)
+    * Slide Captcha
+* **Enhance Captcha Protection with:**
     * Letters
     * Numbers
     * Images
-* Hide captcha for:
+* **Hide Captcha for:**
     * Registered users in comments form
-* Set captcha submission time limit
-* Refresh captcha option
-* Edit captcha title and notifications
-* Compatible with latest WordPress version
-* Incredibly simple settings for fast setup without modifying code
-* Detailed step-by-step documentations and videos
-* Multilingual and RTL ready
+* **Additional Features:**
+    * Set captcha submission time limit
+    * Settings for displaying captchas by Weekdays and Hours
+    * Refresh captcha option
+    * Edit captcha title and notifications
+    * Compatible with the latest WordPress version
+    * User-friendly settings for quick setup without coding
+    * Comprehensive documentation and tutorial videos
+    * Multilingual and RTL ready
 
-> **Pro Features**
->
-> All features from Free version included plus:
->
-> * Compatible with :
->   * Contact Form 7 (since v 3.4)
->   * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348)
->   * Jetpack contact form
->   * MailChimp for WordPress
->   * Ninja Forms
->   * Gravity Forms
->   * WPForms
->   * Caldera Forms
-> * Compatible with WooCommerce:
->   * Login form
->   * Register form
->   * Lost password form
->   * Checkout billing form
-> * Compatible with bbPress:
->   * New Topic form
->   * Reply form
-> * Compatible with BuddyPress:
->   * Registration form
->   * Comments form
->   * Create a Group form
-> * Compatible with Forums - wpForo:
->   * Login form
->   * Registration form
->   * New Topic form
->   * Reply form
-> * Compatible with Divi :
->   * Contact Form
->   * Login Form
-> * Compatible with LearnDash login:
->   * Login form
->   * Registration form
-> * Compatible with BuddyBoss:
->   * Registration form
-> * Compatible with Elementor Pro:
->   * Elementor Contact form [NEW]
-> * Hide captcha for:
->   * Allowed IP addresses
-> * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=a9ab60b2d4016ae9c809733d84012988) plugin with Captcha Allow List
-> * Configure all subsites on the network
-> * Captcha submission time limit for separate forms
-> * Image packages with hand-drawn digits
-> * Add and enable unlimited number of image packages at the same time
-> * Edit Slide captcha appearance
-> * Add custom code via plugin settings page
-> * Get answer to your support question within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
->
-> [Upgrade to Pro Now](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=2d2d85a3c277bf3489697c9a9ff2d352)
+## Pro Features
 
-If you have a feature suggestion or idea you'd like to see in the plugin, we'd love to hear about it! [Suggest a Feature](https://support.bestwebsoft.com/hc/en-us/requests/new)
+All Free features plus:
+
+* **Enhanced Compatibility:**
+    * Contact Form 7 (since v3.4)
+    * [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=ac02c12d6e17bc91f4cc636eec0a0348)
+    * Jetpack Contact Form
+    * MailChimp for WordPress
+    * Ninja Forms
+    * Gravity Forms
+    * WPForms
+    * Caldera Forms
+    * Formidable Contact Form
+    * MemberPress
+* **WooCommerce Integration:**
+    * Login form
+    * Register form
+    * Lost password form
+    * Checkout billing form
+* **bbPress Integration:**
+    * New Topic form
+    * Reply form
+* **BuddyPress Integration:**
+    * Registration form
+    * Comments form
+    * Create a Group form
+* **wpForo Integration:**
+    * Login form
+    * Registration form
+    * New Topic form
+    * Reply form
+* **Divi Integration:**
+    * Contact Form
+    * Login Form
+* **LearnDash and BuddyBoss Integration:**
+    * LearnDash Login and Registration forms
+    * BuddyBoss Registration form
+* **Elementor Pro Integration:**
+    * Elementor Contact form
+* **Compatible with BWS Login Register Form:
+    * Login form
+    * Registration form
+    * Forgot Password form
+* **Advanced Features:**
+    * Hide captcha for allowed IP addresses
+    * Merge IP addresses from [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=c6b924d096b75a288daf0e49a58f93c2) plugin with Captcha Allow List
+    * Configure all subsites on the network
+    * Set captcha submission time limits for individual forms
+    * Image packages with hand-drawn digits
+    * Add and activate unlimited image packages simultaneously
+    * Customize Slide Captcha appearance
+    * Block disposable emails
+    * Add custom code via plugin settings page
+    * Receive support responses within one business day ([Support Policy](https://bestwebsoft.com/support-policy/))
+
+[**Upgrade to Pro Now**](https://bestwebsoft.com/products/wordpress/plugins/captcha/?k=2d2d85a3c277bf3489697c9a9ff2d352)
+
+If you have feature suggestions or ideas you'd like to see in the plugin, we'd love to hear from you! [Suggest a Feature](https://support.bestwebsoft.com/hc/en-us/requests/new)
 
 = Documentation & Videos =
 
@@ -114,11 +124,11 @@ If you have a feature suggestion or idea you'd like to see in the plugin, we'd l
 
 = Help & Support =
 
-Visit our Help Center if you have any questions, our friendly Support Team is happy to help - <https://support.bestwebsoft.com/>
+Visit our [Help Center](https://support.bestwebsoft.com/) if you have any questions; our friendly Support Team is ready to assist you.
 
 = Affiliate Program =
 
-Earn 20% commission by selling the premium WordPress plugins and themes by BestWebSoft — https://bestwebsoft.com/affiliate/
+Earn a 20% commission by selling premium WordPress plugins and themes by BestWebSoft — [Join the Affiliate Program](https://bestwebsoft.com/affiliate/)
 
 = Translation =
 
@@ -128,7 +138,7 @@ Earn 20% commission by selling the premium WordPress plugins and themes by BestW
 * Brazilian Portuguese (pt_BR) (thanks to [Breno Jacinto](mailto:brenojac@gmail.com), www.iconis.org.br)
 * Bulgarian (bg_BG) (thanks to [Nick](mailto:paharaman@gmail.com))
 * Catalan (ca) (thanks to [Psiete](mailto:psiete@gmail.com))
-* Chinese (zh_CN) (thanks to [TIM](mailto:416441872@qq.com), [Jack Chen](email: mailto:beijingtours@foxmail.com), www.jackchen.im)
+* Chinese (zh_CN) (thanks to [TIM](mailto:416441872@qq.com), [Jack Chen](mailto:beijingtours@foxmail.com), www.jackchen.im)
 * Taiwan (zh_TW) (thanks to [Kaiconan](mailto:ch.unk.ai.ma.o@gmail.com))
 * Croatian (hr) (thanks to [Daniel](mailto:daniel@croteh.com))
 * Czech (cs_CZ) (thanks to [Michal Kučera](mailto:kucerami@gmail.com) www.n0lim.it)
@@ -156,54 +166,57 @@ Earn 20% commission by selling the premium WordPress plugins and themes by BestW
 * Serbian (sr_RS) (thanks to Radovan Georgijevic)
 * Slovak (sk_SK) (thanks to Branco Radenovich)
 * Slovenian (sl_SI) (thanks to [Uroš Klopčič](mailto:uros.klopcic@gmail.com), www.klopcic.net)
-* Spain (es_ES)
+* Spanish (es_ES)
 * Swedish (sv_SE) (thanks to Christer Rönningborg, [Blittan](mailto:blittan@xbmc.org))
 * Tagalog (tl) (thanks to [Roozbeh Jalali](mailto:rjalali@languageconnect.net), www.languageconnect.net)
 * Turkish (tr_TR) (thanks to Can Atasever, www.canatasever.com)
 * Ukrainian (uk)
 * Vietnamese (vi_VN) (thanks to NDT Solutions)
 
-Some of these translations are not complete. We are constantly adding new features which should be translated. If you would like to create your own language pack or update the existing one, you can send [the text of PO and MO files](https://codex.wordpress.org/Translating_WordPress) to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new) and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO [files Poedit](https://www.poedit.net/download.php).
+Some translations may be incomplete. We continuously add new features that require translation. To create or update a language pack, send the text of PO and MO files to [BestWebSoft](https://support.bestwebsoft.com/hc/en-us/requests/new). Download the latest Poedit version [here](https://www.poedit.net/download.php).
 
 = Recommended Plugins =
 
-* [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=c6b924d096b75a288daf0e49a58f93c2) - Protect WordPress website against brute force attacks. Limit rate of login attempts.
-* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=0864088de1701a5e104ffb77c6d7011c) - Automatically check and update WordPress website core with all installed plugins and themes to the latest versions.
-* [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f) - Simple contact form plugin any WordPress website must have.
-* [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) - Add email newsletter sign up form to WordPress posts, pages and widgets. Collect data and subscribe your users.
+* [Limit Attempts](https://bestwebsoft.com/products/wordpress/plugins/limit-attempts/?k=c6b924d096b75a288daf0e49a58f93c2) — Protect your WordPress site against brute force attacks by limiting login attempts.
+* [Updater](https://bestwebsoft.com/products/wordpress/plugins/updater/?k=0864088de1701a5e104ffb77c6d7011c) — Automatically check and update your WordPress core, plugins, and themes to the latest versions.
+* [Contact Form](https://bestwebsoft.com/products/wordpress/plugins/contact-form/?k=7f973058ee3bd3a18934b5e13b857d6f) — A simple and essential contact form plugin for any WordPress site.
+* [Subscriber](https://bestwebsoft.com/products/wordpress/plugins/subscriber/?k=2ce0827916414c9c8576110f13560030) — Add an email newsletter sign-up form to WordPress posts, pages, and widgets. Collect and manage subscriber data effectively.
 
 = Credits =
 
-* This plugin incorporates a license verification mechanism to ensure the authenticity of your license key and provide access to premium features and updates. The verification process involves connecting securely to our external service hosted at BestWebSoft website <https://bestwebsoft.com>. Privacy Policy <https://bestwebsoft.com/privacy-policy/>. End user license agreement <https://bestwebsoft.com/end-user-license-agreement/>.
+* This plugin includes a license verification mechanism to ensure the authenticity of your license key and provide access to premium features and updates. The verification process involves securely connecting to our external service hosted on the BestWebSoft website: [BestWebSoft](https://bestwebsoft.com).
+* [Privacy Policy](https://bestwebsoft.com/privacy-policy/)
+* [End User License Agreement](https://bestwebsoft.com/end-user-license-agreement/)
 
 == Installation ==
 
 1. Upload the `captcha-bws` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin via the 'Plugins' menu in WordPress.
-3. Plugin settings are located in "Captcha".
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Plugin settings are located in the "Captcha" section.
 
 [View a Step-by-step Instruction on Captcha Installation](https://bestwebsoft.com/documentation/how-to-install-a-wordpress-product/how-to-install-a-wordpress-plugin/).
 
 == Frequently Asked Questions ==
 
-= How to add Captcha plugin to the Wordpress login page (form)? =
+= How to add Captcha plugin to the WordPress login page (form)? =
 
-Follow the next steps in order to add Captcha to your Wordpress login page (form):
-1. Open your Wordpress admin Dashboard.
-2. Navigate to Captcha settings page.
-3. Find "Enable Captcha for" for the "Login form".
+Follow these steps to add CAPTCHA to your WordPress login page:
+
+1. Open your WordPress admin Dashboard.
+2. Navigate to the Captcha settings page.
+3. Find "Enable Captcha for" and select the "Login form".
 4. Save changes.
 
-= Any captcha answer results an error =
+= Any captcha answer results in an error =
 
-Captcha will only be displayed if you are using standard registration, login, comments form pages. In case of using custom forms and pages it will be necessary to make changes in them so that captcha could be displayed and work correctly.
+CAPTCHA will only display on standard registration, login, and comments forms. If using custom forms and pages, you need to modify them to display and function correctly with CAPTCHA.
 
-= Add Captcha plugin to a custom form on my Wordpress website =
+= Add Captcha plugin to a custom form on my WordPress website =
 
 Follow the instructions below in order to add Captcha plugin to your custom PHP or HTML form:
 1. Install the Captcha plugin and activate it.
-2. (Optional) If you would like to use your own settings for the custom forms you have (for example, for your contact and sign up forms), please follow the steps below:
-   - Go to your theme folder for example 'your-wp-site/wp-content/themes/your-theme-name' where your-theme-name is theme name you currently using ;
+2. (Optional) If you would like to use your own settings for the custom forms you have (for example, for your contact and sign-up forms), please follow the steps below:
+   - Go to your theme folder, for example, 'your-wp-site/wp-content/themes/your-theme-name' where your-theme-name is the theme name you are currently using;
    - Open functions.php file;
    - Add the following code to the end of the file:
 
@@ -215,11 +228,11 @@ add_filter( 'cptch_add_form', 'add_my_forms' );`
 
 Please don't use the next form slugs since they are predefined by plugin settings: general, wp_login, wp_register, wp_lost_password, wp_comments, bws_contact, bws_subscriber, buddypress_register, buddypress_comments, buddypress_group, cf7_contact, woocommerce_login, woocommerce_register, woocommerce_lost_password, woocommerce_checkout.
 - Save file changes;
-- Go to the "Settings" tab on the plugin settings page (Admin Dashboard -> Captcha); If everything is OK, you will see your form in 'Enable Captcha for' => 'External plugins' ( with labels which you specified in the "cptch_add_form_tab" hook call function ).
+- Go to the "Settings" tab on the plugin settings page (Admin Dashboard -> Captcha); If everything is OK, you will see your form in 'Enable Captcha for' => 'External plugins' (with labels which you specified in the "cptch_add_form_tab" hook call function).
 - Enable it and configure form options as you need;
 - Click "Save changes";
 
-If you don`t want to use your own settings for CAPTCHA displaying in your custom form, it will use the settings from "General" block on the plugin settings.
+If you don't want to use your own settings for CAPTCHA displaying in your custom form, it will use the settings from the "General" block on the plugin settings.
 
 3. Open the file with the form (where you would like to add CAPTCHA);
 4. Find a place to insert the code for the CAPTCHA output;
@@ -239,7 +252,7 @@ If you completed the instructions in point 2, then you should add:
 `<?php $error = apply_filters( 'cptch_verify', true, 'string', 'my_contact_form' );
 if ( true === $error ) { /* the CAPTCHA answer is right */
     /* do necessary action */
-} else { /* the CAPTCHA answer is wrong or there are some other errors */Multilingual
+} else { /* the CAPTCHA answer is wrong or there are some other errors */
     echo $error; /* display the error message or do other necessary actions in case when the CAPTCHA test was failed */
 } ?>`
 
@@ -258,9 +271,9 @@ If there is a variable in the check function responsible for the errors output, 
 
 = Why is the CAPTCHA missing in the comments form? =
 
-Plugin displays captcha for those comments forms which were written in the same way as comments forms for the standard WordPress themes. Unfortunately, the plugin is incompatible with comments forms generated by using SAAS (eg: Disqus or JetPack comments forms). If you don't use SAAS comments forms, please follow the next steps:
+The plugin displays captcha for those comments forms which were written in the same way as comments forms for the standard WordPress themes. Unfortunately, the plugin is incompatible with comments forms generated by using SAAS (e.g., Disqus or JetPack comments forms). If you don't use SAAS comments forms, please follow the next steps:
 1. Using FTP, please go to {wp_root_folder}/wp-content/themes/{your_theme}.
-2. Find and open "comments.php" file. It is possible that the file that is used to display the comment form in your theme called differently or comment form output functionality is inserted directly in the other templates themes (eg "single.php" or "page.php"). In this case, you need to open the corresponding file.
+2. Find and open "comments.php" file. It is possible that the file that is used to display the comment form in your theme is called differently or comment form output functionality is inserted directly in the other templates themes (e.g., "single.php" or "page.php"). In this case, you need to open the corresponding file.
 3. Make sure that the file contains one of the next hooks:
 
 `do_action ( 'comment_form_logged_in_after' )
@@ -291,6 +304,23 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 10. Captcha Allow List page.
 
 == Changelog ==
+
+== Changelog ==
+
+= V5.2.7 - 14.11.2025 =
+* Bugfix : Syntax error has been fixed.
+
+= V5.2.6 - 08.11.2025 =
+* Update : All functionality was updated for WordPress 6.8.2
+* Pro : The Block disposable emails functionality has been added.
+* NEW : The new compatibility with BWS Login Register Form has been added.
+* Update : BWS Panel section was updated.
+
+= V5.2.5 - 10.04.2025 =
+* Update : All functionality was updated for WordPress 6.7
+* NEW : The compatibility with Protected post password form has been added.
+* Pro : The compatibility with Memberpress has been added.
+* Pro : The compatibility with Formidable Contact Form has been added.
 
 = V5.2.4 - 24.09.2024 =
 * Update : All functionality was updated for WordPress 6.6
@@ -417,6 +447,17 @@ Please make sure that the problem hasn't been discussed yet on our forum (<https
 * NEW : Plugin has been released.
 
 == Upgrade Notice ==
+
+= V5.2.7 =
+* Bugs fixed.
+
+= V5.2.6 =
+* New features added.
+* The compatibility with new WordPress version updated.
+
+= V5.2.5 =
+* New features added.
+* The compatibility with new WordPress version updated.
 
 = V5.2.4 =
 * Appearance improved.

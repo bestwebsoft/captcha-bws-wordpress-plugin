@@ -384,6 +384,29 @@ if ( ! function_exists( 'cptch_slide_pro_block' ) ) {
 			<button type="submit" name="bws_hide_premium_options" class="notice-dismiss bws_hide_premium_options" title="<?php esc_html_e( 'Close', 'captcha-bws' ); ?>"></button>
 			<div class="bws_table_bg"></div>
 			<table class="form-table bws_pro_version">
+				<tr valign="top">
+					<th scope="row"><?php esc_html_e( 'Block disposable emails', 'captcha-bws' ); ?></th>
+					<td>
+						<label><input id="cptch_block_disposable_emails" type="checkbox" />
+						<span class="bws_info">
+							<?php esc_html_e( 'Please make sure BWS Captcha is active for this form in order for the disposable email check to function.', 'captcha-bws' ); ?>
+						</span></label><br /><br />							
+						<div class="cptch_block_disposable_emails">
+							<label><input type="submit" class="button button-primary button-large" value="<?php esc_html_e( 'Download file with disposable domains', 'captcha-bws' ); ?>" /></label>
+							<p><b><?php esc_html_e( 'WordPress forms', 'captcha-bws' ); ?>:</b></p>
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'Registration form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'Comments form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'Contact Form by BestWebSoft', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'Subscriber by BestWebSoft', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'WooCommerce Registration form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'WooCommerce Checkout form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'LearnDash registration form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'MemberPress checkout form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'BuddyBoss registration form', 'captcha-bws' ); ?></label><br />
+							<label><input type="checkbox" <?php echo disabled( 1, 1, false ); ?>><?php esc_html_e( 'BWS Register form', 'captcha-bws' ); ?></label><br />
+						</div>
+					</td>
+				</tr>
 				<tr>
 					<th scope="row" class="cptch_settings_form"><?php esc_html_e( 'Slider Color', 'captcha-bws' ); ?></th>
 					<td>

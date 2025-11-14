@@ -57,6 +57,10 @@ form input.cptch_input {
 	color: red;
 	font-size: 12px;
 }
+.cptch-password-form-error
+	color: red;
+	font-size: 14px;
+}
 .cptch_span {
 	display: inline-block;
 	vertical-align: middle;
@@ -76,6 +80,8 @@ form input.cptch_input {
 	height: 40px;
 	top: 0;
 	z-index: 1;
+	display: inline-block;
+	vertical-align: middle;
 }
 .cptch_reload_button {
 	width: 2rem;
@@ -91,7 +97,6 @@ form input.cptch_input {
 	display: block;
 	margin-bottom: 3px;
 }
-
 /**
  * RTL styles
  */

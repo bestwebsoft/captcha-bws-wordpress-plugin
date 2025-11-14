@@ -74,9 +74,14 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 				'wp_login'              => array( 'name' => esc_html__( 'Login form', 'captcha-bws' ) ),
 				'wp_register'           => array( 'name' => esc_html__( 'Registration form', 'captcha-bws' ) ),
 				'wp_lost_password'      => array( 'name' => esc_html__( 'Reset password form', 'captcha-bws' ) ),
+				'wp_password_form'      => array( 'name' => esc_html__( 'Protected post password form', 'captcha-bws' ) ),
 				'wp_comments'           => array( 'name' => esc_html__( 'Comments form', 'captcha-bws' ) ),
 				'bws_contact'           => array( 'name' => 'Contact Form' ),
 				'bws_booking'           => array( 'name' => 'Car Rental V2 Pro' ),
+				'frm_contact_form'      => array( 'name' => 'Formidable Contact Form' ),
+				'bws_login_form'        => array( 'name' => 'BWS Login form' ),
+				'bws_register_form'     => array( 'name' => 'BWS Register form' ),
+				'bws_forgot_pass_form'  => array( 'name' => 'BWS Forgot Password form' ),
 				'bws_subscriber'            => array(
 					'name' => 'Subscriber',
 					'for_pro' => 1,
@@ -205,6 +210,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						'wp_login',
 						'wp_register',
 						'wp_lost_password',
+						'wp_password_form',
 						'wp_comments',
 					),
 				),
@@ -213,6 +219,15 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					'forms' => array(
 						'bws_contact',
 						'bws_booking',
+						'frm_contact_form',
+					),
+				),
+				'bws_login_register' => array(
+					'title'  => 'BWS Login Register',
+					'forms' => array(
+						'bws_login_form',
+						'bws_register_form',
+						'bws_forgot_pass_form'
 					),
 				),
 				'other_for_pro' => array(
@@ -284,7 +299,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 
 			$this->registered_forms = array_merge(
 				$this->form_categories['wp_default']['forms'],
-				$this->form_categories['external']['forms'] /*pls */,
+				$this->form_categories['external']['forms'],
+				$this->form_categories['bws_login_register']['forms'],
 				$this->form_categories['other_for_pro']['external']['forms'],
 				$this->form_categories['other_for_pro']['buddypress']['forms'],
 				$this->form_categories['other_for_pro']['woocommerce']['forms'],
@@ -372,6 +388,15 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 					$this->options[ $option ] = $value;
 				}
 			}
+
+			$this->options['weekdays'] = isset( $_POST['cptch_weekdays'] ) && is_array( $_POST['cptch_weekdays'] ) ? array_map( 'intval', $_POST['cptch_weekdays'] ) : array();
+			$this->options['all_day']  = isset( $_POST['cptch_all_day'] ) && is_array( $_POST['cptch_all_day'] ) ? array_map( 'intval', $_POST['cptch_all_day'] ) : array();
+			$this->options['hours']    = isset( $_POST['cptch_hours'] ) && is_array( $_POST['cptch_hours'] ) ? $_POST['cptch_hours'] : array();
+			foreach( $this->options['hours'] as $key => $value ) {
+				$this->options['hours'][ $key ] = array_map( 'intval', $value );
+			}
+
+
 			$this->options['forms']['general']['used_packages'] = $this->options['used_packages'];
 			$this->options['images_count']  = isset( $_REQUEST['cptch_images_count'] ) ? absint( $_REQUEST['cptch_images_count'] ) : 4;
 			$this->options['forms']['general']['time_limit']    = isset( $_REQUEST['cptch_time_limit'] ) ? absint( $_REQUEST['cptch_time_limit'] ) : 120;
@@ -550,7 +575,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 										?>
 										</label>
 										<?php
-										if ( 'external' == $fieldset_name && $disabled ) {
+										if ( ( 'external' == $fieldset_name || 'bws_login_register' == $fieldset_name ) && $disabled ) {
 											echo wp_kses_post( $this->get_form_message( $form_name ) ); /* show "instal/activate" mesage */
 										} elseif ( 'bws_contact' == $form_name && ( is_plugin_active( 'contact-form-multi/contact-form-multi.php' ) || is_plugin_active( 'contact-form-multi-pro/contact-form-multi-pro.php' ) ) ) {
 											?>
@@ -746,6 +771,53 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						<span class="bws_info"><?php echo wp_kses_post( $options[2]['inline_description'] ); ?></span>
 					</td>
 				</tr>
+				<tr valign="top">
+					<th scope="row"><?php esc_html_e( 'Weekdays and Hours', 'captcha-bws' ); ?></th>
+					<td>
+						<table class="cptch-weekdays-wrapper">
+							<tr>
+								<?php
+								$days = array( __( 'Monday', 'captcha-bws' ), __( 'Tuesday', 'captcha-bws' ), __( 'Wednesday', 'captcha-bws' ), __( 'Thursday', 'captcha-bws' ), __( 'Friday', 'captcha-bws' ), __( 'Saturday', 'captcha-bws' ), __( 'Sunday', 'captcha-bws' ) );
+								foreach( $days as $key => $day ) {
+									?>
+									<th>
+										<label>
+											<input<?php echo $this->change_permission_attr; ?> class="cptch_weekdays" type="checkbox" <?php checked( in_array( $key + 1, $this->options['weekdays'] ) ); ?> name="cptch_weekdays[]" value="<?php echo esc_attr( $key + 1 ); ?>" /> <?php echo esc_html( $day, 'captcha-bws' ); ?>
+										</label>
+									</th>
+									<?php
+								}									
+								?>
+							</tr>
+							<tr>
+								<?php
+								foreach( $days as $key => $day ) {
+									$class = in_array( $key + 1, $this->options['all_day'] ) || ! in_array( $key + 1, $this->options['weekdays'] ) ? 'cptch_hours_wrapper hidden' : 'cptch_hours_wrapper';											
+									$class_label = ! in_array( $key + 1, $this->options['weekdays'] ) ? 'hidden' : '';											
+									?>
+									<td>
+										<label class="<?php echo esc_attr( $class_label ); ?>">
+											<input<?php echo $this->change_permission_attr; ?> class="cptch_all_day[<?php echo esc_attr( $key + 1 ); ?>]" type="checkbox" <?php checked( in_array( $key + 1, $this->options['all_day'] ) ); ?> name="cptch_all_day[<?php echo esc_attr( $key + 1 ); ?>]" value="<?php echo esc_attr( $key + 1 ); ?>" /> <?php echo esc_html_e( 'All day', 'captcha-bws' ); ?>
+										</label>
+										<div class="<?php echo esc_attr( $class ); ?>">
+											<?php
+											for( $i = 0; $i < 24; $i++ ) {
+												?>
+												<label class="cptch_hours">
+													<input<?php echo $this->change_permission_attr; ?> type="checkbox" <?php checked( isset( $this->options['hours'][ $key + 1 ] ) && in_array( $i, $this->options['hours'][ $key + 1 ] ) ); ?> name="cptch_hours[<?php echo esc_attr( $key + 1 ); ?>][]" value="<?php echo esc_attr( $i ); ?>" /> <?php echo esc_attr( str_pad( $i, 2, '0', STR_PAD_LEFT ) . ':00' ); ?> 
+												</label><br />
+												<?php
+											}
+											?>
+										</div>
+									</td>
+									<?php
+								}
+								?>
+							</tr>
+						</table>
+					</td>
+				</tr>
 			</table>
 			<?php
 			if ( ! $this->hide_pro_tabs ) {
@@ -761,7 +833,7 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			?>
 			<?php
 			foreach ( $this->forms as $form_slug => $data ) {
-				if ( /*pls */ isset( $data['for_pro'] ) || ( /* pls*/ 'wp_comments' != $form_slug /*pls */ && $this->hide_pro_tabs ) /* pls*/ ) {
+				if ( isset( $data['for_pro'] ) || ( 'wp_comments' != $form_slug  && $this->hide_pro_tabs ) ) {
 					continue;
 				}
 
@@ -770,6 +842,8 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 						if ( 'wp_default' == $category_name ) {
 							$category_title = 'WordPress - ';
 						} elseif ( 'external' == $category_name ) {
+							$category_title = '';
+						} elseif ( 'bws_login_register' == $category_name ) {
 							$category_title = '';
 						} else {
 							$category_title = $category_data['title'] . ' - ';
@@ -1134,6 +1208,9 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 		 * @return string
 		 */
 		private function get_form_message( $slug ) {
+			if ( 'bws_login_form' === $slug || 'bws_register_form' === $slug || 'bws_forgot_pass_form' === $slug ) {
+				$slug = 'bws_login_register';
+			}
 			switch ( $this->options['related_plugins_info'][ $slug ]['status'] ) {
 				case 'deactivated':
 					return ' <a href="plugins.php">' . esc_html__( 'Activate', 'captcha-bws' ) . '</a>';
@@ -1199,9 +1276,11 @@ if ( ! class_exists( 'Cptch_Settings_Tabs' ) ) {
 			 * Default compatible plugins
 			 */
 			$compatible_plugins = array(
-				'bws_contact' => array( 'contact-form-plugin/contact_form.php', 'contact-form-pro/contact_form_pro.php', 'contact-form-plus/contact-form-plus.php' ),
-				'bws_booking' => 'bws-car-rental-pro/bws-car-rental-pro.php',
-				'limit_attempts' => array( 'limit-attempts/limit-attempts.php', 'limit-attempts-pro/limit-attempts-pro.php' ),
+				'bws_contact'        => array( 'contact-form-plugin/contact_form.php', 'contact-form-pro/contact_form_pro.php', 'contact-form-plus/contact-form-plus.php' ),
+				'bws_booking'        => 'bws-car-rental-pro/bws-car-rental-pro.php',
+				'limit_attempts'     => array( 'limit-attempts/limit-attempts.php', 'limit-attempts-pro/limit-attempts-pro.php' ),
+				'frm_contact_form'   => array( 'formidable/formidable.php', 'formidable-pro/formidable-pro.php' ),
+				'bws_login_register' => 'bws-login-register/bws-login-register.php'
 			);
 
 			$compatible_plugins = apply_filters( 'cptch_get_additional_plugins', $compatible_plugins );
